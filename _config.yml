@@ -15,21 +15,18 @@ github_user: Bilalh
 projects:
   "mplayer-last.fm-scrobbler":
     title: Nunc faucibus neque id nibh.
-    version: "1.0"
     description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
     title: Donec et tortor lorem faucibus.
-    version: "1.0"
+    # version: "1.0"
     description: Donec et tortors lorem faucibus.
   aaa:
     title: Nunc faucibus neque id nibh.
-    version: "1.0"
     description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
     title: Donec et tortor lorem faucibus.
     version: "1.0"
     description: Donec et tortors lorem faucibus.
   fff:
     title: Nunc faucibus neque id nibh.
-    version: "1.0"
     description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
     title: Donec et tortor lorem faucibus.
     version: "1.0"

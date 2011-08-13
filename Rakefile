@@ -24,7 +24,7 @@ task :local => :build do
 	]
 end
  
-task :commit => :build do
+task :commit => [:remove_cache,:build] do
 	puts %x[rsync -q -acvrz  --delete _site/* _compiled/]
 	puts %x[cd _compiled; git add .; git commit -am "`date +%F_%H-%M_%s`"; ]
 end
@@ -32,6 +32,10 @@ end
 task :send => :commit do
 	puts %x[cd _compiled; git push origin master]
 	%x[osascript -e 'open location "http://bilalh.github.com"']
+end
+
+task :remove_cache
+	`rm _cache/*`
 end
 
 task :new do
