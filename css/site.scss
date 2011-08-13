@@ -242,6 +242,7 @@ code, tt {
 
 // Posts
 
+
 .post {
   h1 { font-size: 36px; }
   .content { margin-bottom: 10px; }
@@ -254,16 +255,7 @@ code, tt {
   margin-top: 20px;
 }
 
-// Music
 
-.song {
-  padding: 5px 10px;
-  margin: 20px 0 5px 0;
-  
-  @include border-radius(8px);
-  @include background-gradient(#E6E8E8, #DDDFDF);
-  @include big-block-shadow;
-}
 
 // Little Classes
 

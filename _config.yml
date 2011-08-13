@@ -13,10 +13,24 @@ exclude: ["Rakefile", "CNAME", "Website.tmproj"]
 title: Bilal S Hussain
 github_user: Bilalh
 projects:
-vault:
-  title: Nunc faucibus neque id nibh.
-  version: "1.0"
-  description: Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
-  title: Donec et tortor lorem faucibus.
-  version: "1.0"
-  description: Donec et tortors lorem faucibus.
+  "mplayer-last.fm-scrobbler":
+    title: Nunc faucibus neque id nibh.
+    version: "1.0"
+    description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
+    title: Donec et tortor lorem faucibus.
+    version: "1.0"
+    description: Donec et tortors lorem faucibus.
+  aaa:
+    title: Nunc faucibus neque id nibh.
+    version: "1.0"
+    description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
+    title: Donec et tortor lorem faucibus.
+    version: "1.0"
+    description: Donec et tortors lorem faucibus.
+  fff:
+    title: Nunc faucibus neque id nibh.
+    version: "1.0"
+    description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
+    title: Donec et tortor lorem faucibus.
+    version: "1.0"
+    description: Donec et tortors lorem faucibus.
