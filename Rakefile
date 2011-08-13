@@ -34,7 +34,7 @@ task :send => :commit do
 	%x[osascript -e 'open location "http://bilalh.github.com"']
 end
 
-task :remove_cache
+task :remove_cache do
 	`rm _cache/*`
 end
 
