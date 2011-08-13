@@ -35,7 +35,7 @@ task :send => :commit do
 end
 
 task :remove_cache do
-	`rm _cache/*`
+	`rm _cache/*` if File.directory?('_cache')
 end
 
 task :new do
