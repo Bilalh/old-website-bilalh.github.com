@@ -1,0 +1,22 @@
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+uto: false
+server: false
+lsi: false
+safe: false
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title
+paginate: 10
+exclude: ["Rakefile", "License.txt", "CNAME", "Website.tmproj"]
+title: Bilal S Hussain
+github_user: Bilalh
+projects:
+vault:
+  title: Nunc faucibus neque id nibh.
+  version: "1.0"
+  description: Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
+  title: Donec et tortor lorem faucibus.
+  version: "1.0"
+  description: Donec et tortors lorem faucibus.

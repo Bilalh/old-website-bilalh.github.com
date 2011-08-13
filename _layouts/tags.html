@@ -1,0 +1,8 @@
+---
+layout: page
+title: Tags
+---
+ 
+{% for tag in page.tags %}
+  <h4 class="low-top"><a href="/tags/{{ tag | slugize }}">{{ tag }}</a> ({{ site.tags[tag] | length }})</h4>
+{% endfor %}

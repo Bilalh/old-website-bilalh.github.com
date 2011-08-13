@@ -1,0 +1,28 @@
+---
+layout: default
+no_sidebar: true
+---
+
+<h2 class="class-h1-5">AAAPshasell us ullamcorper enim sit amet risus posuere non iaculis orci.</h2>
+
+<p class="large-para">Phasellus ullamcorper enim sit amet risus posuere non iaculis orci.</p>
+
+<div class="span-{% if page.no_sidebar %}8{% else %}5{% endif %}">
+1Morbi elit sapien, sodales ut placerat vel, hendrerit vel diam. Nulla aliquam enim nec felis blandit sed dictum magna lacinia. Nam pellentesque ligula quis velit pharetra eget mattis magna tincidunt. Aenean ante risus, rhoncus vitae consectetur sit amet, volutpat in eros
+</div>
+
+<div class="span-{% if page.no_sidebar %}8{% else %}5{% endif %}">
+2Morbi elit sapien, sodales ut placerat vel, hendrerit vel diam. Nulla aliquam enim nec felis blandit sed dictum magna lacinia. Nam pellentesque ligula quis velit pharetra eget mattis magna tincidunt. Aenean ante risus, rhoncus vitae consectetur sit amet, volutpat in eros.
+</div>
+
+<div class="span-{% if page.no_sidebar %}8{% else %}5{% endif %}">
+3Morbi elit sapien, sodales ut placerat vel, hendrerit vel diam. Nulla aliquam enim nec felis blandit sed dictum magna lacinia. Nam pellentesque ligula quis velit pharetra eget mattis magna tincidunt. Aenean ante risus, rhoncus vitae consectetur sit amet, volutpat in eros.
+</div>
+
+<div class="span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
+  <h2 class="h1-5">Latest Posts</h2>
+
+  {% assign posts = site.posts %}
+  {% assign listing_limit = 5 %}
+  {% include post-listing.html %}
+</div>

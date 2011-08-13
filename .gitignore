@@ -1,0 +1,55 @@
+_site/
+_compiled/
+bin/
+tmp/
+.svn/
+.hg
+.svn
+CVS
+
+*(Autosaved).rtfd/
+Backup[ ]of[ ]*.pages/
+Backup[ ]of[ ]*.key/
+Backup[ ]of[ ]*.numbers/
+
+# Mac OS X Finder
+.DS_Store
+# Sparkle distribution Private Key (Don’t check me in!)
+
+*.aux
+*.glo
+*.idx
+*.log
+*.toc
+*.ist
+*.acn
+*.acr
+*.alg
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.gls
+*.ilg
+*.ind
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.synctex.gz
+*.fls
+*.fmt
+*.ini
+*.log
+*.fdb_latexmk
+*.log
+*.watcher_pid
+
+*.DS_Store
+Thumbs.db
+*~
+\#*
+.\#*
+*.swp

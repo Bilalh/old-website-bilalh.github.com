@@ -1,0 +1,280 @@
+---
+---
+
+// Variables and General Mixinss
+
+$base-h-margin: 0.6em;
+$font-color: #3B4653;
+$project-download-bg: #00910A;
+$song-bg: #E8E8E8;
+
+@mixin transition($type, $time, $ease) {
+  -webkit-transition: $type $time $ease;
+  transition: $type $time $ease;
+}
+
+@mixin border-radius($length) {
+  border-radius: $length;
+  -webkit-border-radius: $length;
+  -moz-border-radius: $length;
+}
+
+@mixin background-gradient($from, $to) {
+  background: $from;
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -webkit-linear-gradient($from, $to);
+  background: -moz-linear-gradient(center top, $from 0%, $to 100%);
+  background: -moz-gradient(center top, $from 0%, $to 100%);
+}
+
+// Style Specific Mixins
+
+@mixin block-style {
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 1px 3px 1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 1px 3px 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 1px 3px 1px 0 rgba(0, 0, 0, 0.25);
+  @include background-gradient(#E6E8E8, #DDDFDF);
+  @include border-radius(5px);
+}
+
+@mixin big-block-shadow {
+  $shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1), 1px 6px 3px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+}
+
+// Main Elements
+
+body {
+  color: $font-color;
+  font-size: 14px;
+  line-height: 1.4;
+  text-shadow: 0 1px 0 #EEE;
+  -webkit-font-smoothing: antialiased;
+  background: url(/images/bg.png) repeat;
+}
+
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.2em;
+  color: darken($font-color, 15%);
+}
+
+h1 { margin-top: $base-h-margin + 0.2; }
+h2 { margin-top: $base-h-margin + 0.15; }
+h3 { margin-top: $base-h-margin + 0.1; }
+h4, h5 { margin-top: $base-h-margin; }
+
+p {
+  margin: 1em 0;
+}
+
+a, a code {
+  color: #2562B0;
+  text-decoration: none;
+  @include transition(all, 0.2s, linear);
+  &:hover { color: #2DA6E3; }
+}
+
+ul, ol {
+  margin-top: 1.5em;
+}
+
+// Header
+
+#header {
+  position: relative;
+  top: -10px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  
+  @include border-radius(8px);
+  @include background-gradient(#F3F3F3, #E9EBEB);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1), 1px 6px 3px 0 rgba(0, 0, 0, 0.25);
+  
+  #menu {    
+    ul {
+      list-style-type: none;
+      margin: 5px;
+      margin-left: 0;
+      
+      li {
+        display: inline;
+        padding: 7px 0 7px 0;
+        margin: 0 5px;
+        position: relative;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 16px;
+        border: 1px solid #DDDFDF;
+        background: transparent;
+        
+        @include border-radius(5px);
+        @include transition(all, 0.1s, linear);
+        
+        &:hover { background: #DDDFDF; }
+        &.last { margin-right: 0; }
+        
+        a {
+          padding: 7px 12px 7px 12px; // top/bottom padding doesn't do anything visually, but is there to create a bigger clicking area
+          color: #333;
+          &:hover { color: #0698CF; }
+        }
+      }
+    }
+  }
+} // #header
+
+// Footer
+
+#footer {
+  margin: 20px 0 10px 0;
+  padding: 10px;
+  @include block-style;
+}
+
+// Sidebar
+
+.sidebar-module {
+  margin: 20px 0;
+  
+  .title {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    @include block-style;
+    
+    font: {
+      size: 24px;
+      weight: bold;
+    }
+  }
+}
+
+// Code
+
+@mixin code-block {
+  background-color: inherit;
+  padding: 0;
+  @include border-radius(0);
+}
+
+pre, code, tt {
+  font: Monaco, 'andale mono', 'lucida console', monospace;
+  text-shadow: none;
+  -webkit-font-smoothing: initial;
+}
+
+pre {
+  line-height: 1.2;
+  margin: 0;
+  code { @include code-block; }
+}
+
+code, tt {
+  color: #222;
+  padding: 1px 3px;
+  @include border-radius(3px);
+  background-color: #EEE;
+}
+
+.highlight {
+  margin: 1em 0;
+  padding: 10px;
+  @include border-radius(5px);
+  background: none repeat scroll 0 0 #222222;
+  overflow: auto;
+  
+  pre code {
+    @include code-block;
+    color: #F0F0F0;
+  }
+}
+
+// Projects
+
+.project-links {
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+.project-download {
+  color: #000300;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  
+  $shadow:
+    1px 1px 0 0 #014D06,
+    2px 2px 0 0 #014D06,
+    3px 3px 0 0 #014D06,
+    4px 4px 0 0 #014D06,
+    5px 5px 5px 0 #000;
+  
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  
+  @include background-gradient($project-download-bg, darken($project-download-bg, 5%));
+  @include transition(color, 0.2s, linear);
+  @include border-radius(10px);
+  
+  &:hover { color: #DCDCDC; }
+  &:active {
+    box-shadow: 1px 1px 5px 0 #000000;
+    -webkit-box-shadow: 1px 1px 5px 0 #000000;    
+    -moz-box-shadow: 1px 1px 5px 0 #000000;
+    top: 4px;
+    left: 4px;
+  }
+}
+
+.readme {
+  margin-top: 20px;
+  h1 { font-size: 2.2em; }
+  h2 {font-size: 1.9em; }
+  h3 {font-size: 1.6em; }
+  h4 {font-size: 1.3em; }
+}
+
+// Posts
+
+.post {
+  h1 { font-size: 36px; }
+  .content { margin-bottom: 10px; }
+  .next-prev-nav { text-align: center; }
+}
+
+// Comments
+
+#disqus_thread {
+  margin-top: 20px;
+}
+
+// Music
+
+.song {
+  padding: 5px 10px;
+  margin: 20px 0 5px 0;
+  
+  @include border-radius(8px);
+  @include background-gradient(#E6E8E8, #DDDFDF);
+  @include big-block-shadow;
+}
+
+// Little Classes
+
+.push-1-5 { margin: 0 -60px 1.5em 60px; }
+.h1-5 { font-size: 2.5em; } // Make a h2 look like a "h1.5"
+.low-top { margin-top: 0.4em; }
+.large-bottom { margin-bottom: 0.7em; }
+.large-para { font-size: 1.5em; }
+.med-para { font-size: 1.2em; }
+
+.dark-link {
+  color: #314853;
+  &:hover { color: #407C8F; }
+}

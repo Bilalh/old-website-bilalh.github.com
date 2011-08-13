@@ -1,0 +1,54 @@
+task :default => :local
+
+task :build do
+  system("jekyll")
+end
+
+task :local => :build do
+	puts %x[rsync -q -acvrz  --delete _site/* ~/Sites/]
+	%x[osascript -e 'open location "http://localhost/"']
+end
+ 
+task :commit => :build do
+	puts %x[rsync -q -acvrz  --delete _site/* _compiled/]
+	puts %x[cd _compiled; git add .; git commit -am "`date +%F_%H-%M_%s`"; ]
+end
+
+task :send => :commit do
+	puts %x[cd _compiled; git push origin master]
+	%x[osascript -e 'open location "http://bilalh.github.com"']
+end
+
+task :new do
+  throw "No title given" unless ARGV[1]
+  title = ""
+  ARGV[1..ARGV.length - 1].each { |v| title += " #{v}" }
+  title.strip!
+  now = Time.now
+  path = "_posts/#{now.strftime('%F')}-#{title.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '')}.md"
+  
+  File.open(path, "w") do |f|
+    f.puts "---"
+    f.puts "layout: post"
+    f.puts "title: #{title}"
+    f.puts "date: #{now.strftime('%F %T')}"
+    f.puts "category: "
+    f.puts "tags:"
+    f.puts " - "
+    f.puts "---"
+    f.puts ""
+    f.puts ""
+  end
+  
+  `mate #{path}`
+  exit
+end
+
+task :css do
+  require "sass"
+  contents = IO.read("css/site.scss").gsub(/^\-{3}\n.*?\-{3}/, "")
+  
+  File.open("css/site.css", "w") do |f|
+    f.write Sass::Engine.new(contents, :syntax => :scss, :style => :compressed).render
+  end
+end
