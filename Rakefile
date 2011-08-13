@@ -6,7 +6,22 @@ end
 
 task :local => :build do
 	puts %x[rsync -q -acvrz  --delete _site/* ~/Sites/]
-	%x[osascript -e 'open location "http://localhost/"']
+	# %x[osascript -e 'open location "http://localhost/"']
+	%x[
+		# Check if Firefox is running, if so refresh
+		ps -xc|grep -sqi firefox && osascript <<'APPLESCRIPT'
+		   tell app "Firefox" to activate
+		   tell app "System Events"
+		      if UI elements enabled then
+		         keystroke "r" using command down
+		         -- Fails if System Preferences > Universal access > "Enable access for assistive devices" is not on 
+		      --else
+		         --tell app "Firefox" to Get URL "JavaScript:window.location.reload();" inside window 1
+		         -- Fails if Firefox is set to open URLs from external apps in new tabs.
+		      end if
+		   end tell
+		APPLESCRIPT	
+	]
 end
  
 task :commit => :build do
@@ -48,7 +63,7 @@ task :css do
   require "sass"
   contents = IO.read("css/site.scss").gsub(/^\-{3}\n.*?\-{3}/, "")
   
-  File.open("css/site.css", "w") do |f|
+  File.open("_site/site.css", "w") do |f|
     f.write Sass::Engine.new(contents, :syntax => :scss, :style => :compressed).render
   end
 end
