@@ -33,14 +33,17 @@ module Jekyll
 		end	
 	end
 
+	# Sets the commons vars for a project page
 	class ProjectPage < CustomPage
 		def initialize(site, base, dir, name, project,html_name)
+			puts "Building project's #{name}"
 			super site, base, dir, name, html_name
 			['title', 'version','repo','download'].each do |key|
 				self.data[key] = project.data[key]
 			end
 			self.data['project_url'] = project.data['url']
 		end	
+		#[Version 1.2](#Version+1.2+(Thu+Aug+11+2011+03:34:20++0100\))
 	end
 	
 	class ChangeLog < ProjectPage
@@ -54,7 +57,18 @@ module Jekyll
 				{}, :filters => [Jekyll::Filters], :registers => { :site => site }
 			)
 			
+			toc = ""
+			changelog.scan(/-+\n([\w :().+]+)\n-+/m).each do |e|
+				text= e.flatten[0]
+				name = text.gsub(/ \(.*\)/, '')
+				id = text.gsub(/ (.*)\)/, '\1\\)')
+				id.gsub!(/\s/,'+')
+				toc << "[#{name}](##{id})\n"
+			end
+			changelog.sub! /([\w :().+]+\n=+)/m, "#ChangeLog\n#{toc}"
+			
 			self.data['changelog'] = changelog
+			
 		end
 		
 	end
