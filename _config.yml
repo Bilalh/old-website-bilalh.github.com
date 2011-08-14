@@ -5,20 +5,23 @@ uto: false
 server: false
 lsi: false
 safe: false
-markdown: rdiscount
 pygments: true
+markdown: rdiscount
+rdiscount:
+  extensions: [:generate_toc]
+
 permalink: /:year/:month/:day/:title
 paginate: 10
-exclude: ["Rakefile", "CNAME", "Website.tmproj",changelog.md]
+exclude: ["Rakefile", "CNAME", "Website.tmproj", "changelog.md"]
 title: Bilal S Hussain
 github_user: Bilalh
 projects:
   "mplayer-last.fm-scrobbler":
-    title: Nunc faucibus neque id nibh.
+    title: Mplayer last.fm Scrobbler
     description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
-    title: Donec et tortor lorem faucibus.
-    # version: "1.0"
-    description: Donec et tortors lorem faucibus.
+    # version: "1.1"
+    description: mplayer last.fm scrobbler with support for mp3, m4a (mp4), flac and ogg.
+    changelog: true
   aaa:
     title: Nunc faucibus neque id nibh.
     description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
