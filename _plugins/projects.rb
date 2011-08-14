@@ -3,6 +3,16 @@
 require_relative 'custom_page'
 
 module Jekyll
+	
+	class Projects < CustomPage
+		def initialize(site, base, dir, projects)
+			super site, base, dir, 'projects'
+			data = []
+			projects.each { |v| data << v.data }
+			self.data['projects'] = data
+		end
+	end
+	
 	class Project < CustomPage
 		def initialize(site, base, dir, name, info)
 			super site, base, dir, 'project'
@@ -16,33 +26,28 @@ module Jekyll
 			self.data['description'] = info['description']
 			
 			filename="_cache/#{name}.readme"
-			if !File.exists?(filename) then
-				# this stuff is bit hackish, but it works
-				# this will fail if README.md isn't present
-				readme = `curl https://raw.github.com/#{site.config['github_user']}/#{name}/master/readme.md` 
-				readme.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
-				readme = Liquid::Template.parse(readme).render({}, :filters => [Jekyll::Filters], :registers => { :site => site })
-				File.open(filename, "w") { |f| f.puts readme } 
-			else 
-				readme = IO.read filename
-			end
+			readme = check_cache(name,'readme.md')
 			
-			self.data['readme']    = RDiscount.new(readme,:generate_toc).to_html
-			# self.data['readme']    =  readme
+			self.data['readme']    =  readme
 			self.data['changelog'] = 'changelog.html'
-		end
+		end	
 	end
-	
-	class ChangeLog < CustomPage
-		def initialize(site, base, dir, name, project)
-			super site, base, dir, 'changelog', 'changelog.html'
+
+	class ProjectPage < CustomPage
+		def initialize(site, base, dir, name, project,html_name)
+			super site, base, dir, name, html_name
 			['title', 'version','repo','download'].each do |key|
 				self.data[key] = project.data[key]
 			end
-			
+			self.data['project_url'] = project.data['url']
+		end	
+	end
+	
+	class ChangeLog < ProjectPage
+		def initialize(site, base, dir, name, project)
+			super site, base, dir, 'changelog', project, "changelog.html"
 			filename="_cache/mplayer-last.fm-scrobbler.changelog"
 			
-			# filename="_cache/#{name}.readme"
 			changelog = IO.read filename
 			changelog.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
 			changelog = Liquid::Template.parse(changelog).render(
@@ -50,17 +55,8 @@ module Jekyll
 			)
 			
 			self.data['changelog'] = changelog
-		end	
-		
-	end
-	
-	class Projects < CustomPage
-		def initialize(site, base, dir, projects)
-			super site, base, dir, 'projects'
-			data = []
-			projects.each { |v| data << v.data }
-			self.data['projects'] = data
 		end
+		
 	end
 	
 	class Site
