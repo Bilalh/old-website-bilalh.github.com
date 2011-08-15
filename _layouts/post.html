@@ -14,19 +14,19 @@ layout: default
   </div>
 
   <div class="next-prev-nav low-top">
-    {% if page.previous.url %}
-      &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+    {% if page.next.url %}
+      &laquo;&nbsp;<a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>
     {% endif %}
   
-    {% if page.previous.url %}
-      {% if page.next.url %}
+    {% if page.next.url %}
+      {% if page.previous.url %}
         |
       {% endif %}
     {% endif %}
     
   
-    {% if page.next.url %}
-      <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">{{ page.next.title }}</a>&nbsp;&raquo;
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>&nbsp;&raquo;
     {% endif %}
   
     <br />
