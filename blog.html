@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog 
+---
+<div>
+{{paginator.per_page }}	Number of posts per page.               <br/>
+<!-- {{paginator.posts }}	Posts available for that page. -->
+{{paginator.total_posts }}	Total number of posts.              <br/>
+{{paginator.total_pages }}	Total number of pages               <br/>
+{{paginator.page }}	The number of the current page.             <br/>
+{{paginator.previous_page }}	The number of the previous page.  <br/>
+{{paginator.next_page }}	The number of the next page           <br/>
+</div>                                                          <br/>
+{% assign posts = paginator.posts %}
+{% include post-listing.html %}
+
+<!-- Replaces the dummy page at blog/index.html  -->

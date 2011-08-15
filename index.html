@@ -20,9 +20,9 @@ no_sidebar: true
 </div>
 
 <div class="span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
-  <h2 class="h1-5">Latest Posts</h2>
+	<h2 class="h1-5">Latest Posts</h2>
 
-  {% assign posts = site.posts %}
-  {% assign listing_limit = 5 %}
-  {% include post-listing.html %}
+	{% assign posts = site.posts %}
+	{% assign listing_limit = 3 %}
+	{% include post-listing.html %}
 </div>
