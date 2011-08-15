@@ -13,6 +13,7 @@ module Jekyll
 		
 		def check_cache(name, filename)
 			cache = "_cache/#{filename}.cache"
+			# cache = "_cache/#{name}#{filename}.cache"
 			data = ""
 			if !File.exists?(cache) then
 				# this stuff is bit hackish, but it works
