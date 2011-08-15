@@ -12,17 +12,7 @@ layout: default
   <div class="content">
     {{ content }}
   </div>
-  
-  <hr />
-  
-  {% if page.tags %}
-    Tagged in
-    {% for tag in page.tags %}
-      <strong><a href="/tags/{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-    <br />
-  {% endif %}
-  
+
   <div class="next-prev-nav low-top">
     {% if page.previous.url %}
       &laquo;&nbsp;<a href="{{ page.previous.url }}" rel="previous" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
@@ -41,7 +31,17 @@ layout: default
   
     <br />
   </div>
+
   
+  <hr />
+  
+  {% if page.tags %}
+    Tagged in
+    {% for tag in page.tags %}
+      <strong><a href="/tags/{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+    <br />
+  {% endif %}
   {% unless page.no_comments %}
     {% include comments.html %}
   {% endunless %}

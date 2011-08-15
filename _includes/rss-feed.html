@@ -15,7 +15,7 @@
           <link href="{{ site.url }}{{ post.url }}/"/>
           <updated>{{ post.date | date_to_xmlschema }}</updated>
           <id>{{ site.url }}{{ post.url }}/</id>
-          <summary type="html">{{ post.content | strip_html | truncatewords: 75 }}</summary>
+          <summary type="html">{{ post.content | strip_html | truncatewords: 50 }}</summary>
       </entry>
     {% endfor %}
 </feed>

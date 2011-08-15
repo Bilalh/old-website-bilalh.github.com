@@ -6,7 +6,8 @@ server: false
 lsi: false
 safe: false
 pygments: true
-markdown: rdiscount
+markdown: rdiscount   
+paginate: 10
 rdiscount:
   extensions: [:generate_toc]
 
