@@ -5,7 +5,7 @@ task :build do
 end
 
 task :local => :build do
-	puts %x[rsync -q -acvrz  --delete _site/* ~/Sites/]
+	puts %x[rsync -q -acvrz  --delete _site/ ~/Sites/]
 	# %x[osascript -e 'open location "http://localhost/"']
 	%x[
 		# Check if Firefox is running, if so refresh
@@ -25,7 +25,7 @@ task :local => :build do
 end
  
 task :commit => [:remove_cache,:build] do
-	puts %x[rsync -q -acvrz  --delete _site/* _compiled/]
+	puts %x[rsync -q -acvrz  --delete _site/ _compiled/]
 	puts %x[cd _compiled; git add .; git commit -am "`date +%F_%H-%M_%s`"; ]
 end
 
