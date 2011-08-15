@@ -20,21 +20,23 @@ module Jekyll
 			super site, base, dir, 'project'
 			puts "Building project: #{name}"
 			
-			self.data['title']       = info['title'] || name
-			self.data['version']     = info['version_title'] || info['version']
-			self.data['repo']        = "https://github.com/#{site.config['github_user']}/#{name}"
-			self.data['download']    = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
-			self.data['docs']        = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
-			self.data['description'] = info['description']
+			self.data['title']     = info['title'] || name
+			self.data['version']   = info['version_title'] || info['version']
+			self.data['repo']      = "https://github.com/#{site.config['github_user']}/#{name}"
+			self.data['download']  = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
+			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
+			self.data['changelog'] = 'changelog.html'  if info['changelog']
+			self.data['icon']      = info['icon']      if info['icon']  
 			
 			readme = check_cache(name,'readme.md')
+			self.data['readme'] = Maruku.new(readme).to_html
 			
-			self.data['readme']    = Maruku.new(readme).to_html
-			self.data['changelog'] = 'changelog.html'  if info['changelog']
-			self.data['icon']      = info['icon']      if info['icon']
+			doc = Nokogiri::HTML(self.data['readme'])
+			self.data['description'] = info['description'] || doc.css('#description').text || ""
+			
 			
 			if info['languages'] then
-			self.data['languages'] = info['languages'].split(/, */).join(" &nbsp&nbsp")
+				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp&nbsp")
 			end 
 			
 		end 

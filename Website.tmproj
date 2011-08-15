@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>Rakefile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -11,14 +13,96 @@
 			<string>Website</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>selected</key>
+			<true/>
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>151</integer>
+	<integer>227</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>Rakefile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>13</integer>
+				<key>line</key>
+				<integer>21</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_config.yml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>9</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_plugins/custom_page.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>19</integer>
+				<key>line</key>
+				<integer>14</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>25</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>25</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>26</integer>
+			</dict>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>_config.yml</string>
+		<string>_plugins/custom_page.rb</string>
+		<string>Rakefile</string>
+		<string>index.html</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
@@ -31,6 +115,20 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
+				<key>_cache</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+				<key>_layouts</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
 				<key>_plugins</key>
 				<dict>
 					<key>isExpanded</key>
@@ -38,7 +136,7 @@
 					<key>subItems</key>
 					<dict/>
 				</dict>
-				<key>images</key>
+				<key>blog</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
@@ -49,6 +147,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{352, 78}, {1088, 701}}</string>
+	<string>{{431, 79}, {937, 785}}</string>
 </dict>
 </plist>

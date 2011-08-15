@@ -6,7 +6,7 @@ server: false
 lsi: false
 safe: false
 pygments: true
-markdown: rdiscount   
+markdown: maruku   
 paginate: 10
 rdiscount:
   extensions: [:generate_toc]
@@ -22,8 +22,7 @@ projects:
     icon:  "/images/VgTagger.png"
     # version: "1.1"  
     languages: "Shell, C++"
-    changelog: true 
-    description: "A command line application that plays audio files with MPlayer and scrobbles them to last.fm. Supports mp3, mp4, flac and ogg." 
+    changelog: true  
   aaa:
     title: Nunc faucibus neque id nibh.
     version: "1.0"                              

@@ -15,6 +15,11 @@ text-align: justify; text-justify: newspaper
 span.languages{
 	font-variant:small-caps;
 }
+	  
+.readmeTitle { 
+	display: none;
+	visibility: hidden;
+}
 	
 img.framed,iframe.framed {
 	border: 1px solid #222;
@@ -284,10 +289,7 @@ code, tt {
 .large-bottom { margin-bottom: 0.7em; }
 .large-para { font-size: 1.5em; }
 .med-para { font-size: 1.2em; }
-.readmeTitle { 
-	display: none;
-	visibility: hidden;
-}
+
 
 .dark-link {
 	color: #314853;
