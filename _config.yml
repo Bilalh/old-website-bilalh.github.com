@@ -18,12 +18,29 @@ github_user: Bilalh
 projects:
   "mplayer-last.fm-scrobbler":
     title: MPlayer last.fm Scrobbler
-    # version: "1.1"
-    description: MPlayer last.fm scrobbler with support for mp3, m4a (mp4), flac and ogg.
+    # version: "1.1"  
     changelog: true
+    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.
   aaa:
     title: Nunc faucibus neque id nibh.
-    version: "1.0"
-  fff:
+    version: "1.0"  
+    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.            
+  fsfdsdfff:
     title: Nunc faucibus neque id nibh.
     version: "1.0"
+    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.            
+  fffdsff:
+    title: Nunc faucibus neque id nibh.
+    version: "1.0"
+    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.
+      
+      
+  ffgggf:
+    title: Nunc faucibus neque id nibh.
+    version: "1.0"
+    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.
+        
+  fdff:
+    title: Nunc faucibus neque id nibh.
+    version: "1.0"
+    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.     

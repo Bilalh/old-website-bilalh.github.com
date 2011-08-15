@@ -8,11 +8,8 @@ $font-color: #3B4653;
 $project-download-bg: #DBDDDD;
 $song-bg: #E8E8E8;
 
-.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12,.grid_13,.grid_14,.grid_15,.grid_16 {
-    display: inline;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px
+div.project{
+text-align: justify; text-justify: newspaper
 }
 
 @mixin transition($type, $time, $ease) {
@@ -272,6 +269,10 @@ code, tt {
 .large-bottom { margin-bottom: 0.7em; }
 .large-para { font-size: 1.5em; }
 .med-para { font-size: 1.2em; }
+.readmeTitle { 
+  display: none;
+  visibility: hidden;
+}
 
 .dark-link {
   color: #314853;

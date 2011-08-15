@@ -2,6 +2,7 @@
 # encoding: utf-8
 require_relative 'custom_page'
 require "Nokogiri"
+require "Maruku"
 
 module Jekyll
 	
@@ -19,16 +20,16 @@ module Jekyll
 			super site, base, dir, 'project'
 			puts "Building project: #{name}"
 			
-			self.data['title']			 = info['title'] || name
-			self.data['version']		 = info['version_title'] || info['version']
-			self.data['repo']				 = "https://github.com/#{site.config['github_user']}/#{name}"
-			self.data['download']		 = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
-			self.data['docs']				 = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
+			self.data['title']       = info['title'] || name
+			self.data['version']     = info['version_title'] || info['version']
+			self.data['repo']        = "https://github.com/#{site.config['github_user']}/#{name}"
+			self.data['download']    = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
+			self.data['docs']        = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
 			self.data['description'] = info['description']
 			
 			readme = check_cache(name,'readme.md')
 			
-			self.data['readme']		 =	readme
+			self.data['readme']    = Maruku.new(readme).to_html
 			self.data['changelog'] = 'changelog.html'
 		end 
 	end
