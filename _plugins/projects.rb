@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby19
 # encoding: utf-8
 require_relative 'custom_page'
+require "Nokogiri"
 
 module Jekyll
 	
@@ -56,16 +57,27 @@ module Jekyll
 				{}, :filters => [Jekyll::Filters], :registers => { :site => site }
 			)
 			
-			toc = ""
-			changelog.scan(/-+\n([\w :().+]+)\n-+/m).each do |e|
-				text= e.flatten[0]
-				name = text.gsub(/ \(.*\)/, '')
-				id = text.gsub(/ (.*)\)/, '\1\\)')
-				id.gsub!(/\s/,'+')
-				toc << "[#{name}](##{id})\n"
+			builder = Nokogiri::XML::Builder.new do |xml|
+				xml.table{
+					xml << "<tr>"
+					(changelog.scan(/-+\n([\w :().+]+)\n-+/m)).each_with_index do |e,i|
+						xml << "</tr><tr>" if i %5 == 0
+						xml.td{
+							text = e.flatten[0]
+							name = text.gsub(/ \(.*\)/, '')
+							id   = text.gsub!(/\s/,'+')
+							xml.a(:href => "##{id}"){
+								xml << name
+							}	
+						}
+					end
+					xml << "</tr>"
+				}
 			end
-			changelog.sub! /([\w :().+]+\n=+)/m, "#ChangeLog\n#{toc}"
 			
+			toc = builder.to_xml
+			toc.sub!(/<\?xml version="1.0"\?>/, '')
+			changelog.sub! /([\w :().+]+\n=+)/m, "#ChangeLog\n#{toc}"	
 			self.data['changelog'] = changelog
 			
 		end
