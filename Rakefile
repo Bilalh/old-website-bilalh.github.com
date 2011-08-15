@@ -25,7 +25,7 @@ task :local => :build do
 end
  
 task :commit => [:remove_cache,:build] do
-	puts %x[rsync -q -acvrz  --delete _site/ _compiled/]
+	puts %x[rsync -q -acvrz --exclude .git  --delete _site/ _compiled/]
 	puts %x[cd _compiled; git add .; git commit -am "`date +%F_%H-%M_%s`"; ]
 end
 
