@@ -18,19 +18,12 @@ github_user: Bilalh
 projects:
   "mplayer-last.fm-scrobbler":
     title: MPlayer last.fm Scrobbler
-    description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
     # version: "1.1"
     description: MPlayer last.fm scrobbler with support for mp3, m4a (mp4), flac and ogg.
     changelog: true
   aaa:
     title: Nunc faucibus neque id nibh.
-    description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
-    title: Donec et tortor lorem faucibus.
     version: "1.0"
-    description: Donec et tortors lorem faucibus.
   fff:
     title: Nunc faucibus neque id nibh.
-    description: 1Nam pharetra nisl quis porttitor suscipit libero urna blandit felis
-    title: Donec et tortor lorem faucibus.
     version: "1.0"
-    description: Donec et tortors lorem faucibus.
