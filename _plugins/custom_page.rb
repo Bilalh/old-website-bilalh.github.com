@@ -19,10 +19,10 @@ module Jekyll
 				# this will fail if README.md isn't present
 				data = `curl https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}` 
 				data.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
-				data = Liquid::Template.parse(readme).render(
+				data = Liquid::Template.parse(data).render(
 					{}, :filters => [Jekyll::Filters], :registers => { :site => site }
 				)
-				File.open(cache, "w") { |f| f.puts readme } 
+				File.open(cache, "w") { |f| f.puts data } 
 			else 
 				data = IO.read cache
 			end
