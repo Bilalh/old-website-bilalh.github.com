@@ -30,7 +30,13 @@ module Jekyll
 			readme = check_cache(name,'readme.md')
 			
 			self.data['readme']    = Maruku.new(readme).to_html
-			self.data['changelog'] = 'changelog.html'
+			self.data['changelog'] = 'changelog.html'  if info['changelog']
+			self.data['icon']      = info['icon']      if info['icon']
+			
+			if info['languages'] then
+			self.data['languages'] = info['languages'].split(/, */).join(" &nbsp&nbsp")
+			end 
+			
 		end 
 	end
 
@@ -44,7 +50,6 @@ module Jekyll
 			end
 			self.data['project_url'] = project.data['url']
 		end 
-		#[Version 1.2](#Version+1.2+(Thu+Aug+11+2011+03:34:20++0100\))
 	end
 	
 	class ChangeLog < ProjectPage
@@ -99,7 +104,7 @@ module Jekyll
 				p.data['url'] = "/#{dir}/#{slug}"
 				projects << p
 				write_page p
-				write_page ChangeLog.new(self, self.source, File.join(dir, slug),k, p)
+				write_page ChangeLog.new(self, self.source, File.join(dir, slug),k, p) if v['changelog']
 			end
 			
 			write_page Projects.new(self, self.source, dir, projects) if self.layouts.key? 'projects'

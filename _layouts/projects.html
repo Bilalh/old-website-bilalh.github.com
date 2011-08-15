@@ -4,16 +4,18 @@ title: Projects
 no_sidebar: true
 ---
 
-<div>These are my open source projects</div>
-<br>
-
 {% for project in page.projects %}
 <div class="project prepend-1 append-1 span-10  {% if forloop.index % 2 ==0 %} last {% endif %}" >
-	<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-	{% if project.version %}<span class="med-para">{{ project.version }}</span> 
-	<span class="med-para">-</span> {% endif %}
-	<!-- <span class="med-para"><a href="{{ project.repo }}">Repository</a></span><br /> -->
-	{% if project.description %}<p class="low-top">{{ project.description }}</p>{% endif %}
+	<h3><a href="{{ project.url }}">{{ project.title }}</a> 
+		<span class="small quiet">{{ project.version }}</span>
+	</h3>    
+	{% if project.icon %}
+	<img src="{{ project.icon }}" class="framed " align="left"  width="64" height="64"> 
+	{% endif %}
+	<p class="low-top">
+		<span class="languages quiet small low-top low-bottom">{{ project.languages }}</span><br />
+			{{ project.description }} <a href="{{ project.url }}">read more...</a> 
+		</p>
 </div>
 
 {% endfor %}
