@@ -2,49 +2,45 @@
 layout: page
 title: Blog 
 ---
-<!-- Testing -->
-<!-- <div>
-{{paginator.per_page }} Number of posts per page.               <br/>
-{{paginator.total_posts }}  Total number of posts.              <br/>
-{{paginator.total_pages }}  Total number of pages               <br/>
-{{paginator.page }} The number of the current page.             <br/>
-{{paginator.previous_page }}  The number of the previous page.  <br/>
-{{paginator.next_page }}  The number of the next page           <br/>
-</div>                                                          <br/>   -->
-{% assign posts = paginator.posts %}
-{% include post-listing.html %}
 
-<div class="next-prev-nav low-top">
-	{% if paginator.previous_page %}
-		&laquo;&nbsp;<a href="{%if  paginator.previous_page == 1 %} /blog {% else %} /page{{ paginator.previous_page }} {% endif %}" 
-		rel="next" title="Previous Page">Previous Page</a>
-	{% endif %}
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/fullTextSearch.js"></script>
 
-	{% if paginator.previous_page %}
-		{% if paginator.next_page %}
-			|
+
+<form id="search">
+	<input type="text" id="query" name="query"/>
+	<input type="submit"/>
+</form>
+
+
+<div id="results">
+
+</div>
+<div id="main-content">
+	{% assign posts = paginator.posts %}
+	{% include post-listing.html %}
+
+	<div class="next-prev-nav low-top">
+		{% if paginator.previous_page %}
+			&laquo;&nbsp;<a href="{%if	paginator.previous_page == 1 %} /blog {% else %} /page{{ paginator.previous_page }} {% endif %}" 
+			rel="next" title="Previous Page">Previous Page</a>
 		{% endif %}
-	{% endif %}
+
+		{% if paginator.previous_page %}
+			{% if paginator.next_page %}
+				|
+			{% endif %}
+		{% endif %}
 	
 
-	{% if paginator.next_page %}
-		<a href="/page{{ paginator.next_page }}" rel="previous" title="Next Page">Next Page</a>&nbsp;&raquo;
-	{% endif %}
+		{% if paginator.next_page %}
+			<a href="/page{{ paginator.next_page }}" rel="previous" title="Next Page">Next Page</a>&nbsp;&raquo;
+		{% endif %}
 
-	<br />
+		<br />
+	</div>  
 </div>
 
-<script type="text/javascript" charset="utf-8">
-  var posts = [
-    {% for post in site.posts %}
-      {
-        title: unescape('{{ post.title | strip_html | cgi_escape }}').gsub(/\+/, ' '),
-        summary: unescape('{{ post.summary | strip_html | cgi_escape }}').gsub(/\+/, ' '),
-        content: unescape('{{ post.content | strip_html | cgi_escape }}').gsub(/\+/, ' '),
-        url: unescape('{{ post.url | strip_html | cgi_escape }}').gsub(/\+/, ' '),
-      },
-    {% endfor %}
-  0];
-
-  posts.pop();
-</script>
+<div class="small quiet" id="indextank" style="display:none">
+Search powered by IndexTank
+</div>
