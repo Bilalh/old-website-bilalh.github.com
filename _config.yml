@@ -52,7 +52,8 @@ projects:
 
   aaa:
     title: Nunc faucibus neque id nibh.
-    version: "1.0"                              
+    version: "1.0"
+    changelog: true                              
     languages: "Objective C, Ruby, C++"  
     description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application            
   fsfdsdfff:

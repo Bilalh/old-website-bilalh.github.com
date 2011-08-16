@@ -26,6 +26,9 @@ img.pic{
 	<h3>{{ page.version }}</h3>
 
 		<h3>
+			{% if page.features_url %}
+				<a href="{{ page.features_url }}">Features &nbsp;</a>
+			{% endif %}
 			{% if page.readme_url %}
 				<a href="{{ page.readme_url }}">Readme &nbsp;</a>
 			{% endif %}

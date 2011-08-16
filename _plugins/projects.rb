@@ -16,7 +16,7 @@ module Jekyll
 	end
 	
 	class Project < CustomPage
-		def initialize(site, base, dir, name, info)
+		def initialize(site, base, dir, name, info, url)
 			super site, base, dir, 'project'
 			puts "Building project: #{name}"
 			
@@ -27,12 +27,14 @@ module Jekyll
 			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
 			
 			self.data['changelog_url'] = 'changelog.html'  if info['changelog']
+			self.data['icon']          = info['icon']      if info['icon']  
 			
-			self.data['icon']      = info['icon']      if info['icon']  
 			if info['features']  then
-				self.data['features']  = info['features']
-				self.data['readme_url'] = 'readme.html'  if info['changelog']
-				
+				self.data['features']     = info['features']
+				self.data['readme_url']   = 'readme.html'
+				self.data['features_url'] = url
+			elsif self.data['changelog_url'] 
+				self.data['readme_url']   = url
 			end
 			
 			readme = check_cache(name,'readme.md')
@@ -58,7 +60,7 @@ module Jekyll
 			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url'].each do |key|
 				self.data[key] = project.data[key]
 			end
-			self.data['project_url'] = project.data['url']
+			copy_keys 'features_url'
 		end
 		
 		def copy_keys(*keys)
@@ -124,12 +126,12 @@ module Jekyll
 			
 			self.config['projects'].each do |k, v|
 				slug = v['slug'] || k.slugize
-				p = Project.new(self, self.source, File.join(dir, slug), k, v)
+				p = Project.new(self, self.source, File.join(dir, slug), k, v,"/#{dir}/#{slug}")
 				p.data['url'] = "/#{dir}/#{slug}"
 				projects << p
 				write_page p
 				write_page ChangeLog.new(self, self.source, File.join(dir, slug),k, p) if v['changelog']
-				write_page Readme.new(self, self.source, File.join(dir, slug),k, p) if v['features']
+				write_page Readme.new(self, self.source, File.join(dir, slug),k, p)    if v['features']
 				
 			end
 			
