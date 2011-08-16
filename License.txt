@@ -4,4 +4,4 @@ Licence
 
 The source of the website is under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
-All other content is under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+All other content is under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License unless specified.
