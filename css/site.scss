@@ -7,12 +7,33 @@ $base-h-margin: 0.6em;
 $font-color: #3B4653;
 $project-download-bg: #DBDDDD;
 $song-bg: #E8E8E8;
+ 
+
+#query { border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b2a48c), to(#9b8d74));
+	background: -moz-linear-gradient(top, #b2a48c, #9b8d74);
+	text-shadow: rgba(0,0,0,.2) 0 0 5px;
+}
+
+#search-submit {
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-mox-box-shadow: 0 0 5px black;
+
+	/* Webkit-transition */
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.4s, 0.4s;
+	-webkit-transition-timing-function: linear, ease-in;
+	}
 
 div.project{
 text-align: justify; text-justify: newspaper
 }
 
-span.languages{
+span.languages a.rss{
 	font-variant:small-caps;
 }
 	  
