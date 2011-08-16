@@ -16,7 +16,7 @@ $(document).ready(function() {
 			// remove all the text and the class of .empty
 			$(this).val("").removeClass("empty");;
 		}
-
+		this.select();
 	});
 
 	// When the focus on #search is lost
