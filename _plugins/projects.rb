@@ -27,6 +27,7 @@ module Jekyll
 			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
 			
 			self.data['changelog_url'] = 'changelog.html'  if info['changelog']
+			self.data['apidocs_url']   = "/docs/#{name}"   if info['apidocs']
 			self.data['icon']          = info['icon']      if info['icon']  
 			
 			if info['features']  then
@@ -60,7 +61,7 @@ module Jekyll
 			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url'].each do |key|
 				self.data[key] = project.data[key]
 			end
-			copy_keys 'features_url'
+			copy_keys 'features_url', 'apidocs_url'
 		end
 		
 		def copy_keys(*keys)
@@ -92,7 +93,7 @@ module Jekyll
 			builder = Nokogiri::XML::Builder.new do |xml|
 				xml.table{
 					xml << "<tr>"
-					(changelog.scan(/-+\n([\w :().+]+)\n-+/m)).each_with_index do |e,i|
+					(changelog.scan(/\n([\w :().+]+)\n-+/m)).each_with_index do |e,i|
 						xml << "</tr><tr>" if i %5 == 0
 						xml.td{
 							text = e.flatten[0]
@@ -108,8 +109,9 @@ module Jekyll
 			end
 			
 			toc = builder.to_xml
+			
 			toc.sub!(/<\?xml version="1.0"\?>/, '')
-			changelog.sub! /([\w :().+]+\n=+)/m, "#ChangeLog\n#{toc}"	
+			changelog.sub! /([\w :().+]+\n=+)/m, "#ChangeLog\n#{toc}"
 			self.data['changelog'] = changelog
 			
 		end

@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Tue Aug 16 2011
+---------------
+* Searching in Posts
+* Nicer Project Page
+* Features
+* Documentation
+
 Tue Aug 15 2011
 ---------------
 * Full Text Search 

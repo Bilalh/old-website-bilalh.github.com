@@ -3,6 +3,7 @@ _compiled/
 _cache/
 bin/
 tmp/
+docs/
 .svn/
 .hg
 .svn
