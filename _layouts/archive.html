@@ -1,6 +1,16 @@
 ---
 layout: page
 ---
- 
-{% assign posts = page.posts %}   
-{% include post-listing.html %}
+
+<div id="results">
+	
+</div>
+
+<div id="main-content">
+	{% assign posts = page.posts %}   
+	{% include post-listing.html %}	
+</div>
+
+<div class="small quiet" id="indextank" style="display:none">
+Search powered by IndexTank
+</div>

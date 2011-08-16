@@ -3,6 +3,11 @@ layout: page
 title: Categories
 ---
 
+<div id="results">
+	
+</div>
+
+<div id="main-content">
 {% for category in page.categories %}
   <h2><a href="/categories/{{ category | slugize }}">{{ category }}</a></h2>
   <h6>{{ site.categories[category] | length }} posts</h6>
@@ -14,3 +19,8 @@ title: Categories
     {% endfor %}
   </ul>
 {% endfor %}
+</div>
+
+<div class="small quiet" id="indextank" style="display:none">
+Search powered by IndexTank
+</div>

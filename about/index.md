@@ -7,7 +7,7 @@ title: About
 	
 </div>
 
-+--{#main-content}
++--{main-content}
 ## Skills
 
 Praesent sed ligula ligula, ut tempor nisl. Cras rutrum tortor non eros laoreet euismod. Aliquam commodo justo non nulla mattis vitae pretium risus vehicula. In hac habitasse platea dictumst. Integer urna libero, auctor vitae auctor vel, volutpat in nisi. Aliquam faucibus nibh orci, non vehicula leo. Praesent venenatis purus nulla. Sed interdum, ligula et accumsan molestie, dolor metus dignissim justo, quis posuere diam dui quis odio. Curabitur vitae lacus vitae nisl condimentum pharetra. Donec quam nibh, congue ac hendrerit at, suscipit eleifend purus. Donec consequat pharetra posuere. Donec a orci eros, non ultricies elit. Suspendisse fermentum augue in mauris egestas a consectetur velit gravida. Pellentesque fermentum tristique odio. Suspendisse lectus ante, porta a suscipit ut, fringilla in arcu. Morbi placerat, sapien nec viverra bibendum, nibh orci cursus nunc, vitae lacinia justo diam sed velit. Nulla facilisi. Nullam felis lacus , molestie id blandit eu, volutpat in turpis. Nullam lectus nisl, sollicitudin quis suscipit eu, dictum vel nunc.

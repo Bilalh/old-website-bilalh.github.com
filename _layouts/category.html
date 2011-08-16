@@ -1,7 +1,17 @@
 ---
 layout: page
 ---
- 
+
+<div id="results">
+	
+</div>
+
+<div id="main-content">
 {% assign posts = site.categories[page.category] %}
 {% assign no_category = true %}
 {% include post-listing.html %}
+</div>
+
+<div class="small quiet" id="indextank" style="display:none">
+Search powered by IndexTank
+</div>

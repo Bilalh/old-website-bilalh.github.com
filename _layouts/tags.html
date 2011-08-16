@@ -2,7 +2,19 @@
 layout: page
 title: Tags
 ---
+
+
+<div id="results">
+	
+</div>
  
+<div id="main-content"> 
 {% for tag in page.tags %}
   <h4 class="low-top"><a href="/tags/{{ tag | slugize }}">{{ tag }}</a> ({{ site.tags[tag] | length }})</h4>
 {% endfor %}
+
+</div>
+
+<div class="small quiet" id="indextank" style="display:none">
+Search powered by IndexTank
+</div>
