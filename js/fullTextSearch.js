@@ -37,6 +37,8 @@ $(document).ready(function() {
 		$('#results').hide();
 		$('div#dReturn').hide();
 	});
+    
+	$('a#mail').prop("href", makeEmail())
 
 });
 

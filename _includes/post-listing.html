@@ -9,6 +9,13 @@
     {% endunless %}
   </h4>
   
-  <p>{{ post.content | strip_html | truncatewords: 75 }}</p>
-  <p><a href="{{ post.url }}">Read more...</a></p>
+  <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+  <p class><a href="{{ post.url }}">Read more...</a></p>
+  {% if page.tags %}
+    Tagged in
+    {% for tag in page.tags %}
+      <strong><a href="/tags/{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+    <br />
+  {% endif %}
 {% endfor %}
