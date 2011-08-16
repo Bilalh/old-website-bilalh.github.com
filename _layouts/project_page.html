@@ -15,7 +15,6 @@ h2.title-feature {
 img.pic{
 	float:left; margin-top: 5px; margin-right: 15px; margin-bottom: 10px
 }
-
 </style>
 
 
@@ -27,11 +26,11 @@ img.pic{
 	<h3>{{ page.version }}</h3>
 
 		<h3>
-			{% if page.features %}
-				<a href="readme">Readme &nbsp;</a>
+			{% if page.readme_url %}
+				<a href="{{ page.readme_url }}">Readme &nbsp;</a>
 			{% endif %}
-			{% if page.changelog %}
-				<a href="{{ page.changelog }}">Changelog</a>
+			{% if page.changelog_url %}
+				<a href="{{ page.changelog_url }}">Changelog</a>
 			{% endif %}
 		</h3>
 </div>
@@ -48,4 +47,6 @@ img.pic{
 	{% endif %}
 </div>
 
-{{ content }}
+<div class="readme span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
+	{{ content }}
+</div>

@@ -25,10 +25,15 @@ module Jekyll
 			self.data['repo']      = "https://github.com/#{site.config['github_user']}/#{name}"
 			self.data['download']  = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
 			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
-			self.data['changelog'] = 'changelog.html'  if info['changelog']
+			
+			self.data['changelog_url'] = 'changelog.html'  if info['changelog']
 			
 			self.data['icon']      = info['icon']      if info['icon']  
-			self.data['features']  = info['features']  if info['features']  
+			if info['features']  then
+				self.data['features']  = info['features']
+				self.data['readme_url'] = 'readme.html'  if info['changelog']
+				
+			end
 			
 			readme = check_cache(name,'readme.md')
 			self.data['readme'] = Maruku.new(readme).to_html
@@ -47,24 +52,28 @@ module Jekyll
 	# Sets the commons vars for a project page
 	class ProjectPage < CustomPage
 		def initialize(site, base, dir, name, project,html_name)
+			@project = project
 			puts "Building project's #{name}"
 			super site, base, dir, name, html_name
-			['title', 'version','repo','download', 'icon'].each do |key|
+			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url'].each do |key|
 				self.data[key] = project.data[key]
 			end
 			self.data['project_url'] = project.data['url']
-		end 
+		end
+		
+		def copy_keys(*keys)
+			keys.each do |key|
+				self.data[key] = @project.data[key] if @project.data[key]
+			end
+		end
+		
 	end
 	
 	class Readme < ProjectPage
 		def initialize(site, base, dir, name, project)
 			super site, base, dir, 'readme', project, "readme.html"
-			['readme', 'description','changelog' ].each do |key|
-				self.data[key] = project.data[key] if project.data[key]
-			end
-		end
-		
-		
+			copy_keys 'readme', 'description'
+		end	
 	end
 	
 	class ChangeLog < ProjectPage

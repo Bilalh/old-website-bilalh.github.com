@@ -3,23 +3,20 @@ layout: project_page
 no_sidebar: true
 ---
 
-<div class="readme span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
-	{% if page.features %}
-		{% for feature in page.features %}
-			<div class="feature prepend-1 append-1 span-10 {% cycle " ", 'last'  %}">
-				<h2 class='title-feature'> {{feature.title}} </h2>
-				<p>
-					{% if feature.icon  %}
-						<img src="{{feature.icon}}" class="pic">
-					{% endif %}
-					{{feature.description | markdownify}}
-				</p>
-			</div>
-		{% endfor %}
-	{% else %}
-		{{ page.readme | markdownify }}
-	{% endif %}
+{% if page.features %}
+	{% for feature in page.features %}
+		<div class="feature prepend-1 append-1 span-10 {% cycle " ", 'last'  %}">
+			<h2 class='title-feature'> {{feature.title}} </h2>
+			<p>
+				{% if feature.icon %}
+					<img src="{{feature.icon}}" class="pic">
+				{% endif %}
+				{{feature.description | markdownify}}
+			</p>
+		</div>
+	{% endfor %}
+{% else %}
+	{{ page.readme | markdownify }}
+{% endif %}
 	
-</div>
-
 

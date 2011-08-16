@@ -5,7 +5,7 @@ no_sidebar: true
 ---
 
 {% for project in page.projects %}
-<div class="project prepend-1 append-1 span-10 {% cycle " ", 'last'  %}" >
+<div class="project prepend-1 append-1 span-10   {% cycle " ", 'last'  %}" >
 	<h3><a href="{{ project.url }}">{{ project.title }}</a> 
 		<span class="small quiet">{{ project.version }}</span>
 	</h3>    
