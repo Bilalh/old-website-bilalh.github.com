@@ -14,8 +14,10 @@
   <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
   <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
   <link href="/css/site.css" type="text/css" rel="stylesheet" />
+
   
-  <!--<script type="text/javascript" src="/js/jquery.js"></script>-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/fullTextSearch.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
 </head>
 
@@ -28,7 +30,7 @@
       <li><a href="/about">About</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/projects">Projects</a></li>
-      <li class="last"><a href="mailto:b.hterra@gmail.com">Contact</a></li>
+      <li class="last"><a id="mail"href="">Contact</a></li>
     </ul>
   </div>
 </div>
@@ -36,6 +38,10 @@
     
     <div id="main" class="span-17">
       <h1 class="large-bottom">About</h1>
+<div id='results'>
+	
+</div>
+<div>
 <h2 id='skills'>Skills</h2>
 
 <p>Praesent sed ligula ligula, ut tempor nisl. Cras rutrum tortor non eros laoreet euismod. Aliquam commodo justo non nulla mattis vitae pretium risus vehicula. In hac habitasse platea dictumst. Integer urna libero, auctor vitae auctor vel, volutpat in nisi. Aliquam faucibus nibh orci, non vehicula leo. Praesent venenatis purus nulla. Sed interdum, ligula et accumsan molestie, dolor metus dignissim justo, quis posuere diam dui quis odio. Curabitur vitae lacus vitae nisl condimentum pharetra. Donec quam nibh, congue ac hendrerit at, suscipit eleifend purus. Donec consequat pharetra posuere. Donec a orci eros, non ultricies elit. Suspendisse fermentum augue in mauris egestas a consectetur velit gravida. Pellentesque fermentum tristique odio. Suspendisse lectus ante, porta a suscipit ut, fringilla in arcu. Morbi placerat, sapien nec viverra bibendum, nibh orci cursus nunc, vitae lacinia justo diam sed velit. Nulla facilisi. Nullam felis lacus , molestie id blandit eu, volutpat in turpis. Nullam lectus nisl, sollicitudin quis suscipit eu, dictum vel nunc.</p>
@@ -49,12 +55,20 @@
 <h2 id='this_website'>This Website</h2>
 
 <p>Fusce blandit est a odio bibendum egestas. Sed at ultricies.</p>
+</div>
+<div class='small quiet' id='indextank' style='display:none'>
+Search powered by IndexTank
+</div>
     </div>
     
     
       <div id="sidebar" class="span-6 push-1 last">
-	<div class="sidebar-module">	 
-		<a href="/feed">RSS</a>
+	<div class="sidebar-module">
+				 
+		<form id="search">
+			<input type="text" id="query" name="query"/>
+			<input type="submit" id="search-submit" value="Go" />
+		</form>
 		<div class="title">Latest Posts </div>
 	
 		
@@ -72,7 +86,8 @@
 		
 			<h5><a href="/2011/08/13/test">Test</a></h5>
 			<span class="quiet low-top">August 13, 2011</span>
-		
+		 
+		   <h5><a href="/feed">RSS</a></h5>
 	</div>
 
 	<div class="sidebar-module">

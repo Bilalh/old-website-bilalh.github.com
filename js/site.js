@@ -1,12 +1,14 @@
-function getEmail()
+function makeEmail()
 {
-  var nf323 = "-fusion";
-  var py23432 = "ael";
-  var px13452 = "mich";
-  var pw3 = ".com";
-  var a343t = "@nova";
-  return px13452 + py23432 + a343t + nf323 + pw3;
-}
+  var nf323   = "terr";
+  var py23432 = ".h";
+  var px13452 = "lto:b";
+  var dsada   = "l.com"
+  var fdsff   = "a";
+  var a343t   = "@gmai";
+  var rdfsdf   = "mai";
+  return rdfsdf+px13452+py23432+nf323+fdsff+a343t+dsada;
+}                           
 
 function removeLinkListeners()
 {
@@ -19,3 +21,5 @@ function removeLinkListeners()
     }
   }
 }
+
+

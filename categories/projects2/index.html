@@ -14,8 +14,10 @@
   <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
   <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
   <link href="/css/site.css" type="text/css" rel="stylesheet" />
+
   
-  <!--<script type="text/javascript" src="/js/jquery.js"></script>-->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/fullTextSearch.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
 </head>
 
@@ -28,7 +30,7 @@
       <li><a href="/about">About</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/projects">Projects</a></li>
-      <li class="last"><a href="mailto:b.hterra@gmail.com">Contact</a></li>
+      <li class="last"><a id="mail"href="">Contact</a></li>
     </ul>
   </div>
 </div>
@@ -36,6 +38,15 @@
     
     <div id="main" class="span-17">
       <h1 class="large-bottom">Category: Projects2</h1>
+<div id="dReturn"  style="display:none">
+	<a id="return"> Return</a>
+</div>
+
+<div id="results">
+	
+</div>
+
+<div id="main-content">
 
 
 
@@ -45,17 +56,26 @@
     
   </h4>
   
-  <p>Cras vel ipsum magnsa. Sed egestas pulvinar imperdiet. Donec ut quam diam, ut blandit erat. Aliquam erat volutpat. Curabitur suscipit heading 2 Nulla vitae nisl et tellus laoreet euismod tincidunt a dui. var q:CallQueue = new CallQueue(nc, new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), ... ); Sed eget tortor sapien, in. Morbi faucibus nunc quis ligula feugiat eu scelerisque tortor imperdiet. Donec euismod erat et velit egestas consectetur. Phasellus magna ante, consequat ut...</p>
-  <p><a href="/2011/08/13/test">Read more...</a></p>
+  <p>Cras vel ipsum magnsa. Sed egestas pulvinar imperdiet. Donec ut quam diam, ut blandit erat. Aliquam erat volutpat. Curabitur suscipit heading 2 Nulla vitae nisl et tellus laoreet euismod tincidunt a dui. var q:CallQueue = new CallQueue(nc, new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), ... ); Sed eget...</p>
+  <p class><a href="/2011/08/13/test">Read more...</a></p>
+  
 
 
+</div>
 
+<div class="small quiet" id="indextank" style="display:none">
+Search powered by IndexTank
+</div>
     </div>
     
     
       <div id="sidebar" class="span-6 push-1 last">
-	<div class="sidebar-module">	 
-		<a href="/feed">RSS</a>
+	<div class="sidebar-module">
+				 
+		<form id="search">
+			<input type="text" id="query" name="query"/>
+			<input type="submit" id="search-submit" value="Go" />
+		</form>
 		<div class="title">Latest Posts </div>
 	
 		
@@ -73,7 +93,8 @@
 		
 			<h5><a href="/2011/08/13/test">Test</a></h5>
 			<span class="quiet low-top">August 13, 2011</span>
-		
+		 
+		   <h5><a href="/feed">RSS</a></h5>
 	</div>
 
 	<div class="sidebar-module">
