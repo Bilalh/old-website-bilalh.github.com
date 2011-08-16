@@ -8,6 +8,21 @@ $font-color: #3B4653;
 $project-download-bg: #DBDDDD;
 $song-bg: #E8E8E8;
  
+a#return {
+padding: .3em 1.1em;
+//color: #fff;
+//text-decoration: none;
+//text-transform: small-caps;
+border: 1px solid #000;
+//background: #666 url(/images/btn_grayGrad.jpg) top repeat-x;
+//clear: left;
+//margin: .8em 0;
+//word-spacing: 3pt 
+}
+
+a#return:hover{
+//	color: blue;
+}
 
 #query { border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -29,6 +44,7 @@ $song-bg: #E8E8E8;
 	-webkit-transition-timing-function: linear, ease-in;
 	}
 
+
 div.project{
 text-align: justify; text-justify: newspaper
 }
@@ -49,7 +65,8 @@ img.framed,iframe.framed {
 	margin: 0 0.5em 0 0;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius: 4px
+	border-radius: 4px;
+	word-spacing: 1.5em;
 }
 
 @mixin transition($type, $time, $ease) {

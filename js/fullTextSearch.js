@@ -29,6 +29,15 @@ $(document).ready(function() {
 		}
 
 	});
+   	
+	$("#return").click(function(){
+
+		$('#main-content').show();
+		$('#indextank').hide();
+		$('#results').hide();
+		$('div#dReturn').hide();
+	});
+
 });
 
 function search(query) {
@@ -40,6 +49,10 @@ function search(query) {
 			</div')
 		});
 	});
+	$('div#results').show();
+	$('div#dReturn').show();
 	$('#main-content').hide();
+	
 	$('#indextank').show();
+	
 }
