@@ -1,16 +1,17 @@
 source:      .
 destination: ./_site
 plugins:     ./_plugins
-uto: false
-server: false
-lsi: false
-safe: false
+uto:      false
+server:   false
+lsi:      false
+safe:     false
 pygments: true
 paginate: 2
 paginate_files: 
   - blog.html 
 
-indextank_index: BsBlog
+github_user:       Bilalh
+indextank_index:   BsBlog
 indextank_api_url: "http://:oj1Uxwu56zAgHx@dcz51.api.indextank.com"
 # these values are applied as regular expressions 
 indextank_excludes: [index.html, 404.html, ^/secret/] 
@@ -20,16 +21,27 @@ rdiscount:
   extensions: [:generate_toc]
 
 permalink: /:year/:month/:day/:title
-exclude: ["Rakefile", "CNAME", "Website.tmproj", "changelog.md"]
-title: Bilal S Hussain
-github_user: Bilalh
+exclude:   ["Rakefile", "CNAME", "Website.tmproj", "changelog.md"]
+title:     Bilal S Hussain
+
 projects:
-  "mplayer-last.fm-scrobbler":
-    title: MPlayer last.fm Scrobbler
-    icon:  "/images/VgTagger.png"
-    version: "1.1"  
-    languages: "Shell, C++"
-    changelog: true  
+  mplayer-last.fm-scrobbler:
+    title:     MPlayer last.fm Scrobbler
+    icon:      /images/VgTagger.png
+    version:   1.1  
+    languages: Shell, C++
+    changelog: true
+    features:
+        - title: Aqua User Interface
+          icon:  /images/gui.png
+          description: >
+            Intuitive user interface based on technology that features everything you would expect from a good  Mac application, including time savers like **drag and drop**, **Quick Look**, and more.  
+            
+        - title: Batch Operations
+          icon : /images/gui.png
+          description: >
+            Multiple file tag editing is easy since App supports applying changes to a selection of files 
+        
   aaa:
     title: Nunc faucibus neque id nibh.
     version: "1.0"                              

@@ -26,7 +26,9 @@ module Jekyll
 			self.data['download']  = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
 			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
 			self.data['changelog'] = 'changelog.html'  if info['changelog']
+			
 			self.data['icon']      = info['icon']      if info['icon']  
+			self.data['features']  = info['features']  if info['features']  
 			
 			readme = check_cache(name,'readme.md')
 			self.data['readme'] = Maruku.new(readme).to_html
