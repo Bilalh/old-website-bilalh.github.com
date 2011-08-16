@@ -49,11 +49,22 @@ module Jekyll
 		def initialize(site, base, dir, name, project,html_name)
 			puts "Building project's #{name}"
 			super site, base, dir, name, html_name
-			['title', 'version','repo','download'].each do |key|
+			['title', 'version','repo','download', 'icon'].each do |key|
 				self.data[key] = project.data[key]
 			end
 			self.data['project_url'] = project.data['url']
 		end 
+	end
+	
+	class Readme < ProjectPage
+		def initialize(site, base, dir, name, project)
+			super site, base, dir, 'readme', project, "readme.html"
+			['readme', 'description','changelog' ].each do |key|
+				self.data[key] = project.data[key] if project.data[key]
+			end
+		end
+		
+		
 	end
 	
 	class ChangeLog < ProjectPage
@@ -109,6 +120,8 @@ module Jekyll
 				projects << p
 				write_page p
 				write_page ChangeLog.new(self, self.source, File.join(dir, slug),k, p) if v['changelog']
+				write_page Readme.new(self, self.source, File.join(dir, slug),k, p) if v['features']
+				
 			end
 			
 			write_page Projects.new(self, self.source, dir, projects) if self.layouts.key? 'projects'
