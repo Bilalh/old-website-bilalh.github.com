@@ -21,7 +21,7 @@ rdiscount:
   extensions: [:generate_toc]
 
 permalink: /:year/:month/:day/:title
-exclude:   ["Rakefile", "CNAME", "Website.tmproj", "changelog.md"]
+exclude:   ["Rakefile", "CNAME", "Website.tmproj"]
 title:     Bilal S Hussain
 
 projects:
