@@ -4,30 +4,34 @@ no_sidebar: true
 ---
 
 <style type="text/css">
-h2  { color: #335E8D;}
+h2	{ color: #335E8D;}     
+.project-icon {margin-top: 20px; }
 </style>
 
 
 <div class="span-{% if page.no_sidebar %}19{% else %}12{% endif %}">
-  <h1>{{ page.title }}</h1>
-  <h3>{{ page.version }}</h3>
-  {% if page.changelog %}
-    <h3><a href="{{ page.changelog }}">Changelog</a></h3>
-  {% endif %}
+	{% if page.icon %}
+	<img src="{{ page.icon }}" class="project-icon" align="left"	width="64" height="64"> 
+	{% endif %}	 
+	<h1 class="project-title">{{ page.title }}</h1>
+	<h3>{{ page.version }}</h3>
+	{% if page.changelog %}
+		<h3><a href="{{ page.changelog }}">Changelog</a></h3>
+	{% endif %}
 </div>
 
 <div class="project-links span-5 last">
-  <a href="{{ page.download }}" class="project-download-link">
-    <div class="project-download">Download</div>
-  </a>
-  
-  <h3><a href="{{ page.repo }}">GitHub Repository</a></h3>
-  
-  {% if page.docs %}
-    <h3><a href="{{ page.docs }}">Documentation</a></h3>
-  {% endif %}
+	<a href="{{ page.download }}" class="project-download-link">
+		<div class="project-download">Download</div>
+	</a>
+	
+	<h3><a href="{{ page.repo }}">GitHub Repository</a></h3>
+	
+	{% if page.docs %}
+		<h3><a href="{{ page.docs }}">Documentation</a></h3>
+	{% endif %}
 </div>
 
 <div class="readme span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
-  {{ page.readme | markdownify }}
+	{{ page.readme | markdownify }}
 </div>
