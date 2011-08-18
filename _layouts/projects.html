@@ -14,7 +14,7 @@ no_sidebar: true
 	{% endif %}
 	<p class="low-top">
 		<span class="languages quiet small low-top low-bottom">{{ project.languages }}</span><br />
-			{{ project.description }} <a href="{{ project.url }}">read more...</a> 
+			{{ project.description | markdownify }} <a href="{{ project.url }}">read more...</a> 
 		</p>
 </div>
 

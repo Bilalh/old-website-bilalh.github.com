@@ -1,6 +1,7 @@
 source:      .
 destination: ./_site
 plugins:     ./_plugins
+
 uto:      false
 server:   false
 lsi:      false
@@ -14,7 +15,7 @@ github_user:       Bilalh
 indextank_index:   BsBlog
 indextank_api_url: "http://:oj1Uxwu56zAgHx@dcz51.api.indextank.com"
 # these values are applied as regular expressions 
-indextank_excludes: [index.html, 404.html, ^/secret/] 
+indextank_excludes: [^index.html, 404.html, ^/docs/] 
 
 markdown: maruku
 rdiscount:
@@ -36,47 +37,124 @@ projects:
         - title: Aqua User Interface
           icon:  /images/gui.png
           description: >
-            Intuitive user interface based on technology that features everything you would expect from a good  Mac application, including time savers like **drag and drop**, **Quick Look**, and more.  
+            Intuitive user interface based on technology that features everything you would expect from a good  Mac application, including time savers like drag and drop, Quick Look, and more.  
             
         - title: Batch Operations
           icon : /images/gui.png
           description: >
-            **Multiple** file tag editing is easy since Tagger supports applying changes to a selection of files 
+            Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
 
         - title: Auto Tagging
           icon : /images/gui.png
           description: >
-            Tagger can **Search** for the tags off the internet. Tagger will retrieve matching result and allows you to browse the result and finally apply the tags to the selection.
+            Tagger can Search for the tags off the internet. Tagger will retrieve matching result and allows you to browse the result and finally apply the tags to the selection.
+            
         - title: Superior Tag Support
           icon : /images/gui.png
-          description: Tagger supports nearly **all** of the tags of both **MP3** and **MP4**
+          description: Tagger supports nearly all of the tags of both MP3 and MP4
+          
+        - title: File Renaming
+          icon : /images/gui.png
+          description: >
+            Tagger supports batch renaming of files from their tags, using any format you choser e.g. 01 - Title.
 
-  aaa:
-    title: Nunc faucibus neque id nibh.
-    version: "1.0"
-    changelog: true                              
-    languages: "Objective C, Ruby, C++"  
-    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application            
-  fsfdsdfff:
-    title: Nunc faucibus neque id nibh.
-    version: "1.0"
-    languages: "Shell, C++"  
-    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.            
-  fffdsff:
-    title: Nunc faucibus neque id nibh.
-    version: "1.0"          
-    languages: "Shell, C++"  
-    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.
-      
-      
-  ffgggf:
-    title: Nunc faucibus neque id nibh.
-    version: "1.0"    
-    languages: "Shell, C++"  
-    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.
-        
-  fdff:
-    title: Nunc faucibus neque id nibh.
-    version: "1.0"     
-    languages: "Shell, C++"  
-    description: A simple application for OS X that clears all your growl notifications. It's useful in conjunction with application launchers such as LaunchBar or Alfred to quickly clear your screen.     
+        - title: Table view 
+          icon : /images/gui.png
+          description: >
+            Tagger has a sortable table view (which supports all the tag fields) for easy editing.
+
+        - title: Convenient Folder Operations  
+          icon : /images/gui.png
+          description: >
+            Tagger allows you set a default folder, allows draging audio files and folders to the dock icon or table view to go directly to the file and more.   
+
+        - title: Finder Labels
+          icon : /images/gui.png
+          description: >
+            Finder labels are supported for easy organisation. They can be assigned with a Finder like right click menu. 
+
+        - title: Tag Manipulation
+          icon : /images/gui.png
+          description: >
+            Tagger supports changing the capitalization (Uppercase, lowercase, and Title Case) for readability. 
+
+        - title: Artwork
+          icon : /images/gui.png
+          description: >
+            Tagger supports embeding artwork in audio files. The image can also be dragged to a folder e.g. the desktop using a customised format.
+            
+  mplayer-last.fm-scrobbler2:
+    title:     MPlayer last.fm scrobbler
+    version:   1.1  
+    languages: Shell, C++
+    
+  media:
+    title:       Media
+    version:     2-49-g5704855 
+    languages:   C, SQL, Man Pages
+    description: >
+      A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
+  
+  audio sync:
+    title:       Audio Sync
+    version:     1.1  
+    languages:   Ruby, Objective C 
+    description: >
+      **Syncs** the specifed playlist to the specifed location, **only** copying the songs that have changed.     
+  
+  shell_tunes:
+    title:       Shell Tunes
+    version:     1.1  
+    languages:   Shell, Applescript
+    description: >
+      Control itunes from the command line, over **40** commands inculding play/pause, mute/unmute, playlist and play random album. Also inculdes also scripts for getting data from itunes.
+  
+  BHDraggableImageView:
+    title:       BHDraggableImageView
+    version:     1.0  
+    languages:   Objective C 
+    description: >
+      A subclass of NSImageView that allow **dragging** the image of the view to desktop as file, it also allows specifying the filename.
+
+  auto doc:
+    title:       AutoDoc
+    version:     1.0  
+    languages:   Ruby 
+    description: >    
+      Creates Doxygen comments for methods/functions in **C** and **Objective C**.
+
+  
+  HTML Utilities:
+    title:       HTML Utilities
+    version:     1.0  
+    languages:   Ruby 
+    description: >    
+      Scripts for transforming html, inculding removing elements by CSS/XPath and transforming Metawiki webpages to epub friendly html with chapters for all the headings.  
+
+  Shell Utilities:
+    title:       Shell Utilities
+    version:     1.0  
+    languages:   Shell
+    description: >
+      A collection of scripts and alias for use at command line. Includes a fuction to extract **any** kind archive (save you from remembering all the tar flags), finding your ip. Alos inculdes a script for mac that goes to the location of the frontmost Finder window in the Terminal. 
+
+  MKV Utilities:
+    title:       MKV Utlities
+    version:     1.0  
+    languages:   Shell, Java
+    description: >    
+      Scripts to easily join, split and extracts mkv files. Also has scripts to do **lossless** convertion of mkv to mp4 (with subtitles) and mp4 to mkv. The scripts can also extract all fonts and subtitles from a set of mkvs. Also contains a Java app for creating mkv chapters. 
+    
+  Applescript Utilities:
+    title:       Applescript Utilities
+    version:     1.0  
+    languages:   Applescript
+    description: >
+      A collection of use applscripts that inculding file labeling, 'fn lock', timestamping files and controlling mplayer.
+  
+  Utilities:
+    title:       Utilities
+    version:     1.0  
+    languages:   Shell, Ruby, Applescript, Python, Other
+    description: >
+      Scripts that don't fit any of the collections, includes a script for re-encoding movies file for phones. 
