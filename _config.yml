@@ -158,3 +158,10 @@ projects:
     languages:   Shell, Ruby, Applescript, Python, Other
     description: >
       Scripts that don't fit any of the collections, includes a script for re-encoding movies file for phones. 
+
+  bashmarks:
+    title:       Bashmarks
+    version:     1.0  
+    languages:   Shell
+    description: >
+      Fork of bashmarks(a script that allows you to save and jump to commonly used directories. with supports tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. `g bookmarkname ls` changes the directory to the bookmark then preforms ls.
