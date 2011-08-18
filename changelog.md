@@ -1,6 +1,12 @@
 Changelog
 =========
 
+Thu Aug 18 2011
+---------------
+* Projects descriptions
+* index page
+* figuring out the projects 
+
 Tue Aug 16 2011
 ---------------
 * Searching in Posts
