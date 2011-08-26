@@ -28,7 +28,7 @@ title:     Bilal S Hussain
 projects:
   mplayer-last.fm-scrobbler:
     title:     Tagger
-    icon:      /images/VgTagger.png
+    icon:      VgTagger.png
     version:   1.3  
     languages: Objective C, Ruby, C++
     changelog: true
@@ -51,51 +51,51 @@ projects:
 
     features:
         - title: Aqua User Interface
-          icon:  /images/gui.png
+          icon:  gui.png
           description: >
             Intuitive user interface based on technology that features everything you would expect from a good  Mac application, including time savers like drag and drop, Quick Look, and more.  
 
         - title: Batch Operations
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
 
         - title: Auto Tagging
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Tagger can Search for the tags off the internet. Tagger will retrieve matching result and allows you to browse the result and finally apply the tags to the selection.
 
         - title: Superior Tag Support
-          icon : /images/gui.png
+          icon : gui.png
           description: Tagger supports nearly all of the tags of both MP3 and MP4
 
         - title: File Renaming
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Tagger supports batch renaming of files from their tags, using any format you choser e.g. 01 - Title.
 
         - title: Table view 
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Tagger has a sortable table view (which supports all the tag fields) for easy editing.
 
         - title: Convenient Folder Operations  
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Tagger allows you set a default folder, allows draging audio files and folders to the dock icon or table view to go directly to the file and more.   
 
         - title: Finder Labels
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Finder labels are supported for easy organisation. They can be assigned with a Finder like right click menu. 
 
         - title: Tag Manipulation
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Tagger supports changing the capitalization (Uppercase, lowercase, and Title Case) for readability. 
 
         - title: Artwork
-          icon : /images/gui.png
+          icon : gui.png
           description: >
             Tagger supports embeding artwork in audio files. The image can also be dragged to a folder e.g. the desktop using a customised format.
 
