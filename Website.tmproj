@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/site.scss</string>
+	<string>_layouts/gallery.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -13,77 +13,34 @@
 			<string>Website</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>selected</key>
+			<true/>
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>182</integer>
+	<integer>234</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_layouts/project.html</key>
+		<key>_layouts/gallery.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>26</integer>
+				<integer>25</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>55</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_layouts/projects.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>39</integer>
-				<key>line</key>
-				<integer>16</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_plugins/projects.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>20</integer>
-				<key>line</key>
-				<integer>48</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>14</integer>
-		</dict>
-		<key>css/site.scss</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>1</integer>
-				<key>line</key>
-				<integer>56</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>36</integer>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>_layouts/projects.html</string>
-		<string>_layouts/project.html</string>
-		<string>_plugins/projects.rb</string>
-		<string>css/site.scss</string>
+		<string>_layouts/gallery.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -97,14 +54,7 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
-				<key>_layouts</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>_plugins</key>
+				<key>about</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
@@ -118,10 +68,17 @@
 					<key>subItems</key>
 					<dict/>
 				</dict>
+				<key>js</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
 			</dict>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{366, 115}, {1079, 777}}</string>
+	<string>{{178, 69}, {1262, 741}}</string>
 </dict>
 </plist>
