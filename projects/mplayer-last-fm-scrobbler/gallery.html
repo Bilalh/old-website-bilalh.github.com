@@ -96,27 +96,110 @@ img.pic{
 </div>
 
 <div class="readme span-24">
-	<h1 id='readmeTitle'>MPlayer last.fm Scrobbler</h1><p id='description'>A command line application that plays audio files with MPlayer and scrobbles them to last.fm. Supports mp3, mp4, flac and ogg.</p><h2 id='usage'>Usage</h2><p><code>mplayerlastfm.sh &lt;glob&gt;</code> <code>play_directory.sh</code></p><h2 id='prerequisites'>Prerequisites</h2><ul>
-<li>Get and setup <a href='http://www.red-bean.com/~decklin/software/lastfmsubmitd/' title='http://www.red-bean.com/~decklin/software/lastfmsubmitd/'>lastfmsubmitd</a></li>
+		<link rel="stylesheet" type="text/css" href="/css/jquery.ad-gallery.css">
+	<script type="text/javascript" src="/js/jquery.ad-gallery.pack.js"></script>
 
-<li>Install <a href='http://developer.kde.org/~wheeler/taglib.html' title='http://developer.kde.org/~wheeler/taglib.html'>taglib</a></li>
+	<script type="text/javascript">
+	$(function() {
+		var galleries = $('.ad-gallery').adGallery();
+		$('#switch-effect').change(
+			function() {
+				galleries[0].settings.effect = $(this).val();
+				return false;
+			}
+		);
+		$('#toggle-slideshow').click(
+			function() {
+				galleries[0].slideshow.toggle();
+				return false;
+			}
+		);
+		$('#toggle-description').click(
+			function() {
+				if(!galleries[0].settings.description_wrapper) {
+					galleries[0].settings.description_wrapper = $('#descriptions');
+				} else {
+					galleries[0].settings.description_wrapper = false;
+				}
+				return false;
+			}
+		);
+	});
+	</script>
 
-<li>mplayer</li>
-</ul><h2 id='install'>Install</h2><ul>
-<li>run <code>make.sh</code> to compile <code>taginfo</code></li>
+	<style type="text/css">
 
-<li>run <code>install.sh</code> (might need sudo) to install <code>mplayerlastfm.sh</code> as <code>/usr/local/bin/mplayerlastfm</code> and <code>play_directory.sh</code> as <code>/usr/local/bin/play_directory.sh</code><br />or Install <code>mplayerlastfm.sh</code> in your <code>$PATH</code> e.g &#8216;/usr/local/bin/m&#8217; for easy use</li>
-</ul><h2 id='mplayerlastfmsh'>mplayerlastfm.sh</h2><p>Set these variables before running mplayerlastfm.sh to set your preferences.</p><pre><code>LASTFM_PLAYER        default mplayer
-TAGINFO              default taginfo
-LASTFM_SUBMIT        default lastfmsubmit
-SCROBBLER_ECHO       default true
-DISPLAY_TRACK_INFO   default true</code></pre><h2 id='play_directorysh'>play_directory.sh</h2><p>Allows the user to choose which directory to play using <code>mplayerlastfm.sh</code>. if the directory contains <em>4</em> directory album 1 to album 4 then running <code>play_directory.sh</code> will result in:</p><pre><code>1) Album 1    3) Album 3  
-2) Album 3    4) Album 4
-#? </code></pre><p>Where the user type the number e.g 3 to pick Album 3. It play recursively all files in the directory.</p><p>Set these variables before running play_directory.sh to set your preferences.</p><pre><code>MPLAYER_LASTFM default mplayerlastfm
-MPN_DIR        defualt $HOME/Music</code></pre><p><code>MPN_DIR</code> is directory to play from.</p><h2 id='issues'>Issues</h2><ul>
-<li>q&#8217; interrupts only playback of current file; press and <em>hold</em> ctrl-C to skip.<br />Even if you skip file immediately with Enter or &#8216;q&#8217; it will scrobble</li>
-</ul>
+	#gallery {
+		padding: 30px;
+	}
+	#descriptions {
+		position: relative;
+		height: 50px;
+		background: #EEE;
+		margin-top: 10px;
+		width: 640px;
+		padding: 10px;
+		overflow: hidden;
+	}
+	#descriptions .ad-image-description {
+		position: absolute;
+	}
+	#descriptions .ad-image-description .ad-description-title {
+		display: block;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+    color: #333;
+    line-height: 140%;
 
+	}
+	.ad-gallery {
+	  width: 900px;
+	}
+	.ad-gallery .ad-image-wrapper {
+	  height: 480px;
+	}
+	</style>
+
+<div id="gallery" class="ad-gallery">
+	<div class="ad-image-wrapper">
+	</div>
+	<div class="ad-controls">
+	</div>
+
+	<div class="ad-nav">
+		<div class="ad-thumbs">
+			<ul class="ad-thumb-list">
+			
+				
+				<li>
+					<a href="/images/projects/mplayer-last.fm-scrobbler/s001.png">
+						<img src="/images/projects/mplayer-last.fm-scrobbler/thumbs/s001.png" 
+						title="Batch Operations" alt="Nunc tempus venenatis viverra. Nullam vitae mattis mauris. Donec sagittis.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/mplayer-last.fm-scrobbler/2.jpg">
+						<img src="/images/projects/mplayer-last.fm-scrobbler/thumbs/2.jpg" 
+						title="Batch Operations2" alt="Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/mplayer-last.fm-scrobbler/3.jpg">
+						<img src="/images/projects/mplayer-last.fm-scrobbler/thumbs/3.jpg" 
+						title="Batch Operations3" alt="Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+">
+					</a>
+				</li>
+				
+								
+			</ul>
+		</div>
+	</div>
+
+</div>
 
 
 </div>

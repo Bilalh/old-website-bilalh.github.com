@@ -30,7 +30,7 @@
       <li><a href="/about">About</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/projects">Projects</a></li>
-      <li class="last"><a id="mail"href="">Contact</a></li>
+      <li class="last"><a id="mail" href="">Contact</a></li>
     </ul>
   </div>
 </div>
@@ -61,7 +61,7 @@ img.pic{
 
 <div class="span-19">
 	
-		<img src="/images/VgTagger.png" class="project-icon" align="left"	width="64" height="64"> 
+		<img src="/images/projects/mplayer-last.fm-scrobbler/VgTagger.png" class="project-icon" align="left"	width="64" height="64"> 
 		 
 	<h1 class="project-title">Tagger</h1>
 	<h3>1.3</h3>
@@ -74,10 +74,13 @@ img.pic{
 				<a href="readme.html">Readme &nbsp;</a>
 			
 			
+				<a href="gallery.html">Screenshots &nbsp;</a>
+			
+			
 				<a href="changelog.html">Changelog &nbsp;</a>
 			
 			
-				<a href="/docs/mplayer-last.fm-scrobbler">Class Documentation</a>
+				<a href="/docs/mplayer-last.fm-scrobbler">Class Documentation &nbsp;</a>
 			
 		</h3>
 </div>
@@ -98,7 +101,10 @@ img.pic{
   <tr />
   <tr />
   <td>
-    <a href='#version_13'>Version 1.3</a>
+    <a href='#version_14'>Version 1.4</a>
+  </td>
+  <td>
+    <a href='#version_13_fri_aug_12_2011_161909_0100'>Version 1.3</a>
   </td>
   <td>
     <a href='#version_12_thu_aug_11_2011_033420_0100'>Version 1.2</a>
@@ -109,10 +115,10 @@ img.pic{
   <td>
     <a href='#version_115_wed_aug_10_2011_034138_0100'>Version 1.1.5</a>
   </td>
+  <tr />
   <td>
     <a href='#version_11_wed_aug_10_2011_013151_0100'>Version 1.1</a>
   </td>
-  <tr />
   <td>
     <a href='#version_101_tue_aug_09_2011_165214_0100'>Version 1.0.1</a>
   </td>
@@ -125,10 +131,10 @@ img.pic{
   <td>
     <a href='#version_012_fri_aug_05_2011_022354_0100'>Version 0.12</a>
   </td>
+  <tr />
   <td>
     <a href='#version_011_tue_aug_02_2011_032121_0100'>Version 0.11</a>
   </td>
-  <tr />
   <td>
     <a href='#version_010_sun_jul_31_2011_045154_0100'>Version 0.10</a>
   </td>
@@ -141,11 +147,98 @@ img.pic{
   <td>
     <a href='#version_07_fri_jul_22_2011_200613_0100'>Version 0.7</a>
   </td>
+  <tr />
   <td>
     <a href='#older_versions'>Older Versions</a>
   </td>
 </table>
-<h2 id='version_13'>Version 1.3</h2>
+<h2 id='version_14'>Version 1.4</h2>
+
+<h3 id='features'>Features</h3>
+
+<ul>
+<li>
+<p>Results can be sorted when searching.</p>
+</li>
+
+<li>
+<p>Tooltips.</p>
+</li>
+
+<li>
+<p>Files can be dragged to the table.</p>
+</li>
+
+<li>
+<p>Added Latin as language since some soundtracks tracks are in <a href='http://vgmdb.net/album/26335' title='Puella Magi Madoka Magica Special CD 2 Original Soundtrack I'>Latin</a>.</p>
+</li>
+
+<li>
+<p>Arranges multiple catalog number nicely.</p>
+</li>
+
+<li>
+<p>Tags From Files (works like renames with tags).</p>
+
+<ul>
+<li>With error handing.</li>
+
+<li>and menus with predefined options.</li>
+</ul>
+</li>
+
+<li>
+<p>Row can be rearranged.</p>
+</li>
+
+<li>
+<p>Menu item for auto-Renumbering of files.</p>
+</li>
+
+<li>
+<p>Can drag a row ontop of another to copy tags.</p>
+</li>
+</ul>
+
+<h3 id='improvements'>Improvements</h3>
+
+<ul>
+<li>Macruby loading.</li>
+
+<li>QuickLookTableView now works with delgate drag and drop now.</li>
+
+<li>Multiple values with ints.</li>
+</ul>
+
+<h3 id='bug_fixes'>Bug Fixes</h3>
+
+<ul>
+<li>Metadata to Comments newline.</li>
+
+<li>Url when going directly to the results.</li>
+
+<li>Refresh.</li>
+
+<li>Fixed a bug where the composer was tothe arranger.</li>
+
+<li>Made catlog field bigger since I found some rare long ids.</li>
+
+<li>Url when ending in a slash.</li>
+
+<li>Use jpeg when the user want jpeg instead of using png.</li>
+
+<li>Chooses the correct language if english is not there when auto tagging.</li>
+
+<li>Fixed a bug with extension checking (now uses filepath instead of display name).</li>
+
+<li>Fix nils when the album does not have a <a href='http://vgmdb.net/album/19776' title='Neon Genesis Evangelion'>platform</a>.</li>
+
+<li>Refreshing the table on renaming with custom format.</li>
+
+<li>Fixed a bug where copying tags from a mp3 to a m4a file.</li>
+</ul>
+
+<h2 id='version_13_fri_aug_12_2011_161909_0100'>Version 1.3 (Fri Aug 12 2011 16:19:09 +0100)</h2>
 
 <h3 id='features'>Features</h3>
 
@@ -186,22 +279,16 @@ img.pic{
 <h3 id='features'>Features</h3>
 
 <ul>
-<li>
-<p>When using using metadata to comments, the text aligns nicely in itunes.</p>
-</li>
+<li>When using using metadata to comments, the text aligns nicely in itunes.</li>
 
-<li>
-<p>Allows going to the next/previous row using a keyboard (alt down/alt up). * Updated to always show the selected row.</p>
-</li>
+<li>Allows going to the next/previous row using a keyboard (alt down/alt up).</li>
 
-<li>
-<p>Export to Itunes menu option (alt cmd E).</p>
-</li>
+<li>Updated to always show the selected row.</li>
 
-<li>
-<p>QuickLook support (allows playing of audio files).</p>
+<li>Export to Itunes menu option (alt cmd E).</li>
 
-<ul>
+<li>QuickLook support (allows playing of audio files).</li>
+
 <li>Shortcut cmd-Y.</li>
 
 <li>Allows multiple selection.</li>
@@ -211,8 +298,6 @@ img.pic{
 <li>Press space when on a selected track also does quicklook.</li>
 
 <li>Quicklook toolbar button.</li>
-</ul>
-</li>
 </ul>
 
 <h3 id='improvements'>Improvements</h3>
@@ -244,7 +329,9 @@ img.pic{
 <h3 id='features'>Features</h3>
 
 <ul>
-<li>Adds formats for renaming. e.g. 01 - title . * Are stored in the plist for easy changing.</li>
+<li>Adds formats for renaming. e.g. 01 - title .</li>
+
+<li>Are stored in the plist for easy changing.</li>
 
 <li>Can click any where on a directory row to go do it.</li>
 
@@ -264,7 +351,9 @@ img.pic{
 <ul>
 <li>Images can not be dragged for directory.</li>
 
-<li>The cover art is now named &#8216;title - cover&#8217; which allows multiple cover to be dragged to the desktop/ * Which can be changed in the prefs.</li>
+<li>The cover art is now named &#8216;title - cover&#8217; which allows multiple cover to be dragged to the desktop/</li>
+
+<li>Which can be changed in the prefs.</li>
 </ul>
 
 <h2 id='version_101_tue_aug_09_2011_165214_0100'>Version 1.0.1 (Tue Aug 09 2011 16:52:14 +0100)</h2>
@@ -336,7 +425,9 @@ img.pic{
 
 <li>Default values.</li>
 
-<li>Prefs for setting start directory. * Allows using the current directory as the start directory.</li>
+<li>Prefs for setting start directory.</li>
+
+<li>Allows using the current directory as the start directory.</li>
 </ul>
 
 <h3 id='bug_fixes'>Bug fixes</h3>
@@ -414,7 +505,9 @@ img.pic{
 <ul>
 <li>The length of track can now be found using Tags.</li>
 
-<li>Auto tagging for tracks names is done * Allows choosing the language.</li>
+<li>Auto tagging for tracks names is done</li>
+
+<li>Allows choosing the language.</li>
 
 <li>Auto tagging for other fields done.</li>
 
@@ -466,19 +559,13 @@ img.pic{
 <h3 id='features'>Features</h3>
 
 <ul>
-<li>
-<p>Complete mp4 tag read/write support.</p>
-</li>
+<li>Complete mp4 tag read/write support.</li>
 
-<li>
-<p>File browser with previous and forward buttons.</p>
+<li>File browser with previous and forward buttons.</li>
 
-<ul>
 <li>Allows user specified directory with a open dialog.</li>
 
 <li>Allows going to parent directories easily.</li>
-</ul>
-</li>
 </ul>
 
 <h2 id='older_versions'>Older Versions</h2>
@@ -486,31 +573,19 @@ img.pic{
 <h3 id='features'>Features</h3>
 
 <ul>
-<li>
-<p>Allow editing of data directory in the table view</p>
-</li>
+<li>Allow editing of data directory in the table view</li>
 
-<li>
-<p>Able to search for albums on vgmdb and get the data for that album.</p>
+<li>Able to search for albums on vgmdb and get the data for that album.</li>
 
-<ul>
 <li>Using a gui.</li>
 
 <li>Allows searching three languages English, Romaji and Kanji.</li>
-</ul>
-</li>
 
-<li>
-<p>Menu items for to Uppercase ^U, to Lowercase Shift ^U, Capitalise Command ^U</p>
-</li>
+<li>Menu items for to Uppercase ^U, to Lowercase Shift ^U, Capitalise Command ^U</li>
 
-<li>
-<p>GUI</p>
-</li>
+<li>GUI</li>
 
-<li>
-<p>Classes</p>
-</li>
+<li>Classes</li>
 </ul>
 
 </div>

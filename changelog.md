@@ -1,6 +1,11 @@
 Changelog
 =========
 
+Thu Aug 25 2011
+---------------
+* Gallery 
+* other fixes.
+
 Thu Aug 18 2011
 ---------------
 * Projects descriptions
