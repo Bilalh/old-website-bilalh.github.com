@@ -20,22 +20,23 @@ module Jekyll
 			super site, base, dir, 'project'
 			puts "Building project: #{name}"
 			
-			self.data['title']		 = info['title'] || name
-			self.data['version']	 = info['version_title'] || info['version']
-			self.data['repo']			 = "https://github.com/#{site.config['github_user']}/#{name}"
-			self.data['download']	 = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
-			self.data['docs']			 = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
+			self.data['title']     = info['title'] || name
+			self.data['version']   = info['version_title'] || info['version']
+			self.data['repo']      = "https://github.com/#{site.config['github_user']}/#{name}"
+			self.data['download']  = "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
+			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
 			
-			self.data['changelog_url'] = 'changelog.html'	 if info['changelog']
-			self.data['apidocs_url']	 = "/docs/#{name}"	 if info['apidocs']
-			self.data['icon']					 = info['icon']			 if info['icon']	
+			self.data['changelog_url'] = 'changelog.html'  if info['changelog']
+			self.data['gallery_url']   = 'gallery.html'    if info['gallery']
+			self.data['apidocs_url']   = "/docs/#{name}"   if info['apidocs']
+			self.data['icon']          = info['icon']      if info['icon']  
 			
-			if info['features']	 then
-				self.data['features']			= info['features']
-				self.data['readme_url']		= 'readme.html'
+			if info['features']  then
+				self.data['features']     = info['features']
+				self.data['readme_url']   = 'readme.html'
 				self.data['features_url'] = url
 			elsif self.data['changelog_url'] 
-				self.data['readme_url']		= url
+				self.data['readme_url']   = url
 			end
 			
 			readme = check_cache(name,'readme.md')
@@ -61,7 +62,7 @@ module Jekyll
 			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url'].each do |key|
 				self.data[key] = project.data[key]
 			end
-			copy_keys 'features_url', 'apidocs_url'
+			copy_keys 'features_url', 'apidocs_url', 'gallery_url'
 		end
 		
 		def copy_keys(*keys)
@@ -77,6 +78,13 @@ module Jekyll
 			super site, base, dir, 'readme', project, "readme.html"
 			copy_keys 'readme', 'description'
 		end 
+	end
+	
+	class Gallery < ProjectPage
+		def initialize(site, base, dir, name, project)
+			super site, base, dir, 'gallery', project, "gallery.html"
+			
+		end
 	end
 	
 	class ChangeLog < ProjectPage
@@ -135,7 +143,8 @@ module Jekyll
 				projects << p
 				write_page p
 				write_page ChangeLog.new(self, self.source, File.join(dir, slug),k, p) if v['changelog']
-				write_page Readme.new(self, self.source, File.join(dir, slug),k, p)		 if v['features']
+				write_page Readme.new(self, self.source, File.join(dir, slug),k, p)    if v['features']
+				write_page Gallery.new(self, self.source, File.join(dir, slug),k, p)   if v['gallery']
 				
 			end
 			

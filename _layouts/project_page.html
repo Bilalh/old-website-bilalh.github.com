@@ -39,11 +39,14 @@ img.pic{
 			{% if page.readme_url %}
 				<a href="{{ page.readme_url }}">Readme &nbsp;</a>
 			{% endif %}
+			{% if page.gallery_url %}
+				<a href="{{ page.gallery_url }}">Screenshots &nbsp;</a>
+			{% endif %}
 			{% if page.changelog_url %}
 				<a href="{{ page.changelog_url }}">Changelog &nbsp;</a>
 			{% endif %}
 			{% if page.apidocs_url %}
-				<a href="{{ page.apidocs_url }}">Class Documentation</a>
+				<a href="{{ page.apidocs_url }}">Class Documentation &nbsp;</a>
 			{% endif %}
 		</h3>
 </div>

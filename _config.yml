@@ -33,6 +33,7 @@ projects:
     languages: Objective C, Ruby, C++
     changelog: true
     apidocs:   true
+    gallery:   true
     features:
         - title: Aqua User Interface
           icon:  /images/gui.png
