@@ -52,7 +52,7 @@ module Jekyll
 			
 			
 			if info['languages'] then
-				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp&nbsp")
+				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp;&nbsp;")
 			end 
 			
 		end 
