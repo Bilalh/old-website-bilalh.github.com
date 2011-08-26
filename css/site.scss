@@ -54,7 +54,7 @@ span.languages a.rss{
 	font-variant:small-caps;
 }
 	  
-.readmeTitle { 
+#readmeTitle { 
 	display: none;
 	visibility: hidden;
 }
@@ -146,6 +146,12 @@ ul, ol {
 
 // Header
 
+.ad-gallery{
+	@include border-radius(8px);
+	@include background-gradient(#F3F3F3, #E9EBEB);
+	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1), 1px 6px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
 #header {
 	position: relative;
 	top: -10px;
@@ -156,7 +162,7 @@ ul, ol {
 	@include background-gradient(#F3F3F3, #E9EBEB);
 	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1), 1px 6px 3px 0 rgba(0, 0, 0, 0.25);
 	
-	#menu {		 
+	#menu{		 
 		ul {
 			list-style-type: none;
 			margin: 5px;

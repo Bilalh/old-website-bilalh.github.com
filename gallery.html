@@ -1,0 +1,96 @@
+---
+layout: project_page
+no_sidebar: true
+---
+
+	<link rel="stylesheet" type="text/css" href="/css/jquery.ad-gallery.css">
+	<script type="text/javascript" src="/js/jquery.ad-gallery.pack.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		var galleries = $('.ad-gallery').adGallery();
+		$('#switch-effect').change(
+			function() {
+				galleries[0].settings.effect = $(this).val();
+				return false;
+			}
+		);
+		$('#toggle-slideshow').click(
+			function() {
+				galleries[0].slideshow.toggle();
+				return false;
+			}
+		);
+		$('#toggle-description').click(
+			function() {
+				if(!galleries[0].settings.description_wrapper) {
+					galleries[0].settings.description_wrapper = $('#descriptions');
+				} else {
+					galleries[0].settings.description_wrapper = false;
+				}
+				return false;
+			}
+		);
+	});
+	</script>
+
+	<style type="text/css">
+
+	#gallery {
+		padding: 30px;
+	}
+	#descriptions {
+		position: relative;
+		height: 50px;
+		background: #EEE;
+		margin-top: 10px;
+		width: 640px;
+		padding: 10px;
+		overflow: hidden;
+	}
+	#descriptions .ad-image-description {
+		position: absolute;
+	}
+	#descriptions .ad-image-description .ad-description-title {
+		display: block;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+    color: #333;
+    line-height: 140%;
+
+	}
+	
+	</style>
+
+<div id="gallery" class="ad-gallery">
+	<div class="ad-image-wrapper">
+	</div>
+	<div class="ad-controls">
+	</div>
+	<div class="ad-nav">
+		<div class="ad-thumbs">
+			<ul class="ad-thumb-list">
+				<li>
+					<a href="/images/1.jpg">
+						<img src="/images/thumbs/t1.jpg" class="image0">
+					</a>
+				</li>
+				<li>
+					<a href="/images/10.jpg">
+						<img src="/images/thumbs/t10.jpg" title="A title for 10.jpg" alt="This is a nice, and incredibly descriptive, description of the image 10.jpg" class="image1">
+					</a>
+				</li>
+				<li>
+					<a href="/images/11.jpg">
+						<img src="/images/thumbs/t11.jpg" title="A title for 11.jpg" longdesc="http://coffeescripter.com" alt="This is a nice, and incredibly descriptive, description of the image 11.jpg" class="image2">
+					</a>
+				</li>
+				<li>
+					<a href="/images/12.jpg">
+						<img src="/images/thumbs/t12.jpg" title="A title for 12.jpg" alt="This is a nice, and incredibly descriptive, description of the image 12.jpg" class="image3">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
