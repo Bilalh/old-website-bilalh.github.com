@@ -37,17 +37,48 @@ projects:
       - title: Batch Operations
         image: s001.png 
         description: >
-           Nunc tempus venenatis viverra. Nullam vitae mattis mauris. Donec sagittis.
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
 
-      - title: Batch Operations2
-        image: 2.jpg 
+      - title: Batch Operations
+        image: s002.png 
         description: >
-           Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
 
-      - title: Batch Operations3
-        image: 3.jpg 
+      - title: Batch Operations
+        image: s003.png 
         description: >
-           Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
+      - title: Batch Operations
+        image: s004.png 
+        description: >
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
+      - title: Batch Operations
+        image: s005.png 
+        description: >
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
+      - title: Batch Operations
+        image: s006.png 
+        description: >
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
+      - title: Batch Operations
+        image: s007.png 
+        description: >
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
+      - title: Batch Operations
+        image: s008.png 
+        description: >
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
+      - title: Batch Operations
+        image: s009.png 
+        description: >
+           Morbi eget lectus justo, semper mollis nunc. In bibendum ultricies nulla, sit amet mollis magna fringilla.
+
 
     features:
         - title: Aqua User Interface
@@ -98,6 +129,9 @@ projects:
           icon : gui.png
           description: >
             Tagger supports embeding artwork in audio files. The image can also be dragged to a folder e.g. the desktop using a customised format.
+    
+
+
 
   mplayer-last.fm-scrobbler2:
     title:     MPlayer last.fm scrobbler

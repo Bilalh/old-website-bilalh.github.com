@@ -30,7 +30,7 @@ img.pic{
 		<img src="/images/projects/{{page.name}}/{{ page.icon }}" class="project-icon left" width="64" height="64" alt="icon"/> 
 	{% endif %}	 
 	<h1 class="project-title">{{ page.title }}</h1>
-	<h3>{{ page.version }}</h3>
+	<!-- <h3>{{ page.version }}</h3> -->
 
 		<h3>
 			{% if page.features_url %}
@@ -53,7 +53,7 @@ img.pic{
 
 <div class="project-links span-5 last">
 	<a href="{{ page.download }}" class="project-download-link">
-		<div class="project-download">Download</div>
+		<div class="project-download">Download{% if page.version %} v{{ page.version }}{% endif %}</div>
 	</a>
 	
 	<h3><a href="{{ page.repo }}">GitHub Repository</a></h3>
