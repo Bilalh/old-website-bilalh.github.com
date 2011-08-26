@@ -10,12 +10,12 @@ no_sidebar: true
 		<span class="small quiet">{{ project.version }}</span>
 	</h3>    
 	{% if project.icon %}
-	<img src="/images/projects/{{project.name}}/{{ project.icon }}" class="framed " align="left"  width="64" height="64"> 
+	<img src="/images/projects/{{project.name}}/{{ project.icon }}" class="framed " align="left"  width="64" height="64" alt="Icon"> 
 	{% endif %}
-	<p class="low-top">
+	<div class="low-top">
 		<span class="languages quiet small low-top low-bottom">{{ project.languages }}</span><br />
 			{{ project.description | markdownify }} <a href="{{ project.url }}">read more...</a> 
-		</p>
+	</div>
 </div>
 
 {% endfor %}
