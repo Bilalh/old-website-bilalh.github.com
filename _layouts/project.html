@@ -7,12 +7,12 @@ no_sidebar: true
 	{% for feature in page.features %}
 		<div class="feature prepend-1 append-1 span-10 {% cycle " ", 'last'  %}">
 			<h2 class='title-feature'> {{feature.title}} </h2>
-			<p class='feature-description'>
+			<div class='feature-description'>
 				{% if feature.icon %}
 					<img src="/images/projects/{{page.name}}/{{feature.icon}}" class="pic" alt="icon">
 				{% endif %}
 				{{feature.description | markdownify}}
-			</p>
+			</div>
 		</div>
 	{% endfor %}
 {% else %}
