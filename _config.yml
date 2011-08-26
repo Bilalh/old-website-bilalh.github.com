@@ -35,7 +35,7 @@ projects:
     apidocs:   true
     gallery:   
       - title: Batch Operations
-        image: 1.jpg 
+        image: s1.png 
         description: >
            Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
 
