@@ -66,31 +66,23 @@ no_sidebar: true
 	</div>
 	<div class="ad-controls">
 	</div>
+
 	<div class="ad-nav">
 		<div class="ad-thumbs">
 			<ul class="ad-thumb-list">
+			
+				{% for screenshot in page.gallery %}
 				<li>
-					<a href="/images/1.jpg">
-						<img src="/images/thumbs/t1.jpg" class="image0">
+					<a href="/images/projects/{{page.name}}/{{screenshot.image}}">
+						<img src="/images/projects/{{page.name}}/thumbs/{{screenshot.image}}" 
+						title="{{screenshot.title}}" alt="{{screenshot.description}}">
 					</a>
 				</li>
-				<li>
-					<a href="/images/10.jpg">
-						<img src="/images/thumbs/t10.jpg" title="A title for 10.jpg" alt="This is a nice, and incredibly descriptive, description of the image 10.jpg" class="image1">
-					</a>
-				</li>
-				<li>
-					<a href="/images/11.jpg">
-						<img src="/images/thumbs/t11.jpg" title="A title for 11.jpg" longdesc="http://coffeescripter.com" alt="This is a nice, and incredibly descriptive, description of the image 11.jpg" class="image2">
-					</a>
-				</li>
-				<li>
-					<a href="/images/12.jpg">
-						<img src="/images/thumbs/t12.jpg" title="A title for 12.jpg" alt="This is a nice, and incredibly descriptive, description of the image 12.jpg" class="image3">
-					</a>
-				</li>
+				{% endfor %}
+								
 			</ul>
 		</div>
 	</div>
+
 </div>
 

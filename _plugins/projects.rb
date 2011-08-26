@@ -20,6 +20,7 @@ module Jekyll
 			super site, base, dir, 'project'
 			puts "Building project: #{name}"
 			
+			self.data['name']      = name
 			self.data['title']     = info['title'] || name
 			self.data['version']   = info['version_title'] || info['version']
 			self.data['repo']      = "https://github.com/#{site.config['github_user']}/#{name}"
@@ -27,15 +28,19 @@ module Jekyll
 			self.data['docs']      = info['docs'] == 'wiki' ? "#{self.data['repo']}/wiki" : info['docs'] if info['docs']
 			
 			self.data['changelog_url'] = 'changelog.html'  if info['changelog']
-			self.data['gallery_url']   = 'gallery.html'    if info['gallery']
 			self.data['apidocs_url']   = "/docs/#{name}"   if info['apidocs']
 			self.data['icon']          = info['icon']      if info['icon']  
+			
+			if info['gallery'] then 
+				self.data['gallery_url']   = 'gallery.html'    
+				self.data['gallery']       = info['gallery']
+			end
 			
 			if info['features']  then
 				self.data['features']     = info['features']
 				self.data['readme_url']   = 'readme.html'
 				self.data['features_url'] = url
-			elsif self.data['changelog_url'] 
+			elsif self.data['changelog_url'] #TODO else?
 				self.data['readme_url']   = url
 			end
 			
@@ -59,7 +64,7 @@ module Jekyll
 			@project = project
 			puts "Building project's #{name}"
 			super site, base, dir, name, html_name
-			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url'].each do |key|
+			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url', 'name'].each do |key|
 				self.data[key] = project.data[key]
 			end
 			copy_keys 'features_url', 'apidocs_url', 'gallery_url'
@@ -73,18 +78,18 @@ module Jekyll
 		
 	end
 	
+	class Gallery < ProjectPage
+		def initialize(site, base, dir, name, project)
+			super site, base, dir, 'gallery', project, "gallery.html"
+				copy_keys 'gallery'
+		end
+	end
+	
 	class Readme < ProjectPage
 		def initialize(site, base, dir, name, project)
 			super site, base, dir, 'readme', project, "readme.html"
 			copy_keys 'readme', 'description'
 		end 
-	end
-	
-	class Gallery < ProjectPage
-		def initialize(site, base, dir, name, project)
-			super site, base, dir, 'gallery', project, "gallery.html"
-			
-		end
 	end
 	
 	class ChangeLog < ProjectPage

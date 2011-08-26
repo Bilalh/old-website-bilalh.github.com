@@ -33,13 +33,28 @@ projects:
     languages: Objective C, Ruby, C++
     changelog: true
     apidocs:   true
-    gallery:   true
+    gallery:   
+      - title: Batch Operations
+        image: 1.jpg 
+        description: >
+           Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+
+      - title: Batch Operations2
+        image: 2.jpg 
+        description: >
+           Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+
+      - title: Batch Operations3
+        image: 3.jpg 
+        description: >
+           Multiple file tag editing is easy since Tagger supports applying changes to a selection of files.
+
     features:
         - title: Aqua User Interface
           icon:  /images/gui.png
           description: >
             Intuitive user interface based on technology that features everything you would expect from a good  Mac application, including time savers like drag and drop, Quick Look, and more.  
-            
+
         - title: Batch Operations
           icon : /images/gui.png
           description: >
@@ -49,11 +64,11 @@ projects:
           icon : /images/gui.png
           description: >
             Tagger can Search for the tags off the internet. Tagger will retrieve matching result and allows you to browse the result and finally apply the tags to the selection.
-            
+
         - title: Superior Tag Support
           icon : /images/gui.png
           description: Tagger supports nearly all of the tags of both MP3 and MP4
-          
+
         - title: File Renaming
           icon : /images/gui.png
           description: >
@@ -83,33 +98,33 @@ projects:
           icon : /images/gui.png
           description: >
             Tagger supports embeding artwork in audio files. The image can also be dragged to a folder e.g. the desktop using a customised format.
-            
+
   mplayer-last.fm-scrobbler2:
     title:     MPlayer last.fm scrobbler
     version:   1.1  
     languages: Shell, C++
-    
+
   media:
     title:       Media
     version:     2-49-g5704855 
     languages:   C, SQL, Man Pages
     description: >
       A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
-  
+
   audio sync:
     title:       Audio Sync
     version:     1.1  
     languages:   Ruby, Objective C 
     description: >
       **Syncs** the specifed playlist to the specifed location, **only** copying the songs that have changed.     
-  
+
   shell_tunes:
     title:       Shell Tunes
     version:     1.1  
     languages:   Shell, Applescript
     description: >
       Control itunes from the command line, over **40** commands inculding play/pause, mute/unmute, playlist and play random album. Also inculdes also scripts for getting data from itunes.
-  
+
   BHDraggableImageView:
     title:       BHDraggableImageView
     version:     1.0  
@@ -124,7 +139,6 @@ projects:
     description: >    
       Creates Doxygen comments for methods/functions in **C** and **Objective C**.
 
-  
   HTML Utilities:
     title:       HTML Utilities
     version:     1.0  
@@ -152,14 +166,14 @@ projects:
     languages:   Applescript, Shell, Ruby
     description: >
        Set of scripts for controling Finder, inculdes get the path of the selected Finder item, setting labels, timestamps files a script for mac that goes to the location of the frontmost Finder window in the Terminal. 
-    
+
   Applescript Utilities:
     title:       Applescript Utilities
     version:     1.0  
     languages:   Applescript
     description: >
       A collection of use applscripts that inculding file labeling, 'fn lock', timestamping files and controlling mplayer.
-  
+
   Utilities:
     title:       Utilities
     version:     1.0  
