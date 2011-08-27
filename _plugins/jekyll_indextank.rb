@@ -36,11 +36,15 @@ module Jekyll
       items = site.pages.dup.concat(site.posts)
 
       # only process files that will be converted to .html and only non excluded files 
-      items = items.find_all {|i| i.output_ext == '.html' && ! @excludes.any? {|s| (i.absolute_url =~ Regexp.new(s)) != nil } } 
+      items = items.find_all do |i|
+      	 i.output_ext == '.html' && ! @excludes.any? {|s| (i.absolute_url =~ Regexp.new(s)) != nil }
+      end 
       items.reject! {|i| i.data['exclude_from_search'] } 
       
-      # only process items that are changed since last regeneration
-      items = items.find_all {|i| @last_indexed.nil? || File.mtime(i.full_path_to_source) > @last_indexed }
+      # # only process items that are changed since last regeneration
+      # items = items.find_all do |i|
+      # 	 @last_indexed.nil? || !File.exists?(i.full_path_to_source) ||  File.mtime(i.full_path_to_source) > @last_indexed
+      # end
 
       # dont process index pages
       items.reject! {|i| i.is_a?(Jekyll::Page) && i.index? }

@@ -12,12 +12,13 @@ module Jekyll
 		end
 		
 		def check_cache(name, filename)
-			cache = "_cache/#{filename}.cache"
+			cache = "_cache/#{name}-#{filename}.cache"
 			# cache = "_cache/#{name}#{filename}.cache"
 			data = ""
 			if !File.exists?(cache) then
 				# this stuff is bit hackish, but it works
 				# this will fail if README.md isn't present
+				puts "https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}"
 				data = `curl https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}` 
 				data.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
 				data = Liquid::Template.parse(data).render(
