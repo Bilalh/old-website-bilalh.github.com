@@ -95,9 +95,8 @@ module Jekyll
 	class ChangeLog < ProjectPage
 		def initialize(site, base, dir, name, project)
 			super site, base, dir, 'changelog', project, "changelog.html"
-			filename="/Users/bilalh/Desktop/Changelog.md"
-			
-			changelog = IO.read filename
+			# filename="/Users/bilalh/Desktop/Changelog.md"
+			changelog = check_cache(name,"Changelog.md")			
 			changelog.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
 			changelog = Liquid::Template.parse(changelog).render(
 				{}, :filters => [Jekyll::Filters], :registers => { :site => site }
