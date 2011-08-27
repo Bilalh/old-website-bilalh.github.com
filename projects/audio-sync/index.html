@@ -62,7 +62,7 @@ img.pic{
 <div class="span-19">
 		 
 	<h1 class="project-title">Audio Sync</h1>
-	<!-- <h3>1.1</h3> -->
+	<!-- <h3></h3> -->
 
 		<h3>
 			
@@ -74,36 +74,29 @@ img.pic{
 </div>
 
 <div class="project-links span-5 last">
-	<a href="https://github.com/Bilalh/audio sync/zipball/1.1" class="project-download-link">
-		<div class="project-download">Download v1.1</div>
+	<a href="https://github.com/Bilalh/audio-sync/zipball/master" class="project-download-link">
+		<div class="project-download">Download</div>
 	</a>
 	
-	<h3><a href="https://github.com/Bilalh/audio sync">GitHub Repository</a></h3>
+	<h3><a href="https://github.com/Bilalh/audio-sync">GitHub Repository</a></h3>
 	
 	
 </div>
 
 <div class="readme span-24">
 	
-	<h1 id='readmeTitle'>MPlayer last.fm Scrobbler</h1><p id='description'>A command line application that plays audio files with MPlayer and scrobbles them to last.fm. Supports mp3, mp4, flac and ogg.</p><h2 id='usage'>Usage</h2><p><code>mplayerlastfm.sh &lt;glob&gt;</code> <code>play_directory.sh</code></p><h2 id='prerequisites'>Prerequisites</h2><ul>
-<li>Get and setup <a href='http://www.red-bean.com/~decklin/software/lastfmsubmitd/' title='http://www.red-bean.com/~decklin/software/lastfmsubmitd/'>lastfmsubmitd</a></li>
+	<h1 id='readmeTitle'>Audio Sync</h1><p id='description'>Syncs the specified playlist in iTunes to the specified location, only copying the songs that have changed.</p><h2 id='usage'>Usage</h2><pre><code>itunes_sync base_path [-i|-a|-d|-e]</code></pre><h2 id='prerequisites'>Prerequisites</h2><p>MacRuby 0.10+</p><h2 id='install'>Install</h2><ul>
+<li>Put the scripts in your <code>$PATH</code></li>
+</ul><h2 id='options'>Options</h2><ul>
+<li>-i prints info</li>
 
-<li>Install <a href='http://developer.kde.org/~wheeler/taglib.html' title='http://developer.kde.org/~wheeler/taglib.html'>taglib</a></li>
+<li>-a prints all music</li>
 
-<li>mplayer</li>
-</ul><h2 id='install'>Install</h2><ul>
-<li>run <code>make.sh</code> to compile <code>taginfo</code></li>
+<li>-d prints all the music that would be deleted</li>
 
-<li>run <code>install.sh</code> (might need sudo) to install <code>mplayerlastfm.sh</code> as <code>/usr/local/bin/mplayerlastfm</code> and <code>play_directory.sh</code> as <code>/usr/local/bin/play_directory.sh</code><br />or Install <code>mplayerlastfm.sh</code> in your <code>$PATH</code> e.g &#8216;/usr/local/bin/m&#8217; for easy use</li>
-</ul><h2 id='mplayerlastfmsh'>mplayerlastfm.sh</h2><p>Set these variables before running mplayerlastfm.sh to set your preferences.</p><pre><code>LASTFM_PLAYER        default mplayer
-TAGINFO              default taginfo
-LASTFM_SUBMIT        default lastfmsubmit
-SCROBBLER_ECHO       default true
-DISPLAY_TRACK_INFO   default true</code></pre><h2 id='play_directorysh'>play_directory.sh</h2><p>Allows the user to choose which directory to play using <code>mplayerlastfm.sh</code>. if the directory contains <em>4</em> directory album 1 to album 4 then running <code>play_directory.sh</code> will result in:</p><pre><code>1) Album 1    3) Album 3  
-2) Album 3    4) Album 4
-#? </code></pre><p>Where the user type the number e.g 3 to pick Album 3. It play recursively all files in the directory.</p><p>Set these variables before running play_directory.sh to set your preferences.</p><pre><code>MPLAYER_LASTFM default mplayerlastfm
-MPN_DIR        defualt $HOME/Music</code></pre><p><code>MPN_DIR</code> is directory to play from.</p><h2 id='issues'>Issues</h2><ul>
-<li>q&#8217; interrupts only playback of current file; press and <em>hold</em> ctrl-C to skip.<br />Even if you skip file immediately with Enter or &#8216;q&#8217; it will scrobble</li>
+<li>-e prints the size of all the playlist</li>
+</ul><h2 id='issues'>Issues</h2><p>If you change the case of the song e.g The song to, the Song, they might treated as the same song.</p><h2 id='licence'>Licence</h2><p><a href='http://creativecommons.org/licenses/by-nc-sa/3.0/' title='Full details'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></p><h2 id='authors'>Authors</h2><ul>
+<li>Bilal Hussain</li>
 </ul>
 
 	

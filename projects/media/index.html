@@ -62,7 +62,7 @@ img.pic{
 <div class="span-19">
 		 
 	<h1 class="project-title">Media</h1>
-	<!-- <h3>2-49-g5704855</h3> -->
+	<!-- <h3></h3> -->
 
 		<h3>
 			
@@ -74,8 +74,8 @@ img.pic{
 </div>
 
 <div class="project-links span-5 last">
-	<a href="https://github.com/Bilalh/media/zipball/2-49-g5704855" class="project-download-link">
-		<div class="project-download">Download v2-49-g5704855</div>
+	<a href="https://github.com/Bilalh/media/zipball/master" class="project-download-link">
+		<div class="project-download">Download</div>
 	</a>
 	
 	<h3><a href="https://github.com/Bilalh/media">GitHub Repository</a></h3>
@@ -85,25 +85,36 @@ img.pic{
 
 <div class="readme span-24">
 	
-	<h1 id='readmeTitle'>MPlayer last.fm Scrobbler</h1><p id='description'>A command line application that plays audio files with MPlayer and scrobbles them to last.fm. Supports mp3, mp4, flac and ogg.</p><h2 id='usage'>Usage</h2><p><code>mplayerlastfm.sh &lt;glob&gt;</code> <code>play_directory.sh</code></p><h2 id='prerequisites'>Prerequisites</h2><ul>
-<li>Get and setup <a href='http://www.red-bean.com/~decklin/software/lastfmsubmitd/' title='http://www.red-bean.com/~decklin/software/lastfmsubmitd/'>lastfmsubmitd</a></li>
+	<h1 id='readmeTitle'>Meida</h1><p id='description'>Media is used to play video and/or audio files, provide a nice interface to MPlayer and keep track of which episodes of series has been watched. It has a options to show only the latest or unwatched files and update mylist</p><h2 id='usage'>Usage</h2><p>Usage <code>media start_path [args]</code></p><pre><code> args: [-abcdefghijklmnopqrstuvwxyz.ABCDEFGHIJKLMNOPQRSTUVWXYZ,0123456789:/[]{}@%^=]
+ Use -h for help Use -h[num] for a section in the help
+ Use -h,{letters} for details of the arg(s)</code></pre><p>See the man pages or <code>media -h</code> for more details.</p><h2 id='prerequisites'>Prerequisites</h2><ul>
+<li>sqlite3</li>
 
-<li>Install <a href='http://developer.kde.org/~wheeler/taglib.html' title='http://developer.kde.org/~wheeler/taglib.html'>taglib</a></li>
+<li>pcre</li>
 
-<li>mplayer</li>
+<li>libcurl (for mylist)</li>
+
+<li>libxml (for mylist and playlists)</li>
+
+<li>linux has lots extra requirements see Readm</li>
 </ul><h2 id='install'>Install</h2><ul>
-<li>run <code>make.sh</code> to compile <code>taginfo</code></li>
+<li>
+<p>Put the scripts in your <code>$PATH</code></p>
 
-<li>run <code>install.sh</code> (might need sudo) to install <code>mplayerlastfm.sh</code> as <code>/usr/local/bin/mplayerlastfm</code> and <code>play_directory.sh</code> as <code>/usr/local/bin/play_directory.sh</code><br />or Install <code>mplayerlastfm.sh</code> in your <code>$PATH</code> e.g &#8216;/usr/local/bin/m&#8217; for easy use</li>
-</ul><h2 id='mplayerlastfmsh'>mplayerlastfm.sh</h2><p>Set these variables before running mplayerlastfm.sh to set your preferences.</p><pre><code>LASTFM_PLAYER        default mplayer
-TAGINFO              default taginfo
-LASTFM_SUBMIT        default lastfmsubmit
-SCROBBLER_ECHO       default true
-DISPLAY_TRACK_INFO   default true</code></pre><h2 id='play_directorysh'>play_directory.sh</h2><p>Allows the user to choose which directory to play using <code>mplayerlastfm.sh</code>. if the directory contains <em>4</em> directory album 1 to album 4 then running <code>play_directory.sh</code> will result in:</p><pre><code>1) Album 1    3) Album 3  
-2) Album 3    4) Album 4
-#? </code></pre><p>Where the user type the number e.g 3 to pick Album 3. It play recursively all files in the directory.</p><p>Set these variables before running play_directory.sh to set your preferences.</p><pre><code>MPLAYER_LASTFM default mplayerlastfm
-MPN_DIR        defualt $HOME/Music</code></pre><p><code>MPN_DIR</code> is directory to play from.</p><h2 id='issues'>Issues</h2><ul>
-<li>q&#8217; interrupts only playback of current file; press and <em>hold</em> ctrl-C to skip.<br />Even if you skip file immediately with Enter or &#8216;q&#8217; it will scrobble</li>
+<pre><code>make dist
+make install
+make create_database
+-Optional-
+(might need sudo)
+make install_man_pages
+make install_media_aliases</code></pre>
+</li>
+
+<li>
+<p>Note the xcode project is <strong>only</strong> for <strong>debugging</strong> not building</p>
+</li>
+</ul><h2 id='issues'>Issues</h2><p>See man pages</p><h2 id='licence'>Licence</h2><p><a href='http://creativecommons.org/licenses/by-nc-sa/3.0/' title='Full details'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></p><h2 id='authors'>Authors</h2><ul>
+<li>Bilal Hussain</li>
 </ul>
 
 	
