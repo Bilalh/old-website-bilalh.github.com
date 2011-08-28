@@ -1,9 +1,15 @@
 Changelog
 =========
 
-Thu Aug 25 2011
+Thus Aug 26 2011
 ---------------
-* Gallery 
+* Real data.
+* Gallery finished.
+* Search fixed.
+
+Wed Aug 25 2011
+---------------
+* Gallery started.
 * other fixes.
 
 Thu Aug 18 2011
