@@ -2,7 +2,7 @@
 <html>
 <head>
   
-    <title>Test - Bilal S Hussain</title>
+    <title>fn lock - Bilal S Hussain</title>
   
   
   <meta name="author" content="Bilal Hussain" />
@@ -51,33 +51,54 @@ Search powered by IndexTank
 </div>
 
 <div class="post" id="main-content">
-  <h1>Test</h1>
+  <h1>fn lock</h1>
   <h4 class="large-bottom">
-    Posted on August 13, 2011
-     in <a href="/categories/testing">Testing</a> 
+    Posted on August 29, 2011
+     in <a href="/categories/osx">OSX</a> 
   </h4>
   
   <div class="content">
-    <p>Cras vel ipsum magnsa. Sed egestas pulvinar imperdiet. Donec ut quam diam, ut blandit erat. Aliquam erat volutpat. Curabitur suscipit</p><h2 id='heading_2'>heading 2</h2><p>Nulla vitae nisl et tellus laoreet euismod tincidunt a dui.</p><div class='highlight'><pre><code class='actionscript'><span class='k'>var</span> <span class='nx'>q</span><span class='o'>:</span><span class='nx'>CallQueue</span> <span class='o'>=</span> <span class='k'>new</span> <span class='nx'>CallQueue</span><span class='p'>(</span><span class='nx'>nc</span><span class='o'>,</span>
-  <span class='k'>new</span> <span class='nx'>Call</span><span class='p'>(</span><span class='s2'>&quot;service.method&quot;</span><span class='o'>,</span> <span class='s2'>&quot;param&quot;</span><span class='p'>)</span><span class='o'>,</span>
-  <span class='k'>new</span> <span class='nx'>Call</span><span class='p'>(</span><span class='s2'>&quot;service.method&quot;</span><span class='o'>,</span> <span class='s2'>&quot;param&quot;</span><span class='p'>)</span><span class='o'>,</span>
-  <span class='k'>new</span> <span class='nx'>Call</span><span class='p'>(</span><span class='s2'>&quot;service.method&quot;</span><span class='o'>,</span> <span class='s2'>&quot;param&quot;</span><span class='p'>)</span><span class='o'>,</span>
-  <span class='p'>...</span>
-<span class='p'>);</span>
+    <p>The below scripts toggles function keys on mac keyboards, Between the media and the standard functions keys.</p><p>The script is most useful in either the script menu, which is done by placing the script in the <code>/Library/Scripts/</code> or using Alfred/Quicksilver.</p><div class='highlight'><pre><code class='applescript'><span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
+  <span class='k'>set</span> <span class='nv'>current</span> <span class='nv'>pane</span> <span class='k'>to</span> <span class='nv'>pane</span> <span class='s2'>&quot;com.apple.preference.keyboard&quot;</span>
+<span class='k'>end</span> <span class='k'>tell</span>
+
+
+<span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Events&quot;</span>
+  <span class='k'>if</span> <span class='nv'>UI</span> <span class='nv'>elements</span> <span class='na'>enabled</span> <span class='k'>then</span>
+    <span class='k'>tell</span> <span class='nb'>application</span> <span class='nv'>process</span> <span class='s2'>&quot;System Preferences&quot;</span>
+      <span class='k'>get</span> <span class='na'>properties</span>
+      <span class='nv'>click</span> <span class='nv'>radio</span> <span class='nb'>button</span> <span class='s2'>&quot;Keyboard&quot;</span> <span class='k'>of</span> <span class='no'>tab</span> <span class='nv'>group</span> <span class='mi'>1</span> <span class='k'>of</span> <span class='na'>window</span> <span class='s2'>&quot;Keyboard&quot;</span>
+      <span class='nv'>click</span> <span class='nv'>checkbox</span> <span class='s2'>&quot;Use all F1, F2, etc. keys as standard function keys&quot;</span> <span class='err'>¬</span> 
+        <span class='k'>of</span> <span class='no'>tab</span> <span class='nv'>group</span> <span class='mi'>1</span> <span class='k'>of</span> <span class='na'>window</span> <span class='s2'>&quot;Keyboard&quot;</span>
+      
+    <span class='k'>end</span> <span class='k'>tell</span>
+    
+  <span class='k'>else</span>
+    <span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
+      <span class='nb'>activate</span>
+      <span class='k'>set</span> <span class='nv'>current</span> <span class='nv'>pane</span> <span class='se'>¬</span>
+        <span class='k'>to</span> <span class='nv'>pane</span> <span class='s2'>&quot;com.apple.preference.universalaccess&quot;</span>
+      <span class='nb'>display dialog</span> <span class='se'>¬</span>
+        <span class='s2'>&quot;UI element scripting is not enabled. Check \&quot;Enable access for assistive devices\&quot;&quot;</span>
+    <span class='k'>end</span> <span class='k'>tell</span>
+  <span class='k'>end</span> <span class='k'>if</span>
+<span class='k'>end</span> <span class='k'>tell</span>
+
+<span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
+  <span class='nb'>quit</span>
+<span class='k'>end</span> <span class='k'>tell</span>
 </code></pre>
-</div><h2 id='sed_eget_tortor_sapien_in'>Sed eget tortor sapien, in.</h2><p>Morbi faucibus nunc quis ligula feugiat eu scelerisque tortor imperdiet. Donec euismod erat et velit egestas consectetur. Phasellus magna ante, consequat ut rhoncus nec, cursus et nulla. Nam quis ornare risus. Duis aliquam ipsum sed enim fermentum non vehicula nibh vestibulum. Quisque pharetra euismod sagittis. Aliquam ac mauris ligula, a pulvinar tortor. Fusce a tempor odio. Vivamus non est justo. Etiam quis venenatis massa. Phasellus ipsum nisi, bibendum ut adipiscing at, mollis ut erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum malesuada hendrerit nunc vel pellentesque. Curabitur posuere aliquam lacus at facilisis. Sed vestibulum consequat volutpat.</p><h2 id='fusce_blandit_turpis_non_nisi'>Fusce blandit turpis non nisi.</h2><p>Quisque eleifend mi blandit lacus vulputate eu auctor nunc sodales.</p>
+</div>
   </div>
 
   <div class="next-prev-nav low-top">
     
-      &laquo;&nbsp;<a href="/2011/08/29/fn-lock" rel="next" title="fn lock">fn lock</a>
+  
+    
     
   
     
-      
-    
-    
-  
+      <a href="/2011/08/13/test" rel="previous" title="Test">Test</a>&nbsp;&raquo;
     
   
     <br />
@@ -89,7 +110,11 @@ Search powered by IndexTank
   
     Tagged in
     
-      <strong><a href="/tags/utilities">Utilities</a></strong>
+      <strong><a href="/tags/applescript">Applescript</a></strong>, 
+    
+      <strong><a href="/tags/utilities">Utilities</a></strong>, 
+    
+      <strong><a href="/tags/scripting">Scripting</a></strong>
     
     <br />
   
