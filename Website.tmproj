@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>changelog.md</string>
+	<string>_plugins/projects.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -13,6 +13,8 @@
 			<string>Website</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>selected</key>
+			<true/>
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
@@ -21,39 +23,39 @@
 	<integer>202</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_posts/2011-08-29-fn-lock.md</key>
+		<key>_config.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>144</integer>
+				<integer>14</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>208</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>1</integer>
+			<integer>6</integer>
 		</dict>
-		<key>changelog.md</key>
+		<key>_plugins/projects.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>27</integer>
+				<integer>47</integer>
 				<key>line</key>
-				<integer>6</integer>
+				<integer>26</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>_posts/2011-08-29-fn-lock.md</string>
-		<string>changelog.md</string>
+		<string>_config.yml</string>
+		<string>_plugins/projects.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -78,6 +80,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{470, 72}, {971, 806}}</string>
+	<string>{{206, 94}, {1254, 873}}</string>
 </dict>
 </plist>
