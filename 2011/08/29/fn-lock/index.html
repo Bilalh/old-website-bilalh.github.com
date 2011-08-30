@@ -58,7 +58,10 @@ Search powered by IndexTank
   </h4>
   
   <div class="content">
-    <p>The below scripts toggles function keys on mac keyboards, Between the media and the standard functions keys.</p><p>The script is most useful in either the script menu, which is done by placing the script in the <code>/Library/Scripts/</code> or using Alfred/Quicksilver.</p><div class='highlight'><pre><code class='applescript'><span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
+    <p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys.</p>
+
+<p>The script is most useful in either the script menu, which is done by placing the script in the <code>/Library/Scripts/</code> or using Alfred/Quicksilver.</p>
+<div class='highlight'><pre><code class='applescript'><span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
   <span class='k'>set</span> <span class='nv'>current</span> <span class='nv'>pane</span> <span class='k'>to</span> <span class='nv'>pane</span> <span class='s2'>&quot;com.apple.preference.keyboard&quot;</span>
 <span class='k'>end</span> <span class='k'>tell</span>
 

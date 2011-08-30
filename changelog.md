@@ -1,7 +1,12 @@
 Changelog
 =========
 
-Thus Aug 26 2011
+Sun Aug 28 2011
+---------------
+* About page.
+* First blog post 'fn lock'
+
+Thu Aug 26 2011
 ---------------
 * Real data.
 * Gallery finished.
