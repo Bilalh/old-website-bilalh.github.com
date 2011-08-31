@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_plugins/projects.rb</string>
+	<string>Rakefile</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -13,16 +13,28 @@
 			<string>Website</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
-			<key>selected</key>
-			<true/>
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>202</integer>
+	<integer>147</integer>
 	<key>metaData</key>
 	<dict>
+		<key>Rakefile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>59</integer>
+				<key>line</key>
+				<integer>68</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>27</integer>
+		</dict>
 		<key>_config.yml</key>
 		<dict>
 			<key>caret</key>
@@ -30,32 +42,18 @@
 				<key>column</key>
 				<integer>14</integer>
 				<key>line</key>
-				<integer>208</integer>
+				<integer>85</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>6</integer>
-		</dict>
-		<key>_plugins/projects.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>47</integer>
-				<key>line</key>
-				<integer>26</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>10</integer>
+			<integer>80</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>_config.yml</string>
-		<string>_plugins/projects.rb</string>
+		<string>Rakefile</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -68,18 +66,10 @@
 			<key>isExpanded</key>
 			<true/>
 			<key>subItems</key>
-			<dict>
-				<key>_plugins</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-			</dict>
+			<dict/>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{206, 94}, {1254, 873}}</string>
+	<string>{{783, 90}, {1017, 863}}</string>
 </dict>
 </plist>

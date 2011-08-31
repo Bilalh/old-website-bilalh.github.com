@@ -27,11 +27,11 @@ projects:
   tagger:
     title:     Tagger
     icon:      Tagger.png
-    version:   1.4  
+    version:   1.4.1
     languages: Objective C, Ruby, C++
     changelog: true
     apidocs:   true
-    download:  https://github.com/downloads/Bilalh/Tagger/v1-4-binaries.zip
+    download:  https://github.com/downloads/Bilalh/Tagger/v1-4-1-binaries.zip
     gallery:   
       - title: Multiplen File Editing
         image: s001.png 
@@ -93,7 +93,7 @@ projects:
         - title: Auto Tagging
           #icon : gui.png
           description: >
-            Tagger can Search for the tags off the internet. Tagger will retrieve matching result and allows you to browse the result and finally apply the tags to the selection.
+            Tagger can Search for the tags off the internet (using vgmdb). Tagger will retrieve matching result and allows you to browse the result and finally apply the tags to the selection.
 
         - title: Superior Tag Support
           #icon : gui.png
@@ -122,7 +122,7 @@ projects:
         - title: Tag Manipulation
           #icon : gui.png
           description: >
-            Tagger supports changing the capitalization (Uppercase, lowercase, and Title Case) for readability. It also supports renumbering of files,
+            Tagger supports changing the capitalization (Uppercase, lowercase, and Title Case) for readability. It also supports renumbering of files and triming whitespace.
 
         - title: Artwork
           #icon : gui.png
