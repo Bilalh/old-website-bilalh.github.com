@@ -9,6 +9,14 @@ $project-download-bg: #DBDDDD;
 $song-bg: #E8E8E8;
 
 
+blockquote {
+    border:2px dotted #e5e5e5;
+    font-size:1.0em;
+    margin:20px 10px;
+    padding:3px;
+		font-style: normal;
+}
+
 a#return {
 padding: .3em 1.1em;
 //color: #fff;
@@ -257,7 +265,7 @@ code, tt {
 	@include border-radius(5px);
 	background: none repeat scroll 0 0 #222222;
 	overflow: auto;
-	
+	border: dashed 2px #e5e5e5;
 	pre code {
 		@include code-block;
 		color: #F0F0F0;
