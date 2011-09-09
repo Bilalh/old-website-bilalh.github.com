@@ -64,7 +64,7 @@ img.pic{
 		<img src="/images/projects/tagger/Tagger.png" class="project-icon left" width="64" height="64" alt="icon"/> 
 		 
 	<h1 class="project-title">Tagger</h1>
-	<!-- <h3>1.4.1</h3> -->
+	<!-- <h3>1.4.2</h3> -->
 
 		<h3>
 			
@@ -87,7 +87,7 @@ img.pic{
 
 <div class="project-links span-6 last">
 	<a href="https://github.com/downloads/Bilalh/Tagger/v1-4-1-binaries.zip" class="project-download-link">
-		<div class="project-download">Download v1.4.1</div>
+		<div class="project-download">Download v1.4.2</div>
 	</a>
 	
 	<h3><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
@@ -107,9 +107,9 @@ img.pic{
 
 <li>64 bit only</li>
 </ul><h3 id='introductions'>Introductions</h3><p>Build the release version of VGTagger.</p><p>(When embeding make sure require &#8216;rubygems&#8217; is commented with a # before it)</p><p>Run Embed MacRuby on it which does the follows to embed the MacRuby framework</p><pre><code>macruby_deploy --compile --embed --gem nokogiri --gem htmlentities --verbose</code></pre><p>To save 15mb you can remove the unused .rb files in <code>VGTagger.app/Contents/Frameworks/MacRuby.framework/Versions/0.10/usr/lib/ruby/1.9.2</code></p><h2 id='issues'>Issues</h2><ul>
-<li>Bug in mp3 files when <em>replacing</em> (not adding) artwork on files who album art has <em>never</em> been edited in iTunes, means the file can&#8217;t be added to iTunes.</li>
-
-<li>Bug in mp4 converted from flac using apps such XLD, when setting artwork, means the file can not be added to itunes.</li>
+<li>Bug in mp3 files somtimes when <em>replacing</em> (not adding) artwork on files who album art has <em>never</em> been edited in iTunes, means the file can&#8217;t be added to iTunes. This happens sometimes happens after replacing the all work twice.</li>
+</ul><p><em>Work around</em> To replace a mp3 cover art a second time use <code>refresh</code>(⌘R) then <code>Parent Folder</code>(⌘↑) then <code>Back</code>(⌘<span>) menus items then replace the cover.</span></p><ul>
+<li>Bug in malformed m4a files somtimes when <em>replacing</em> (not adding) artwork, means the file can&#8217;t be played in iTunes.</li>
 </ul><h2 id='libraries_used'>Libraries Used</h2><ul>
 <li>
 <p>MacRuby</p>
