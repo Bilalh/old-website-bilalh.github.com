@@ -24,7 +24,7 @@ exclude:   ["Rakefile", "CNAME", "Website.tmproj"]
 title:     Bilal S Hussain
 
 projects:
-  Tagger:
+  tagger:
     title:     Tagger
     icon:      Tagger.png
     version:   1.4.2
