@@ -2,7 +2,7 @@
 <html>
 <head>
   
-    <title>AutoDoc - Bilal S Hussain</title>
+    <title>MKV Utlities - Bilal S Hussain</title>
   
   
   <meta name="author" content="Bilal Hussain" />
@@ -61,7 +61,7 @@ img.pic{
 
 <div class="span-18">
 		 
-	<h1 class="project-title">AutoDoc</h1>
+	<h1 class="project-title">MKV Utlities</h1>
 	<!-- <h3></h3> -->
 
 		<h3>
@@ -74,24 +74,77 @@ img.pic{
 </div>
 
 <div class="project-links span-6 last">
-	<a href="https://github.com/Bilalh/autoDoc/zipball/master" class="project-download-link">
+	<a href="https://github.com/Bilalh/MKV-Utilities/zipball/master" class="project-download-link">
 		<div class="project-download">Download</div>
 	</a>
 	
-	<h3><a href="https://github.com/Bilalh/autoDoc">GitHub Repository</a></h3>
+	<h3><a href="https://github.com/Bilalh/MKV-Utilities">GitHub Repository</a></h3>
 	
 	
 </div>
 
 <div class="readme span-24">
 	
-	<h1 id='readmeTitle'>AutoDoc</h1><p id='description'>Creates Doxygen comments for methods/functions in <strong>C</strong> and <strong>Objective C</strong></p><h2 id='usage'>Usage</h2><pre><code>document_c_with_stars.rb &lt;function declaration&gt;
-document_objectivec_with_stars &lt;function declaration&gt;</code></pre><h2 id='prerequisites'>Prerequisites</h2><p>ruby1.9</p><h2 id='install'>Install</h2><ul>
-<li>Put the scripts in your <code>$PATH</code></li>
-</ul><h2 id='notes'>Notes</h2><ul>
-<li><code>document_c_with_stars_textmate.rb</code> can be used a snippet. Use it by selecting the function declaration and pressing the shortcut key</li>
+	<h1 id='readmeTitle'>MKV Utilities</h1><p id='description'>Scripts to easily join, split and extracts mkv files. Also has scripts to do <strong>lossless</strong> convertion of mkv to mp4 (with subtitles) and mp4 to mkv. The scripts can also extract all fonts and subtitles from a set of mkvs. Also contains a Java app for creating mkv chapters.</p><h2 id='usage'>Usage</h2><ul>
+<li>
+<p><code>extract_mkv_fonts.sh {path}</code><br />extracts all fonts from the specified mkvs</p>
+</li>
 
-<li>from <a href='https://github.com/Bilalh/Scripts' title='https://github.com/Bilalh/Scripts'>Scripts</a></li>
+<li>
+<p><code>extract_mkv_subs.sh</code><br />extracts all fonts from the specified mkvs</p>
+</li>
+
+<li>
+<p><code>mkv_funs.sh</code><br />Contains mkv function which will print the full help if given no arguments</p>
+</li>
+
+<li>
+<p><code>amkv  </code> Extract the aac audio from a mkv file</p>
+</li>
+
+<li>
+<p><code>jmkv  </code> Joins mkvs</p>
+</li>
+
+<li>
+<p><code>smkv  </code> splits the specified mkv</p>
+</li>
+
+<li>
+<p><code>tmkv  </code> Extract the section of video between two time</p>
+</li>
+
+<li>
+<p><code>kmkv  </code> Keep only ith part of the spitting</p>
+</li>
+
+<li>
+<p><code>rfmkv </code> Remove first part of the split</p>
+</li>
+
+<li>
+<p><code>simkv </code> Spilt the specifed split</p>
+</li>
+
+<li>
+<p><code>amkv  </code> Extract the aac audio from a mkv file</p>
+</li>
+
+<li>
+<p><code>amkv  </code> Extract the aac audio from a mkv file</p>
+</li>
+
+<li>
+<p><code>gmkv  </code> go to join mkv folder</p>
+</li>
+</ul><h2 id='prerequisites'>Prerequisites</h2><ul>
+<li>mkvtoolnix (mkvmerge, mkvextract)</li>
+
+<li>MP4Box and mediainfo for convention of mkv.</li>
+</ul><h2 id='install'>Install</h2><ul>
+<li>Put the <code>extract_mkv_fonts</code> and <code>extract_mkv_subs.sh</code> in your <code>$PATH</code></li>
+
+<li>source <code>mkv_funs.sh</code> and <code>encoding.sh</code> from your .bashrc</li>
 </ul><h2 id='issues'>Issues</h2><p>None Yet</p><h2 id='licence'>Licence</h2><p><a href='http://creativecommons.org/licenses/by-nc-sa/3.0/' title='Full details'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></p><h2 id='authors'>Authors</h2><ul>
 <li>Bilal Hussain</li>
 </ul>
