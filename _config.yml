@@ -7,7 +7,7 @@ server:   false
 lsi:      false
 safe:     false
 pygments: true
-paginate: 2
+paginate: 4
 paginate_files: 
   - blog.html 
 
