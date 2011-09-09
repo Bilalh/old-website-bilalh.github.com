@@ -4,6 +4,7 @@ Changelog
 Fri 09 Sep 2011
 ---------------
 * Projects
+* Git Delete Last Commit post
 
 Sun Aug 28 2011
 ---------------
