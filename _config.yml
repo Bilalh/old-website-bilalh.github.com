@@ -139,7 +139,7 @@ projects:
     languages:   C, SQL, Man Pages
     description: >
       A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
-
+  
   audio-sync:
     title:       Audio Sync
     languages:   Ruby, Objective C 
@@ -150,14 +150,11 @@ projects:
     languages:   Shell, Applescript
   
 
-  # BHDraggableImageView:
-  #   title:       BHDraggableImageView
-  #   version:     1.0  
-  #   languages:   Objective C 
-  #   description: >
-  #     A subclass of NSImageView that allow **dragging** the image of the view to desktop as file, it also allows specifying the filename.
-  # 
-  # 
+  BHDraggableImageView:
+    title:       BHDraggableImageView
+    languages:   Objective C 
+  
+
   autodoc:
     title:       AutoDoc
     languages:   Ruby 
@@ -167,7 +164,6 @@ projects:
   # 
   # HTML Utilities:
   #   title:       HTML Utilities
-  #   version:     1.0  
   #   languages:   Ruby 
   #   description: >    
   #     Scripts for transforming html, inculding removing elements by CSS/XPath and transforming Metawiki webpages to epub friendly html with chapters for all the headings.  
@@ -175,7 +171,6 @@ projects:
   # 
   # Shell Utilities:
   #   title:       Shell Utilities
-  #   version:     1.0  
   #   languages:   Shell
   #   description: >
   #     A collection of scripts and alias for use at command line. Includes a fuction to extract **any** kind archive (save you from remembering all the tar flags) and finding your ip.  Also inculdes scripts for for the bitrate and other infomation from audio files.
@@ -183,7 +178,6 @@ projects:
   # 
   # MKV Utilities:
   #   title:       MKV Utlities
-  #   version:     1.0  
   #   languages:   Shell, Java
   #   description: >    
   #     Scripts to easily join, split and extracts mkv files. Also has scripts to do **lossless** convertion of mkv to mp4 (with subtitles) and mp4 to mkv. The scripts can also extract all fonts and subtitles from a set of mkvs. Also contains a Java app for creating mkv chapters. 
@@ -191,7 +185,6 @@ projects:
   # 
   # Finder Utilities:
   #   title:       Finder Utilities
-  #   version:     1.0  
   #   languages:   Applescript, Shell, Ruby
   #   description: >
   #      Set of scripts for controling Finder, inculdes get the path of the selected Finder item, setting labels, timestamps files a script for mac that goes to the location of the frontmost Finder window in the Terminal. 
@@ -199,7 +192,6 @@ projects:
   # 
   # Applescript Utilities:
   #   title:       Applescript Utilities
-  #   version:     1.0  
   #   languages:   Applescript
   #   description: >
   #     A collection of use applscripts that inculding file labeling, 'fn lock', timestamping files and controlling mplayer.
@@ -207,7 +199,6 @@ projects:
   # 
   # Utilities:
   #   title:       Utilities
-  #   version:     1.0  
   #   languages:   Shell, Ruby, Applescript, Python, Other
   #   description: >
   #     Scripts that don't fit any of the collections, includes a script for re-encoding movies file for phones. 
@@ -215,7 +206,6 @@ projects:
   # 
   # bashmarks:
   #   title:       Bashmarks
-  #   version:     1.0  
   #   languages:   Shell
   #   description: >
   #     Fork of bashmarks (a script that allows you to save and jump to commonly used directories. with supports for tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. `g bookmarkname ls` changes the directory to the bookmark then preforms ls.
