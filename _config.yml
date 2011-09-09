@@ -158,12 +158,11 @@ projects:
   #     A subclass of NSImageView that allow **dragging** the image of the view to desktop as file, it also allows specifying the filename.
   # 
   # 
-  # auto doc:
-  #   title:       AutoDoc
-  #   version:     1.0  
-  #   languages:   Ruby 
-  #   description: >    
-  #     Creates Doxygen comments for methods/functions in **C** and **Objective C**.
+  autodoc:
+    title:       AutoDoc
+    languages:   Ruby 
+    description: >    
+      Creates Doxygen comments for methods/functions in **C** and **Objective C**.
   # 
   # 
   # HTML Utilities:

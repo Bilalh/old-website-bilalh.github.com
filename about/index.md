@@ -26,7 +26,7 @@ title: About
 
 
 ## Me
-* Third Year Computer Science student at **St. Andrews
+* Fourth Year Computer Science student at **St. Andrews
 **. 
 
 
