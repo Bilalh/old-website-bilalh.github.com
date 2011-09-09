@@ -1,6 +1,10 @@
 Changelog
 =========
 
+Fri 09 Sep 2011
+---------------
+* Projects
+
 Sun Aug 28 2011
 ---------------
 * About page.
