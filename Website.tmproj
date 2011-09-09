@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_config.yml</string>
+	<string>_posts/2011-09-09-git-delete-last-commit.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -13,43 +13,29 @@
 			<string>Website</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>selected</key>
+			<true/>
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>273</integer>
+	<integer>198</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_config.yml</key>
+		<key>Rakefile</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>83</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>165</integer>
+				<integer>22</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>141</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>9</integer>
-				<key>line</key>
-				<integer>165</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>83</integer>
-				<key>line</key>
-				<integer>165</integer>
-			</dict>
+			<integer>4</integer>
 		</dict>
 		<key>_layouts/project.html</key>
 		<dict>
@@ -65,14 +51,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>blog.html</key>
+		<key>_posts/2011-09-09-git-delete-last-commit.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>139</integer>
 				<key>line</key>
-				<integer>23</integer>
+				<integer>18</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -86,7 +72,7 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>16</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -96,9 +82,9 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>blog.html</string>
-		<string>_config.yml</string>
+		<string>Rakefile</string>
 		<string>index.html</string>
+		<string>_posts/2011-09-09-git-delete-last-commit.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -112,7 +98,21 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
-				<key>_cache</key>
+				<key>_posts</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+				<key>about</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+				<key>css</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
@@ -123,6 +123,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{124, 73}, {1017, 805}}</string>
+	<string>{{644, 108}, {784, 770}}</string>
 </dict>
 </plist>
