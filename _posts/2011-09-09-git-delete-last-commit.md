@@ -18,10 +18,10 @@ git reset --hard HEAD~1
 
 >   Note that `--hard` get rid of **any** changes from the deleted commit(s). Use `--soft` to leave the files as `Changes to be committed`.
 
-If you have push the commit then you do 
+If you have pushed the commit then you can do 
 
 {% highlight bash tabsize=2 %}
 git revert HEAD
 {% endhighlight %}
 
-which creates a **new** commit that get gets with of all the changes in the last commit.
+which creates a **new** commit that get gets rid of all the changes in the last commit.
