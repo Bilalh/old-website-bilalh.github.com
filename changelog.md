@@ -4,7 +4,9 @@ Changelog
 Fri 09 Sep 2011
 ---------------
 * Projects
-* Git Delete Last Commit post
+* Git Delete Last Commit post.
+* ls colours post.
+* Mac Keyboard Symbols.
 
 Sun Aug 28 2011
 ---------------
