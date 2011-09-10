@@ -58,21 +58,13 @@ Search powered by IndexTank
   </h4>
   
   <div class="content">
-    <p>If you have committed files that you shouldn&#8217;t have (e.g passwords, keys) you can use the following to delete the last commit provided the commit has not been pushed.</p>
-<div class='highlight'><pre><code class='bash'>git reset --hard HEAD~1
+    <p>If you have committed files that you shouldn&#8217;t have (e.g passwords, keys) you can use the following to delete the last commit provided the commit has not been pushed.</p><div class='highlight'><pre><code class='bash'>git reset --hard HEAD~1
 </code></pre>
-</div>
-<p><code>Head~1</code> means the pervious commit, you can also use the SHA-1 of commit to <strong>delete</strong> all commits back to that commit.</p>
-
-<blockquote>
+</div><p><code>Head~1</code> means the pervious commit, you can also use the SHA-1 of commit to <strong>delete</strong> all commits back to that commit.</p><blockquote>
 <p>Note that <code>--hard</code> get rid of <strong>any</strong> changes from the deleted commit(s). Use <code>--soft</code> to leave the files as <code>Changes to be committed</code>.</p>
-</blockquote>
-
-<p>If you have pushed the commit then you can do</p>
-<div class='highlight'><pre><code class='bash'>git revert HEAD
+</blockquote><p>If you have pushed the commit then you can do</p><div class='highlight'><pre><code class='bash'>git revert HEAD
 </code></pre>
-</div>
-<p>which creates a <strong>new</strong> commit that get gets rid of all the changes in the last commit.</p>
+</div><p>which creates a <strong>new</strong> commit that get gets rid of all the changes in the last commit.</p>
   </div>
 
   <div class="next-prev-nav low-top">
