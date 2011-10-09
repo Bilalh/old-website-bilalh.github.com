@@ -1,6 +1,10 @@
 Changelog
 =========
 
+Sun 09 Oct 2011
+---------------
+* Fixed Facebook url.
+
 Fri 09 Sep 2011
 ---------------
 * Projects

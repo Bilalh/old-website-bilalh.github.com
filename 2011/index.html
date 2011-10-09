@@ -49,6 +49,37 @@
 <div id="main-content">
 	   
 	
+  <h2><a href="/2011/10/09/using-sed" class="dark-link">Using sed</a></h2>
+  <h4 class="low-top">
+    Posted on October 09, 2011
+    
+      
+        in <a href="/categories/unix">Unix</a>
+      
+    
+  </h4>
+  
+  <p>Useful sed commands
+
+Delete nth line inplace
+sed -i .tmp &#39;&lt;n&gt;d&#39; &lt;filename&gt;
+
+
+Get the nth line
+sed &#39;&lt;n&gt;q;d&#39; &lt;filename&gt;
+
+
+Delete the first 10 lines of a file
+sed &#39;1,10d&#39;
+
+
+Delete lines matching pattern
+ sed &#39;/pattern/d&#39;
+
+</p>
+  <p class><a href="/2011/10/09/using-sed">Read more...</a></p>
+  
+
   <h2><a href="/2011/09/10/ls-colours" class="dark-link">ls colours</a></h2>
   <h4 class="low-top">
     Posted on September 10, 2011
@@ -59,7 +90,8 @@
     
   </h4>
   
-  <p>To get ls colours on a mac add the follow to your .bash_profile.export CLICOLOR=1
+  <p>To get ls colours on a mac add the follow to your .bash_profile.
+export CLICOLOR=1
 export LSCOLORS=ExFxCxDxbxegedabagacad
 
 </p>
@@ -76,7 +108,7 @@ export LSCOLORS=ExFxCxDxbxegedabagacad
     
   </h4>
   
-  <p>If you have committed files that you shouldn&#8217;t have (e.g passwords, keys) you can use the following to delete the last commit provided the commit has not been pushed.git reset --hard HEAD~1 Head~1 means the pervious commit, you can also use the SHA-1 of commit to delete all commits back...</p>
+  <p>If you have committed files that you shouldn&#8217;t have (e.g passwords, keys) you can use the following to delete the last commit provided the commit has not been pushed. git reset --hard HEAD~1 Head~1 means the pervious commit, you can also use the SHA-1 of commit to delete all commits...</p>
   <p class><a href="/2011/09/09/git-delete-last-commit">Read more...</a></p>
   
 
@@ -104,7 +136,7 @@ export LSCOLORS=ExFxCxDxbxegedabagacad
     
   </h4>
   
-  <p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys.The script is most useful in either the script menu, which is done by placing the script in the /Library/Scripts/ or using Alfred/Quicksilver.tell application &quot;System Preferences&quot; set current pane to pane &quot;com.apple.preference.keyboard&quot; end tell...</p>
+  <p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys. The script is most useful in either the script menu, which is done by placing the script in the /Library/Scripts/ or using Alfred/Quicksilver. tell application &quot;System Preferences&quot; set current pane to pane &quot;com.apple.preference.keyboard&quot;...</p>
   <p class><a href="/2011/08/29/fn-lock">Read more...</a></p>
   
 
@@ -118,7 +150,7 @@ export LSCOLORS=ExFxCxDxbxegedabagacad
     
   </h4>
   
-  <p>Cras vel ipsum magnsa. Sed egestas pulvinar imperdiet. Donec ut quam diam, ut blandit erat. Aliquam erat volutpat. Curabitur suscipitheading 2Nulla vitae nisl et tellus laoreet euismod tincidunt a dui.var q:CallQueue = new CallQueue(nc, new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), ... ); Sed eget tortor sapien, in.Morbi...</p>
+  <p>Cras vel ipsum magnsa. Sed egestas pulvinar imperdiet. Donec ut quam diam, ut blandit erat. Aliquam erat volutpat. Curabitur suscipit heading 2 Nulla vitae nisl et tellus laoreet euismod tincidunt a dui. var q:CallQueue = new CallQueue(nc, new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), new Call(&quot;service.method&quot;, &quot;param&quot;), ... ); Sed eget...</p>
   <p class><a href="/2011/08/13/test">Read more...</a></p>
   
 
@@ -141,6 +173,9 @@ Search powered by IndexTank
 		<div class="title">Latest Posts </div>
 	
 		
+			<h5><a href="/2011/10/09/using-sed">Using sed</a></h5>
+			<span class="quiet low-top">October 09, 2011</span>
+		
 			<h5><a href="/2011/09/10/ls-colours">ls colours</a></h5>
 			<span class="quiet low-top">September 10, 2011</span>
 		
@@ -152,9 +187,6 @@ Search powered by IndexTank
 		
 			<h5><a href="/2011/08/29/fn-lock">fn lock</a></h5>
 			<span class="quiet low-top">August 29, 2011</span>
-		
-			<h5><a href="/2011/08/13/test">Test</a></h5>
-			<span class="quiet low-top">August 13, 2011</span>
 		 
 		   <h5><a href="/feed">RSS</a></h5>
 	</div>
@@ -166,8 +198,8 @@ Search powered by IndexTank
               <a href="/tags/applescript/" title="1 post">Applescript</a>
             </span>
           
-            <span style="font-size: 75%">
-              <a href="/tags/bash/" title="1 post">Bash</a>
+            <span style="font-size: 280%">
+              <a href="/tags/bash/" title="2 posts">Bash</a>
             </span>
           
             <span style="font-size: 75%">
@@ -178,8 +210,8 @@ Search powered by IndexTank
               <a href="/tags/misc/" title="1 post">Misc</a>
             </span>
           
-            <span style="font-size: 75%">
-              <a href="/tags/scripting/" title="1 post">Scripting</a>
+            <span style="font-size: 280%">
+              <a href="/tags/scripting/" title="2 posts">Scripting</a>
             </span>
           
             <span style="font-size: 280%">
@@ -190,17 +222,17 @@ Search powered by IndexTank
 
 	<div class="sidebar-module">
 		<div class="title"><a href='/Categories'>Categories</a></div>
-		<a href="/categories/testing"><strong>Testing</strong></a> (1)<br /><a href="/categories/osx"><strong>OSX</strong></a> (3)<br /><a href="/categories/unix"><strong>Unix</strong></a> (1)<br />
+		<a href="/categories/testing"><strong>Testing</strong></a> (1)<br /><a href="/categories/osx"><strong>OSX</strong></a> (3)<br /><a href="/categories/unix"><strong>Unix</strong></a> (2)<br />
 	</div>
 	
 	<div class="sidebar-module">
 		<div class="title">Archives</div>
-		<a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (2)<br />
+		<a href="/2011/10"><strong>October 2011</strong></a> (1)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (2)<br />
 	</div>
 	
 	<div class="sidebar-module">
 		<div class="title">Find me on...</div>
-		<strong><a href="http://www.facebook.com/bilalsh">Facebook</a></strong><br />
+		<strong><a href="http://www.facebook.com/bilalsyedhussain">Facebook</a></strong><br />
 		<strong><a href="https://github.com/Bilalh">GitHub</a></strong><br />
 	</div>
 </div>
