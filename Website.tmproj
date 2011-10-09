@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2011-09-09-git-delete-last-commit.md</string>
+	<string>_posts/2011-09-10-ls-colours.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -13,29 +13,27 @@
 			<string>Website</string>
 			<key>regexFolderFilter</key>
 			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
-			<key>selected</key>
-			<true/>
 			<key>sourceDirectory</key>
 			<string></string>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>198</integer>
+	<integer>269</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Rakefile</key>
+		<key>_config.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>22</integer>
+				<integer>17</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 		<key>_layouts/project.html</key>
 		<dict>
@@ -51,28 +49,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>_posts/2011-09-09-git-delete-last-commit.md</key>
+		<key>_posts/2011-09-10-ls-colours.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>139</integer>
-				<key>line</key>
 				<integer>18</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>index.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -82,9 +66,8 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>Rakefile</string>
-		<string>index.html</string>
-		<string>_posts/2011-09-09-git-delete-last-commit.md</string>
+		<string>_config.yml</string>
+		<string>_posts/2011-09-10-ls-colours.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -105,24 +88,10 @@
 					<key>subItems</key>
 					<dict/>
 				</dict>
-				<key>about</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>css</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
 			</dict>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{644, 108}, {784, 770}}</string>
+	<string>{{436, 105}, {956, 773}}</string>
 </dict>
 </plist>
