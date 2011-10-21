@@ -8,16 +8,19 @@ title: About
 </div>
 
 +--{main-content}
-## Skills
 
-### Highly experienced
+## [Résume](Bilal_Husasin-Resume.pdf "Bilal Hussain's Résume") ##
+
+## Skills ##
+
+### Highly experienced ###
 
 * Java
 * C
 * Ruby
 * Unix
 
-### Other
+### Other ###
 * Git 
 * SVN
 * SQL
@@ -25,10 +28,8 @@ title: About
 * Objective C
 
 
-## Me
-* Fourth Year Computer Science student at **St. Andrews
-**. 
-
+## Me ##
+* Fourth Year Computer Science student at **St. Andrews**. 
 
 =--
 
