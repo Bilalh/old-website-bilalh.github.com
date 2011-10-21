@@ -44,7 +44,12 @@ module Jekyll
 				self.data['readme_url']   = url
 			end
 			
-			readme = check_cache(name,"Readme.md")
+			readme =
+			if info['readme'] then
+				IO.read info['readme']
+			else
+				check_cache(name,"Readme.md")
+			end
 			self.data['readme'] = Maruku.new(readme).to_html
 			
 			doc = Nokogiri::HTML(self.data['readme'])

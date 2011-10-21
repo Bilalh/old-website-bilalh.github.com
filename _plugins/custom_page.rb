@@ -17,7 +17,7 @@ module Jekyll
 			data = ""
 			if !File.exists?(cache) then
 				# this stuff is bit hackish, but it works
-				# this will fail if README.md isn't present
+				# this will fail if Readme.md isn't present
 				puts "https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}"
 				data = `curl https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}` 
 				data.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")

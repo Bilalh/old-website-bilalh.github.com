@@ -25,6 +25,7 @@ export GIT_PS1_SHOWSTASHSTATE=true
 * `GIT_PS1_SHOWDIRTYSTATE` adds a `*` at the end if the branch has been changed e.g `User@master * $ `
 * `GIT_PS1_SHOWUNTRACKEDFILES` adds a `%` at end if the branch has untracked files e.g `User@master % $ `
 * `GIT_PS1_SHOWSTASHSTATE` shows a  if the stash contains anything.
+* `+` at the end means that there are changed to be committed.
 
 For a full colour prompt use 
 
