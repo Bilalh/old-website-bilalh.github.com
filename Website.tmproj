@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2011-10-09-using-sed.md</string>
+	<string>changelog.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,20 +21,6 @@
 	<integer>269</integer>
 	<key>metaData</key>
 	<dict>
-		<key>Rakefile</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>65</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>33</integer>
-		</dict>
 		<key>_config.yml</key>
 		<dict>
 			<key>caret</key>
@@ -49,6 +35,20 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>_includes/sidebar.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>15</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>_layouts/project.html</key>
 		<dict>
 			<key>caret</key>
@@ -57,20 +57,6 @@
 				<integer>1</integer>
 				<key>line</key>
 				<integer>6</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_posts/2011-10-09-using-sed.md</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>17</integer>
-				<key>line</key>
-				<integer>29</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -95,13 +81,12 @@
 	<key>openDocuments</key>
 	<array>
 		<string>changelog.md</string>
-		<string>Rakefile</string>
-		<string>_posts/2011-10-09-using-sed.md</string>
+		<string>_includes/sidebar.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
-	<false/>
+	<true/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -110,6 +95,13 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
+				<key>_includes</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
 				<key>_posts</key>
 				<dict>
 					<key>isExpanded</key>
@@ -121,6 +113,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{171, 134}, {956, 773}}</string>
+	<string>{{618, 149}, {1133, 766}}</string>
 </dict>
 </plist>

@@ -61,3 +61,7 @@ Sat Aug 13 2011
 ------------------------------
 * added caching for projects
 * Fixed alignment problem 
+
+Fri 21 Oct 2011
+---------------
+* post on git.
