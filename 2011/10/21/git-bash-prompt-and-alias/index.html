@@ -2,7 +2,7 @@
 <html>
 <head>
   
-    <title>Tag: Misc - Bilal S Hussain</title>
+    <title>git bash prompt and alias - Bilal S Hussain</title>
   
   
   <meta name="author" content="Bilal Hussain" />
@@ -37,38 +37,81 @@
 
     
     <div id="main" class="span-17">
-      <h1 class="large-bottom">Tag: Misc</h1>
-<div id="dReturn"  style="display:none">
+      <div id="dReturn"  style="display:none">
+	<h1>Search Results</h1>
 	<a id="return"> Return</a>
 </div>
 
 <div id="results">
-	
-</div>
- 
-<div id="main-content">
-
-
-  <h2><a href="/2011/09/08/mac-keyboard-symbols" class="dark-link">Mac Keyboard Symbols</a></h2>
-  <h4 class="low-top">
-    Posted on September 08, 2011
-    
-      
-        in <a href="/categories/osx">OSX</a>
-      
-    
-  </h4>
-  
-  <p>Below is the list of symbols on mac keyboards with their Unicode equivalents which is useful for readme. SymbolNameUnicode ⎋ Escape U+238B ⇥ Tab forward U+21E5 ⇤ Tab back U+21E4 ⇪ Capslock U+21EA ⇧ Shift U+21E7 ⌃ Control U+2303 ⌥ Option (Alt, Alternative) U+2325  Apple symbol U+F8FF ⌘ Command...</p>
-  <p class><a href="/2011/09/08/mac-keyboard-symbols">Read more...</a></p>
-  
-
 
 </div>
 
 <div class="small quiet" id="indextank" style="display:none">
 Search powered by IndexTank
 </div>
+
+<div class="post" id="main-content">
+  <h1>git bash prompt and alias</h1>
+  <h4 class="large-bottom">
+    Posted on October 21, 2011
+     in <a href="/categories/unix">Unix</a> 
+  </h4>
+  
+  <div class="content">
+    <p>You can get git to shown the information such as which branch you are on by using the following:</p>
+
+<p><div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\u$(__git_ps1 &quot;@%s&quot;) \$ &#39;</span>
+</code></pre>
+</div></p>
+
+<p>This would as display as <code>User@master $ </code>. You can git to shown even more information by using the following.</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWDIRTYSTATE</span><span class='o'>=</span><span class='nb'>true</span>
+<span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWUNTRACKEDFILES</span><span class='o'>=</span><span class='nb'>true</span>
+<span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWSTASHSTATE</span><span class='o'>=</span><span class='nb'>true</span>
+</code></pre>
+</div>
+<ul>
+<li><code>GIT_PS1_SHOWDIRTYSTATE</code> adds a <code>*</code> at the end if the branch has been changed e.g <code>User@master * $ </code></li>
+
+<li><code>GIT_PS1_SHOWUNTRACKEDFILES</code> adds a <code>%</code> at end if the branch has untracked files e.g <code>User@master % $ </code></li>
+
+<li><code>GIT_PS1_SHOWSTASHSTATE</code> shows a if the stash contains anything.</li>
+</ul>
+
+<p>For a full colour prompt use</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\[$(tput setaf 3)\]\u\[$(tput sgr0)$(tput setaf 5)\]\[$(tput sgr0)$(tput setaf 2)\]$(__git_ps1 &quot; [%s]&quot;) \[$(tput sgr0)\]$ &#39;</span>
+</code></pre>
+</div>
+<p>which shows <code>bilalh [mediakeys] $</code> but in colour</p>
+
+<p>This has been tested with <code>git version 1.7.3.4</code> but should work with 1.6.5+ and requires git <code>bash_completion</code>, see <a href='https://github.com/markgandolfo/git-bash-completion,' title='git bash_completion'>git bash completion</a> if you don&#8217;t have it.</p>
+  </div>
+
+  <div class="next-prev-nav low-top">
+    
+  
+    
+    
+  
+    
+      <a href="/2011/10/09/using-sed" rel="previous" title="Using sed">Using sed</a>&nbsp;&raquo;
+    
+  
+    <br />
+  </div>
+
+  
+  <hr />
+  
+  
+    Tagged in
+    
+      <strong><a href="/tags/git">Git</a></strong>
+    
+    <br />
+  
+</div>
+
     </div>
     
     
