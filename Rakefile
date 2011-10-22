@@ -5,6 +5,7 @@ task :build do
 	`mv _site/blog.html _site/blog/index.html`
 end
 
+# Refreshes the web page in Firefox
 task :local => :build do
 	puts %x[rsync -q -acvrz	 --delete _site/ ~/Sites/]
 	# %x[osascript -e 'open location "http://localhost/"']
@@ -24,13 +25,19 @@ task :local => :build do
 		APPLESCRIPT 
 	]
 end
- 
-task :commit => [:remove_cache,:build] do
-	puts %x[rsync -q -acvrz --exclude .git	--delete _site/ _compiled/]
+
+# Commit the changes to the site.
+task :commit => :build do
+	puts %x[rsync -q -acvrz --exclude .git --delete _site/ _compiled/]
 	puts %x[cd _compiled; git add .; git commit -am "`date +%F_%H-%M_%s`"; ]
 end
 
-task :send => :commit do
+task :send => [:remove_cache, :ssend] do
+	
+end
+
+# Send the changes to the server and open the webpage
+task :ssend => :commit do
 	puts %x[cd _compiled; git push origin master]
 	%x[osascript -e 'open location "http://bilalh.github.com"']
 end
@@ -39,6 +46,7 @@ task :remove_cache do
 	`rm _cache/*`
 end
 
+# Make a new post
 task :new do
 	throw "No title given" unless ARGV[1]
 	title = ""
