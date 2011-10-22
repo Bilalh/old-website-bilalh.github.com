@@ -21,7 +21,7 @@ markdown: maruku
 
 permalink: /:year/:month/:day/:title
 exclude:   ["Rakefile", "CNAME", "Website.tmproj"]
-title:     Bilal S Hussain
+title:     Bilal Syed Hussain
 
 projects:
   tagger:
