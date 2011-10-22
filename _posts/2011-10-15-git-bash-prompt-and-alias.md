@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git bash prompt and alias
-date: 2011-10-21 22:37:32
+date: 2011-10-15 22:37:32
 category: Unix
 tags:
  - Git
