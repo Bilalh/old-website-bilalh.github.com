@@ -28,7 +28,7 @@ title: About
 * Objective C
 
 
-## Me ##
+## Education ##
 * Fourth Year Computer Science student at **St. Andrews**. 
 
 =--
