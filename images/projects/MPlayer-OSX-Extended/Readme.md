@@ -17,16 +17,16 @@ Icons
 -----
 I made the all the filetype icons for the project (33 in total), below are a sample the rest can seen [here](https://github.com/Bilalh/MPlayer-OSX-Extended/tree/master/extras/File%20Type%20Icons "Complete set of icons").
 
-# Video Icons #
+### Video Icons ###
 ![Video Icons](/images/projects/MPlayer-OSX-Extended/Video.png)
 
-# Audio Icons #
+### Audio Icons ###
 ![Audio Icons](/images/projects/MPlayer-OSX-Extended/Audio.png)
 
-# Subtitles Icons #
+### Subtitles Icons ###
 ![Subtitles Icons](/images/projects/MPlayer-OSX-Extended/Subtitles.png)
 
-# Binary Icon #
+### Binary Icon ###
 ![Binary Icon](/images/projects/MPlayer-OSX-Extended/binary.png)
 
 Media Keys
