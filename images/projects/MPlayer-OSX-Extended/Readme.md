@@ -1,7 +1,12 @@
+Use numbered headers: true
+
 MPlayer-OSX-Extended {#readmeTitle}
 ===================================
 
 This page contains some of my contributions to the project, see the [Main website](http://mplayerosx.ch/) for general information. 
+
+* toc
+{:toc}
 
 File Types Information 
 ----------------------
@@ -20,6 +25,13 @@ I made the all the filetype icons for the project (33 in total), below are a sam
 
 # Subtitles Icons #
 ![Subtitles Icons](/images/projects/MPlayer-OSX-Extended/Subtitles.png)
+
+# Binary Icon #
+![Binary Icon](/images/projects/MPlayer-OSX-Extended/binary.png)
+
+Media Keys
+----------
+Added support for media keys on mac keyboards. 
 
 Next Episode
 ------------
