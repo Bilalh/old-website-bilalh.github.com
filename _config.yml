@@ -204,6 +204,7 @@ projects:
     title:       MPlayer OSX Extended
     icon:        MPlayer-OSX-Extended.png
     languages:   Objective C, Icons
+    download:    https://github.com/downloads/Bilalh/MPlayer-OSX-Extended/MPlayer%20OSX%20Extended.zip
     readme:      images/projects/MPlayer-OSX-Extended/Readme.md
     description: >
       MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg.  I have contributed icons and some features to the project.
