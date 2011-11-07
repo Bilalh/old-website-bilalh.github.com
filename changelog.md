@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Mon 07 Nov 2011
+---------------
+* Added better changelog handing.
+* Allows custom url to be cashed.
+* misc
+* MPlayer OSX Extended changelog 
+
 Sun 09 Oct 2011
 ---------------
 * Fixed Facebook url.
