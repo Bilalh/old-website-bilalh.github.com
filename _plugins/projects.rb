@@ -51,10 +51,13 @@ module Jekyll
 				check_cache(name,"Readme.md")
 			end
 			self.data['readme'] = Maruku.new(readme).to_html
+			self.data['readme_name'] = info['readme_name'] if info['readme_name']
 			
 			doc = Nokogiri::HTML(self.data['readme'])
 			self.data['description'] = info['description'] || doc.css('#description').text || ""
 			
+			self.data['changelog_location'] =     info['changelog_location']     || nil
+			self.data['changelog_heading_hash'] = info['changelog_heading_hash'] || false
 			
 			if info['languages'] then
 				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp;&nbsp;")
@@ -72,7 +75,7 @@ module Jekyll
 			['title', 'version','repo','download', 'icon', 'changelog_url', 'readme_url', 'name'].each do |key|
 				self.data[key] = project.data[key]
 			end
-			copy_keys 'features_url', 'apidocs_url', 'gallery_url'
+			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 'readme_name'
 		end
 		
 		def copy_keys(*keys)
@@ -100,22 +103,27 @@ module Jekyll
 	class ChangeLog < ProjectPage
 		def initialize(site, base, dir, name, project)
 			super site, base, dir, 'changelog', project, "changelog.html"
-			# filename="/Users/bilalh/Desktop/Changelog.md"
-			changelog = check_cache(name,"Changelog.md")			
+			
+			changelog = check_cache(name,"Changelog.md",  project.data['changelog_location'])
 			changelog.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
 			changelog = Liquid::Template.parse(changelog).render(
 				{}, :filters => [Jekyll::Filters], :registers => { :site => site }
 			)
 			
+			# if true check heading with  ## Heading ##
+			regex = project.data['changelog_heading_hash'] ? /##\s+([\w.(): ]+)\s+##/m
+																									   : /\n([\w :().+]+)\n-+/m
+			
 			builder = Nokogiri::XML::Builder.new do |xml|
 				xml.table{
 					xml << "<tr>"
-					(changelog.scan(/\n([\w :().+]+)\n-+/m)).each_with_index do |e,i|
+					# (changelog.scan(/##\s+([\w.() ]+)\s+##/m)).each_with_index do |e,i|
+					(changelog.scan(regex)).each_with_index do |e,i|
 						xml << "</tr><tr>" if i %5 == 0
 						xml.td{
 							text = e.flatten[0]
 							name = text.gsub(/ \(.*\)/, '')
-							id	 = text.gsub(/\s/,'_')
+							id	 = text.strip.gsub(/\s/,'_')
 							id.gsub!(/[:+.()]/,'')
 							id.downcase!
 							xml.a(:href => "##{id}"){

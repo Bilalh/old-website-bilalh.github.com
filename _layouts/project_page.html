@@ -37,7 +37,8 @@ img.pic{
 				<a href="{{ page.features_url }}">Features &nbsp;</a>
 			{% endif %}
 			{% if page.readme_url %}
-				<a href="{{ page.readme_url }}">Readme &nbsp;</a>
+				<a href="{{ page.readme_url }}">
+					{% if page.readme_name %}{{ page.readme_name }}{% else %}Readme{% endif %} &nbsp;</a>
 			{% endif %}
 			{% if page.gallery_url %}
 				<a href="{{ page.gallery_url }}">Screenshots &nbsp;</a>

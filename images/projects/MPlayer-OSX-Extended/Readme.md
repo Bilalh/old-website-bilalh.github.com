@@ -15,7 +15,7 @@ I added information about movies. This gives the user more info when looking at 
 
 Icons
 -----
-I made the all the filetype icons for the project (33 in total), below are a sample the rest can seen [here](https://github.com/Bilalh/MPlayer-OSX-Extended/tree/master/extras/File%20Type%20Icons "Complete set of icons").
+I made the all the filetype icons for the project (34 in total), below are a sample the rest can seen [here](https://github.com/Bilalh/MPlayer-OSX-Extended/tree/master/extras/File%20Type%20Icons "Complete set of icons").
 
 ### Video Icons ###
 ![Video Icons](/images/projects/MPlayer-OSX-Extended/Video.png)

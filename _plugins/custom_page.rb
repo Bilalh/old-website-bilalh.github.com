@@ -11,15 +11,17 @@ module Jekyll
 			self.read_yaml(File.join(base, '_layouts'), layout + '.html')
 		end
 		
-		def check_cache(name, filename)
+		def check_cache(name, filename, custom_url=nil)
 			cache = "_cache/#{name}-#{filename}.cache"
 			# cache = "_cache/#{name}#{filename}.cache"
 			data = ""
+			
 			if !File.exists?(cache) then
 				# this stuff is bit hackish, but it works
-				# this will fail if Readme.md isn't present
+				# this will fail if the file isn't present
 				puts "https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}"
-				data = `curl https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}` 
+				url = custom_url ? custom_url : "https://raw.github.com/#{site.config['github_user']}/#{name}/master/#{filename}"
+				data = `curl #{url}` 
 				data.gsub!(/\`{3} ?(\w+)\n(.+?)\n\`{3}/m, "{% highlight \\1 %}\n\\2\n{% endhighlight %}")
 				data = Liquid::Template.parse(data).render(
 					{}, :filters => [Jekyll::Filters], :registers => { :site => site }
