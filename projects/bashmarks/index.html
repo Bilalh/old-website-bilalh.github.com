@@ -104,21 +104,24 @@ img.pic{
 <li>make install</li>
 
 <li>source <strong>~/.local/bin/bashmarks.sh</strong> from within your <strong>~.bash_profile</strong> or <strong>~/.bashrc</strong> file</li>
-</ol><h2 id='shell_commands'>Shell Commands</h2><pre><code>s &lt;bookmark_name&gt; - Saves the current directory as &quot;bookmark_name&quot;
-g &lt;bookmark_name&gt; - Goes (cd) to the directory associated with &quot;bookmark_name&quot;
-o &lt;bookmark_name&gt; - Open the directory associated with &quot;bookmark_name&quot; in Finder
-p &lt;bookmark_name&gt; - Prints the directory associated with &quot;bookmark_name&quot;
-d &lt;bookmark_name&gt; - Deletes the bookmark
-l                 - Lists all available bookmarks</code></pre><h2 id='example_usage'>Example Usage</h2><pre><code>$ cd /var/www/
+</ol><h2 id='shell_commands'>Shell Commands</h2><pre><code>s &lt;bookmark_name&gt;  - Saves the current directory as &quot;bookmark_name&quot;
+g &lt;bookmark_name&gt;  - Goes (cd) to the directory associated with &quot;bookmark_name&quot;
+o &lt;bookmark_name&gt;  - Open the directory associated with &quot;bookmark_name&quot; in Finder
+d &lt;bookmark_name&gt;  - Deletes the bookmark
+l | g              - Lists all available bookmarks
+l &lt;bookmark_name&gt;  - Lists the specified bookmark associated with &quot;bookmark_name&quot;
+_p &lt;bookmark_name&gt; - Prints the directory associated with &quot;bookmark_name&quot;</code></pre><h2 id='example_usage'>Example Usage</h2><pre><code>$ cd /var/www/
 $ s webfolder
 $ cd /usr/local/lib/
 $ s locallib
 $ l
-    webfolder    /var/www/
-    locallib     /usr/local/lib/
+	webfolder	 /var/www/
+	locallib	 /usr/local/lib/
 $ g web&lt;tab&gt;
-$ g webfolder
-$ o webfolder </code></pre><h2 id='where_bashmarks_are_stored'>Where Bashmarks are stored</h2><p>All of your directory bookmarks are saved in a file called &#8220;.sdirs&#8221; in your HOME directory.</p>
+$ g webfolder	  # cd to /var/www/
+$ o webfolder	  # Open in Finder if on mac
+$ l locallib
+	locallib	 /usr/local/lib/</code></pre><h2 id='where_bashmarks_are_stored'>Where Bashmarks are stored</h2><p>All of your directory bookmarks are saved in a file called &#8220;.sdirs&#8221; in your HOME directory.</p>
 
 	
 
