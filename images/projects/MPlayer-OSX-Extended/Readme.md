@@ -27,7 +27,7 @@ I made the all the filetype icons for the project (34 in total), below are a sam
 ![Subtitles Icons](/images/projects/MPlayer-OSX-Extended/Subtitles.png)
 
 ### Binary Icon ###
-![Binary Icon](/images/projects/MPlayer-OSX-Extended/binary.png)
+![Binary Icon](/images/projects/MPlayer-OSX-Extended/Binary.png)
 
 Media Keys
 ----------
