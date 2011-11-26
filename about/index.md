@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+no_sidebar: true
 ---
 
 <div id="results">
