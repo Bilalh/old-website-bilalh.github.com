@@ -103,7 +103,7 @@ img.pic{
 </ul><h2 id='install'>Install</h2><ul>
 <li>Put the scripts in your <code>$PATH</code></li>
 
-<li>alias for easy use e.g. add <code>alias i=&#39;itunes.sh&#39;</code> to your .bashrc</li>
+<li>See below for bash completion.</li>
 </ul><h2 id='options'>Options</h2><pre><code>Usage: itunes.sh &lt;option&gt;
 Options: (short)
  (s) status          : Shows iTunes&#39; status, and track info
@@ -142,11 +142,35 @@ Options: (short)
  (e) repeat off      : Set repeat to off
 
 
-     [0-5] {force}  : Set the current song rating
- (6) 4.5   {force}  : Set the current song rating to 4½ stars
+     [0-5]          : Set the current song rating
+ (6) 4.5            : Set the current song rating to 4½ stars
 
  (t) stop           : Stop iTunes.
- (q) quit           : Quit iTunes.</code></pre><h2 id='other'>Other</h2><ul>
+ (q) quit           : Quit iTunes.</code></pre><h2 id='bash_completion'>Bash Completion</h2><ul>
+<li>
+<p>Add this to your <code>.bash_profile</code> or <code>.bashrc</code></p>
+
+<pre><code>function i(){
+	itunes.sh &quot;$@&quot;
+}
+
+function _ilist(){
+	itunes.sh commands
+}
+
+function _icomp(){
+	local curw
+	COMPREPLY=()
+	curw=${COMP_WORDS[COMP_CWORD]}
+	COMPREPLY=($(compgen -W &#39;`_ilist`&#39; -- $curw))
+	return 0
+}
+
+#  Completion for itunes.sh
+shopt -s progcomp
+complete -F _icomp i</code></pre>
+</li>
+</ul><h2 id='other'>Other</h2><ul>
 <li>The extra folder contain extra scripts for controlling iTunes see the scripts for details.</li>
 
 <li>These scripts were moved from https://github.com/Bilalh/Scripts</li>
