@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git bash prompt and alias
+title: git bash prompt and aliases
 date: 2011-10-15 22:37:32
 category: Unix
 tags:
