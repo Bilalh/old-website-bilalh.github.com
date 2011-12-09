@@ -47,7 +47,7 @@ img.pic{
 				<a href="{{ page.changelog_url }}">Changelog &nbsp;</a>
 			{% endif %}
 			{% if page.apidocs_url %}
-				<a href="{{ page.apidocs_url }}">Class Documentation &nbsp;</a>
+				<a href="{{ page.apidocs_url }}">{% if page.apidocs_name %}{{ page.apidocs_name }}{% else %}Class Documentation{% endif %} &nbsp;</a>
 			{% endif %}
 		</h3>
 </div>

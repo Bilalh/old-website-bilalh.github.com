@@ -159,8 +159,10 @@ projects:
     readme:      images/projects/MPlayer-OSX-Extended/Readme.md
     readme_name: Main
     changelog:   true
+    apidocs:     true
     changelog_location: https://raw.github.com/Bilalh/MPlayer-OSX-Extended/readme/CHANGELOG.md
     changelog_heading_hash: true
+    apidocs_name: Help
     description: >
       MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg.  I have contributed icons and some features to the project.
   
