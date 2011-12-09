@@ -22,6 +22,7 @@ no_sidebar: true
 * Unix
 
 ### Other ###
+* C++
 * Git 
 * SVN
 * SQL
