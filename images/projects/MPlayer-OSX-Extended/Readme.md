@@ -36,3 +36,7 @@ Added support for media keys on mac keyboards.
 Next Episode
 ------------
 Added a menu item that plays the next episode based on the currently playing file.  
+
+Help 
+----
+I am wrote most of the help.  See [Help](/docs/MPlayer-OSX-Extended "MPlayer-OSX-Extended help" ) to view it
