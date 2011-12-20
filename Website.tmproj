@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2011-10-15-git-bash-prompt-and-aliases.md</string>
+	<string>index.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,62 +18,47 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>363</integer>
+	<integer>223</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_cache/tagger-Changelog.md.cache</key>
+		<key>images/projects/MPlayer-OSX-Extended/Readme.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>24</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>_posts/2011-10-15-git-bash-prompt-and-aliases.md</key>
+		<key>index.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>34</integer>
+				<integer>6</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>15</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>about/index.md</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>19</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>about/index.md</string>
-		<string>_cache/tagger-Changelog.md.cache</string>
-		<string>_posts/2011-10-15-git-bash-prompt-and-aliases.md</string>
+		<string>images/projects/MPlayer-OSX-Extended/Readme.md</string>
+		<string>index.html</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
-	<true/>
+	<false/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -81,32 +66,10 @@
 			<key>isExpanded</key>
 			<true/>
 			<key>subItems</key>
-			<dict>
-				<key>_layouts</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>_posts</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>about</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-			</dict>
+			<dict/>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{282, 167}, {978, 648}}</string>
+	<string>{{313, 230}, {978, 648}}</string>
 </dict>
 </plist>
