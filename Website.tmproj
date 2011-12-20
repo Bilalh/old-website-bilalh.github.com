@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>_posts/2011-12-20-mplayer-osx-extended.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,42 +18,27 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>223</integer>
+	<integer>215</integer>
 	<key>metaData</key>
 	<dict>
-		<key>images/projects/MPlayer-OSX-Extended/Readme.md</key>
+		<key>_posts/2011-12-20-mplayer-osx-extended.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>174</integer>
 				<key>line</key>
-				<integer>24</integer>
+				<integer>35</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>index.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>6</integer>
-				<key>line</key>
-				<integer>15</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>14</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>images/projects/MPlayer-OSX-Extended/Readme.md</string>
-		<string>index.html</string>
+		<string>_posts/2011-12-20-mplayer-osx-extended.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -66,10 +51,18 @@
 			<key>isExpanded</key>
 			<true/>
 			<key>subItems</key>
-			<dict/>
+			<dict>
+				<key>_layouts</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+			</dict>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{313, 230}, {978, 648}}</string>
+	<string>{{373, 97}, {827, 669}}</string>
 </dict>
 </plist>
