@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>_posts/2011-12-20-mplayer-osx-extended.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -20,30 +18,11 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>215</integer>
 	<key>metaData</key>
-	<dict>
-		<key>_posts/2011-12-20-mplayer-osx-extended.md</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>174</integer>
-				<key>line</key>
-				<integer>35</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>14</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>_posts/2011-12-20-mplayer-osx-extended.md</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
-	<false/>
+	<true/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -52,6 +31,13 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
+				<key>_includes</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
 				<key>_layouts</key>
 				<dict>
 					<key>isExpanded</key>

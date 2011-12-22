@@ -18,12 +18,12 @@ New Features
 
 ### File Types Information ###
 
-I added information about movies. This gives the user more info when looking at video/audio  files in Finder.
+I added type information about movies as shown below. This gives the user more info when looking at video/audio  files in Finder.
 ![Filetypes](/images/projects/MPlayer-OSX-Extended/Filetypes.png)
 
 
 ### Media Keys ###
-Support for media keys (F7, F8, F9) on mac keyboards has been added. 
+Support for media keys (F7, F8, F9) on Apple keyboards has been added. 
 
 | Key              | Function          |
 | ---------------- | ----------------- |
