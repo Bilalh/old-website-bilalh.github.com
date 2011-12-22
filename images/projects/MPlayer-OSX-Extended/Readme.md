@@ -10,12 +10,12 @@ This page contains some of my contributions to the project, see the [Main websit
 
 File Types Information 
 ----------------------
-I added information about movies. This gives the user more info when looking at video/audio  files in Finder.
+I added type information about movies as shown below. This gives the user more info when looking at video/audio  files in Finder.
 ![Filetypes](/images/projects/MPlayer-OSX-Extended/Filetypes.png)
 
-Media Keys
-----------
-Added support for media keys on mac keyboards. 
+
+### Media Keys ###
+Support for media keys (F7, F8, F9) on Apple keyboards has been added. 
 
 | Key              | Function          |
 | ---------------- | ----------------- |
@@ -25,15 +25,15 @@ Added support for media keys on mac keyboards.
 
 Next Episode
 ------------
-Added a menu item (Play Next Episode) that plays the next episode based on the currently playing file. This is  bound to  ⌘E
+Added a menu item (Play Next Episode) that plays the next episode based on the currently playing file. This is bound to  ⌘E
 
 Help 
 ----
-I am wrote most of the help.  See [Help](/docs/MPlayer-OSX-Extended "MPlayer-OSX-Extended help" ) to view it
+I am (re)wrote most of the help.  See [Help](/docs/MPlayer-OSX-Extended "MPlayer-OSX-Extended help" ) to view it
 
 Icons
 -----
-I made the all the filetype icons for the project (34 in total), below are a sample the rest can seen [here](https://github.com/Bilalh/MPlayer-OSX-Extended/tree/build/extras/File%20Type%20Icons "Complete set of icons").
+I made all the filetype icons for the project (34 in total), below are a sample the rest can seen [here](https://github.com/Bilalh/MPlayer-OSX-Extended/tree/build/extras/File%20Type%20Icons "Complete set of icons").
 
 ### Video Icons ###
 ![Video Icons](/images/projects/MPlayer-OSX-Extended/Video.png)
