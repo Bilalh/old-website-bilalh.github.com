@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>images/projects/MPlayer-OSX-Extended/Readme.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,11 +20,61 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>215</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>_posts/2011-12-20-mplayer-osx-extended.md</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>20</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>104</integer>
+			<key>firstVisibleLine</key>
+			<integer>9</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>32</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>20</integer>
+			</dict>
+		</dict>
+		<key>images/projects/MPlayer-OSX-Extended/Readme.md</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>5</integer>
+				<key>line</key>
+				<integer>33</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>15</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>_posts/2011-12-20-mplayer-osx-extended.md</string>
+		<string>images/projects/MPlayer-OSX-Extended/Readme.md</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
-	<true/>
+	<false/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -31,24 +83,40 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
-				<key>_includes</key>
+				<key>_posts</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
 					<key>subItems</key>
 					<dict/>
 				</dict>
-				<key>_layouts</key>
+				<key>images</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
 					<key>subItems</key>
-					<dict/>
+					<dict>
+						<key>projects</key>
+						<dict>
+							<key>isExpanded</key>
+							<true/>
+							<key>subItems</key>
+							<dict>
+								<key>MPlayer-OSX-Extended</key>
+								<dict>
+									<key>isExpanded</key>
+									<true/>
+									<key>subItems</key>
+									<dict/>
+								</dict>
+							</dict>
+						</dict>
+					</dict>
 				</dict>
 			</dict>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{373, 97}, {827, 669}}</string>
+	<string>{{523, 149}, {827, 669}}</string>
 </dict>
 </plist>
