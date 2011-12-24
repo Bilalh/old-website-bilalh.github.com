@@ -2,7 +2,7 @@
 <html>
 <head>
   
-    <title>Tag: Misc - Bilal Syed Hussain</title>
+    <title>Fixing corrupt mp3s - Bilal Syed Hussain</title>
   
   
   <meta name="author" content="Bilal Hussain" />
@@ -50,38 +50,96 @@
 
     
     <div id="main" class="span-17">
-      <h1 class="large-bottom">Tag: Misc</h1>
+      <style type="text/css">
+h3,h4{ 
+	color: #335E8D;
+}     
+h3,h4 {
+	margin-left   : 3px;
+	font-variant  : small-caps;
+	font-weight   : normal;
+	border-bottom : 1px dotted #ccc;  
+}
+</style>
+
+
 <div id="dReturn"  style="display:none">
+	<h1>Search Results</h1>
 	<a id="return"> Return</a>
 </div>
 
 <div id="results">
-	
-</div>
- 
-<div id="main-content">
-
-
-  <h2><a href="/2011/09/08/mac-keyboard-symbols" class="dark-link">Mac Keyboard Symbols</a></h2>
-  <h4 class="low-top">
-    Posted on September 08, 2011
-    
-      
-        in <a href="/categories/osx">OSX</a>
-      
-    
-  </h4>
-  
-  <p>Below is the list of symbols on mac keyboards with their Unicode equivalents which is useful for readme. SymbolNameUnicode ⎋ Escape U+238B ⇥ Tab forward U+21E5 ⇤ Tab back U+21E4 ⇪ Capslock U+21EA ⇧ Shift U+21E7 ⌃ Control U+2303 ⌥ Option (Alt, Alternative) U+2325  Apple symbol U+F8FF ⌘ Command...</p>
-  <p class><a href="/2011/09/08/mac-keyboard-symbols">Read more...</a></p>
-  
-
 
 </div>
 
 <div class="small quiet" id="indextank" style="display:none">
 Search powered by IndexTank
 </div>
+
+<div class="post" id="main-content">
+  <h1>Fixing corrupt mp3s</h1>
+  <h4 class="large-bottom">
+    Posted on December 24, 2011
+     in <a href="/categories/unix">Unix</a> 
+  </h4>
+  
+  <div class="content">
+    <p>To fix corrupt mp3 use <a href='http://mp3val.sourceforge.net/'>mp3val</a>. The website has a binary for Windows, and sources for other platforms (Linux, Mac OS X).</p>
+
+<h2 id='installation'>Installation</h2>
+
+<p>To install on a Mac either install it the easy way:</p>
+
+<pre><code>brew install mp3val</code></pre>
+
+<p>or download the sources and then <code>cd</code> to the directory of sources and then do</p>
+
+<pre><code>make -f Makefile.gcc</code></pre>
+
+<p>and then place the binaries in <code>/usr/local/bin</code></p>
+
+<h2 id='usage'>Usage</h2>
+
+<p>To fix the corrupt mp3s use</p>
+
+<pre><code>mp3val -f</code></pre>
+
+<p>which tells <code>mp3val</code> to fix the errors in the mp3s. Wildcards can be used e.g.</p>
+
+<pre><code>mp3val -f *.mp3</code></pre>
+
+<p>which fix all mp3 in the current directory.</p>
+
+<p><code>mp3val</code> keeps all the old tags as well, which is useful</p>
+  </div>
+
+  <div class="next-prev-nav low-top">
+    
+  
+    
+    
+  
+    
+      <a href="/2011/12/20/mplayer-osx-extended" rel="previous" title="MPlayer OSX Extended">MPlayer OSX Extended</a>&nbsp;&raquo;
+    
+  
+    <br />
+  </div>
+
+  
+  <hr />
+  
+  
+    Tagged in
+    
+      <strong><a href="/tags/utilities">Utilities</a></strong>, 
+    
+      <strong><a href="/tags/audio">Audio</a></strong>
+    
+    <br />
+  
+</div>
+
     </div>
     
     
