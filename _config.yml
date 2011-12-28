@@ -66,7 +66,7 @@ projects:
       - title: Auto Tagging - Results
         image: s007.png 
         description: >
-          The field to tag can be changed. 
+          The field to be tagged can be changed. 
 
       - title: Auto Tagging - languages 
         image: s008.png 
@@ -76,7 +76,7 @@ projects:
       - title: Preferences 
         image: s009.png 
         description: >
-           The columns in the table can be chosen. The starting dolder can also be specifed.
+           The columns in the table can be chosen. The starting folder can also be specifed.
     
 
     features:
