@@ -10,7 +10,7 @@ no_sidebar: true
 
 +--{main-content}
 
-## [Résume](Bilal_Husasin-Resume.pdf "Bilal Hussain's Résume") ##
+## [Résume](Bilal_Husasin-Resume.pdf "Bilal Syed Hussain's Résume") ##
 
 ## Skills ##
 
@@ -32,6 +32,8 @@ no_sidebar: true
 
 ## Education ##
 * Fourth Year Computer Science student at **St. Andrews**. 
+
+## [Summary of Open Source Projects](http://resume.github.com/?Bilalh "Summary of Open Source Projects") ##
 
 =--
 

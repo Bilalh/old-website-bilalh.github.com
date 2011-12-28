@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2011-12-24-fixing-corrupt-mp3s.md</string>
+	<string>_config.yml</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,6 +21,20 @@
 	<integer>278</integer>
 	<key>metaData</key>
 	<dict>
+		<key>_config.yml</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>9</integer>
+				<key>line</key>
+				<integer>25</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>6</integer>
+		</dict>
 		<key>_posts/2011-10-09-using-sed.md</key>
 		<dict>
 			<key>caret</key>
@@ -35,25 +49,11 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>_posts/2011-12-24-fixing-corrupt-mp3s.md</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>15</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>2</integer>
-		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>_posts/2011-10-09-using-sed.md</string>
-		<string>_posts/2011-12-24-fixing-corrupt-mp3s.md</string>
+		<string>_config.yml</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
