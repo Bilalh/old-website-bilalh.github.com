@@ -2,7 +2,7 @@
 layout: post
 title: MPlayer OSX Extended
 date: 2011-12-20 17:37:31
-category: OSX
+category: Release
 tags:
  - MPlayer
 ---

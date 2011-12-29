@@ -18,7 +18,7 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>278</integer>
+	<integer>234</integer>
 	<key>metaData</key>
 	<dict>
 		<key>_config.yml</key>
@@ -26,39 +26,24 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>25</integer>
+				<integer>146</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>6</integer>
-		</dict>
-		<key>_posts/2011-10-09-using-sed.md</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>17</integer>
-				<key>line</key>
-				<integer>29</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>21</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>_posts/2011-10-09-using-sed.md</string>
 		<string>_config.yml</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
-	<false/>
+	<true/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -67,40 +52,17 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
-				<key>_posts</key>
+				<key>_layouts</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
 					<key>subItems</key>
 					<dict/>
 				</dict>
-				<key>images</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict>
-						<key>projects</key>
-						<dict>
-							<key>isExpanded</key>
-							<true/>
-							<key>subItems</key>
-							<dict>
-								<key>MPlayer-OSX-Extended</key>
-								<dict>
-									<key>isExpanded</key>
-									<true/>
-									<key>subItems</key>
-									<dict/>
-								</dict>
-							</dict>
-						</dict>
-					</dict>
-				</dict>
 			</dict>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{481, 145}, {827, 669}}</string>
+	<string>{{481, 135}, {910, 679}}</string>
 </dict>
 </plist>

@@ -27,11 +27,11 @@ projects:
   tagger:
     title:     Tagger
     icon:      Tagger.png
-    version:   1.4.2
+    version:   1.5
     languages: Objective C, Ruby, C++
     changelog: true
     apidocs:   false
-    download:  https://github.com/downloads/Bilalh/Tagger/v1-4-2-binaries.zip
+    download:  https://github.com/downloads/Bilalh/Tagger/v1-5-Tagger-binaries.zip
     gallery:   
       - title: Multiplen File Editing
         image: s001.png 
