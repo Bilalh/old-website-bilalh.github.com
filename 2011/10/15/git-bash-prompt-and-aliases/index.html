@@ -91,34 +91,23 @@ Search powered by IndexTank
 	
 	<div class="content">
 		<p>You can get git to shown the information such as which branch you are on by using the following:</p>
-
-<p><div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\u$(__git_ps1 &quot;@%s&quot;) \$ &#39;</span>
+<p><p><div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\u$(__git_ps1 &quot;@%s&quot;) \$ &#39;</span>
 </code></pre>
-</div></p>
+</div></p></p>
 
-<p>This would as display as <code>User@master $ </code>. You can git to shown even more information by using the following.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWDIRTYSTATE</span><span class='o'>=</span><span class='nb'>true</span>
+<p><p>This would as display as <code>User@master $ </code>. You can git to shown even more information by using the following.</p> <div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWDIRTYSTATE</span><span class='o'>=</span><span class='nb'>true</span>
 <span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWUNTRACKEDFILES</span><span class='o'>=</span><span class='nb'>true</span>
 <span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWSTASHSTATE</span><span class='o'>=</span><span class='nb'>true</span>
 </code></pre>
-</div>
-<ul>
-<li><code>GIT_PS1_SHOWDIRTYSTATE</code> adds a <code>*</code> at the end if the branch has been changed e.g <code>User@master * $ </code></li>
+</div> <pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GIT_PS1_SHOWDIRTYSTATE&lt;/code&gt; adds a &lt;code&gt;*&lt;/code&gt; at the end if the branch has been changed e.g &lt;code&gt;User@master * $ &lt;/code&gt;&lt;/li&gt;</pre></p>
 
-<li><code>GIT_PS1_SHOWUNTRACKEDFILES</code> adds a <code>%</code> at end if the branch has untracked files e.g <code>User@master % $ </code></li>
-
-<li><code>GIT_PS1_SHOWSTASHSTATE</code> shows a if the stash contains anything.</li>
-
-<li><code>+</code> at the end means that there are changed to be committed.</li>
-</ul>
-
-<p>For a full colour prompt use</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\[$(tput setaf 3)\]\u\[$(tput sgr0)$(tput setaf 5)\]\[$(tput sgr0)$(tput setaf 2)\]$(__git_ps1 &quot; [%s]&quot;) \[$(tput sgr0)\]$ &#39;</span>
+<p><li><code>GIT_PS1_SHOWUNTRACKEDFILES</code> adds a <code>%</code> at end if the branch has untracked files e.g <code>User@master % $ </code></li></p>
+<li><code>GIT_PS1_SHOWSTASHSTATE</code> shows a if the stash contains anything.</li><li><code>+</code> at the end means that there are changed to be committed.</li><pre class='markdown-html-error' style='border: solid 3px red; background-color: pink'>REXML could not parse this XML/HTML: 
+&lt;/ul&gt;</pre><p>For a full colour prompt use</p><div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\[$(tput setaf 3)\]\u\[$(tput sgr0)$(tput setaf 5)\]\[$(tput sgr0)$(tput setaf 2)\]$(__git_ps1 &quot; [%s]&quot;) \[$(tput sgr0)\]$ &#39;</span>
 </code></pre>
-</div>
-<p>which shows <code>bilalh [mediakeys] $</code> but in colour</p>
-
-<p>This has been tested with <code>git version 1.7.3.4</code> but should work with 1.6.5+ and requires git <code>bash_completion</code>, see <a href='https://github.com/markgandolfo/git-bash-completion,' title='git bash_completion'>git bash completion</a> if you don&#8217;t have it.</p>
+</div><p>which shows <code>bilalh [mediakeys] $</code> but in colour</p><p>This has been tested with <code>git version 1.7.3.4</code> but should work with 1.6.5+ and requires git <code>bash_completion</code>, see <a href='https://github.com/markgandolfo/git-bash-completion,' title='git bash_completion'>git bash completion</a> if you don&#8217;t have it.</p>
 	</div>
 
 	<div class="next-prev-nav low-top">
