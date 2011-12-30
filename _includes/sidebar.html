@@ -5,13 +5,6 @@
 			<input type="text" id="query" name="query"/>
 			<input type="submit" id="search-submit" value="Go" />
 		</form>
-		<div class="title">Latest Posts </div>
-	
-		{% for post in site.posts limit: 3 %}
-			<h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
-			<span class="quiet low-top">{{ post.date | format_date }}</span>
-		{% endfor %} 
-		   <h5><a href="/feed">RSS</a></h5>
 	</div>
 
 	<div class="sidebar-module">
