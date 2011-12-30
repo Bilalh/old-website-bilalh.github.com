@@ -312,6 +312,9 @@ code, tt {
 	}
 }
 
+h2 {font-size: 1.9em; }
+h3 {font-size: 1.6em; }
+h4 {font-size: 1.3em; }
 .readme {
 	margin-top: 20px;
 	h1 { font-size: 2.2em; }
@@ -340,7 +343,7 @@ code, tt {
 // Little Classes
 
 .push-1-5 { margin: 0 -60px 1.5em 60px; }
-.h1-5 { font-size: 2.2em; } // Make a h2 look like a "h1.5"
+.h1-5 { font-size: 2em; } // Make a h2 look like a "h1.5"
 .low-top { margin-top: 0.4em; }
 .large-bottom { margin-bottom: 0.7em; }
 .large-para { font-size: 1.5em; }
