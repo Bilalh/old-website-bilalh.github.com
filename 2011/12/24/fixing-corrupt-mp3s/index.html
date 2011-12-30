@@ -92,7 +92,33 @@ Search powered by IndexTank
 	</h4>
 	
 	<div class="content">
-		<p>To fix corrupt mp3 use <a href='http://mp3val.sourceforge.net/'>mp3val</a>. The website has binaries for Windows, and sources for other platforms (Linux, Mac OS X).</p><h2 id='installation'>Installation</h2><p>To install on a Mac either install it the easy way:</p><pre><code>brew install mp3val</code></pre><p>or download the sources and then <code>cd</code> to the directory of sources and then do</p><pre><code>make -f Makefile.gcc</code></pre><p>and then place the binaries in <code>/usr/local/bin</code></p><h2 id='usage'>Usage</h2><p>To fix the corrupt mp3s use</p><pre><code>mp3val -f</code></pre><p>which tells <code>mp3val</code> to fix the errors in the mp3s. Wildcards can be used e.g.</p><pre><code>mp3val -f *.mp3</code></pre><p>which fix all mp3 in the current directory.</p><p><code>mp3val</code> keeps all the old tags as well, which is useful</p>
+		<p>To fix corrupt mp3 use <a href='http://mp3val.sourceforge.net/'>mp3val</a>. The website has binaries for Windows, and sources for other platforms (Linux, Mac OS X).</p>
+
+<h2 id='installation'>Installation</h2>
+
+<p>To install on a Mac either install it the easy way:</p>
+
+<pre><code>brew install mp3val</code></pre>
+
+<p>or download the sources and then <code>cd</code> to the directory of sources and then do</p>
+
+<pre><code>make -f Makefile.gcc</code></pre>
+
+<p>and then place the binaries in <code>/usr/local/bin</code></p>
+
+<h2 id='usage'>Usage</h2>
+
+<p>To fix the corrupt mp3s use</p>
+
+<pre><code>mp3val -f</code></pre>
+
+<p>which tells <code>mp3val</code> to fix the errors in the mp3s. Wildcards can be used e.g.</p>
+
+<pre><code>mp3val -f *.mp3</code></pre>
+
+<p>which fix all mp3 in the current directory.</p>
+
+<p><code>mp3val</code> keeps all the old tags as well, which is useful</p>
 	</div>
 
 	<div class="next-prev-nav low-top">

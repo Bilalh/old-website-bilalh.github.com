@@ -92,13 +92,22 @@ Search powered by IndexTank
 	</h4>
 	
 	<div class="content">
-		<p>Useful <code>sed</code> commands</p><h3 id='delete_nth_line_inplace'>Delete nth line inplace</h3><div class='highlight'><pre><code class='bash'>sed -i .tmp <span class='s1'>&#39;&lt;n&gt;d&#39;</span> &lt;filename&gt;
+		<p>Useful <code>sed</code> commands</p>
+
+<h3 id='delete_nth_line_inplace'>Delete nth line inplace</h3>
+<div class='highlight'><pre><code class='bash'>sed -i .tmp <span class='s1'>&#39;&lt;n&gt;d&#39;</span> &lt;filename&gt;
 </code></pre>
-</div><h3 id='get_the_nth_line'>Get the nth line</h3><div class='highlight'><pre><code class='bash'>sed <span class='s1'>&#39;&lt;n&gt;q;d&#39;</span> &lt;filename&gt;
+</div>
+<h3 id='get_the_nth_line'>Get the nth line</h3>
+<div class='highlight'><pre><code class='bash'>sed <span class='s1'>&#39;&lt;n&gt;q;d&#39;</span> &lt;filename&gt;
 </code></pre>
-</div><h3 id='delete_the_first_10_lines_of_a_file'>Delete the first 10 lines of a file</h3><div class='highlight'><pre><code class='bash'>sed <span class='s1'>&#39;1,10d&#39;</span>
+</div>
+<h3 id='delete_the_first_10_lines_of_a_file'>Delete the first 10 lines of a file</h3>
+<div class='highlight'><pre><code class='bash'>sed <span class='s1'>&#39;1,10d&#39;</span>
 </code></pre>
-</div><h3 id='delete_lines_matching_pattern'>Delete lines matching pattern</h3><div class='highlight'><pre><code class='bash'> sed <span class='s1'>&#39;/pattern/d&#39;</span>
+</div>
+<h3 id='delete_lines_matching_pattern'>Delete lines matching pattern</h3>
+<div class='highlight'><pre><code class='bash'> sed <span class='s1'>&#39;/pattern/d&#39;</span>
 </code></pre>
 </div>
 	</div>
