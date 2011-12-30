@@ -36,7 +36,7 @@ Search powered by IndexTank
 
 		<span class="tag-list">
 			{% for tag in page.tags %}
-			<a href="/tags/{{ tag }}">{{ tag }}</a>
+			<a href="/tags/{{ tag| slugize }}">{{ tag }}</a>
 			{% endfor %}
 		</span>
 	</h4>
@@ -64,14 +64,5 @@ Search powered by IndexTank
 		<br />
 	</div>
 
-	
 	<hr />
-	
-	{% if page.tags %}
-		Tagged in
-		{% for tag in page.tags %}
-			<strong><a href="/tags/{{ tag | slugize }}">{{ tag }}</a></strong>{% unless forloop.last %}, {% endunless %}
-		{% endfor %}
-		<br />
-	{% endif %}
 </div>

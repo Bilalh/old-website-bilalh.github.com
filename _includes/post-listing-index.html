@@ -9,7 +9,7 @@
     </span>
     <span class="tag-list">
       {% for tag in post.tags %}
-      <a href="/tags/{{ tag }}">{{ tag }}</a>
+      <a href="/tags/{{ tag | slugize }}">{{ tag }}</a>
       {% endfor %}
     </span>
   </div>
