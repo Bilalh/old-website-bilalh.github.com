@@ -20,10 +20,10 @@ There also a <a href="/blog">blog</a> with an <a href='/fee'>RSS</a> feed that c
 </div> -->
 
 
-<div class="span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
+<div class="span-16">
 	<h2 class="h1-5">Latest Posts</h2>
 
 	{% assign posts = site.posts %}
-	{% assign listing_limit = 2 %}
-	{% include post-listing.html %}
+	{% assign listing_limit = 5 %}
+	{% include post-listing-index.html %}
 </div>  

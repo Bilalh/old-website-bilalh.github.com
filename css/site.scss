@@ -14,7 +14,7 @@ blockquote {
     font-size:1.0em;
     margin:20px 10px;
     padding:3px;
-		font-style: normal;
+	font-style: normal;
 }
 
 a#return {
@@ -351,3 +351,94 @@ code, tt {
 	color: #314853;
 	&:hover { color: #407C8F; }
 }
+
+// from pigoz.github.com
+
+$border: #dddddd;
+$header-color: white;
+$header-shadow: #333;
+$header-bg-light: rgb(27,141,200);
+$header-bg-dark: rgb(30,80,60);
+$header-border-dark: rgb(93,49,229);
+$header-border-light: rgb(120,70,255);
+$text-color: #444;
+$text-shadow: #333;
+
+@mixin pgz-padded {
+  .inner {
+    padding: 0.5em 1em;
+  }
+}
+
+@mixin pgz-area {
+  margin-top: 0.4em;
+  background-color: white;
+  border-bottom: 1px solid $border;
+  h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.3em 0;
+    }
+}
+
+@mixin pgz-smallfont {
+  font-size: 83%;
+}
+
+@mixin pgz-header {
+  color: $header-color;
+  @include background-gradient($header-bg-light, $header-bg-dark);
+//  @include  background(linear-gradient(top, $header-bg-light, $header-bg-dark));
+  font-size: 130%;
+}
+
+@mixin pgz-tag {
+  a {
+    background: none repeat scroll 0 0 $header-bg-dark;
+    @include border-radius(4px);
+    @include pgz-header;
+    @include pgz-smallfont;
+
+    border-bottom: 1px solid $header-border-dark;
+    border-left: 1px solid $header-border-dark;
+    border-right: 1px solid $header-border-dark;
+
+	
+    &:hover {
+      //@include background(linear-gradient(top, $bg, $bg));
+    }
+
+
+	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-size: 11px;
+	height: 0px;
+	image-rendering: auto;
+	left: auto;
+	list-style-type: disc;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 2px;
+	text-decoration: none;
+	text-indent: 0px;
+	text-shadow: none;
+	text-transform: none;
+	top: auto;
+  }
+}
+
+.post-listing {
+//  @include grid(9);
+  @include pgz-area;
+  @include pgz-padded;
+
+  .tag-list {
+    float: right;
+    @include pgz-tag;
+  }
+
+  .title .date {
+    margin: 0 1.5em 0 0;
+  }
+}
+
