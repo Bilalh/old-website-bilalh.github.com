@@ -58,13 +58,13 @@ function OnLoad() {
 google.setOnLoadCallback(function() {
   $(function() {
 		OnLoad()
-		$(".gsc-input > input").val("Search...").addClass("empty");
+		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
      
     // When you click on #search
     $(".gsc-input > input").focus(function(){
      
         // If the value is equal to "Search..."
-        if($(this).val() == "Search...") {
+        if($(this).val() == "Search... powered by Google") {
             // remove all the text and the class of .empty
             $(this).val("").removeClass("empty");;
         }
@@ -77,7 +77,7 @@ google.setOnLoadCallback(function() {
         // If the input field is empty
         if($(this).val() == "") {
             // Add the text "Search..." and a class of .empty
-            $(this).val("Search...").addClass("empty");
+            $(this).val("Search... powered by Google").addClass("empty");
         }
      
     });
