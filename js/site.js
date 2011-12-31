@@ -97,12 +97,11 @@ window.addEvent('domready',function(){
         options = new google.search.DrawOptions();
 
       //set google options
-      options.setDrawMode(google.search.SearchControl.DRAW_MODE_TABBED);
       options.setInput(searchBox);
 
       //set search options
-      search.setUserDefinedClassSuffix('siteSearch');
-      search.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+      // search.setUserDefinedClassSuffix('siteSearch');
+      // search.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
 	  search.setSiteRestriction('bilalh.github.com');
 
 
