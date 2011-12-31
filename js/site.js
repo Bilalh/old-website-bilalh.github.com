@@ -21,24 +21,29 @@ $(document).ready(function() {
 
 window.addEvent('domready',function(){
 
-  /* search */
-  var searchBox = $('.gsc-input > input'), searchLoaded=false, 
-	searchFn = function() {
-
-      //add listeners to search box
-      searchBox.addEvents({
-        keyup: function(e) {
-          if(searchBox.value && searchBox.value != "Search") {
-            container.fade(0.9);
-            control.execute(searchBox.value);
-          }
-          else {
-            container.fade(0);
-          }
+    // Add the value of "Search..." to the input field and a class of .empty
+    $(".gsc-input > input").val("Search...").addClass("empty");
+     
+    // When you click on #search
+    $(".gsc-input > input").focus(function(){
+     
+        // If the value is equal to "Search..."
+        if($(this).val() == "Search...") {
+            // remove all the text and the class of .empty
+            $(this).val("").removeClass("empty");;
         }
-      });
-      searchBox.removeEvent('focus',searchFn);
-    }
-  };
-  searchBox.addEvent('focus',searchFn);
+        this.select();
+    });
+     
+    // When the focus on #search is lost
+    $(".gsc-input > input").blur(function(){
+     
+        // If the input field is empty
+        if($(this).val() == "") {
+            // Add the text "Search..." and a class of .empty
+            $(this).val("Search...").addClass("empty");
+        }
+     
+    });
+
 });
