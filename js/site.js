@@ -11,7 +11,7 @@ function makeEmail()
 }                           
 
 
-// $(document).ready(function() {
-//      
-//     $('a#mail').prop("href", makeEmail())
-// });
+$(document).ready(function() {
+     
+    $('a#mail').prop("href", makeEmail())
+});
