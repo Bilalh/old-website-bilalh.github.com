@@ -101,6 +101,8 @@ window.addEvent('domready',function(){
       options.setInput(searchBox);
 
       //set search options
+      search.setUserDefinedClassSuffix('siteSearch');
+      search.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
 	  search.setSiteRestriction('bilalh.github.com');
 
 
