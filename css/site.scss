@@ -33,25 +33,6 @@ a#return:hover{
 //	color: blue;
 }
 
-#query { border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#b2a48c), to(#9b8d74));
-	background: -moz-linear-gradient(top, #b2a48c, #9b8d74);
-	text-shadow: rgba(0,0,0,.2) 0 0 5px;
-}
-
-#search-submit {
-	border-radius: 50px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-mox-box-shadow: 0 0 5px black;
-
-	/* Webkit-transition */
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 0.4s, 0.4s;
-	-webkit-transition-timing-function: linear, ease-in;
-	}
 
 
 div.project{
@@ -448,6 +429,28 @@ $text-shadow: #333;
 }
 
 
+//google search
 
 .gsc-control {width: 100% !important;}
 .gs-text-box, .gsc-tabhActive, .gs-watermark, .gsc-branding, .gsc-twiddle, .gsc-stats, .gsc-results-selector, .gsc-all-results-active, .gsc-search-button, .gsc-clear-button{display:none;}
+
+
+#query .gsc-input { border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b2a48c), to(#9b8d74));
+	background: -moz-linear-gradient(top, #b2a48c, #9b8d74);
+	text-shadow: rgba(0,0,0,.2) 0 0 5px;
+}
+
+#search-submit {
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-mox-box-shadow: 0 0 5px black;
+
+	/* Webkit-transition */
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.4s, 0.4s;
+	-webkit-transition-timing-function: linear, ease-in;
+	}

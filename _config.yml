@@ -12,10 +12,10 @@ paginate_files:
   - blog.html 
 
 github_user:       Bilalh
-indextank_index:   BsBlog
-indextank_api_url: "http://:oj1Uxwu56zAgHx@dcz51.api.indextank.com"
-# these values are applied as regular expressions 
-indextank_excludes: [/index.html, 404.html, ^/docs/] 
+# indextank_index:   BsBlog
+# indextank_api_url: "http://:oj1Uxwu56zAgHx@dcz51.api.indextank.com"
+# # these values are applied as regular expressions 
+# indextank_excludes: [/index.html, 404.html, ^/docs/] 
 
 markdown: maruku
 
