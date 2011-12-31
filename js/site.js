@@ -10,16 +10,8 @@ function makeEmail()
   return rdfsdf+px13452+py23432+nf323+fdsff+a343t+dsada;
 }                           
 
-function removeLinkListeners()
-{
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++)
-  {
-    if (links[i].classList.contains('project-download-link'))
-    {
-      links[i].removeEventListener('mousedown', clicky.outbound);
-    }
-  }
-}
 
-
+$(document).ready(function() {
+     
+    $('a#mail').prop("href", makeEmail())
+});

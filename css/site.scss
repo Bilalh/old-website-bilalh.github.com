@@ -442,14 +442,14 @@ $text-shadow: #333;
 	text-shadow: rgba(0,0,0,.2) 0 0 5px;
 }
 
-#search-submit {
-	border-radius: 50px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-mox-box-shadow: 0 0 5px black;
+//.gsc-input > input{
+// background:url("/images/search.png") no-repeat;	
+//}
 
-	/* Webkit-transition */
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 0.4s, 0.4s;
-	-webkit-transition-timing-function: linear, ease-in;
-	}
+
+/* results positioning */
+#search-results    { position:absolute; z-index:90; top:40px; right:10px; visibility:hidden; }
+/* triangle! */
+#search-results-pointer { width:0px; height:0px; border-left:20px solid transparent; border-right:20px solid transparent; border-bottom:20px solid #eee; margin-left:80%; }
+/* content DIV which holds search results! */
+#search-results-content { position:relative; padding:20px; background:#fff; border:3px solid #eee; width:380px; min-height:200px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) }

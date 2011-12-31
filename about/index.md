@@ -37,6 +37,4 @@ no_sidebar: true
 
 =--
 
-<div class="small quiet" id="indextank" style="display:none">
-Search powered by IndexTank
-</div>
+
