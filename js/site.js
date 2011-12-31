@@ -54,3 +54,4 @@ $(document).ready(function() {
 //     });
 // });
 // 
+$('.gsc-search-box').searchBox();
