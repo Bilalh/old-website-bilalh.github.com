@@ -51,7 +51,13 @@ function OnLoad() {
   searchControl.addSearcher(webSearch);
   
   // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
+  // searchControl.draw(document.getElementById("searchcontrol"));
+  var drawOptions = new google.search.DrawOptions();
+  drawOptions.setInput(document.getElementById('query_input'));
+
+  // Draw the control in content div
+  customSearchControl.draw('results', drawOptions);
+
 }
 google.setOnLoadCallback(OnLoad);
 
@@ -149,7 +155,7 @@ Search powered by IndexTank
 			<input type="submit" id="search-submit" value="Go" />
 		</form> -->
 		<div id="searchcontrol">
-			
+			<input type="text" id="query_input"/>
 		</div>
 		
 	</div>
