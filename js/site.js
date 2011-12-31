@@ -14,10 +14,10 @@ function makeEmail()
 $(document).ready(function() {
      
     // Add the value of "Search..." to the input field and a class of .empty
-    $("#gsc-input").val("Search...").addClass("empty");
+    $(".gsc-input").val("Search...").addClass("empty");
  
     // When you click on #search
-    $("#gsc-input").focus(function(){
+    $(".gsc-input").focus(function(){
  
         // If the value is equal to "Search..."
         if($(this).val() == "Search...") {
@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
  
     // When the focus on #search is lost
-    $("#gsc-input").blur(function(){
+    $(".gsc-input").blur(function(){
  
         // If the input field is empty
         if($(this).val() == "") {
