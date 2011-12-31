@@ -38,11 +38,6 @@ $(document).ready(function() {
  
     });
     $('a#mail').prop("href", makeEmail())
- 
-	$("input[type=text]").focus(function(){
-	    // Select field contents
-	    this.select();
-	});
 
 });
  
