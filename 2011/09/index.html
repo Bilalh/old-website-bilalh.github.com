@@ -32,31 +32,31 @@
   })();
 
 </script>
-	 <script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-  <script language="Javascript" type="text/javascript">
-  //<![CDATA[
-google.load("search", "1");
-
-function OnLoad() {
-  // Create a search control
-  var searchControl = new google.search.SearchControl();
-  
-  // Add in a WebSearch
-  var webSearch = new google.search.WebSearch();
-  
-  // Restrict our search to pages from this site
-  webSearch.setSiteRestriction('bilalh.github.com');
-  
-  // Add the searcher to the SearchControl
-  searchControl.addSearcher(webSearch);
-  
-  // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
-}
-google.setOnLoadCallback(OnLoad);
-
-  //]]>
-  </script>
+	//  <script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+//   <script language="Javascript" type="text/javascript">
+//   //<![CDATA[
+// google.load("search", "1");
+// 
+// function OnLoad() {
+//   // Create a search control
+//   var searchControl = new google.search.SearchControl();
+//   
+//   // Add in a WebSearch
+//   var webSearch = new google.search.WebSearch();
+//   
+//   // Restrict our search to pages from this site
+//   webSearch.setSiteRestriction('bilalh.github.com');
+//   
+//   // Add the searcher to the SearchControl
+//   searchControl.addSearcher(webSearch);
+//   
+//   // tell the searcher to draw itself and tell it where to attach
+//   searchControl.draw(document.getElementById("searchcontrol"));
+// }
+// google.setOnLoadCallback(OnLoad);
+// 
+//   //]]>
+//   </script>
 </head>
 
 <body>
@@ -142,9 +142,24 @@ Search powered by IndexTank
     
     
       <div id="sidebar" class="span-6 push-1 last">
-	<div id="searchcontrol" class="sidebar-module">
-				
+	<div class="sidebar-module">
+			<form action="http://www.google.com/search" method="get">
+			  <!-- HTML5 SEARCH BOX!  -->
+			  <input type="search" id="search-box" name="q" results="5" placeholder="Search..." autocomplete="on" />
+			  <!-- SEARCH davidwalsh.name ONLY! -->
+			  <input type="hidden" name="sitesearch" value="davidwalsh.name" />
+			  <!-- SEARCH BUTTON -->
+			  <input id="search-submit" type="submit" value="Search" />
+			</form>
+
+			<!-- ASYNCHRONOUSLY LOAD THE AJAX SEARCH API;  MOOTOOLS TOO! -->
+			<script type="text/javascript" src="http://www.google.com/jsapi?key=BQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg"></script>
+			<script type="text/javascript">
+			  google.load('mootools','1.2.4');
+			  google.load('search','1');
+			</script>
 	</div>
+
 
 	<div class="sidebar-module">
 		<div class="title"><a href='/tags'>Tags</a></div>
