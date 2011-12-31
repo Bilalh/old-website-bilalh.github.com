@@ -14,7 +14,7 @@ function makeEmail()
 $(document).ready(function() {
      
     // Add the value of "Search..." to the input field and a class of .empty
-    $(".gsc-input").val("Search...").addClass("empty");
+    $(".gsc-input").val("Search...");
  
     // When you click on #search
     $(".gsc-input").focus(function(){
