@@ -56,7 +56,7 @@ function OnLoad() {
   drawOptions.setInput(document.getElementById('query_input'));
 
   // Draw the control in content div
-  customSearchControl.draw('results', drawOptions);
+  customSearchControl.draw('searchresults', drawOptions);
 
 }
 google.setOnLoadCallback(OnLoad);
@@ -191,6 +191,10 @@ Search powered by IndexTank
 		</form> -->
 		<div id="searchcontrol">
 			<input type="text" id="query_input"/>
+		</div>
+		
+		<div id="searchresults">
+			
 		</div>
 		
 	</div>
