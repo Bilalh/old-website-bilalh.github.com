@@ -17,7 +17,7 @@ function OnLoad() {
   searchControl.addSearcher(webSearch);
   
   // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
+  searchControl.draw($("searchcontrol"));
 }
 google.setOnLoadCallback(OnLoad);
 
