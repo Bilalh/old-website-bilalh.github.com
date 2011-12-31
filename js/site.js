@@ -15,12 +15,6 @@ $(document).ready(function() {
      
     $('a#mail').prop("href", makeEmail())
 
-});
- 
-
-
-window.addEvent('domready',function(){
-
     // Add the value of "Search..." to the input field and a class of .empty
     $(".gsc-input > input").val("Search...").addClass("empty");
      
@@ -46,4 +40,6 @@ window.addEvent('domready',function(){
      
     });
 
+
 });
+ 
