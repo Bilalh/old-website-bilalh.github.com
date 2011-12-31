@@ -435,11 +435,10 @@ $text-shadow: #333;
 .gs-text-box, .gsc-tabhActive, .gs-watermark, .gsc-branding, .gsc-twiddle, .gsc-stats, .gsc-results-selector, .gsc-all-results-active, .gsc-search-button, .gsc-clear-button{display:none;}
 
 
-#query .gsc-input { border-radius: 20px;
+#query, .gsc-input { 
+	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#b2a48c), to(#9b8d74));
-	background: -moz-linear-gradient(top, #b2a48c, #9b8d74);
 	text-shadow: rgba(0,0,0,.2) 0 0 5px;
 }
 
