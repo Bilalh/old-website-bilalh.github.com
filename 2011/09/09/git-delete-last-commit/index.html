@@ -32,30 +32,31 @@
   })();
 
 </script>
-	<script src="http://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-<script language="Javascript" type="text/javascript">
+	 <script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+  <script language="Javascript" type="text/javascript">
+  //<![CDATA[
+google.load("search", "1");
+
+function OnLoad() {
+  // Create a search control
+  var searchControl = new google.search.SearchControl();
   
-  google.load("search", "1");
+  // Add in a WebSearch
+  var webSearch = new google.search.WebSearch();
   
-  function OnLoad() {
-    // Create a search control
-    var searchControl = new google.search.SearchControl();
-    
-    // Add in a WebSearch
-    var webSearch = new google.search.WebSearch();
-    
-    // Restrict our search to pages from this site
-    webSearch.setSiteRestriction('bilalh.github.com');
-    
-    // Add the searcher to the SearchControl
-    searchControl.addSearcher(webSearch);
-    
-    // tell the searcher to draw itself and tell it where to attach
-    searchControl.draw(document.getElementById("search_control"));
-  }
-  google.setOnLoadCallback(OnLoad);
+  // Restrict our search to pages from this site
+  webSearch.setSiteRestriction('bilalh.github.com');
   
-</script>
+  // Add the searcher to the SearchControl
+  searchControl.addSearcher(webSearch);
+  
+  // tell the searcher to draw itself and tell it where to attach
+  searchControl.draw(document.getElementById("searchcontrol"));
+}
+google.setOnLoadCallback(OnLoad);
+
+  //]]>
+  </script>
 </head>
 
 <body>
@@ -163,7 +164,7 @@ Search powered by IndexTank
 			<input type="text" id="query" name="query"/>
 			<input type="submit" id="search-submit" value="Go" />
 		</form> -->
-		<div id="search_control">
+		<div id="searchcontrol">
 			
 		</div>
 		
