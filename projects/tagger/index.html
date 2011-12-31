@@ -51,13 +51,7 @@ function OnLoad() {
   searchControl.addSearcher(webSearch);
   
   // tell the searcher to draw itself and tell it where to attach
-  // searchControl.draw(document.getElementById("searchcontrol"));
-  var drawOptions = new google.search.DrawOptions();
-  drawOptions.setInput(document.getElementById('query_input'));
-
-  // Draw the control in content div
-  customSearchControl.draw('searchresults', drawOptions);
-
+  searchControl.draw(document.getElementById("searchcontrol"));
 }
 google.setOnLoadCallback(OnLoad);
 
