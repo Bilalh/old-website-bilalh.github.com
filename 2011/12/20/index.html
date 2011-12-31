@@ -51,15 +51,39 @@ function OnLoad() {
   
   // tell the searcher to draw itself and tell it where to attach
   searchControl.draw(document.getElementById("searchcontrol"));
-}
+	// Add the value of "Search..." to the input field and a class of .empty
+    $(".gsc-input > input").val("Search...").addClass("empty");
+     
+    // When you click on #search
+    $(".gsc-input > input").focus(function(){
+     
+        // If the value is equal to "Search..."
+        if($(this).val() == "Search...") {
+            // remove all the text and the class of .empty
+            $(this).val("").removeClass("empty");;
+        }
+        this.select();
+    });
+     
+    // When the focus on #search is lost
+    $(".gsc-input > input").blur(function(){
+     
+        // If the input field is empty
+        if($(this).val() == "") {
+            // Add the text "Search..." and a class of .empty
+            $(this).val("Search...").addClass("empty");
+        }
+     
+    });
 
+
+
+}
 google.setOnLoadCallback(function() {
   $(function() {
-    // init my stuff
+		OnLoad()
   });
 });
-
-
 
 
   //]]>
