@@ -41,3 +41,16 @@ $(document).ready(function() {
 
 });
  
+
+$(function() {
+    $(".gsc-input").focus(function(){
+ 
+        // If the value is equal to "Search..."
+        if($(this).val() == "Search...") {
+            // remove all the text and the class of .empty
+            $(this).val("").removeClass("empty");;
+        }
+        this.select();
+    });
+});
+
