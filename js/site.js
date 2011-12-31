@@ -101,9 +101,8 @@ window.addEvent('domready',function(){
       options.setInput(searchBox);
 
       //set search options
-      search.setUserDefinedClassSuffix('siteSearch');
-      search.setSiteRestriction('davidwalsh.name');
-      search.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+	  search.setSiteRestriction('bilalh.github.com');
+
 
       //set search controls
       control.addSearcher(search);
