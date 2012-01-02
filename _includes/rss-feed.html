@@ -6,16 +6,16 @@
     
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}</id>
-    <author><name>Michael Ebens</name></author>
-    <rights>Copyright (c) 2011 NovaFusion</rights>
+    <author><name>Bilal Syed Hussain</name></author>
+    <rights>Copyright (c) 2011 Bilal Syed Hussain</rights>
     
-    {% for post in site.posts limit:20 %}
+    {% for post in site.posts limit:30 %}
       <entry>
           <title>{{ post.title }}</title>
           <link href="{{ site.url }}{{ post.url }}/"/>
           <updated>{{ post.date | date_to_xmlschema }}</updated>
           <id>{{ site.url }}{{ post.url }}/</id>
-          <summary type="html">{{ post.content | strip_html | truncatewords: 50 }}</summary>
+          <summary type="html">{{ post.content | strip_html | truncatewords: 20 }}</summary>
       </entry>
     {% endfor %}
 </feed>
