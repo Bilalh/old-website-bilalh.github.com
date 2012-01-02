@@ -327,6 +327,7 @@ h4 {font-size: 1.3em; }
 .h1-5 { font-size: 2em; } // Make a h2 look like a "h1.5"
 .low-top { margin-top: 0.4em; }
 .large-bottom { margin-bottom: 0.7em; }
+.med-bottom { margin-bottom: 0.4em; }
 .large-para { font-size: 1.5em; }
 .med-para { font-size: 1.2em; }
 
@@ -455,10 +456,15 @@ $text-shadow: #333;
 #search-results-content { position:relative; padding:20px; background:#fff; border:3px solid #eee; width:380px; min-height:200px; -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) }
 
 
+h2.archives a {
+	font-weight: bold;
+}
+
 // archives
 h2.archives {
+text-align: center;
 font-size: 1.5em;
-font-weight: 300;
+//font-weight: 300;
 color: #555;
 background: #ECF5FF;
 padding: 5px 0 5px 10px;
