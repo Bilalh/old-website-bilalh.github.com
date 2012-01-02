@@ -80,7 +80,8 @@ module Jekyll
 			['title', 'version','repo','download', 'icon', 'name'].each do |key|
 				self.data[key] = project.data[key]
 			end
-			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 'readme_name','changelog_url', 'readme_url', 'apidocs_name'
+			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 
+			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url"
 		end
 		
 		def copy_keys(*keys)
