@@ -1,247 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  
-    <title>Tagger - Bilal Syed Hussain</title>
-  
-  
-  <meta name="author" content="Bilal Hussain" />
-  <meta name="description" content="Bilal Hussain  " />
-  <meta name="robots" content="noodp, nydir" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
-  <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-  <link href="/css/site.css" type="text/css" rel="stylesheet" />
+		<html>
+		<head>
+			<meta http-equiv="content-type" content="text/html;charset=utf-8">
+			<title>What's new in Tagger?</title>
+			<meta name="robots" content="anchors">
+			<link href="rnotes.css" type="text/css" rel="stylesheet" media="all">
+		</head>
 
-  
-	<script type="text/javascript" src="/js/jquery.js"></script>
-  <script type="text/javascript" src="/js/site.js"></script>
-	<script type="text/javascript">
+		<body>
+			<br />
+			<table class="dots" width="100%" border="0" cellspacing="0" cellpadding="0" summary="Release Notes table ">
+				<tr>
+					<td class="blue" colspan="2">
+						<h1 id='title'>Release Notes</h1>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" id='content'>
+					<h1 id='changelog'>Changelog</h1>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26827948-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-	<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-  <script language="Javascript" type="text/javascript">
-  //<![CDATA[
-google.load("search", "1");
-
-function OnLoad() {
-  // Create a search control
-  var searchControl = new google.search.SearchControl();
-  
-  // Add in a WebSearch
-  var webSearch = new google.search.WebSearch();
-  
-  // Restrict our search to pages from this site
-  webSearch.setSiteRestriction('bilalh.github.com');
-  
-  // Add the searcher to the SearchControl
-  searchControl.addSearcher(webSearch);
-  
-  // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
-	// Add the value of "Search..." to the input field and a class of .empty
-
-
-}
-google.setOnLoadCallback(function() {
-  $(function() {
-		OnLoad()
-		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
-    // When you click on #search
-    $(".gsc-input > input").focus(function(){
-     
-        // If the value is equal to "Search..."
-        if($(this).val() == "Search... powered by Google") {
-            // remove all the text and the class of .empty
-            $(this).val("").removeClass("empty");;
-        }
-        this.select();
-    });
-     
-    // When the focus on #search is lost
-    $(".gsc-input > input").blur(function(){
-     
-        // If the input field is empty
-        if($(this).val() == "") {
-            // Add the text "Search..." and a class of .empty
-            $(this).val("Search... powered by Google").addClass("empty");
-        }
-     
-    });
-  });
-});
-
-
-  //]]>
-  </script>
-</head>
-
-<body>
-  <div class="container">
-    <div id="header" class="span-24">
-  <div id="menu" class="span-15 last">
-    <ul>
-      <li class="first"><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li class="last"><a id="mail" href="">Contact</a></li>
-    </ul>
-  </div>
-</div>
-
-    
-    <div id="main" class="span-24">
-      <style type="text/css">
-h2,h3,h4,h5{ 
-	color: #335E8D;
-	font-weight   : normal;
-	border-bottom : 1px dotted #ccc;
-}     
-
-h2, h2.title-feature {
-	margin-left   : 3px;
-	font-variant  : small-caps;
-	font-weight   : normal;
-	border-bottom : 1px dotted #ccc;  
-}
-
-
-.project-icon {
-	margin-top: 20px; 
-}
-img.pic{
-	float:left;
-	margin-top    : 5px;
-	margin-right  : 15px;
-	margin-bottom : 10px;
-}
-</style>
-
-
-<div class="span-18">
-	
-		<img src="/images/projects/tagger/Tagger.png" class="project-icon left" width="64" height="64" alt="icon"/> 
-		 
-	<h1 class="project-title">Tagger</h1>
-	<!-- <h3>1.5.1</h3> -->
-
-		<h3>
-			
-				<a href="/projects/tagger">Features &nbsp;</a>
-			
-			
-				<a href="readme.html">
-					Readme &nbsp;</a>
-			
-			
-				<a href="gallery.html">Screenshots &nbsp;</a>
-			
-			
-				<a href="changelog.html">Changelog &nbsp;</a>
-			
-			
-			
-		</h3>
-</div>
-
-<div class="project-links span-6 last">
-	<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip" class="project-download-link">
-		<div class="project-download">Download v1.5.1</div>
-	</a>
-	
-	<h3><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
-	
-	
-</div>
-
-<div class="readme span-24">
-	<h1 id='changelog'>ChangeLog</h1>
-<table>
-  <tr />
-  <tr />
-  <td>
-    <a href='#version_151_sat_31_dec_2011_211829_0000'>Version 1.5.1</a>
-  </td>
-  <td>
-    <a href='#version_15_wed_28_dec_2011_191459_0000'>Version 1.5</a>
-  </td>
-  <td>
-    <a href='#version_143_sun_27_nov_2011_053351_0000'>Version 1.4.3</a>
-  </td>
-  <td>
-    <a href='#version_142_fri_9_sep_2011_040919_0100'>Version 1.4.2</a>
-  </td>
-  <td>
-    <a href='#version_141_wed_aug_31_2011_220134_0100'>Version 1.4.1</a>
-  </td>
-  <tr />
-  <td>
-    <a href='#version_14_tue_aug_30_2011_234354_0100'>Version 1.4</a>
-  </td>
-  <td>
-    <a href='#version_13_fri_aug_12_2011_161909_0100'>Version 1.3</a>
-  </td>
-  <td>
-    <a href='#version_12_thu_aug_11_2011_033420_0100'>Version 1.2</a>
-  </td>
-  <td>
-    <a href='#version_116_wed_aug_10_2011_053441_0100'>Version 1.1.6</a>
-  </td>
-  <td>
-    <a href='#version_115_wed_aug_10_2011_034138_0100'>Version 1.1.5</a>
-  </td>
-  <tr />
-  <td>
-    <a href='#version_11_wed_aug_10_2011_013151_0100'>Version 1.1</a>
-  </td>
-  <td>
-    <a href='#version_101_tue_aug_09_2011_165214_0100'>Version 1.0.1</a>
-  </td>
-  <td>
-    <a href='#version_10_tue_aug_09_2011_050541_0100'>Version 1.0</a>
-  </td>
-  <td>
-    <a href='#version_013_sun_aug_07_2011_233944_0100'>Version 0.13</a>
-  </td>
-  <td>
-    <a href='#version_012_fri_aug_05_2011_022354_0100'>Version 0.12</a>
-  </td>
-  <tr />
-  <td>
-    <a href='#version_011_tue_aug_02_2011_032121_0100'>Version 0.11</a>
-  </td>
-  <td>
-    <a href='#version_010_sun_jul_31_2011_045154_0100'>Version 0.10</a>
-  </td>
-  <td>
-    <a href='#version_09_fri_jul_29_2011_150500_0100'>Version 0.9</a>
-  </td>
-  <td>
-    <a href='#version_08_mon_jul_25_2011_025527_0100'>Version 0.8</a>
-  </td>
-  <td>
-    <a href='#version_07_fri_jul_22_2011_200613_0100'>Version 0.7</a>
-  </td>
-  <tr />
-  <td>
-    <a href='#older_versions'>Older Versions</a>
-  </td>
-</table>
-<h2 id='version_151_sat_31_dec_2011_211829_0000'>Version 1.5.1 (Sat 31 Dec 2011 21:18:29 +0000)</h2>
+<h2 id='version_151'>Version 1.5.1</h2>
 
 <h3 id='features'>Features</h3>
 
@@ -251,7 +28,7 @@ img.pic{
 <li>Scripts to automatically make a release version, sign its dsa and make the appcast.</li>
 </ul>
 
-<h2 id='version_15_wed_28_dec_2011_191459_0000'>Version 1.5 (Wed 28 Dec 2011 19:14:59 +0000)</h2>
+<h2 id='version_15_28_dec_2011_191459_0000'>Version 1.5 (28 Dec 2011 19:14:59 +0000)</h2>
 
 <h3 id='features'>Features</h3>
 
@@ -772,23 +549,9 @@ img.pic{
 
 <li>Classes</li>
 </ul>
-
-</div>
-
-    </div>
-    
-    
-    
-    <div id="footer" class="span-24">
-  &copy; 2012 Bilal Syed Hussain.  
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
-</div>
-
-  </div>
-  
-</body>
-</html>
+					</td>
+				</tr>
+			</table>
+			<br>
+		</body>
+		</html>
