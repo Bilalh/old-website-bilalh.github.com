@@ -77,9 +77,11 @@ module Jekyll
 			@project = project
 			puts "Building project's #{name}"
 			super site, base, dir, name, html_name
-			['title', 'version','repo','download', 'icon', 'name'].each do |key|
+			['version','repo','download', 'icon', 'name'].each do |key|
 				self.data[key] = project.data[key]
 			end
+			self.data['title'] = project.data['title'] + "'s #{name}"
+			
 			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 
 			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url"
 		end
