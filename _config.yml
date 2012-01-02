@@ -32,8 +32,9 @@ projects:
     changelog: true
     apidocs:   false
     download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip
+    support:   https://github.com/Bilalh/tagger/issues
     gallery:   
-      - title: Multiplen File Editing
+      - title: Multiple File Editing
         image: s001.png 
         description: >
            Multiple files can be edited at once.

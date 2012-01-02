@@ -29,11 +29,12 @@ module Jekyll
 			
 			self.data['changelog_url'] = 'changelog.html'  if info['changelog']
 			self.data['apidocs_url']   = "/docs/#{name}"   if info['apidocs']
+			self.data['support_url']   = info['support']   if info['support']
 			self.data['icon']          = info['icon']      if info['icon']  
 			
 			if info['gallery'] then 
-				self.data['gallery_url']   = 'gallery.html'    
-				self.data['gallery']       = info['gallery']
+				self.data['gallery_url']  = 'gallery.html'    
+				self.data['gallery']      = info['gallery']
 			end
 			
 			self.data['apidocs_name']  = info['apidocs_name']   if info['apidocs_name']
@@ -64,6 +65,8 @@ module Jekyll
 			if info['languages'] then
 				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp;&nbsp;")
 			end 
+			
+			
 			
 		end 
 	end
