@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>index.html</string>
+	<string>css/site.scss</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,22 +18,94 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>300</integer>
+	<integer>203</integer>
 	<key>metaData</key>
 	<dict>
-		<key>css/site.scss</key>
+		<key>_includes/google_ajax_search.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>1</integer>
 				<key>line</key>
-				<integer>479</integer>
+				<integer>23</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>440</integer>
+			<integer>23</integer>
+		</dict>
+		<key>_includes/sharing.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>57</integer>
+				<key>line</key>
+				<integer>15</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_includes/sidebar.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>37</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>33</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>42</integer>
+				<key>line</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<key>_layouts/post.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>59</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>24</integer>
+		</dict>
+		<key>css/site.scss</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>10</integer>
+				<key>line</key>
+				<integer>528</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>491</integer>
 		</dict>
 		<key>index.html</key>
 		<dict>
@@ -52,8 +124,12 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>css/site.scss</string>
 		<string>index.html</string>
+		<string>_layouts/post.html</string>
+		<string>_includes/sidebar.html</string>
+		<string>_includes/sharing.html</string>
+		<string>_includes/google_ajax_search.html</string>
+		<string>css/site.scss</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -67,14 +143,35 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
-				<key>_posts</key>
+				<key>_includes</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
 					<key>subItems</key>
 					<dict/>
 				</dict>
-				<key>images</key>
+				<key>_layouts</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+				<key>_plugins</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+				<key>css</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict/>
+				</dict>
+				<key>js</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
@@ -85,6 +182,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{92, 94}, {899, 745}}</string>
+	<string>{{284, 149}, {1004, 715}}</string>
 </dict>
 </plist>
