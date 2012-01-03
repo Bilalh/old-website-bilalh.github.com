@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
     <title>Tagger's changelog - Bilal Syed Hussain</title>
-  
-  
   <meta name="author" content="Bilal Hussain" />
   <meta name="description" content="Bilal Hussain  " />
   <meta name="robots" content="noodp, nydir" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
   <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
   <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
   <link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-  
 	<script type="text/javascript" src="/js/jquery.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
 	<script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-26827948-1']);
   _gaq.push(['_trackPageview']);
-
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 	<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
   <script language="Javascript" type="text/javascript">
   //<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
   // Create a search control
   var searchControl = new google.search.SearchControl();
-  
   // Add in a WebSearch
   var webSearch = new google.search.WebSearch();
-  
   // Restrict our search to pages from this site
   webSearch.setSiteRestriction('bilalh.github.com');
-  
   // Add the searcher to the SearchControl
   searchControl.addSearcher(webSearch);
-  
   // tell the searcher to draw itself and tell it where to attach
   searchControl.draw(document.getElementById("searchcontrol"));
 	// Add the value of "Search..." to the input field and a class of .empty
-
-
 }
 google.setOnLoadCallback(function() {
   $(function() {
 		OnLoad()
 		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
     // When you click on #search
     $(".gsc-input > input").focus(function(){
-     
         // If the value is equal to "Search..."
         if($(this).val() == "Search... powered by Google") {
             // remove all the text and the class of .empty
@@ -70,25 +51,19 @@ google.setOnLoadCallback(function() {
         }
         this.select();
     });
-     
     // When the focus on #search is lost
     $(".gsc-input > input").blur(function(){
-     
         // If the input field is empty
         if($(this).val() == "") {
             // Add the text "Search..." and a class of .empty
             $(this).val("Search... powered by Google").addClass("empty");
         }
-     
     });
   });
 });
-
-
   //]]>
   </script>
 </head>
-
 <body>
   <div class="container">
     <div id="header" class="span-24">
@@ -102,8 +77,6 @@ google.setOnLoadCallback(function() {
     </ul>
   </div>
 </div>
-
-    
     <div id="main" class="span-24">
       <style type="text/css">
 h2,h3,h4,h5{ 
@@ -111,15 +84,12 @@ h2,h3,h4,h5{
 	font-weight   : normal;
 	border-bottom : 1px dotted #ccc;
 }     
-
 h2, h2.title-feature {
 	margin-left   : 3px;
 	font-variant  : small-caps;
 	font-weight   : normal;
 	border-bottom : 1px dotted #ccc;  
 }
-
-
 .project-icon {
 	margin-top: 20px; 
 }
@@ -130,44 +100,24 @@ img.pic{
 	margin-bottom : 10px;
 }
 </style>
-
-
 <div class="span-18">
-	
 		<img src="/images/projects/tagger/Tagger.png" class="project-icon left" width="64" height="64" alt="icon"/> 
-		 
 	<h1 class="project-title">Tagger's changelog</h1>
 		<h3>
-			
 				<a href="/projects/tagger">Features &nbsp;</a>
-			
-			
 				<a href="readme.html">
 					Readme &nbsp;</a>
-			
-			
 				<a href="gallery.html">Screenshots &nbsp;</a>
-			
-			
 				<a href="changelog.html">Changelog &nbsp;</a>
-			
-			
-			
 				<a href="https://github.com/Bilalh/tagger/issues">Support &nbsp;</a>
-			
 		</h3>
 </div>
-
 <div class="project-links span-6 last">
 	<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip" class="project-download-link">
 		<div class="project-download">Download v1.5.1</div>
 	</a>
-	
 	<h3><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
-	
-	
 </div>
-
 <div class="readme span-24">
 	<h1 id='changelog'>ChangeLog</h1>
 <table>
@@ -245,553 +195,319 @@ img.pic{
   </td>
 </table>
 <h2 id='version_152_mon_02_jan_2012_11013_0000'>Version 1.5.2 (Mon 02 Jan 2012 1:10:13 +0000)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Poxy Icons.</li>
-
 <li>Batch Delete comments.</li>
 </ul>
-
 <h2 id='version_151_sat_31_dec_2011_211829_0000'>Version 1.5.1 (Sat 31 Dec 2011 21:18:29 +0000)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Automatic updates using sparkle.</li>
-
 <li>Scripts to automatically make a release version, sign its dsa and make the appcast.</li>
 </ul>
-
 <h2 id='version_15_wed_28_dec_2011_191459_0000'>Version 1.5 (Wed 28 Dec 2011 19:14:59 +0000)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Scroll to specified row on keypress (like iTunes).</li>
-
 <li>Tabbing now goes the first cell of the next row upon reaching the end of a row.</li>
-
 <li>Spreadsheet View.</li>
-
 <li>Swapping first and last name menuitem for artist and other fields.</li>
-
 <li>Go menu icons.</li>
-
 <li>albumSort, artistSort, titleSort, composerSort and albumArtistSort field can now be edited.</li>
 </ul>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>Handles missing data from vgmdb.</li>
-
 <li>Gui Improvements on Grouping and Genre field.</li>
-
 <li>Handles the different format for Performer in vgmdb that happens for some albums</li>
-
 <li>Comparing number where one of the number might be null.</li>
-
 <li>About dialog and homepage link</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>MP3 cover art.</li>
 </ul>
-
 <h2 id='version_143_sun_27_nov_2011_053351_0000'>Version 1.4.3 (Sun 27 Nov 2011 05:33:51 +0000)</h2>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>Removed NSLogs.</li>
-
 <li>Deleting Tags from select files.</li>
-
 <li>Sort by date in when searching vgmdb.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>m4a delete all tags.</li>
 </ul>
-
 <h2 id='version_142_fri_9_sep_2011_040919_0100'>Version 1.4.2 (Fri 9 Sep 2011 04:09:19 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Genre picker in auto tagger.</li>
-
 <li>Delete specified tags or all tags of selected tracks menu</li>
 </ul>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>removed NSLogs.</li>
-
 <li>vgmdb enable.</li>
-
 <li>Fields alignment.</li>
-
 <li>Tags from file names refreshing</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>Fixed most bugs in mp3 files when <em>replacing</em> (not adding) artwork on files who album art has <em>never</em> been edited in iTunes, means the file can&#8217;t be added to iTunes for nearly all cases.</li>
-
 <li>Fixed most bugs in mp4 files converted from flac using apps such XLD, when setting artwork, means the file can not be added to itunes.</li>
 </ul>
-
 <h2 id='version_141_wed_aug_31_2011_220134_0100'>Version 1.4.1 (Wed Aug 31 2011 22:01:34 +0100)</h2>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>Genre list.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>Dragging files to table.</li>
-
 <li>vgmdb enable.</li>
 </ul>
-
 <h2 id='version_14_tue_aug_30_2011_234354_0100'>Version 1.4 (Tue Aug 30 2011 23:43:54 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Results can be sorted when searching.</li>
-
 <li>Tooltips.</li>
-
 <li>Files can be dragged to the table.</li>
-
 <li>Added Latin as language since some soundtracks tracks are in <a href='http://vgmdb.net/album/26335' title='Puella Magi Madoka Magica Special CD 2 Original Soundtrack I'>Latin</a>.</li>
-
 <li>Arranges multiple catalog number nicely.</li>
-
 <li>Tags From Files (works like renames with tags).<br />With error handing.<br />and menus with predefined options.</li>
-
 <li>Rows in main table can be rearranged.</li>
-
 <li>Menu item for auto-Renumbering of files.</li>
-
 <li>Can drag a row ontop of another to copy tags.</li>
-
 <li>Genre and Grouping preferences. Defaults genre can be selected. auto complete.</li>
-
 <li>Capitalise, uppercase and lowercase tags menu. with all tags.</li>
-
 <li>Trim whitespace menu.</li>
 </ul>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>Macruby loading.</li>
-
 <li>QuickLookTableView now works with delegate drag and drop now.</li>
-
 <li>Multiple values with ints.</li>
-
 <li>grouping and genre grow on resize</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>Metadata to Comments newline.</li>
-
 <li>Url when going directly to the results.</li>
-
 <li>Refresh.</li>
-
 <li>Fixed a bug where the composer was to the arranger.</li>
-
 <li>Made catalog field bigger since I found some rare long ids.</li>
-
 <li>Url when ending in a slash.</li>
-
 <li>Use jpeg when the user want jpeg instead of using png.</li>
-
 <li>Chooses the correct language if english is not there when auto tagging.</li>
-
 <li>Fixed a bug with extension checking (now uses filepath instead of display name).</li>
-
 <li>Fix nils when the album does not have a <a href='http://vgmdb.net/album/19776' title='Neon Genesis Evangelion'>platform</a>.</li>
-
 <li>Refreshing the table on renaming with custom format.</li>
-
 <li>Fixed a bug where copying tags from a mp3 to a m4a file.</li>
 </ul>
-
 <h2 id='version_13_fri_aug_12_2011_161909_0100'>Version 1.3 (Fri Aug 12 2011 16:19:09 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Label colours for files shown.</li>
-
 <li>Nicer display of label colour for selected row.</li>
-
 <li>Right click menu that allows labelling files.</li>
-
 <li>Right click menu item reveal in finder.</li>
-
 <li>New 512x512 Icon</li>
-
 <li>Can rid of unused code.</li>
-
 <li>When display search results, you can double click to go the albums webpage.</li>
 </ul>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>Shows the label colour as a dot when selecting a labeled row.</li>
-
 <li>Can label multiple row at once.</li>
-
 <li>Does not show the of in disc 1 of 2 if there is total number of discs, same for tracks</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>When editing the data of a selected row.</li>
 </ul>
-
 <h2 id='version_12_thu_aug_11_2011_033420_0100'>Version 1.2 (Thu Aug 11 2011 03:34:20 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>When using using metadata to comments, the text aligns nicely in itunes.</li>
-
 <li>Allows going to the next/previous row using a keyboard (alt down/alt up).</li>
-
 <li>Updated to always show the selected row.</li>
-
 <li>Export to Itunes menu option (alt cmd E).</li>
-
 <li>QuickLook support (allows playing of audio files).</li>
-
 <li>Shortcut cmd-Y.</li>
-
 <li>Allows multiple selection.</li>
-
 <li>Can use up down to go to next track</li>
-
 <li>Press space when on a selected track also does quicklook.</li>
-
 <li>Quicklook toolbar button.</li>
 </ul>
-
 <h3 id='improvements'>Improvements</h3>
-
 <ul>
 <li>Disable Open Selected Folder if the user has not selected a folder.</li>
-
 <li>Disable QuickLook if the user has not selected a file.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug Fixes</h3>
-
 <ul>
 <li>Cover comparing with NSMultipleValuesMarker</li>
 </ul>
-
 <h2 id='version_116_wed_aug_10_2011_053441_0100'>Version 1.1.6 (Wed Aug 10 2011 05:34:41 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>refreshes the table on auto tagging.</li>
-
 <li>Small size (15mb smaller).</li>
 </ul>
-
 <h2 id='version_115_wed_aug_10_2011_034138_0100'>Version 1.1.5 (Wed Aug 10 2011 03:41:38 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Adds formats for renaming. e.g. 01 - title .</li>
-
 <li>Are stored in the plist for easy changing.</li>
-
 <li>Can click any where on a directory row to go do it.</li>
-
 <li>Can open a selected directory with cmd-O.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>highlighting When clicking on a directory.</li>
 </ul>
-
 <h2 id='version_11_wed_aug_10_2011_013151_0100'>Version 1.1 (Wed Aug 10 2011 01:31:51 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Images can not be dragged for directory.</li>
-
 <li>The cover art is now named &#8216;title - cover&#8217; which allows multiple cover to be dragged to the desktop/</li>
-
 <li>Which can be changed in the prefs.</li>
 </ul>
-
 <h2 id='version_101_tue_aug_09_2011_165214_0100'>Version 1.0.1 (Tue Aug 09 2011 16:52:14 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Debug statement do not appear in release version.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>Fix a bug with the vgmdb menu item not been enable.</li>
 </ul>
-
 <h2 id='version_10_tue_aug_09_2011_050541_0100'>Version 1.0 (Tue Aug 09 2011 05:05:41 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Added a button for searching vgmdb.</li>
-
 <li>Display the result if there is only one result from the search.</li>
-
 <li>Back/forward/Reveal/Vgmdb disable when not usable instead of doing nothing.</li>
-
 <li>Menu item and shortcut cmd-1 for going to the starting directory.</li>
-
 <li>Table columns sorting and highlighting on all columns.</li>
-
 <li>Auto embed Macruby .</li>
-
 <li>Embed tablib and fixed build settings.</li>
-
 <li>Table columns lengths</li>
-
 <li>Shows the results straight away if there only one when searching Vgmdb</li>
-
 <li>The cover art can be dragged to finder or any other place</li>
-
 <li>Pref for how cover art is dragged</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>Fixed a bug when vgmdb returns no results.</li>
 </ul>
-
 <h2 id='version_013_sun_aug_07_2011_233944_0100'>Version 0.13 (Sun Aug 07 2011 23:39:44 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Music files (m4a and mp3) can be dragged onto the dock icon to go the directory of the file.</li>
-
 <li>Can drag directory but now allows all files.</li>
-
 <li>Size column.</li>
-
 <li>Tags can now do bitrate channels sample rate and kind.</li>
-
 <li>FileSystemNode can now tell it size.</li>
-
 <li>Disc and track pairs.</li>
-
 <li>Prefs for hiding columns.</li>
-
 <li>Default values.</li>
-
 <li>Prefs for setting start directory.</li>
-
 <li>Allows using the current directory as the start directory.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>Fixed Warnings about missing method.</li>
-
 <li>Fixed a bug where no window was open.</li>
 </ul>
-
 <h2 id='version_012_fri_aug_05_2011_022354_0100'>Version 0.12 (Fri Aug 05 2011 02:23:54 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Pad the track number when renaming.</li>
-
 <li>Batch renaming using sub directories.</li>
-
 <li>Shortcuts for back and forward.</li>
-
 <li>Shortcuts for parent directory.</li>
-
 <li>Menu and shortcuts for common directories.</li>
-
 <li>Refresh menu item.</li>
-
 <li>Reveal in Finder menu item.</li>
-
 <li>Reopen menu item which opens the last open window.</li>
-
 <li>Shows that the selected tracks have different values.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>Fixed a bug where selection was not consecutive.</li>
-
 <li>Fixed a bug with update data when changing directory.</li>
-
 <li>Field are now not editable when selecting a directory.</li>
-
 <li>Compares images properly which shows if the selected files has the same image.</li>
 </ul>
-
 <h2 id='version_011_tue_aug_02_2011_032121_0100'>Version 0.11 (Tue Aug 02 2011 03:21:21 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Better error handing.</li>
-
 <li>Allows batch renaming of files based on tags.</li>
-
 <li>Gui for batch renaming of files based on tags.</li>
 </ul>
-
 <h2 id='version_010_sun_jul_31_2011_045154_0100'>Version 0.10 (Sun Jul 31 2011 04:51:54 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Made comments tag iTunes compatible.</li>
-
 <li>Muti-row editing.</li>
-
 <li>Some bug fixes.</li>
 </ul>
-
 <h2 id='version_09_fri_jul_29_2011_150500_0100'>Version 0.9 (Fri Jul 29 2011 15:05:00 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>The length of track can now be found using Tags.</li>
-
 <li>Auto tagging for tracks names is done</li>
-
 <li>Allows choosing the language.</li>
-
 <li>Auto tagging for other fields done.</li>
-
 <li>Allows choosing which fields to update.</li>
-
 <li>Show the url, which is clickable.</li>
-
 <li>Read and write of url tag.</li>
-
 <li>Allows saving of url of from auto tagger.</li>
-
 <li>Read/write mp3 cover art.</li>
-
 <li>Read/write mp4 cover art.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>Made length column uneditable since it should not be changed.</li>
 </ul>
-
 <h2 id='version_08_mon_jul_25_2011_025527_0100'>Version 0.8 (Mon Jul 25 2011 02:55:27 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Complete mp3 (IDV tag read/write support.</li>
-
 <li>Allows clearing number fields e.g year.</li>
-
 <li>Validate number fields to allow only numbers.</li>
-
 <li>Allows changes the language of each field in the results from vgmdb.</li>
-
 <li>Now allows search using the tags of the song to allow easier searching.</li>
 </ul>
-
 <h3 id='bug_fixes'>Bug fixes</h3>
-
 <ul>
 <li>Better error handing when vgmdb is missing data.</li>
-
 <li>Fixed a bug when trying to save a field with an empty string.</li>
 </ul>
-
 <h2 id='version_07_fri_jul_22_2011_200613_0100'>Version 0.7 (Fri Jul 22 2011 20:06:13 +0100)</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Complete mp4 tag read/write support.</li>
-
 <li>File browser with previous and forward buttons.</li>
-
 <li>Allows user specified directory with a open dialog.</li>
-
 <li>Allows going to parent directories easily.</li>
 </ul>
-
 <h2 id='older_versions'>Older Versions</h2>
-
 <h3 id='features'>Features</h3>
-
 <ul>
 <li>Allow editing of data directory in the table view</li>
-
 <li>Able to search for albums on vgmdb and get the data for that album.</li>
-
 <li>Using a gui.</li>
-
 <li>Allows searching three languages English, Romaji and Kanji.</li>
-
 <li>Menu items for to Uppercase ^U, to Lowercase Shift ^U, Capitalise Command ^U</li>
-
 <li>GUI</li>
-
 <li>Classes</li>
 </ul>
-
 </div>
-
     </div>
-    
-    
-    
     <div id="footer" class="span-24">
   &copy; 2012 Bilal Syed Hussain.  
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
@@ -800,8 +516,6 @@ img.pic{
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
   </div>
-  
 </body>
 </html>

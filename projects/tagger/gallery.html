@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
     <title>Tagger's gallery - Bilal Syed Hussain</title>
-  
-  
   <meta name="author" content="Bilal Hussain" />
   <meta name="description" content="Bilal Hussain  " />
   <meta name="robots" content="noodp, nydir" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
   <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
   <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
   <link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-  
 	<script type="text/javascript" src="/js/jquery.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
 	<script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-26827948-1']);
   _gaq.push(['_trackPageview']);
-
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 	<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
   <script language="Javascript" type="text/javascript">
   //<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
   // Create a search control
   var searchControl = new google.search.SearchControl();
-  
   // Add in a WebSearch
   var webSearch = new google.search.WebSearch();
-  
   // Restrict our search to pages from this site
   webSearch.setSiteRestriction('bilalh.github.com');
-  
   // Add the searcher to the SearchControl
   searchControl.addSearcher(webSearch);
-  
   // tell the searcher to draw itself and tell it where to attach
   searchControl.draw(document.getElementById("searchcontrol"));
 	// Add the value of "Search..." to the input field and a class of .empty
-
-
 }
 google.setOnLoadCallback(function() {
   $(function() {
 		OnLoad()
 		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
     // When you click on #search
     $(".gsc-input > input").focus(function(){
-     
         // If the value is equal to "Search..."
         if($(this).val() == "Search... powered by Google") {
             // remove all the text and the class of .empty
@@ -70,25 +51,19 @@ google.setOnLoadCallback(function() {
         }
         this.select();
     });
-     
     // When the focus on #search is lost
     $(".gsc-input > input").blur(function(){
-     
         // If the input field is empty
         if($(this).val() == "") {
             // Add the text "Search..." and a class of .empty
             $(this).val("Search... powered by Google").addClass("empty");
         }
-     
     });
   });
 });
-
-
   //]]>
   </script>
 </head>
-
 <body>
   <div class="container">
     <div id="header" class="span-24">
@@ -102,8 +77,6 @@ google.setOnLoadCallback(function() {
     </ul>
   </div>
 </div>
-
-    
     <div id="main" class="span-24">
       <style type="text/css">
 h2,h3,h4,h5{ 
@@ -111,15 +84,12 @@ h2,h3,h4,h5{
 	font-weight   : normal;
 	border-bottom : 1px dotted #ccc;
 }     
-
 h2, h2.title-feature {
 	margin-left   : 3px;
 	font-variant  : small-caps;
 	font-weight   : normal;
 	border-bottom : 1px dotted #ccc;  
 }
-
-
 .project-icon {
 	margin-top: 20px; 
 }
@@ -130,48 +100,27 @@ img.pic{
 	margin-bottom : 10px;
 }
 </style>
-
-
 <div class="span-18">
-	
 		<img src="/images/projects/tagger/Tagger.png" class="project-icon left" width="64" height="64" alt="icon"/> 
-		 
 	<h1 class="project-title">Tagger's gallery</h1>
 		<h3>
-			
 				<a href="/projects/tagger">Features &nbsp;</a>
-			
-			
 				<a href="readme.html">
 					Readme &nbsp;</a>
-			
-			
 				<a href="gallery.html">Screenshots &nbsp;</a>
-			
-			
 				<a href="changelog.html">Changelog &nbsp;</a>
-			
-			
-			
 				<a href="https://github.com/Bilalh/tagger/issues">Support &nbsp;</a>
-			
 		</h3>
 </div>
-
 <div class="project-links span-6 last">
 	<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip" class="project-download-link">
 		<div class="project-download">Download v1.5.1</div>
 	</a>
-	
 	<h3><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
-	
-	
 </div>
-
 <div class="readme span-24">
 		<link rel="stylesheet" type="text/css" href="/css/jquery.ad-gallery.css">
 	<script type="text/javascript" src="/js/jquery.ad-gallery.pack.js"></script>
-
 	<script type="text/javascript">
 	$(function() {
 		var galleries = $('.ad-gallery').adGallery();
@@ -199,9 +148,7 @@ img.pic{
 		);
 	});
 	</script>
-
 	<style type="text/css">
-
 	#gallery {
 		padding: 30px;
 	}
@@ -222,7 +169,6 @@ img.pic{
 		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
     color: #333;
     line-height: 140%;
-
 	}
 	.ad-gallery {
 	  width: 800px;
@@ -231,18 +177,14 @@ img.pic{
 	  height: 456px;
 	}
 	</style>
-
 <div id="gallery" class="ad-gallery">
 	<div class="ad-image-wrapper">
 	</div>
 	<div class="ad-controls">
 	</div>
-
 	<div class="ad-nav">
 		<div class="ad-thumbs">
 			<ul class="ad-thumb-list">
-			
-				
 				<li>
 					<a href="/images/projects/tagger/s001.png">
 						<img src="/images/projects/tagger/thumbs/s001.png" 
@@ -250,7 +192,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s002.png">
 						<img src="/images/projects/tagger/thumbs/s002.png" 
@@ -258,7 +199,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s003.png">
 						<img src="/images/projects/tagger/thumbs/s003.png" 
@@ -266,7 +206,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s004.png">
 						<img src="/images/projects/tagger/thumbs/s004.png" 
@@ -274,7 +213,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s005.png">
 						<img src="/images/projects/tagger/thumbs/s005.png" 
@@ -282,7 +220,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s006.png">
 						<img src="/images/projects/tagger/thumbs/s006.png" 
@@ -290,7 +227,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s007.png">
 						<img src="/images/projects/tagger/thumbs/s007.png" 
@@ -298,7 +234,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s008.png">
 						<img src="/images/projects/tagger/thumbs/s008.png" 
@@ -306,7 +241,6 @@ img.pic{
 ">
 					</a>
 				</li>
-				
 				<li>
 					<a href="/images/projects/tagger/s009.png">
 						<img src="/images/projects/tagger/thumbs/s009.png" 
@@ -314,21 +248,12 @@ img.pic{
 ">
 					</a>
 				</li>
-				
-								
 			</ul>
 		</div>
 	</div>
-
 </div>
-
-
 </div>
-
     </div>
-    
-    
-    
     <div id="footer" class="span-24">
   &copy; 2012 Bilal Syed Hussain.  
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
@@ -337,8 +262,6 @@ img.pic{
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
   </div>
-  
 </body>
 </html>

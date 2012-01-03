@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
     <title>Tag: Applescript - Bilal Syed Hussain</title>
-  
-  
   <meta name="author" content="Bilal Hussain" />
   <meta name="description" content="Bilal Hussain  " />
   <meta name="robots" content="noodp, nydir" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
   <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
   <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
   <link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-  
 	<script type="text/javascript" src="/js/jquery.js"></script>
   <script type="text/javascript" src="/js/site.js"></script>
 	<script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-26827948-1']);
   _gaq.push(['_trackPageview']);
-
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 	<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
   <script language="Javascript" type="text/javascript">
   //<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
   // Create a search control
   var searchControl = new google.search.SearchControl();
-  
   // Add in a WebSearch
   var webSearch = new google.search.WebSearch();
-  
   // Restrict our search to pages from this site
   webSearch.setSiteRestriction('bilalh.github.com');
-  
   // Add the searcher to the SearchControl
   searchControl.addSearcher(webSearch);
-  
   // tell the searcher to draw itself and tell it where to attach
   searchControl.draw(document.getElementById("searchcontrol"));
 	// Add the value of "Search..." to the input field and a class of .empty
-
-
 }
 google.setOnLoadCallback(function() {
   $(function() {
 		OnLoad()
 		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
     // When you click on #search
     $(".gsc-input > input").focus(function(){
-     
         // If the value is equal to "Search..."
         if($(this).val() == "Search... powered by Google") {
             // remove all the text and the class of .empty
@@ -70,25 +51,19 @@ google.setOnLoadCallback(function() {
         }
         this.select();
     });
-     
     // When the focus on #search is lost
     $(".gsc-input > input").blur(function(){
-     
         // If the input field is empty
         if($(this).val() == "") {
             // Add the text "Search..." and a class of .empty
             $(this).val("Search... powered by Google").addClass("empty");
         }
-     
     });
   });
 });
-
-
   //]]>
   </script>
 </head>
-
 <body>
   <div class="container">
     <div id="header" class="span-24">
@@ -102,100 +77,68 @@ google.setOnLoadCallback(function() {
     </ul>
   </div>
 </div>
-
-    
     <div id="main" class="span-17">
       <h1 class="large-bottom">Tag: Applescript</h1>
 <div id="main-content">
-
-
 <div class="post-listing">
 	<h2><a href="/2011/08/29/fn-lock" class="dark-link">fn lock</a></h2>
 	<div class="low-top">
 		<span class="low-top ">Posted on  August 29, 2011 in <a href="/categories/osx">OSX</a></span>
 		<span class="tag-list">
-			
 			<a href="/tags/applescript">Applescript</a>
-			
 			<a href="/tags/utilities">Utilities</a>
-			
 			<a href="/tags/scripting">Scripting</a>
-			
 		</span>
 	</div>
 	<p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys. The script is most useful in either the script menu, which is done by placing the script in the /Library/Scripts/ or using Alfred/Quicksilver. tell application &quot;System Preferences&quot; set current pane to pane &quot;com.apple.preference.keyboard&quot;...</p>
 	<p class><a href="/2011/08/29/fn-lock">Read more...</a></p>
 </div>
-
 </div>
-
-
     </div>
-    
-    
       <div id="sidebar" class="span-6 push-1 last">
 	<div class="sidebar-module">
-				 
 		<div id="searchcontrol">
-			
 		</div>
-		
 	</div>
-
 	<div class="sidebar-module">
 		<div class="title"><a href='/tags'>Tags</a></div>
-		
             <span style="font-size: 75%">
               <a href="/tags/applescript/" title="1 post">Applescript</a>
             </span>
-          
             <span style="font-size: 75%">
               <a href="/tags/audio/" title="1 post">Audio</a>
             </span>
-          
             <span style="font-size: 143%">
               <a href="/tags/bash/" title="2 posts">Bash</a>
             </span>
-          
             <span style="font-size: 143%">
               <a href="/tags/git/" title="2 posts">Git</a>
             </span>
-          
             <span style="font-size: 143%">
               <a href="/tags/mplayer/" title="2 posts">MPlayer</a>
             </span>
-          
             <span style="font-size: 75%">
               <a href="/tags/misc/" title="1 post">Misc</a>
             </span>
-          
             <span style="font-size: 143%">
               <a href="/tags/scripting/" title="2 posts">Scripting</a>
             </span>
-          
             <span style="font-size: 75%">
               <a href="/tags/textmate/" title="1 post">TextMate</a>
             </span>
-          
             <span style="font-size: 280%">
               <a href="/tags/utilities/" title="4 posts">Utilities</a>
             </span>
-          
 	</div>
-
 	<div class="sidebar-module">
 		<div class="title"><a href='/categories'>Categories</a></div>
 		<a href="/categories/osx"><strong>OSX</strong></a> (4)<br /><a href="/categories/unix"><strong>Unix</strong></a> (5)<br /><a href="/categories/release"><strong>Release</strong></a> (1)<br />
 	</div>
-	
 	<div class="sidebar-module">
 		<div class="title"><a href='/archives'>Archives</div>
 		<a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
 	</div>
 </div>
-
-    
-    
     <div id="footer" class="span-24">
   &copy; 2012 Bilal Syed Hussain.  
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
@@ -204,8 +147,6 @@ google.setOnLoadCallback(function() {
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
  &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
   </div>
-  
 </body>
 </html>
