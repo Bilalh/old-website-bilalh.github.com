@@ -7,9 +7,16 @@ server:   false
 lsi:      false
 safe:     false
 pygments: true
+markdown: maruku
 
-github_user: Bilalh
-markdown:    maruku
+github_user:       Bilalh
+googleplus_user:   115924527404981938729
+googleplus_hidden: false
+
+google_plus_one: true
+google_plus_one_size: 12
+facebook_like: true
+twitter_tweet_button: true
 
 paginate: 5
 paginate_files: 
