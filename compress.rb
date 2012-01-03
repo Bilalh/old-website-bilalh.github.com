@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby19 -WKU
 require "front-compiler"
-# 
+
 class FrontCompiler::HTMLCompactor
 	  def remove_trailing_spaces(source)
 		source.gsub /\n\s*/, "\n"
