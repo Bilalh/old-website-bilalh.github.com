@@ -3,7 +3,7 @@ require "front-compiler"
 
 class FrontCompiler::HTMLCompactor
 	  def remove_trailing_spaces(source)
-		source.gsub /(\n[ \t]*)+/, "\n"
+		source.gsub /(\n[ \t]*)+/, ""
 		end
 end
 
