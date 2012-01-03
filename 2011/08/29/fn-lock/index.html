@@ -59,6 +59,15 @@ if($(this).val() == "") {
 $(this).val("Search... powered by Google").addClass("empty");
 }
 });
+$("#comment_heading").click(function()
+{
+$(this).next("#disqus_thread").slideToggle(500);
+if($(this).text() == "Show Comments") {
+$(this).text("Hide Comments")
+}else{
+$(this).text("Show Comments")
+}
+});
 });
 });
 //]]>
@@ -176,15 +185,15 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
-<section>
-<h2>Comments</h1>
-<div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div>
+<h2 id='comment_heading'>Show Comments</h2>
+<div id="disqus_thread" style="display: none; " aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-</section>
+</div>
 </div>
 </div>
 <div id="sidebar" class="span-6 push-1 last">
-<div class="sidebar-module">
+<div class="sidebar-module" id='gsearcher'>
 <div id="searchcontrol">
 </div>
 </div>

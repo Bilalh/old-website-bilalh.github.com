@@ -59,6 +59,15 @@ if($(this).val() == "") {
 $(this).val("Search... powered by Google").addClass("empty");
 }
 });
+$("#comment_heading").click(function()
+{
+$(this).next("#disqus_thread").slideToggle(500);
+if($(this).text() == "Show Comments") {
+$(this).text("Hide Comments")
+}else{
+$(this).text("Show Comments")
+}
+});
 });
 });
 //]]>
@@ -150,7 +159,7 @@ sed &#39;/pattern/d&#39;
 </div>
 </div>
 <div id="sidebar" class="span-6 push-1 last">
-<div class="sidebar-module">
+<div class="sidebar-module" id='gsearcher'>
 <div id="searchcontrol">
 </div>
 </div>

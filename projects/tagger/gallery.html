@@ -59,6 +59,15 @@ if($(this).val() == "") {
 $(this).val("Search... powered by Google").addClass("empty");
 }
 });
+$("#comment_heading").click(function()
+{
+$(this).next("#disqus_thread").slideToggle(500);
+if($(this).text() == "Show Comments") {
+$(this).text("Hide Comments")
+}else{
+$(this).text("Show Comments")
+}
+});
 });
 });
 //]]>
