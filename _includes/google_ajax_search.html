@@ -26,28 +26,38 @@ google.setOnLoadCallback(function() {
   $(function() {
 		OnLoad()
 		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
-    // When you click on #search
-    $(".gsc-input > input").focus(function(){
-     
-        // If the value is equal to "Search..."
-        if($(this).val() == "Search... powered by Google") {
-            // remove all the text and the class of .empty
-            $(this).val("").removeClass("empty");;
-        }
-        this.select();
-    });
-     
-    // When the focus on #search is lost
-    $(".gsc-input > input").blur(function(){
-     
-        // If the input field is empty
-        if($(this).val() == "") {
-            // Add the text "Search..." and a class of .empty
-            $(this).val("Search... powered by Google").addClass("empty");
-        }
-     
-    });
+	 
+	// When you click on #search
+	$(".gsc-input > input").focus(function(){
+	 
+		// If the value is equal to "Search..."
+		if($(this).val() == "Search... powered by Google") {
+			// remove all the text and the class of .empty
+			$(this).val("").removeClass("empty");;
+		}
+		this.select();
+	});
+	 
+	// When the focus on #search is lost
+	$(".gsc-input > input").blur(function(){
+	 
+		// If the input field is empty
+		if($(this).val() == "") {
+			// Add the text "Search..." and a class of .empty
+			$(this).val("Search... powered by Google").addClass("empty");
+		}
+	});
+
+	$("#comment_heading").click(function()
+	{
+		$(this).next("#disqus_thread").slideToggle(500);
+		if($(this).text() == "Show Comments") {
+			$(this).text("Hide Comments")
+		}else{
+			$(this).text("Show Comments")
+		}
+	});
+	
   });
 });
 
