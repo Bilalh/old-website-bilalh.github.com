@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% if page.title %}
-    <title>{{ page.title }} - {{ site.title }}</title>
-  {% else %}
-    <title>{{ site.title }}</title>
-  {% endif %}
-  
-  <meta name="author" content="Bilal Hussain" />
-  <meta name="description" content="Bilal Hussain  " />
-  <meta name="robots" content="noodp, nydir" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
-  <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-  <link href="/css/site.css" type="text/css" rel="stylesheet" />
+	{% if page.title %}
+	<title>{{ page.title }} - {{ site.title }}</title>
+	{% else %}
+	<title>{{ site.title }}</title>
+	{% endif %}
+	
+	<meta name="author" content="Bilal Syed Hussain" />
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}" />
+	{% else %}
+	<meta name="description" content="{{site.title }} {{ page.title }}" />
+	{% endif %}
 
-  
-	<script type="text/javascript" src="/js/jquery.js"></script>
-  <script type="text/javascript" src="/js/site.js"></script>
-	{% include google_analytics.html   %}
-	{% include google_ajax_search.html %}
+	{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}" />	
+	{% endif %}
+
+	<meta name="robots" content="noodp, nydir" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+	<!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->	 
+	<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+	<link href="/css/site.css" type="text/css" rel="stylesheet" />
+
+	
+		<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/site.js"></script>
+		{% include google_analytics.html	 %}
+		{% include google_ajax_search.html %}
 </head>
 
 <body>
-  <div class="container">
-    {% include header.html %}
-    
-    <div id="main" class="span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
-      {{ content }}
-    </div>
-    
-    {% unless page.no_sidebar %}
-      {% include sidebar.html %}
-    {% endunless %}
-    
-    {% include footer.html %}
-  </div>
-  
+	<div class="container">
+		{% include header.html %}
+		
+		<div id="main" class="span-{% if page.no_sidebar %}24{% else %}17{% endif %}">
+			{{ content }}
+		</div>
+		
+		{% unless page.no_sidebar %}
+			{% include sidebar.html %}
+		{% endunless %}
+		
+		{% include footer.html %}
+	</div>
+	
 </body>
 </html>

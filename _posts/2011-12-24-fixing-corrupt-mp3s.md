@@ -6,6 +6,8 @@ category: Unix
 tags:
  - Utilities
  - Audio
+keywords: Audio Unix mp3
+description: How to fix corrupt mp3 using 'mp3val' on Mac or Unix
 ---
 
 To fix corrupt mp3 use [mp3val](http://mp3val.sourceforge.net/).  The website has binaries for Windows, and sources for other platforms (Linux, Mac OS X). 
