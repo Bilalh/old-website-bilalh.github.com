@@ -2,7 +2,7 @@
 require "front-compiler"
 
 c = FrontCompiler.new
-Dir.glob('_compiled/**/*.{html,js,css}').each do |f|
+Dir.glob('_compiled/**/*.{html}').each do |f|
 	compressed = c.compact_file(f)
 	File.open(f, "w") { |file| file.write compressed }
 end
