@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Utilities - Bilal Syed Hussain</title>
+<meta name="author" content="Bilal Hussain" />
+<meta name="description" content="Bilal Hussain  " />
+<meta name="robots" content="noodp, nydir" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+<link href="/css/site.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26827948-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
+google.load("search", "1");
+function OnLoad() {
+// Create a search control
+var searchControl = new google.search.SearchControl();
+// Add in a WebSearch
+var webSearch = new google.search.WebSearch();
+// Restrict our search to pages from this site
+webSearch.setSiteRestriction('bilalh.github.com');
+// Add the searcher to the SearchControl
+searchControl.addSearcher(webSearch);
+// tell the searcher to draw itself and tell it where to attach
+searchControl.draw(document.getElementById("searchcontrol"));
+// Add the value of "Search..." to the input field and a class of .empty
+}
+google.setOnLoadCallback(function() {
+$(function() {
+OnLoad()
+$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
+// When you click on #search
+$(".gsc-input > input").focus(function(){
+// If the value is equal to "Search..."
+if($(this).val() == "Search... powered by Google") {
+// remove all the text and the class of .empty
+$(this).val("").removeClass("empty");;
+}
+this.select();
+});
+// When the focus on #search is lost
+$(".gsc-input > input").blur(function(){
+// If the input field is empty
+if($(this).val() == "") {
+// Add the text "Search..." and a class of .empty
+$(this).val("Search... powered by Google").addClass("empty");
+}
+});
+});
+});
+//]]>
+</script>
+</head>
+<body>
+<div class="container">
+<div id="header" class="span-24">
+<div id="menu" class="span-15 last">
+<ul>
+<li class="first"><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/projects">Projects</a></li>
+<li class="last"><a id="mail" href="">Contact</a></li>
+</ul>
+</div>
+</div>
+<div id="main" class="span-24">
+<style type="text/css">
+h2,h3,h4,h5{ 
+color: #335E8D;
+font-weight   : normal;
+border-bottom : 1px dotted #ccc;
+}     
+h2, h2.title-feature {
+margin-left   : 3px;
+font-variant  : small-caps;
+font-weight   : normal;
+border-bottom : 1px dotted #ccc;  
+}
+.project-icon {
+margin-top: 20px; 
+}
+img.pic{
+float:left;
+margin-top    : 5px;
+margin-right  : 15px;
+margin-bottom : 10px;
+}
+</style>
+<div class="span-18">
+<h1 class="project-title">Web Utilities</h1>
+<h3>
+</h3>
+</div>
+<div class="project-links span-6 last">
+<a href="https://github.com/Bilalh/Web-Utilities/zipball/master" class="project-download-link">
+<div class="project-download">Download</div>
+</a>
+<h3><a href="https://github.com/Bilalh/Web-Utilities">GitHub Repository</a></h3>
+</div>
+<div class="readme span-24">
+<h1 id='readmeTitle'>Web Utilities</h1><p id='description'>Scripts for transforming html, including removing elements by CSS/XPath and transforming Metawiki webpages to epub friendly html with chapters for all the headings.</p><h2 id='usage'>Usage</h2><pre><code>remove_elems.rb html {css|xpath}*
+Removes the specified elements using css and/or xpath
+remove_elems_inline.rb html {css|xpath}*
+Removes the specified elements using css and/or xpath inplace
+remove_elems_inline_glob.sh {glob}
+Run `remove_elems_inline.rb` on each file in the glob
+wiki_to_epub_html.rb save_dir base_url url
+wiki_to_epub_html.rb config_file
+Coverts metawiki webpages to epub friendly html. </code></pre><h2 id='prerequisites'>Prerequisites</h2><ul>
+<li>Ruby 1.9 with the nokogiri gem</li>
+</ul><h2 id='install'>Install</h2><ul>
+<li>
+<p>Put the scripts in your <code>$PATH</code></p>
+<h2 id='options_for_wiki_to_epub_html'>Options for wiki_to_epub_html</h2>
+</li>
+<li>
+<p>base_url is of the form <code>www.example.com</code></p>
+</li>
+<li>
+<p>A url is either a full or relative url.</p>
+</li>
+</ul><h3 id='config_file'>config_file</h3><p>a config_file is:</p><pre><code>save_dir
+base_url
+{url}+			</code></pre><p>In the config_file metadata can be specified using a : e.g.</p><pre><code>:author:Urobuchi Gen
+:series:Fate/Zero</code></pre><p>The follow + and - can be used as true and false or add and remove</p><ul>
+<li><code>resize_images</code></li>
+<li><code>numbered</code> number the files from 1</li>
+<li><code>css:ele</code> to add/remove css elements</li>
+<li><code>xpath:ele</code> to add/remove xpath elements</li>
+<li><code>title_gsub:regex</code> Text to</li>
+<li><code>filename</code> the base filename only used with <code>fmt</code></li>
+<li><code>fmt</code> format for number e.g %2d</li>
+</ul><p>Other options</p><ul>
+<li><code>-css</code> to remove all css elements, <code>-xpath</code> remove all xpath element</li>
+</ul><h2 id='issues'>Issues</h2><p>None yet</p><h2 id='licence'>Licence</h2><p><a href='http://creativecommons.org/licenses/by-nc-sa/3.0/' title='Full details'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></p><h2 id='authors'>Authors</h2><ul>
+<li>Bilal Hussain</li>
+</ul>
+</div>
+</div>
+<div id="footer" class="span-24">
+&copy; 2012 Bilal Syed Hussain.  
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
+</div>
+</div>
+</body>
+</html>
