@@ -29,6 +29,7 @@ end
 # Commit the changes to the site.
 task :commit => :build do
 	puts %x[rsync -q -acvrz --exclude .git --delete _site/ _compiled/]
+	puts %x[./compress.rb]
 	puts %x[cd _compiled; git add .; git commit -am "`date +%F_%H-%M_%s`"; ]
 end
 
@@ -41,6 +42,8 @@ task :ssend => :commit do
 	puts %x[cd _compiled; git push origin master]
 	%x[osascript -e 'open location "http://bilalh.github.com"']
 end
+
+
 
 task :remove_cache do
 	`rm _cache/*`

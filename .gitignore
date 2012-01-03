@@ -16,7 +16,6 @@ Backup[ ]of[ ]*.numbers/
 
 # Mac OS X Finder
 .DS_Store
-# Sparkle distribution Private Key (Don’t check me in!)
 
 *.aux
 *.glo
