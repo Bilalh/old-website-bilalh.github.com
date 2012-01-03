@@ -12,6 +12,9 @@ To fix corrupt mp3 use [mp3val](http://mp3val.sourceforge.net/).  The website ha
 
 Installation
 ------------
+
+**Update**: binaries for Mac OS X (tested on 10.6) [here](/files/mp3val)
+
 To install on a Mac either install it the easy way:
 
 	brew install mp3val

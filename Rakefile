@@ -49,7 +49,7 @@ task :remove_cache do
 	`rm _cache/*`
 end
 
-# Make a new post
+# Makes a new post
 task :new do
 	throw "No title given" unless ARGV[1]
 	title = ""
