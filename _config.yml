@@ -18,6 +18,8 @@ google_plus_one_size: 12
 facebook_like: true
 twitter_tweet_button: true
 
+disqus_short_name: bilalsyedhussain
+
 paginate: 5
 paginate_files: 
   - blog.html 

@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <style type="text/css">
@@ -55,4 +56,9 @@ h3,h4 {
 
 	<hr />
 	{% include sharing.html %}
+	{% include disqus.html %}
+	<section>
+    <h2>Comments</h1>
+    <div id="disqus_thread" aria-live="polite">{% include disqus_thread.html %}</div>
+  </section>
 </div>
