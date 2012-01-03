@@ -8,7 +8,7 @@ class FrontCompiler::HTMLCompactor
 end
 
 c = FrontCompiler.new
-Dir.glob('_site/**/*.{html,css,js}').each do |f|
+Dir.glob('_compiled/**/*.{html,css,js}').each do |f|
 	compressed = c.compact_file(f)
 	File.open(f, "w") { |file| file.write compressed }
 end

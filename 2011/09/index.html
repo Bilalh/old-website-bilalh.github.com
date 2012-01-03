@@ -1,244 +1,179 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-    <title>Archives for September 2011 - Bilal Syed Hussain</title>
-  
-  
-  <meta name="author" content="Bilal Hussain" />
-  <meta name="description" content="Bilal Hussain  " />
-  <meta name="robots" content="noodp, nydir" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
-  <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-  <link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-  
-	<script type="text/javascript" src="/js/jquery.js"></script>
-  <script type="text/javascript" src="/js/site.js"></script>
-	<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26827948-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<title>Archives for September 2011 - Bilal Syed Hussain</title>
+<meta name="author" content="Bilal Hussain" />
+<meta name="description" content="Bilal Hussain  " />
+<meta name="robots" content="noodp, nydir" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+<link href="/css/site.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26827948-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
-	<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-  <script language="Javascript" type="text/javascript">
-  //<![CDATA[
+<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
-  // Create a search control
-  var searchControl = new google.search.SearchControl();
-  
-  // Add in a WebSearch
-  var webSearch = new google.search.WebSearch();
-  
-  // Restrict our search to pages from this site
-  webSearch.setSiteRestriction('bilalh.github.com');
-  
-  // Add the searcher to the SearchControl
-  searchControl.addSearcher(webSearch);
-  
-  // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
-	// Add the value of "Search..." to the input field and a class of .empty
-
-
+// Create a search control
+var searchControl = new google.search.SearchControl();
+// Add in a WebSearch
+var webSearch = new google.search.WebSearch();
+// Restrict our search to pages from this site
+webSearch.setSiteRestriction('bilalh.github.com');
+// Add the searcher to the SearchControl
+searchControl.addSearcher(webSearch);
+// tell the searcher to draw itself and tell it where to attach
+searchControl.draw(document.getElementById("searchcontrol"));
+// Add the value of "Search..." to the input field and a class of .empty
 }
 google.setOnLoadCallback(function() {
-  $(function() {
-		OnLoad()
-		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
-    // When you click on #search
-    $(".gsc-input > input").focus(function(){
-     
-        // If the value is equal to "Search..."
-        if($(this).val() == "Search... powered by Google") {
-            // remove all the text and the class of .empty
-            $(this).val("").removeClass("empty");;
-        }
-        this.select();
-    });
-     
-    // When the focus on #search is lost
-    $(".gsc-input > input").blur(function(){
-     
-        // If the input field is empty
-        if($(this).val() == "") {
-            // Add the text "Search..." and a class of .empty
-            $(this).val("Search... powered by Google").addClass("empty");
-        }
-     
-    });
-  });
+$(function() {
+OnLoad()
+$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
+// When you click on #search
+$(".gsc-input > input").focus(function(){
+// If the value is equal to "Search..."
+if($(this).val() == "Search... powered by Google") {
+// remove all the text and the class of .empty
+$(this).val("").removeClass("empty");;
+}
+this.select();
 });
-
-
-  //]]>
-  </script>
+// When the focus on #search is lost
+$(".gsc-input > input").blur(function(){
+// If the input field is empty
+if($(this).val() == "") {
+// Add the text "Search..." and a class of .empty
+$(this).val("Search... powered by Google").addClass("empty");
+}
+});
+});
+});
+//]]>
+</script>
 </head>
-
 <body>
-  <div class="container">
-    <div id="header" class="span-24">
-  <div id="menu" class="span-15 last">
-    <ul>
-      <li class="first"><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li class="last"><a id="mail" href="">Contact</a></li>
-    </ul>
-  </div>
+<div class="container">
+<div id="header" class="span-24">
+<div id="menu" class="span-15 last">
+<ul>
+<li class="first"><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/projects">Projects</a></li>
+<li class="last"><a id="mail" href="">Contact</a></li>
+</ul>
 </div>
-
-    
-    <div id="main" class="span-17">
-      <h1>Archives for September 2011</h1>
-
+</div>
+<div id="main" class="span-17">
+<h1>Archives for September 2011</h1>
 <div id="main-content">
-	   
-	
 <div class="post-listing">
-	<h2><a href="/2011/09/10/ls-colours" class="dark-link">ls colours</a></h2>
-	<div class="low-top">
-		<span class="low-top ">Posted on  September 10, 2011 in <a href="/categories/osx">OSX</a></span>
-		<span class="tag-list">
-			
-			<a href="/tags/bash">Bash</a>
-			
-		</span>
-	</div>
-	<p>To get ls colours on a mac add the follow to your .bash_profile.
+<h2><a href="/2011/09/10/ls-colours" class="dark-link">ls colours</a></h2>
+<div class="low-top">
+<span class="low-top ">Posted on  September 10, 2011 in <a href="/categories/osx">OSX</a></span>
+<span class="tag-list">
+<a href="/tags/bash">Bash</a>
+</span>
+</div>
+<p>To get ls colours on a mac add the follow to your .bash_profile.
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxbxegedabagacad
-
 </p>
-	<p class><a href="/2011/09/10/ls-colours">Read more...</a></p>
+<p class><a href="/2011/09/10/ls-colours">Read more...</a></p>
 </div>
-
 <div class="post-listing">
-	<h2><a href="/2011/09/09/git-delete-last-commit" class="dark-link">Git Delete Last Commit</a></h2>
-	<div class="low-top">
-		<span class="low-top ">Posted on  September 09, 2011 in <a href="/categories/unix">Unix</a></span>
-		<span class="tag-list">
-			
-			<a href="/tags/git">Git</a>
-			
-		</span>
-	</div>
-	<p>If you have committed files that you shouldn&#8217;t have (e.g passwords, keys) you can use the following to delete the last commit provided the commit has not been pushed. git reset --hard HEAD~1 Head~1 means the pervious commit, you can also use the SHA-1 of commit to delete all commits...</p>
-	<p class><a href="/2011/09/09/git-delete-last-commit">Read more...</a></p>
+<h2><a href="/2011/09/09/git-delete-last-commit" class="dark-link">Git Delete Last Commit</a></h2>
+<div class="low-top">
+<span class="low-top ">Posted on  September 09, 2011 in <a href="/categories/unix">Unix</a></span>
+<span class="tag-list">
+<a href="/tags/git">Git</a>
+</span>
 </div>
-
+<p>If you have committed files that you shouldn&#8217;t have (e.g passwords, keys) you can use the following to delete the last commit provided the commit has not been pushed. git reset --hard HEAD~1 Head~1 means the pervious commit, you can also use the SHA-1 of commit to delete all commits...</p>
+<p class><a href="/2011/09/09/git-delete-last-commit">Read more...</a></p>
+</div>
 <div class="post-listing">
-	<h2><a href="/2011/09/08/mac-keyboard-symbols" class="dark-link">Mac Keyboard Symbols</a></h2>
-	<div class="low-top">
-		<span class="low-top ">Posted on  September 08, 2011 in <a href="/categories/osx">OSX</a></span>
-		<span class="tag-list">
-			
-			<a href="/tags/misc">Misc</a>
-			
-		</span>
-	</div>
-	<p>Below is the list of symbols on mac keyboards with their Unicode equivalents which is useful for readme. SymbolNameUnicode ⎋ Escape U+238B ⇥ Tab forward U+21E5 ⇤ Tab back U+21E4 ⇪ Capslock U+21EA ⇧ Shift U+21E7 ⌃ Control U+2303 ⌥ Option (Alt, Alternative) U+2325  Apple symbol U+F8FF ⌘ Command...</p>
-	<p class><a href="/2011/09/08/mac-keyboard-symbols">Read more...</a></p>
+<h2><a href="/2011/09/08/mac-keyboard-symbols" class="dark-link">Mac Keyboard Symbols</a></h2>
+<div class="low-top">
+<span class="low-top ">Posted on  September 08, 2011 in <a href="/categories/osx">OSX</a></span>
+<span class="tag-list">
+<a href="/tags/misc">Misc</a>
+</span>
 </div>
-	
+<p>Below is the list of symbols on mac keyboards with their Unicode equivalents which is useful for readme. SymbolNameUnicode ⎋ Escape U+238B ⇥ Tab forward U+21E5 ⇤ Tab back U+21E4 ⇪ Capslock U+21EA ⇧ Shift U+21E7 ⌃ Control U+2303 ⌥ Option (Alt, Alternative) U+2325  Apple symbol U+F8FF ⌘ Command...</p>
+<p class><a href="/2011/09/08/mac-keyboard-symbols">Read more...</a></p>
 </div>
-
-
-    </div>
-    
-    
-      <div id="sidebar" class="span-6 push-1 last">
-	<div class="sidebar-module">
-				 
-		<!-- <form id="search">
-			<input type="text" id="query" name="query"/>
-			<input type="submit" id="search-submit" value="Go" />
-		</form> -->
-		<div id="searchcontrol">
-			
-		</div>
-		
-	</div>
-
-	<div class="sidebar-module">
-		<div class="title"><a href='/tags'>Tags</a></div>
-		
-            <span style="font-size: 75%">
-              <a href="/tags/applescript/" title="1 post">Applescript</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/audio/" title="1 post">Audio</a>
-            </span>
-          
-            <span style="font-size: 143%">
-              <a href="/tags/bash/" title="2 posts">Bash</a>
-            </span>
-          
-            <span style="font-size: 143%">
-              <a href="/tags/git/" title="2 posts">Git</a>
-            </span>
-          
-            <span style="font-size: 143%">
-              <a href="/tags/mplayer/" title="2 posts">MPlayer</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/misc/" title="1 post">Misc</a>
-            </span>
-          
-            <span style="font-size: 143%">
-              <a href="/tags/scripting/" title="2 posts">Scripting</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/textmate/" title="1 post">TextMate</a>
-            </span>
-          
-            <span style="font-size: 280%">
-              <a href="/tags/utilities/" title="4 posts">Utilities</a>
-            </span>
-          
-	</div>
-
-	<div class="sidebar-module">
-		<div class="title"><a href='/categories'>Categories</a></div>
-		<a href="/categories/osx"><strong>OSX</strong></a> (4)<br /><a href="/categories/unix"><strong>Unix</strong></a> (5)<br /><a href="/categories/release"><strong>Release</strong></a> (1)<br />
-	</div>
-	
-	<div class="sidebar-module">
-		<div class="title"><a href='/archives'>Archives</div>
-		<a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
-	</div>
 </div>
-
-    
-    
-    <div id="footer" class="span-24">
-  &copy; 2012 Bilal Syed Hussain.  
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
-  </div>
-  
+<div id="sidebar" class="span-6 push-1 last">
+<div class="sidebar-module">
+<!-- <form id="search">
+<input type="text" id="query" name="query"/>
+<input type="submit" id="search-submit" value="Go" />
+</form> -->
+<div id="searchcontrol">
+</div>
+</div>
+<div class="sidebar-module">
+<div class="title"><a href='/tags'>Tags</a></div>
+<span style="font-size: 75%">
+<a href="/tags/applescript/" title="1 post">Applescript</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/audio/" title="1 post">Audio</a>
+</span>
+<span style="font-size: 143%">
+<a href="/tags/bash/" title="2 posts">Bash</a>
+</span>
+<span style="font-size: 143%">
+<a href="/tags/git/" title="2 posts">Git</a>
+</span>
+<span style="font-size: 143%">
+<a href="/tags/mplayer/" title="2 posts">MPlayer</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/misc/" title="1 post">Misc</a>
+</span>
+<span style="font-size: 143%">
+<a href="/tags/scripting/" title="2 posts">Scripting</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/textmate/" title="1 post">TextMate</a>
+</span>
+<span style="font-size: 280%">
+<a href="/tags/utilities/" title="4 posts">Utilities</a>
+</span>
+</div>
+<div class="sidebar-module">
+<div class="title"><a href='/categories'>Categories</a></div>
+<a href="/categories/osx"><strong>OSX</strong></a> (4)<br /><a href="/categories/unix"><strong>Unix</strong></a> (5)<br /><a href="/categories/release"><strong>Release</strong></a> (1)<br />
+</div>
+<div class="sidebar-module">
+<div class="title"><a href='/archives'>Archives</div>
+<a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
+</div>
+</div>
+<div id="footer" class="span-24">
+&copy; 2012 Bilal Syed Hussain.  
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
+</div>
+</div>
 </body>
 </html>

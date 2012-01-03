@@ -1,292 +1,228 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-    <title>Projects - Bilal Syed Hussain</title>
-  
-  
-  <meta name="author" content="Bilal Hussain" />
-  <meta name="description" content="Bilal Hussain  " />
-  <meta name="robots" content="noodp, nydir" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-  <!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->  
-  <link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-  <link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-  
-	<script type="text/javascript" src="/js/jquery.js"></script>
-  <script type="text/javascript" src="/js/site.js"></script>
-	<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26827948-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<title>Projects - Bilal Syed Hussain</title>
+<meta name="author" content="Bilal Hussain" />
+<meta name="description" content="Bilal Hussain  " />
+<meta name="robots" content="noodp, nydir" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+<link href="/css/site.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26827948-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
-	<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-  <script language="Javascript" type="text/javascript">
-  //<![CDATA[
+<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
-  // Create a search control
-  var searchControl = new google.search.SearchControl();
-  
-  // Add in a WebSearch
-  var webSearch = new google.search.WebSearch();
-  
-  // Restrict our search to pages from this site
-  webSearch.setSiteRestriction('bilalh.github.com');
-  
-  // Add the searcher to the SearchControl
-  searchControl.addSearcher(webSearch);
-  
-  // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
-	// Add the value of "Search..." to the input field and a class of .empty
-
-
+// Create a search control
+var searchControl = new google.search.SearchControl();
+// Add in a WebSearch
+var webSearch = new google.search.WebSearch();
+// Restrict our search to pages from this site
+webSearch.setSiteRestriction('bilalh.github.com');
+// Add the searcher to the SearchControl
+searchControl.addSearcher(webSearch);
+// tell the searcher to draw itself and tell it where to attach
+searchControl.draw(document.getElementById("searchcontrol"));
+// Add the value of "Search..." to the input field and a class of .empty
 }
 google.setOnLoadCallback(function() {
-  $(function() {
-		OnLoad()
-		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-     
-    // When you click on #search
-    $(".gsc-input > input").focus(function(){
-     
-        // If the value is equal to "Search..."
-        if($(this).val() == "Search... powered by Google") {
-            // remove all the text and the class of .empty
-            $(this).val("").removeClass("empty");;
-        }
-        this.select();
-    });
-     
-    // When the focus on #search is lost
-    $(".gsc-input > input").blur(function(){
-     
-        // If the input field is empty
-        if($(this).val() == "") {
-            // Add the text "Search..." and a class of .empty
-            $(this).val("Search... powered by Google").addClass("empty");
-        }
-     
-    });
-  });
+$(function() {
+OnLoad()
+$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
+// When you click on #search
+$(".gsc-input > input").focus(function(){
+// If the value is equal to "Search..."
+if($(this).val() == "Search... powered by Google") {
+// remove all the text and the class of .empty
+$(this).val("").removeClass("empty");;
+}
+this.select();
 });
-
-
-  //]]>
-  </script>
+// When the focus on #search is lost
+$(".gsc-input > input").blur(function(){
+// If the input field is empty
+if($(this).val() == "") {
+// Add the text "Search..." and a class of .empty
+$(this).val("Search... powered by Google").addClass("empty");
+}
+});
+});
+});
+//]]>
+</script>
 </head>
-
 <body>
-  <div class="container">
-    <div id="header" class="span-24">
-  <div id="menu" class="span-15 last">
-    <ul>
-      <li class="first"><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li class="last"><a id="mail" href="">Contact</a></li>
-    </ul>
-  </div>
+<div class="container">
+<div id="header" class="span-24">
+<div id="menu" class="span-15 last">
+<ul>
+<li class="first"><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/projects">Projects</a></li>
+<li class="last"><a id="mail" href="">Contact</a></li>
+</ul>
 </div>
-
-    
-    <div id="main" class="span-24">
-      <h1 class="large-bottom">Projects</h1>
-
+</div>
+<div id="main" class="span-24">
+<h1 class="large-bottom">Projects</h1>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/tagger">Tagger</a> 
-		<span class="small quiet">1.5.1</span>
-	</h3>    
-	
-	<img src="/images/projects/tagger/Tagger.png" class="framed left" width="64" height="64" alt="features Icon"> 
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Objective C &nbsp;&nbsp;Ruby &nbsp;&nbsp;C++</span><br />
-			<p>Tagger is application that auto tags audio files. It also supports batch tag editing See the website for more details</p> <a href="/projects/tagger">read more...</a> 
-	</div>
+<h3><a href="/projects/tagger">Tagger</a> 
+<span class="small quiet">1.5.1</span>
+</h3>    
+<img src="/images/projects/tagger/Tagger.png" class="framed left" width="64" height="64" alt="features Icon"> 
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Objective C &nbsp;&nbsp;Ruby &nbsp;&nbsp;C++</span><br />
+<p>Tagger is application that auto tags audio files. It also supports batch tag editing See the website for more details</p> <a href="/projects/tagger">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/mplayer-last-fm-scrobbler">MPlayer last.fm scrobbler</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Shell &nbsp;&nbsp;C++</span><br />
-			<p>A command line application that plays audio files with MPlayer and scrobbles them to last.fm. Supports mp3, mp4, flac and ogg.</p> <a href="/projects/mplayer-last-fm-scrobbler">read more...</a> 
-	</div>
+<h3><a href="/projects/mplayer-last-fm-scrobbler">MPlayer last.fm scrobbler</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Shell &nbsp;&nbsp;C++</span><br />
+<p>A command line application that plays audio files with MPlayer and scrobbles them to last.fm. Supports mp3, mp4, flac and ogg.</p> <a href="/projects/mplayer-last-fm-scrobbler">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/media">Media</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">C &nbsp;&nbsp;SQL &nbsp;&nbsp;Man Pages</span><br />
-			<p>A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.</p> <a href="/projects/media">read more...</a> 
-	</div>
+<h3><a href="/projects/media">Media</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">C &nbsp;&nbsp;SQL &nbsp;&nbsp;Man Pages</span><br />
+<p>A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.</p> <a href="/projects/media">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/audio-sync">Audio Sync</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Ruby &nbsp;&nbsp;Objective C</span><br />
-			<p>Syncs the specified playlist in iTunes to the specified location, only copying the songs that have changed.</p> <a href="/projects/audio-sync">read more...</a> 
-	</div>
+<h3><a href="/projects/audio-sync">Audio Sync</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Ruby &nbsp;&nbsp;Objective C</span><br />
+<p>Syncs the specified playlist in iTunes to the specified location, only copying the songs that have changed.</p> <a href="/projects/audio-sync">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/shell-tunes">Shell Tunes</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Shell &nbsp;&nbsp;Applescript</span><br />
-			<p>Control itunes from the command line, over 40 commands inculding play/pause, mute/unmute, playlist and play random album. Also inculdes also scripts for getting data from itunes.</p> <a href="/projects/shell-tunes">read more...</a> 
-	</div>
+<h3><a href="/projects/shell-tunes">Shell Tunes</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Shell &nbsp;&nbsp;Applescript</span><br />
+<p>Control itunes from the command line, over 40 commands inculding play/pause, mute/unmute, playlist and play random album. Also inculdes also scripts for getting data from itunes.</p> <a href="/projects/shell-tunes">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/mplayer-osx-extended">MPlayer OSX Extended</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<img src="/images/projects/MPlayer-OSX-Extended/MPlayer-OSX-Extended.png" class="framed left" width="64" height="64" alt="features Icon"> 
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Objective C &nbsp;&nbsp;Icons</span><br />
-			<p>MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg. I have contributed icons and some features to the project and upto data binaries.</p> <a href="/projects/mplayer-osx-extended">read more...</a> 
-	</div>
+<h3><a href="/projects/mplayer-osx-extended">MPlayer OSX Extended</a> 
+<span class="small quiet"></span>
+</h3>    
+<img src="/images/projects/MPlayer-OSX-Extended/MPlayer-OSX-Extended.png" class="framed left" width="64" height="64" alt="features Icon"> 
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Objective C &nbsp;&nbsp;Icons</span><br />
+<p>MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg. I have contributed icons and some features to the project and upto data binaries.</p> <a href="/projects/mplayer-osx-extended">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/bhdraggableimageview">BHDraggableImageView</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Objective C</span><br />
-			<p>NSImageView where the image can be dragged to any other image source and also as a file. Supports Garbage Collection</p> <a href="/projects/bhdraggableimageview">read more...</a> 
-	</div>
+<h3><a href="/projects/bhdraggableimageview">BHDraggableImageView</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Objective C</span><br />
+<p>NSImageView where the image can be dragged to any other image source and also as a file. Supports Garbage Collection</p> <a href="/projects/bhdraggableimageview">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/autodoc">AutoDoc</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Ruby</span><br />
-			<p>Creates Doxygen comments for methods/functions in C and Objective C</p> <a href="/projects/autodoc">read more...</a> 
-	</div>
+<h3><a href="/projects/autodoc">AutoDoc</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Ruby</span><br />
+<p>Creates Doxygen comments for methods/functions in C and Objective C</p> <a href="/projects/autodoc">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/web-utilities">Web Utilities</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Ruby</span><br />
-			<p>Scripts for transforming html, including removing elements by CSS/XPath and transforming Metawiki webpages to epub friendly html with chapters for all the headings.</p> <a href="/projects/web-utilities">read more...</a> 
-	</div>
+<h3><a href="/projects/web-utilities">Web Utilities</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Ruby</span><br />
+<p>Scripts for transforming html, including removing elements by CSS/XPath and transforming Metawiki webpages to epub friendly html with chapters for all the headings.</p> <a href="/projects/web-utilities">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/bash-scripts">Shell Utilities</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Shell</span><br />
-			<p>A collection of scripts and alias for use at command line. Includes a function to extract any kind archive (save you from remembering all the tar flags) and finding your ip. Also includes scripts for for the bit rate and other information from audio files.</p> <a href="/projects/bash-scripts">read more...</a> 
-	</div>
+<h3><a href="/projects/bash-scripts">Shell Utilities</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Shell</span><br />
+<p>A collection of scripts and alias for use at command line. Includes a function to extract any kind archive (save you from remembering all the tar flags) and finding your ip. Also includes scripts for for the bit rate and other information from audio files.</p> <a href="/projects/bash-scripts">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/mkv-utilities">MKV Utlities</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Shell</span><br />
-			<p>Scripts to easily join, split and extracts mkv files. Also has scripts to do lossless convertion of mkv to mp4 (with subtitles) and mp4 to mkv. The scripts can also extract all fonts and subtitles from a set of mkvs. Also contains a Java app for creating mkv chapters.</p> <a href="/projects/mkv-utilities">read more...</a> 
-	</div>
+<h3><a href="/projects/mkv-utilities">MKV Utlities</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Shell</span><br />
+<p>Scripts to easily join, split and extracts mkv files. Also has scripts to do lossless convertion of mkv to mp4 (with subtitles) and mp4 to mkv. The scripts can also extract all fonts and subtitles from a set of mkvs. Also contains a Java app for creating mkv chapters.</p> <a href="/projects/mkv-utilities">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/finder-utilities">Finder Utilities</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Applescript &nbsp;&nbsp;Shell &nbsp;&nbsp;Ruby</span><br />
-			<p>Set of scripts for controlling Finder, includes get the path of the selected Finder item, setting labels, timestamps files a script for mac that goes to the location of the frontmost Finder window in the Terminal.</p> <a href="/projects/finder-utilities">read more...</a> 
-	</div>
+<h3><a href="/projects/finder-utilities">Finder Utilities</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Applescript &nbsp;&nbsp;Shell &nbsp;&nbsp;Ruby</span><br />
+<p>Set of scripts for controlling Finder, includes get the path of the selected Finder item, setting labels, timestamps files a script for mac that goes to the location of the frontmost Finder window in the Terminal.</p> <a href="/projects/finder-utilities">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10    " >
-	<h3><a href="/projects/scripts">Utilities</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Shell &nbsp;&nbsp;Ruby &nbsp;&nbsp;Applescript &nbsp;&nbsp;Python &nbsp;&nbsp;Other</span><br />
-			<p>Scripts that don’t fit any of the other collections, includes scripts for re-encoding movies file for phones, doing a diff on LaTeX and removing duplicates lines from a files.</p> <a href="/projects/scripts">read more...</a> 
-	</div>
+<h3><a href="/projects/scripts">Utilities</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Shell &nbsp;&nbsp;Ruby &nbsp;&nbsp;Applescript &nbsp;&nbsp;Python &nbsp;&nbsp;Other</span><br />
+<p>Scripts that don’t fit any of the other collections, includes scripts for re-encoding movies file for phones, doing a diff on LaTeX and removing duplicates lines from a files.</p> <a href="/projects/scripts">read more...</a> 
 </div>
-
+</div>
 <div class="project prepend-1 append-1 span-10   last" >
-	<h3><a href="/projects/bashmarks">Bashmarks</a> 
-		<span class="small quiet"></span>
-	</h3>    
-	
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">Shell</span><br />
-			<p>Fork of bashmarks (a script that allows you to save and jump to commonly used directories. with supports for tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. <code>g bookmarkname ls</code> changes the directory to the bookmark then preforms ls.</p> <a href="/projects/bashmarks">read more...</a> 
-	</div>
+<h3><a href="/projects/bashmarks">Bashmarks</a> 
+<span class="small quiet"></span>
+</h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">Shell</span><br />
+<p>Fork of bashmarks (a script that allows you to save and jump to commonly used directories. with supports for tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. <code>g bookmarkname ls</code> changes the directory to the bookmark then preforms ls.</p> <a href="/projects/bashmarks">read more...</a> 
 </div>
-
-
+</div>
 <div class="project prepend-1 append-1 span-10  last" >
-	<h3><a href="https://github.com/Bilalh">Other Projects</a> </h3>    
-	<div class="low-top">
-		<span class="languages quiet small low-top low-bottom">C&nbsp;&nbsp;C++&nbsp;&nbsp;Java&nbsp;&nbsp; Objective C&nbsp;&nbsp;Ruby&nbsp;&nbsp;Shell&nbsp;&nbsp;Other</span><br />
-			Other projects are hosted on Github <a href="https://github.com/Bilalh">read more...</a> 
-	</div>
+<h3><a href="https://github.com/Bilalh">Other Projects</a> </h3>    
+<div class="low-top">
+<span class="languages quiet small low-top low-bottom">C&nbsp;&nbsp;C++&nbsp;&nbsp;Java&nbsp;&nbsp; Objective C&nbsp;&nbsp;Ruby&nbsp;&nbsp;Shell&nbsp;&nbsp;Other</span><br />
+Other projects are hosted on Github <a href="https://github.com/Bilalh">read more...</a> 
 </div>
-    </div>
-    
-    
-    
-    <div id="footer" class="span-24">
-  &copy; 2012 Bilal Syed Hussain.  
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
-  </div>
-  
+</div>
+<div id="footer" class="span-24">
+&copy; 2012 Bilal Syed Hussain.  
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
+</div>
+</div>
 </body>
 </html>
