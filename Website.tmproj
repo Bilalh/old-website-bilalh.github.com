@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/site.scss</string>
+	<string>_layouts/project.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,42 +21,14 @@
 	<integer>203</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_includes/google_ajax_search.html</key>
+		<key>_layouts/default.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>23</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>23</integer>
-		</dict>
-		<key>_includes/sharing.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>57</integer>
-				<key>line</key>
-				<integer>15</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_includes/sidebar.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>37</integer>
-				<key>line</key>
-				<integer>1</integer>
+				<integer>10</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -67,16 +39,16 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>33</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>1</integer>
+				<integer>14</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>42</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>1</integer>
+				<integer>10</integer>
 			</dict>
 		</dict>
 		<key>_layouts/post.html</key>
@@ -86,50 +58,64 @@
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>59</integer>
+				<integer>4</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>24</integer>
+			<integer>4</integer>
 		</dict>
-		<key>css/site.scss</key>
+		<key>_layouts/project.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>10</integer>
+				<integer>13</integer>
 				<key>line</key>
-				<integer>528</integer>
+				<integer>16</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>491</integer>
+			<integer>0</integer>
 		</dict>
-		<key>index.html</key>
+		<key>_posts/2011-12-24-fixing-corrupt-mp3s.md</key>
 		<dict>
 			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>9</integer>
+				<key>line</key>
+				<integer>9</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>9</integer>
 			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>11</integer>
+				<key>line</key>
+				<integer>9</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>index.html</string>
 		<string>_layouts/post.html</string>
-		<string>_includes/sidebar.html</string>
-		<string>_includes/sharing.html</string>
-		<string>_includes/google_ajax_search.html</string>
-		<string>css/site.scss</string>
+		<string>_layouts/default.html</string>
+		<string>_layouts/project.html</string>
+		<string>_posts/2011-12-24-fixing-corrupt-mp3s.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -164,14 +150,7 @@
 					<key>subItems</key>
 					<dict/>
 				</dict>
-				<key>css</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>js</key>
+				<key>_posts</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
@@ -182,6 +161,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{284, 149}, {1004, 715}}</string>
+	<string>{{154, 137}, {1004, 715}}</string>
 </dict>
 </plist>

@@ -66,7 +66,7 @@ module Jekyll
 				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp;&nbsp;")
 			end 
 			
-			
+			self.data['iusethis'] = info['iusethis'] if info['iusethis']
 			
 		end 
 	end
@@ -83,7 +83,7 @@ module Jekyll
 			self.data['title'] = project.data['title'] + "'s #{name}"
 			
 			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 
-			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url"
+			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url", "iusethis"
 		end
 		
 		def copy_keys(*keys)
