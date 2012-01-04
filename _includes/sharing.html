@@ -36,7 +36,7 @@
 	{% endif %}
 	{% if page.iusethis %}
 	<div id="usethis">
-		<!-- {{page.iusethis}} -->
+		
 	</div>
 	<script>
         $('div#usethis').html(writeCapture.sanitize('<scr'+'ipt type="text/javascript" src="http://osx.iusethis.com/app/include/{{page.iusethis}}/7"></scr'+'ipt>'));
@@ -44,4 +44,12 @@
 	<div class='clear'></div>
 	{% endif %}
 	
+	{% if page.macupdate %}
+	<div id="macupdate">
+		
+	</div>
+    <script>
+           $("div#macupdate").html(writeCapture.sanitize('<scri'+'pt type="text/javascript" src="http://www.macupdate.com/developers/badge/{{page.macupdate}}"></scr'+'ipt>'));
+    </script>
+	{% endif %}	
 </div>

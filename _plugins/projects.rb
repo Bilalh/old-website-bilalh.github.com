@@ -67,6 +67,7 @@ module Jekyll
 			end 
 			
 			self.data['iusethis'] = info['iusethis'] if info['iusethis']
+			self.data['macupdate'] = info['macupdate'] if info['macupdate']
 			
 		end 
 	end
@@ -83,7 +84,7 @@ module Jekyll
 			self.data['title'] = project.data['title'] + "'s #{name}"
 			
 			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 
-			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url", "iusethis"
+			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url", "iusethis", "macupdate"
 		end
 		
 		def copy_keys(*keys)
