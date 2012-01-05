@@ -22,6 +22,9 @@ module Jekyll
 			
 			self.data['name']      = name
 			self.data['title']     = info['title'] || name
+			self.data['nice_name'] = info['title']
+			
+			
 			self.data['version']   = info['version_title'] || info['version']
 			self.data['repo']      = "https://github.com/#{site.config['github_user']}/#{name}"
 			self.data['download']  = info['download'] || "#{self.data['repo']}/zipball/#{info['version'] || 'master'}"
@@ -83,7 +86,7 @@ module Jekyll
 			end
 			self.data['title'] = project.data['title'] + "'s #{name}"
 			
-			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 
+			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 'nice_name',
 			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url", "iusethis", "macupdate"
 		end
 		

@@ -38,7 +38,7 @@ img.pic{
 	{% if page.icon %}
 		<img src="/images/projects/{{page.name}}/{{ page.icon }}" class="project-icon left" width="64" height="64" alt="icon"/> 
 	{% endif %}	 
-	<h1 class="project-title">{{ page.title }}</h1>
+	<h1 class="project-title">{{ page.nice_name }}</h1>
 		<h3 class='project-headings'>
 			{% if page.features_url %}
 				<a href="{{ page.features_url }}">Features &nbsp;</a>
