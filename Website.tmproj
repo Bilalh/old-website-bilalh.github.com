@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>css/site.scss</string>
+	<string>_plugins/projects.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,36 +21,6 @@
 	<integer>203</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_config.yml</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>10</integer>
-				<key>line</key>
-				<integer>139</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>24</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>4</integer>
-				<key>line</key>
-				<integer>139</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>13</integer>
-				<key>line</key>
-				<integer>139</integer>
-			</dict>
-		</dict>
 		<key>_includes/sharing.html</key>
 		<dict>
 			<key>caret</key>
@@ -93,7 +63,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>13</integer>
+			<integer>2</integer>
 		</dict>
 		<key>_layouts/post.html</key>
 		<dict>
@@ -114,14 +84,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>19</integer>
+				<integer>44</integer>
 				<key>line</key>
-				<integer>71</integer>
+				<integer>40</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>39</integer>
+			<integer>34</integer>
 		</dict>
 		<key>_layouts/projects.html</key>
 		<dict>
@@ -142,14 +112,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>23</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>69</integer>
+				<integer>66</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>54</integer>
+			<integer>60</integer>
 		</dict>
 		<key>css/site.scss</key>
 		<dict>
@@ -174,7 +144,6 @@
 		<string>_layouts/default.html</string>
 		<string>_includes/sharing.html</string>
 		<string>css/site.scss</string>
-		<string>_config.yml</string>
 		<string>_plugins/projects.rb</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
@@ -235,6 +204,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{154, 137}, {1004, 715}}</string>
+	<string>{{163, 113}, {1004, 715}}</string>
 </dict>
 </plist>
