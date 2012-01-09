@@ -130,10 +130,16 @@ Removes the specified elements using css and/or xpath
 remove_elems_inline.rb html {css|xpath}*
 Removes the specified elements using css and/or xpath inplace
 remove_elems_inline_glob.sh {glob}
-Run `remove_elems_inline.rb` on each file in the glob
+Runs `remove_elems_inline.rb` on each file in the glob
 wiki_to_epub_html.rb save_dir base_url url
 wiki_to_epub_html.rb config_file
-Coverts metawiki webpages to epub friendly html. </code></pre><h2 id='prerequisites'>Prerequisites</h2><ul>
+Coverts metawiki webpages to epub friendly html. 
+keep_specifed_elems.rb html {css|xpath}*
+Keeps only the specified elements using css and/or xpath
+keep_specifed_elems_inline.rb {css|xpath}*
+Keeps only the specified elements using css and/or xpath inlplace
+keep_specifed_elems_inline_glob.sh {glob}
+Runs `keep_specifed_elems_inline.rb` on each file in the glob</code></pre><h2 id='prerequisites'>Prerequisites</h2><ul>
 <li>Ruby 1.9 with the nokogiri gem</li>
 </ul><h2 id='install'>Install</h2><ul>
 <li>
@@ -154,13 +160,13 @@ base_url
 <li><code>numbered</code> number the files from 1</li>
 <li><code>css:ele</code> to add/remove css elements</li>
 <li><code>xpath:ele</code> to add/remove xpath elements</li>
-<li><code>title_gsub:regex</code> Text to</li>
+<li><code>title_gsub:regex</code> Text to remove</li>
 <li><code>filename</code> the base filename only used with <code>fmt</code></li>
 <li><code>fmt</code> format for number e.g %2d</li>
 </ul><p>Other options</p><ul>
 <li><code>-css</code> to remove all css elements, <code>-xpath</code> remove all xpath element</li>
 </ul><h2 id='issues'>Issues</h2><p>None yet</p><h2 id='licence'>Licence</h2><p><a href='http://creativecommons.org/licenses/by-nc-sa/3.0/' title='Full details'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></p><h2 id='authors'>Authors</h2><ul>
-<li>Bilal Hussain</li>
+<li>Bilal Syed Hussain</li>
 </ul>
 <hr />
 <div class="sharing">
