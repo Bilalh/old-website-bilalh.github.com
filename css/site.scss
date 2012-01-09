@@ -323,13 +323,15 @@ h4 {font-size: 1.3em; }
 
 // Little Classes
 
-.push-1-5 { margin: 0 -60px 1.5em 60px; }
-.h1-5 { font-size: 2em; } // Make a h2 look like a "h1.5"
-.low-top { margin-top: 0.4em; }
+.push-1-5     { margin: 0 -60px 1.5em 60px; }
+.h1-5         { font-size: 2em; } // Make a h2 look like a "h1.5"
+.low-top      { margin-top: 0.4em; }
+.low-bottom   { margin-bottom: 0.2em; }
+.neg-bottom   { margin-bottom: -0.2em;}
 .large-bottom { margin-bottom: 0.7em; }
-.med-bottom { margin-bottom: 0.4em; }
-.large-para { font-size: 1.5em; }
-.med-para { font-size: 1.2em; }
+.med-bottom   { margin-bottom: 0.4em; }
+.large-para   { font-size: 1.5em; }
+.med-para     { font-size: 1.2em; }
 
 
 .dark-link {
@@ -337,14 +339,14 @@ h4 {font-size: 1.3em; }
 	&:hover { color: #407C8F; }
 }
 
-// from pigoz.github.com
+// based off pigoz.github.com
 
 $border: #dddddd;
 $header-color: white;
 $header-shadow: #333;
 $header-bg-light: rgb(27,141,200);
 $header-bg-dark: rgb(30,80,60);
-$header-border-dark: rgb(93,49,229);
+$header-border-dark: rgb(93,120,229);
 $header-border-light: rgb(120,70,255);
 $text-color: #444;
 $text-shadow: #333;
@@ -390,7 +392,7 @@ $text-shadow: #333;
 
 	
     &:hover {
-      //@include background(linear-gradient(top, $bg, $bg));
+	  @include background-gradient($header-border-light, $header-border-dark);
     }
 
 
@@ -429,6 +431,7 @@ $text-shadow: #333;
   }
 }
 
+// from pigoz.github.com
 
 //google search
 
