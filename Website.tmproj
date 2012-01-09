@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_plugins/projects.rb</string>
+	<string>css/site.scss</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,135 +21,135 @@
 	<integer>203</integer>
 	<key>metaData</key>
 	<dict>
-		<key>_includes/sharing.html</key>
+		<key>_layouts/tags.html</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>15</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>46</integer>
+				<integer>12</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>_site/css/site.css</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>1553</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>blog.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>34</integer>
+				<key>line</key>
+				<integer>7</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>18</integer>
+			<integer>0</integer>
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>18</integer>
 				<key>line</key>
-				<integer>46</integer>
+				<integer>7</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>21</integer>
+				<integer>34</integer>
 				<key>line</key>
-				<integer>46</integer>
+				<integer>7</integer>
 			</dict>
 		</dict>
-		<key>_layouts/default.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>72</integer>
-				<key>line</key>
-				<integer>28</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>2</integer>
-		</dict>
-		<key>_layouts/post.html</key>
+		<key>compress.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>4</integer>
+				<integer>14</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>_layouts/project_page.html</key>
+		<key>css/railscasts.css</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>44</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>40</integer>
+				<integer>29</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>34</integer>
-		</dict>
-		<key>_layouts/projects.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>10</integer>
-				<key>line</key>
-				<integer>2</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>_plugins/projects.rb</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>3</integer>
-				<key>line</key>
-				<integer>66</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>60</integer>
+			<integer>9</integer>
 		</dict>
 		<key>css/site.scss</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>62</integer>
 				<key>line</key>
-				<integer>527</integer>
+				<integer>80</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>506</integer>
+			<integer>0</integer>
+		</dict>
+		<key>index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>17</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>_layouts/project_page.html</string>
-		<string>_layouts/projects.html</string>
-		<string>_layouts/post.html</string>
-		<string>_layouts/default.html</string>
-		<string>_includes/sharing.html</string>
+		<string>blog.html</string>
+		<string>_layouts/tags.html</string>
+		<string>compress.rb</string>
 		<string>css/site.scss</string>
-		<string>_plugins/projects.rb</string>
+		<string>_site/css/site.css</string>
+		<string>index.html</string>
+		<string>css/railscasts.css</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>showFileHierarchyPanel</key>
-	<false/>
+	<true/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -158,42 +158,7 @@
 			<true/>
 			<key>subItems</key>
 			<dict>
-				<key>_includes</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>_layouts</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>_plugins</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>_posts</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
 				<key>css</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-				<key>js</key>
 				<dict>
 					<key>isExpanded</key>
 					<true/>
@@ -204,6 +169,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{163, 113}, {1004, 715}}</string>
+	<string>{{-6, 92}, {1053, 714}}</string>
 </dict>
 </plist>
