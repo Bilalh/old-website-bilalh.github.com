@@ -39,6 +39,9 @@ projects:
     apidocs:   false
     download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip
     support:   https://github.com/Bilalh/tagger/issues
+    iusethis:  mediatagger
+    # alternativeto: media-tagger
+    macupdate: 41285
     gallery:   
       - title: Multiple File Editing
         image: s001.png 
@@ -136,8 +139,6 @@ projects:
           description: >
             Tagger supports embeding artwork in audio files. The image can also be dragged to a folder e.g. the desktop using a customised format.
     
-    iusethis:  mediatagger
-    macupdate: 41285
     
   mplayer-last.fm-scrobbler:
     title:     MPlayer last.fm scrobbler

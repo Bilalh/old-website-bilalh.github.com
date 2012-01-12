@@ -69,8 +69,9 @@ module Jekyll
 				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp;&nbsp;")
 			end 
 			
-			self.data['iusethis'] = info['iusethis'] if info['iusethis']
-			self.data['macupdate'] = info['macupdate'] if info['macupdate']
+			["iusethis", "macupdate", "alternativeto"].each do |e|
+				self.data[e] = info[e]  if info[e]
+			end
 			
 		end 
 	end
@@ -87,7 +88,8 @@ module Jekyll
 			self.data['title'] = project.data['title'] + "'s #{name}"
 			
 			copy_keys 'features_url', 'apidocs_url', 'gallery_url', 'nice_name',
-			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url", "iusethis", "macupdate"
+			'readme_name','changelog_url', 'readme_url', 'apidocs_name', "support_url", 
+			"iusethis", "macupdate","alternativeto"
 		end
 		
 		def copy_keys(*keys)

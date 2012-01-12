@@ -11,7 +11,7 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
 		})();
 	</script>
-	{% endif %}	
+	{% endif %} 
 	{% if site.facebook_like %}
 		<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
 		<div id="fb-root"></div>
@@ -39,17 +39,22 @@
 		
 	</div>
 	<script>
-        $('div#usethis').html(writeCapture.sanitize('<scr'+'ipt type="text/javascript" src="http://osx.iusethis.com/app/include/{{page.iusethis}}/7"></scr'+'ipt>'));
-    </script>
+		$('div#usethis').html(writeCapture.sanitize('<scr'+'ipt type="text/javascript" src="http://osx.iusethis.com/app/include/{{page.iusethis}}/7"></scr'+'ipt>'));
+	</script>
 	<div class='clear'></div>
+	{% endif %}
+	
+	{% if page.alternativeto %}
+	<span id="a2itemwidget"></span>
+	<script src="http://api.alternativeto.net/software/{{page.alternativeto}}/widgetjs/blue" type="text/javascript"></script>
 	{% endif %}
 	
 	{% if page.macupdate %}
 	<div id="macupdate">
 		
 	</div>
-    <script>
-           $("div#macupdate").html(writeCapture.sanitize('<scri'+'pt type="text/javascript" src="http://www.macupdate.com/developers/badge/{{page.macupdate}}"></scr'+'ipt>'));
-    </script>
-	{% endif %}	
+	<script>
+		   $("div#macupdate").html(writeCapture.sanitize('<scri'+'pt type="text/javascript" src="http://www.macupdate.com/developers/badge/{{page.macupdate}}"></scr'+'ipt>'));
+	</script>
+	{% endif %} 
 </div>
