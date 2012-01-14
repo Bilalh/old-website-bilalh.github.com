@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enchanted Bashmarks - Terminal Directory Bookmarks
+title: Enchanted Bashmarks - terminal directory bookmarks
 date: 2012-01-14 00:57:33
 category: Unix
 tags:
