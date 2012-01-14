@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ls colours - Bilal Syed Hussain</title>
+<title>Enchanted Bashmarks - Terminal Directory Bookmarks - Bilal Syed Hussain</title>
 <meta name="author" content="Bilal Syed Hussain" />
-<meta name="description" content="Bilal Syed Hussain ls colours" />
+<meta name="description" content="Bashmarks is a shell script that allows you to save and jump to commonly used directories." />
 <meta name="robots" content="noodp, nydir" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
@@ -100,30 +100,87 @@ border-bottom : 1px dotted #ccc;
 }
 </style>
 <div class="post" id="main-content">
-<h1>ls colours</h1>
+<h1>Enchanted Bashmarks - Terminal Directory Bookmarks</h1>
 <h4 class="large-bottom">
-Posted on September 10, 2011
-in <a href="/categories/osx">OSX</a> 
+Posted on January 14, 2012
+in <a href="/categories/unix">Unix</a> 
 <span class="tag-list">
 <a href="/tags/bash">Bash</a>
+<a href="/tags/scripting">Scripting</a>
 </span>
 </h4>
 <div class="content">
-<p>To get <code>ls</code> colours on a mac add the follow to your <code>.bash_profile</code>.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>CLICOLOR</span><span class='o'>=</span>1
-<span class='nb'>export </span><span class='nv'>LSCOLORS</span><span class='o'>=</span>ExFxCxDxbxegedabagacad
+<p><a href='/projects/bashmarks' title='Bashmarks project page'>Bashmarks</a> is a shell script that allows you to save and jump to commonly used directories.</p>
+<h2 id='usage_example'>Usage Example</h2>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span><span class='nb'>cd</span> ~/home/projects/www/
+<span class='nv'>$ </span>s web
+<span class='nv'>$ </span><span class='nb'>cd</span> /usr/local/lib/
+<span class='nv'>$ </span>s locallib
+<span class='nv'>$ </span>l
+web          /var/www/
+locallib     /usr/local/lib/
+<span class='nv'>$ </span>g w&lt;tab&gt;
+<span class='nv'>$ </span>g web           <span class='c'># cd to ~/home/projects/www/</span>
+<span class='nv'>$ </span>g l&lt;tab&gt;
+<span class='nv'>$ </span>g locallib      <span class='c'># cd to /usr/local/lib/</span>
 </code></pre>
 </div>
+<h2 id='extra_features'>Extra Features</h2>
+<ul>
+<li>if no bookmark name is specified the default directory is used instead ($HOME unless changed)</li>
+</ul>
+<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ~/projects
+s
+g              <span class='c'># g now defaults to ~/projects </span>
+</code></pre>
+</div>
+<ul>
+<li>Commands can be placed after the bookmark</li>
+</ul>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>g web ls     <span class='c'># cd to ~/home/projects/www/ then executes ls </span>
+~/var/www/
+index.html
+site.css
+<span class='nv'>$ </span>
+</code></pre>
+</div>
+<ul>
+<li>cd like features</li>
+</ul>
+<div class='highlight'><pre><code class='bash'>g -   <span class='c'># does cd -</span>
+g ..  <span class='c'># does cd ..</span>
+g /   <span class='c'># does cd /</span>
+</code></pre>
+</div>
+<h3 id='mac_specific_features'>Mac Specific Features</h3>
+<ul>
+<li><code>o</code> command which opens the specified bookmark in Finder</li>
+<li><code>t</code> command which opens the specified bookmark in a new Terminal tab.</li>
+</ul>
+<div class='highlight'><pre><code class='bash'>t web          <span class='c'># opens ~/home/projects/www/  in a new tab</span>
+<span class='nb'>cd </span>javascript 
+t              <span class='c'># opens ~/home/projects/www/javascript in a new tab</span>
+o              <span class='c'># opens ~/home/projects/www/javascript in Finder</span>
+</code></pre>
+</div>
+<h2 id='install'>Install</h2>
+<ol>
+<li>git clone git://github.com/Bilalh/bashmarks.git</li>
+<li>make install</li>
+<li><strong>source ~/.local/bin/bashmarks.sh</strong> from within your <strong>~.bash_profile</strong> or <strong>~/.bashrc</strong></li>
+</ol>
+<p>OR</p>
+<p>download <a href='https://github.com/Bilalh/bashmarks/blob/master/bashmarks.sh'>https://github.com/Bilalh/bashmarks/blob/master/bashmarks.sh</a> and source it from within your <strong>~.bash_profile</strong> or <strong>~/.bashrc</strong></p>
+<h2 id='more_information'>More Information</h2>
+<p>See the <a href='/projects/bashmarks' title='Bashmarks project page'>Project Page</a> for information.<br /><a href='https://github.com/Bilalh/bashmarks' title='Bashmarks GitHub Repository'>GitHub Repository</a></p>
 </div>
 <div class="next-prev-nav low-top">
-&laquo;&nbsp;<a href="/2011/10/09/using-sed" rel="next" title="Using sed">Using sed</a>
-|
-<a href="/2011/09/09/git-delete-last-commit" rel="previous" title="Git Delete Last Commit">Git Delete Last Commit</a>&nbsp;&raquo;
+<a href="/2011/12/24/fixing-corrupt-mp3s" rel="previous" title="Fixing corrupt mp3s">Fixing corrupt mp3s</a>&nbsp;&raquo;
 <br />
 </div>
 <hr />
 <div class="sharing">
-<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.com/2011/09/10/ls-colours" data-via="" data-counturl="http://bilalh.github.com/2011/09/10/ls-colours" >Tweet</a>
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.com/2012/01/14/enchanted-bashmarks-terminal-directory-bookmarks" data-via="" data-counturl="http://bilalh.github.com/2012/01/14/enchanted-bashmarks-terminal-directory-bookmarks" >Tweet</a>
 <div class="g-plusone" data-size="12"></div>
 <script type="text/javascript">
 (function() {
@@ -154,8 +211,8 @@ document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
 <script type="text/javascript">
 var disqus_shortname = 'bilalsyedhussain';
 // var disqus_developer = 1;
-var disqus_identifier = 'http://bilalh.github.com/2011/09/10/ls-colours';
-var disqus_url = 'http://bilalh.github.com/2011/09/10/ls-colours';
+var disqus_identifier = 'http://bilalh.github.com/2012/01/14/enchanted-bashmarks-terminal-directory-bookmarks';
+var disqus_url = 'http://bilalh.github.com/2012/01/14/enchanted-bashmarks-terminal-directory-bookmarks';
 var disqus_script = 'embed.js';
 (function () {
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
