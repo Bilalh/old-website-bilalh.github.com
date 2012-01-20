@@ -8,18 +8,44 @@ no_sidebar: true
 <p class="large-para">This site contains the various programs and scripts I have created, along with a blog.</p>
 
 <div class="prepend-2 append-2 home span-{% if page.no_sidebar %}8{% else %}5{% endif %}">
-On the project page find the <a href='/projects'>open source project</a> that I have created.  The most recent include a <a href='/projects/Tagger'>application</a> to edit and auto tag audio files, a <a href='/projects/shell-tunes'>program</a> that can control itunes from the command line and <a href='/projects/autodoc'>scripts</a> to create method comments for  C and Objective C. 
+On the project page find the <a href='/projects'>open source project</a> that I have created.  The most recent include a <a href='/projects/Tagger'>application</a> to edit and auto tag audio files, a <a href='/projects/shell-tunes'>program</a> that can control itunes from the command line and <a href='/projects/autodoc'>scripts</a> to create method comments for	 C and Objective C. 
 </div>
 
 <div class="prepend-2 append-2 span-{% if page.no_sidebar %}8{% else %}5{% endif %} last">
-There also a <a href="/blog">blog</a> with an <a href='/feed'>RSS</a> feed that contains updates about my projects and also contains posts to do with technology.     
+There also a <a href="/blog">blog</a> with an <a href='/feed'>RSS</a> feed that contains updates about my projects and also contains posts to do with technology.	  
 </div>
 
+<div class="span-24">
+	<h2>Latest Projects</h2>
+
+	{% for project in site.featured_project limit:2 %}
+	<div class="post-listing project-listing">
+		<div class="inner">
+			<div class="title">
+				<a href="/projects/{{project.name}}">
+				{{project.title}}
+				</a>
+			</div>
+			<div class='description'>
+				<span>{{project.oneline}}</span>
+			</div>
+			<div class="lang">
+				<span class="tag-list project-list">
+					{% for language in project.languages limit:3 %}
+					<span>{{ language }}</span>
+					{% endfor %}
+				</span>
+			</div>
+		</div>
+	</div>	
+	{% endfor %}
+	
+</div>
 
 <div class="span-24">
-	<h2 class="h1-5">Latest Posts</h2>
+	<h2 class>Latest Posts</h2>
 
 	{% assign posts = site.posts %}
 	{% assign listing_limit = 5 %}
 	{% include post-listing-index.html %}
-</div>  
+</div>	

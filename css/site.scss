@@ -385,21 +385,15 @@ $text-shadow: #333;
 }
 
 @mixin pgz-tag {
-  a {
-    background: none repeat scroll 0 0 $header-bg-dark;
-    @include border-radius(4px);
-    @include pgz-header;
-    @include pgz-smallfont;
+  a, span {
+	background: none repeat scroll 0 0 $header-bg-dark;
+	@include border-radius(4px);
+	@include pgz-header;
+	@include pgz-smallfont;
 
-    border-bottom: 1px solid $header-border-dark;
-    border-left: 1px solid $header-border-dark;
-    border-right: 1px solid $header-border-dark;
-
-	
-    &:hover {
-	  @include background-gradient($header-border-light, $header-border-dark);
-    }
-
+	border-bottom: 1px solid $header-border-dark;
+	border-left: 1px solid $header-border-dark;
+	border-right: 1px solid $header-border-dark;
 
 	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
 	font-size: 11px;
@@ -417,6 +411,13 @@ $text-shadow: #333;
 	text-transform: none;
 	top: auto;
   }
+  
+  a {
+      &:hover {
+  	  @include background-gradient($header-border-light, $header-border-dark);
+  	}
+  }
+  
 }
 
 .tag-list {
@@ -434,6 +435,27 @@ $text-shadow: #333;
   .title .date {
     margin: 0 1.5em 0 0;
   }
+  .dateS {
+    margin: 0 6.5em 0 0;
+  }
+}
+
+div.project-listing{
+    div.title, div.description {
+        display: table-cell;
+    }
+    div.title{
+        width:160px;
+    }
+    div.description{
+        width:600px;
+    }
+    div.lang{
+        display: table-cell;        
+    }
+    .project-list{
+        float: none;
+    }
 }
 
 // from pigoz.github.com

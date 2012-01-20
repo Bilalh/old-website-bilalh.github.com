@@ -4,7 +4,7 @@ title: Blog
 ---
 <h1 class="neg-bottom">Blog<a href="/feed" class="small quiet rss"><img src="/images/rss.png" alt="RSS" width=32 height=32 /></a>
 </h1>
-<span class="low-top quiet large-bottom"><a href="/archives" rel="Post Archives" class="small quiet">Archives</a></span>
+<span class="low-top quiet large-bottom"><a href="/archives" class="small quiet">Archives</a></span>
 
 <div id="main-content">
 	{% assign posts = paginator.posts %}
@@ -19,7 +19,7 @@ title: Blog
 		{% if paginator.previous_page %}
 			|&nbsp;
 		{% endif %}
-		<a href="/archives" rel="archives" title="Archives">Archives</a>
+		<a href="/archives" title="Archives">Archives</a>
 		{% if paginator.next_page %}
 			&nbsp;|
 		{% endif %}

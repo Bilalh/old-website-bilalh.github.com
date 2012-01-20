@@ -66,7 +66,7 @@ module Jekyll
 			self.data['changelog_heading_hash'] = info['changelog_heading_hash'] || false
 			
 			if info['languages'] then
-				self.data['languages'] = info['languages'].split(/, */).join(" &nbsp;&nbsp;")
+				self.data['languages'] = info['languages'].join(" &nbsp;&nbsp;")
 			end 
 			
 			["iusethis", "macupdate", "alternativeto"].each do |e|

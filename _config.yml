@@ -30,11 +30,12 @@ title:     Bilal Syed Hussain
 url:       http://bilalh.github.com
 
 projects:
-  tagger:
+  
+  tagger: &tagger
     title:     Tagger
     icon:      Tagger.png
     version:   1.5.1
-    languages: Objective C, Ruby, C++
+    languages: [Objective C, Ruby, C++]
     changelog: true
     apidocs:   false
     download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip
@@ -139,32 +140,39 @@ projects:
           description: >
             Tagger supports embeding artwork in audio files. The image can also be dragged to a folder e.g. the desktop using a customised format.
     
-    
-  mplayer-last.fm-scrobbler:
+
+    name:        tagger
+    oneline:     >
+      An tag editor for audio files, that support auto tagging.
+    description: >
+      Tagger is an application that auto tags audio files. It also supports batch tag editing. 
+
+
+  mplayer-last.fm-scrobbler: &mplayer-lastfm
     title:     MPlayer last.fm scrobbler
-    languages: Shell, C++
+    languages: [Shell, C++]
   
-  media:
+  media: &media
     title:       Media
-    languages:   C, SQL, Man Pages
+    languages:   [C, SQL, Man Pages]
     description: >
       A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
   
-  Audio-Sync:
+  Audio-Sync: &Audio-Sync
     title:       Audio Sync
-    languages:   Ruby, Objective C 
+    languages:   [Ruby, Objective C]
   
-
-  Shell-Tunes:
+  
+  Shell-Tunes: &Shell-Tunes
     title:       Shell Tunes
-    languages:   Shell, Applescript
+    languages:   [Shell, Applescript]
   
 
 
-  MPlayer-OSX-Extended:
+  MPlayer-OSX-Extended: &MPlayer-OSX-Extended
     title:       MPlayer OSX Extended
     icon:        MPlayer-OSX-Extended.png
-    languages:   Objective C, Icons
+    languages:   [Objective C, Icons]
     download:    https://github.com/downloads/Bilalh/MPlayer-OSX-Extended/MPlayer%20OSX%20Extended.zip
     readme:      images/projects/MPlayer-OSX-Extended/Readme.md
     readme_name: Main
@@ -173,39 +181,41 @@ projects:
     changelog_location: https://raw.github.com/Bilalh/MPlayer-OSX-Extended/readme/CHANGELOG.md
     changelog_heading_hash: true
     apidocs_name: Help
-    description: >
-      MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg.  I have contributed icons and some features to the project and upto data binaries.
+    name:         mplayer-osx-extended
+    oneline:      >
+      Video player leveraging the power of the MPlayer with extra features.
+    description:  >
+      MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg. I have contributed icons and some features to the project and upto data binaries.
   
 
-  BHDraggableImageView:
+  BHDraggableImageView: &BHDraggableImageView
     title:       BHDraggableImageView
-    languages:   Objective C 
+    languages:   [Objective C]
   
 
-  autoDoc:
+  autoDoc: &autoDoc
     title:       AutoDoc
-    languages:   Ruby 
+    languages:   [Ruby]
   
   
-  Web-Utilities:
+  Web-Utilities: &Web-Utilities
     title:       Web Utilities
-    languages:   Ruby 
+    languages:   [Ruby]
   
   
-  Bash-Scripts:
+  Bash-Scripts: &Bash-Scripts
     title:       Shell Utilities
-    languages:   Shell
+    languages:   [Shell]
   
   
- 
-  MKV-Utilities:
+  MKV-Utilities: &MKV-Utilities
     title:       MKV Utlities
-    languages:   Shell
+    languages:   [Shell]
   
   
-  Finder-Utilities:
+  Finder-Utilities: &Finder-Utilities
     title:       Finder Utilities
-    languages:   Applescript, Shell, Ruby
+    languages:   [Applescript, Shell, Ruby]
   
   # 
   # Applescript Utilities:
@@ -215,15 +225,21 @@ projects:
   #     A collection of use applscripts that inculding file labeling, 'fn lock', timestamping files and controlling mplayer.
   
   
-  Scripts:
+  Scripts: &Scripts
     title:       Utilities
-    languages:   Shell, Ruby, Applescript, Python, Other
+    languages:   [Shell, Ruby, Applescript, Python, Other]
   
   
-  bashmarks:
+  bashmarks: &bashmarks
     title:       Bashmarks
-    languages:   Shell
+    languages:   [Shell]
     description: >
       Fork of bashmarks (a script that allows you to save and jump to commonly used directories. with supports for tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. `g bookmarkname ls` changes the directory to the bookmark then preforms ls.
   
 
+
+featured_project: 
+  -  
+    *tagger
+  -
+    *MPlayer-OSX-Extended
