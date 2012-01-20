@@ -35,7 +35,7 @@ projects:
     title:     Tagger
     icon:      Tagger.png
     version:   1.5.1
-    languages: [Objective C, Ruby, C++]
+    languages: [Objective C, C++, Ruby]
     changelog: true
     apidocs:   false
     download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip
@@ -233,6 +233,9 @@ projects:
   bashmarks: &bashmarks
     title:       Bashmarks
     languages:   [Shell]
+    name:   bashmarks
+    oneline: >
+      Directory bookmarks for the terminal with adddition features.
     description: >
       Fork of bashmarks (a script that allows you to save and jump to commonly used directories. with supports for tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. `g bookmarkname ls` changes the directory to the bookmark then preforms ls.
   
@@ -241,5 +244,7 @@ projects:
 featured_project: 
   -  
     *tagger
+  -
+      *bashmarks
   -
     *MPlayer-OSX-Extended
