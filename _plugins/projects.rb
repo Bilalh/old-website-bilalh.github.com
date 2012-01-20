@@ -130,22 +130,29 @@ module Jekyll
 			
 			builder = Nokogiri::XML::Builder.new do |xml|
 				xml.table{
-					xml << "<tr>"
+					# xml << "<tr>"
 					# (changelog.scan(/##\s+([\w.() ]+)\s+##/m)).each_with_index do |e,i|
-					(changelog.scan(regex)).each_with_index do |e,i|
-						xml << "</tr><tr>" if i %5 == 0
-						xml.td{
-							text = e.flatten[0]
-							name = text.gsub(/ \(.*\)/, '')
-							id	 = text.strip.gsub(/\s/,'_')
-							id.gsub!(/[:+.()]/,'')
-							id.downcase!
-							xml.a(:href => "##{id}"){
-								xml << name
-							} 
+					arr=changelog.scan(regex)
+					i=0
+					while i < arr.length
+						xml.tr{
+							while i < arr.length
+								xml.td{
+									text = arr[i].flatten[0]
+									name = text.gsub(/ \(.*\)/, '')
+									id	 = text.strip.gsub(/\s/,'_')
+									id.gsub!(/[:+.()]/,'')
+									id.downcase!
+									xml.a(:href => "##{id}"){
+										xml << name
+									}
+								}	
+								break if i % 5 == 4
+								i+=1
+							end
 						}
+						i+=1
 					end
-					xml << "</tr>"
 				}
 			end
 			
