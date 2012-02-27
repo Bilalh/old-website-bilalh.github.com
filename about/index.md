@@ -10,7 +10,7 @@ no_sidebar: true
 
 +--{main-content}
 
-## [Résume](Bilal_Husasin-Resume.pdf "Bilal Syed Hussain's Résume") ##
+## [Résume](Bilal_Syed_Husasin-Resume.pdf "Bilal Syed Hussain's Résume") ##
 
 ## Skills ##
 
@@ -21,19 +21,21 @@ no_sidebar: true
 * Ruby
 * Unix
 
-### Other ###
+### Experienced ###
 * C++
-* Git 
-* SVN
+* Objective C
 * SQL
 * (X)HTML + CSS and JavaScript
-* Objective C
+
+### Other ###
+* Git 
+* 
+* SVN
+
 
 
 ## Education ##
 * Fourth Year Computer Science student at **St. Andrews**. 
-
-## [Summary of Open Source Projects](http://resume.github.com/?Bilalh "Summary of Open Source Projects") ##
 
 =--
 
