@@ -40,8 +40,8 @@ projects:
     apidocs:   false
     download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip
     support:   https://github.com/Bilalh/tagger/issues
-    iusethis:  mediatagger
-    # alternativeto: media-tagger
+    # iusethis:  mediatagger
+    alternativeto: media-tagger
     macupdate: 41285
     gallery:   
       - title: Multiple File Editing
