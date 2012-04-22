@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_plugins/projects.rb</string>
+	<string>_posts/2012-04-22-pipe-output-from-command-line-tools-to-a-text-editor.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -26,44 +26,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>20</integer>
+				<integer>12</integer>
 				<key>line</key>
-				<integer>36</integer>
+				<integer>144</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>211</integer>
-		</dict>
-		<key>_includes/sharing.html</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>16</integer>
-				<key>line</key>
-				<integer>47</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>22</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>11</integer>
-				<key>line</key>
-				<integer>47</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>23</integer>
-				<key>line</key>
-				<integer>47</integer>
-			</dict>
+			<integer>16</integer>
 		</dict>
 		<key>_layouts/tags.html</key>
 		<dict>
@@ -79,75 +49,28 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>_plugins/projects.rb</key>
+		<key>_posts/2012-04-22-pipe-output-from-command-line-tools-to-a-text-editor.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
+				<integer>25</integer>
 				<key>line</key>
-				<integer>143</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>116</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>16</integer>
-				<key>line</key>
-				<integer>143</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>31</integer>
-				<key>line</key>
-				<integer>143</integer>
-			</dict>
-		</dict>
-		<key>about/index.md</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>6</integer>
-				<key>line</key>
-				<integer>20</integer>
+				<integer>21</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-		</dict>
-		<key>css/site.scss</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>13</integer>
-				<key>line</key>
-				<integer>583</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>546</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>_config.yml</string>
-		<string>_includes/sharing.html</string>
-		<string>_plugins/projects.rb</string>
-		<string>css/site.scss</string>
-		<string>about/index.md</string>
+		<string>_posts/2012-04-22-pipe-output-from-command-line-tools-to-a-text-editor.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<true/>
+	<false/>
 	<key>treeState</key>
 	<dict>
 		<key>Website</key>
@@ -167,6 +90,6 @@
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{356, 144}, {1084, 734}}</string>
+	<string>{{920, 186}, {715, 735}}</string>
 </dict>
 </plist>
