@@ -48,7 +48,13 @@
     </url>
     <url>
         <loc>http://bilalh.github.com/2012/04/15/sync-icloud-contacts-on-snow-leaopard</loc>
-        <lastmod>2012-04-15T05:08:23+01:00</lastmod>
+        <lastmod>2012-04-15T05:20:02+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://bilalh.github.com/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor
+        </loc>
+        <lastmod>2012-04-22T22:12:26+01:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/about/</loc>
@@ -68,14 +74,14 @@
     </url>
     <url>
         <loc>http://bilalh.github.com/feed/atom/</loc>
-        <lastmod>2012-04-15T05:08:23+01:00</lastmod>
+        <lastmod>2012-04-22T22:12:26+01:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/feed/</loc>
-        <lastmod>2012-04-15T05:08:23+01:00</lastmod>
+        <lastmod>2012-04-22T22:12:26+01:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/</loc>
-        <lastmod>2012-04-15T05:08:23+01:00</lastmod>
+        <lastmod>2012-04-22T22:12:26+01:00</lastmod>
     </url>
 </urlset>

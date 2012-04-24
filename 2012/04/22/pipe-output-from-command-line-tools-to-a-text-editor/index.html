@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tag: TextMate - Bilal Syed Hussain</title>
+<title>Pipe output from command line tools to a text editor - Bilal Syed Hussain</title>
 <meta name="author" content="Bilal Syed Hussain" />
-<meta name="description" content="Tag: TextMate" />
+<meta name="description" content="Bilal Syed Hussain Pipe output from command line tools to a text editor" />
 <meta name="robots" content="noodp, nydir" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
@@ -88,25 +88,87 @@ $(this).text("Show Comments")
 </div>
 </div>
 <div id="main" class="span-17">
-<h1 class="large-bottom">Tag: TextMate</h1>
-<div id="main-content">
-<div class="post-listing">
-<h2><a href="/2011/10/22/textmate-theme" class="dark-link">TextMate Theme</a></h2>
-<div class="low-top">
-<span class="low-top ">Posted on  October 22, 2011 in <a href="/categories/osx">OSX</a></span>
+<style type="text/css">
+h3,h4{ 
+color: #335E8D;
+}			
+h3,h4 {
+margin-left		: 3px;
+font-variant	: small-caps;
+font-weight		: normal;
+border-bottom : 1px dotted #ccc;	
+}
+</style>
+<div class="post" id="main-content">
+<h1>Pipe output from command line tools to a text editor</h1>
+<h4 class="large-bottom">
+Posted on April 22, 2012
+in <a href="/categories/osx">OSX</a> 
 <span class="tag-list">
+<a href="/tags/scripting">Scripting</a>
 <a href="/tags/utilities">Utilities</a>
-<a href="/tags/textmate">TextMate</a>
 </span>
+</h4>
+<div class="content">
+<p>A useful feature is to pipe the result of a command such as <code>ls</code> to a text editor. This can be done by using:</p>
+<div class='highlight'><pre><code class='bash'>  ls | open -f
+</code></pre>
 </div>
-<p>My theme for TextMate, works well for Ruby, CSS, Markdown, C, Bash and TeX:
-Ruby
-TeX
-Markdown
-CSS
-Download Link
-GitHub Repository</p>
-<p class><a href="/2011/10/22/textmate-theme">Read more...</a></p>
+<p>Using the <code>-a</code> flag for <code>open</code> makes this even more useful allowing you to specify the application to open the output in e.g to open in TextMate use</p>
+<div class='highlight'><pre><code class='bash'>  ls | open -f -a Textmate
+</code></pre>
+</div>
+</div>
+<div class="next-prev-nav low-top">
+<a href="/2012/04/15/sync-icloud-contacts-on-snow-leaopard" rel="previous" title="Sync iCloud Calendars on Snow Leaopard">Sync iCloud Calendars on Snow Leaopard</a>&nbsp;&raquo;
+<br />
+</div>
+<hr />
+<div class="sharing">
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.com/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor" data-via="" data-counturl="http://bilalh.github.com/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor" >Tweet</a>
+<div class="g-plusone" data-size="12"></div>
+<script type="text/javascript">
+(function() {
+var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+script.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+})();
+</script>
+<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+(function(){
+var twitterWidgets = document.createElement('script');
+twitterWidgets.type = 'text/javascript';
+twitterWidgets.async = true;
+twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+})();
+</script>
+</div>
+<script type="text/javascript">
+var disqus_shortname = 'bilalsyedhussain';
+// var disqus_developer = 1;
+var disqus_identifier = 'http://bilalh.github.com/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor';
+var disqus_url = 'http://bilalh.github.com/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor';
+var disqus_script = 'embed.js';
+(function () {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+<div>
+<h2 id='comment_heading'>Show Comments</h2>
+<div id="disqus_thread" style="display: none; " aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 </div>
 </div>
 </div>
