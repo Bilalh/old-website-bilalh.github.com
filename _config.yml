@@ -143,7 +143,7 @@ projects:
 
     name:        tagger
     oneline:     >
-      An tag editor for audio files, that support auto tagging.
+      An tag editor for audio files, that supports auto tagging.
     description: >
       Tagger is an application that auto tags audio files. It also supports batch tag editing. 
 
@@ -173,7 +173,7 @@ projects:
     title:       MPlayer OSX Extended
     icon:        MPlayer-OSX-Extended.png
     languages:   [Objective C, Icons]
-    download:    https://github.com/downloads/Bilalh/MPlayer-OSX-Extended/MPlayer%20OSX%20Extended.zip
+    download:    https://github.com/downloads/Bilalh/MPlayer-OSX-Extended/MPlayer%20OSX%20Extended%20rev15-test1-build%202.zip
     readme:      images/projects/MPlayer-OSX-Extended/Readme.md
     readme_name: Main
     changelog:   true

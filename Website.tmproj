@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>_posts/2012-04-22-pipe-output-from-command-line-tools-to-a-text-editor.md</string>
+	<string>_plugins/overide.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,22 +18,52 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>230</integer>
+	<integer>306</integer>
 	<key>metaData</key>
 	<dict>
+		<key>Rakefile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>3</integer>
+				<key>line</key>
+				<integer>84</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>_config.yml</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>144</integer>
+				<integer>23</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>16</integer>
+			<integer>10</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>14</integer>
+				<key>line</key>
+				<integer>24</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>23</integer>
+			</dict>
 		</dict>
 		<key>_layouts/tags.html</key>
 		<dict>
@@ -49,47 +79,75 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>_posts/2012-04-22-pipe-output-from-command-line-tools-to-a-text-editor.md</key>
+		<key>_plugins/overide.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>25</integer>
+				<integer>39</integer>
 				<key>line</key>
-				<integer>21</integer>
+				<integer>0</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>_site/page2/index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>6</integer>
+				<key>line</key>
+				<integer>267</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>32</integer>
+		</dict>
+		<key>blog.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>23</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>index.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>7</integer>
+				<key>line</key>
+				<integer>49</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>13</integer>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
+		<string>_site/page2/index.html</string>
+		<string>_plugins/overide.rb</string>
+		<string>blog.html</string>
+		<string>index.html</string>
 		<string>_config.yml</string>
-		<string>_posts/2012-04-22-pipe-output-from-command-line-tools-to-a-text-editor.md</string>
+		<string>Rakefile</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
-	<false/>
-	<key>treeState</key>
-	<dict>
-		<key>Website</key>
-		<dict>
-			<key>isExpanded</key>
-			<true/>
-			<key>subItems</key>
-			<dict>
-				<key>_plugins</key>
-				<dict>
-					<key>isExpanded</key>
-					<true/>
-					<key>subItems</key>
-					<dict/>
-				</dict>
-			</dict>
-		</dict>
-	</dict>
+	<true/>
 	<key>windowFrame</key>
-	<string>{{920, 186}, {715, 735}}</string>
+	<string>{{725, 143}, {715, 735}}</string>
 </dict>
 </plist>
