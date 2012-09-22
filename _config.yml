@@ -34,11 +34,11 @@ projects:
   tagger: &tagger
     title:     Tagger
     icon:      Tagger.png
-    version:   1.5.1
+    version:   1.6.2
     languages: [Objective C, C++, Ruby]
     changelog: true
     apidocs:   false
-    download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip
+    download:  https://github.com/downloads/Bilalh/Tagger/Tagger_1.6.2.zip
     support:   https://github.com/Bilalh/tagger/issues
     # iusethis:  mediatagger
     alternativeto: media-tagger

@@ -12,6 +12,11 @@ no_sidebar: true
 
 ## [Résume](Bilal_Syed_Husasin-Resume.pdf "Bilal Syed Hussain's Résume") ##
 
+
+## Education ##
+* First-class honours in Computer Science at University of St. Andrews
+* Currently doing PhD at the University of St. Andrews.
+
 ## Skills ##
 
 ### Highly experienced ###
@@ -24,18 +29,15 @@ no_sidebar: true
 ### Experienced ###
 * C++
 * Objective C
+* Python
 * SQL
 * (X)HTML + CSS and JavaScript
 
+
 ### Other ###
 * Git 
-* 
 * SVN
 
-
-
-## Education ##
-* Fourth Year Computer Science student at **St. Andrews**. 
 
 =--
 
