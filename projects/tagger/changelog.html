@@ -82,7 +82,6 @@ $(this).text("Show Comments")
 <li class="first"><a href="/">Home</a></li>
 <li><a href="/about">About</a></li>
 <li><a href="/blog">Blog</a></li>
-<li><a href="/archives">Archives</a></li>
 <li><a href="/projects">Projects</a></li>
 <li class="last"><a id="mail" href="">Contact</a></li>
 </ul>
@@ -127,8 +126,8 @@ Readme &nbsp;</a>
 </h3>
 </div>
 <div class="project-links span-6 last">
-<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.5.1.zip" class="project-download-link">
-<div class="project-download">Download v1.5.1</div>
+<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.6.2.zip" class="project-download-link">
+<div class="project-download">Download v1.6.2</div>
 </a>
 <h3 class ='project-headings'><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
 </div>
@@ -137,8 +136,22 @@ Readme &nbsp;</a>
 <table>
 <tr>
 <td>
-<a href='#version_153'>Version 1.5.3</a>
+<a href='#version_162_sat_22_sep_2012'>Version 1.6.2</a>
 </td>
+<td>
+<a href='#version_161_thu_13_sep_2012'>Version 1.6.1</a>
+</td>
+<td>
+<a href='#version_16_thu_13_sep_2012_225414_gmt0100'>Version 1.6</a>
+</td>
+<td>
+<a href='#version_154_wed_18_jul_2012_215506_0100'>Version 1.5.4</a>
+</td>
+<td>
+<a href='#version_153_sat_jan_14_2012_200545_0000'>Version 1.5.3</a>
+</td>
+</tr>
+<tr>
 <td>
 <a href='#version_152_mon_02_jan_2012__11013_0000'>Version 1.5.2</a>
 </td>
@@ -151,11 +164,11 @@ Readme &nbsp;</a>
 <td>
 <a href='#version_143_sun_27_nov_2011_053351_0000'>Version 1.4.3</a>
 </td>
-</tr>
-<tr>
 <td>
 <a href='#version_142_fri_9_sep_2011_040919_0100'>Version 1.4.2</a>
 </td>
+</tr>
+<tr>
 <td>
 <a href='#version_141_wed_aug_31_2011_220134_0100'>Version 1.4.1</a>
 </td>
@@ -168,11 +181,11 @@ Readme &nbsp;</a>
 <td>
 <a href='#version_12_thu_aug_11_2011_033420_0100'>Version 1.2</a>
 </td>
-</tr>
-<tr>
 <td>
 <a href='#version_116_wed_aug_10_2011_053441_0100'>Version 1.1.6</a>
 </td>
+</tr>
+<tr>
 <td>
 <a href='#version_115_wed_aug_10_2011_034138_0100'>Version 1.1.5</a>
 </td>
@@ -185,11 +198,11 @@ Readme &nbsp;</a>
 <td>
 <a href='#version_10_tue_aug_09_2011_050541_0100'>Version 1.0</a>
 </td>
-</tr>
-<tr>
 <td>
 <a href='#version_013_sun_aug_07_2011_233944_0100'>Version 0.13</a>
 </td>
+</tr>
+<tr>
 <td>
 <a href='#version_012_fri_aug_05_2011_022354_0100'>Version 0.12</a>
 </td>
@@ -202,11 +215,11 @@ Readme &nbsp;</a>
 <td>
 <a href='#version_09_fri_jul_29_2011_150500_0100'>Version 0.9</a>
 </td>
-</tr>
-<tr>
 <td>
 <a href='#version_08_mon_jul_25_2011_025527_0100'>Version 0.8</a>
 </td>
+</tr>
+<tr>
 <td>
 <a href='#version_07_fri_jul_22_2011_200613_0100'>Version 0.7</a>
 </td>
@@ -215,7 +228,43 @@ Readme &nbsp;</a>
 </td>
 </tr>
 </table>
-<h2 id='version_153'>Version 1.5.3</h2>
+<h2 id='version_162_sat_22_sep_2012'>Version 1.6.2 (Sat 22 Sep 2012)</h2>
+<h3 id='bug_fixes'>Bug Fixes</h3>
+<ul>
+<li>Gui Fixes</li>
+</ul>
+<h2 id='version_161_thu_13_sep_2012'>Version 1.6.1 (Thu 13 Sep 2012)</h2>
+<h3 id='bug_fixes'>Bug Fixes</h3>
+<ul>
+<li>fix for http://vgmdb.net/album/33201.</li>
+</ul>
+<h2 id='version_16_thu_13_sep_2012_225414_gmt0100'>Version 1.6 (Thu 13 Sep 2012 22:54:14 GMT+01:00)</h2>
+<h3 id='improvements'>Improvements</h3>
+<ul>
+<li>Much faster app loading (Now loads instantly compared with 10 seconds before).</li>
+<li>Auto taging rewriten in C++/Objective C hence much faster.</li>
+<li>Updated Code for Xcode 4.4 &#8211; using the new syntax.</li>
+<li>Refactored Code.</li>
+<li>Go to Downloads shortcut changed to ⌥⌘L to comform to Finder&#8217;s shortcut.</li>
+<li>File size reduced by over 50%.</li>
+<li>Using taglib 1.7.2</li>
+</ul>
+<h3 id='bug_fixes'>Bug Fixes</h3>
+<ul>
+<li>Fixes for 10.7.</li>
+<li>Added unit tests.</li>
+<li>Html decoding</li>
+<li>Track number bug fix + tests</li>
+</ul>
+<h2 id='version_154_wed_18_jul_2012_215506_0100'>Version 1.5.4 (Wed 18 Jul 2012 21:55:06 +0100)</h2>
+<ul>
+<li>&#8216;Renumber Files&#8217; populates a null disc track count.</li>
+<li>Fixes issue #12 - Tags From Filenames &gt; Using Custom Format : Uses the file&#8217;s full path for the first tag!</li>
+<li>Updated to Macruby 0.12</li>
+<li>Update project to Xcode 4.3</li>
+<li>First version to built on 10.7</li>
+</ul>
+<h2 id='version_153_sat_jan_14_2012_200545_0000'>Version 1.5.3 (Sat Jan 14 2012 20:05:45 +0000)</h2>
 <ul>
 <li>Renaming files from tags with a &#8217;/&#8217; in it, fixed.</li>
 <li>Help Menu.</li>
