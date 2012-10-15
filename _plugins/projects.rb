@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby19
 # encoding: utf-8
 require_relative 'custom_page'
-require "Nokogiri"
-require "Maruku"
+require "nokogiri"
+require "maruku"
 
 module Jekyll
 	
