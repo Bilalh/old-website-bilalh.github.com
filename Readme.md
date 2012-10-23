@@ -7,14 +7,15 @@ Personal Website and project pages
 Prerequisites
 -------------
 * Ruby (only tested with 1.9)
-	* sass gem
-	* front-compiler gem
+
+	gem install nokogiri sass growl jekyll jekyll-pagination 
 
 Install 
 -------
 * `mkdir _cache _compiled _site`
 * git clone in `_compiled`  -- this pushes to master 
 * Check out the `source` branch  
+
 
 Rakefile
 --------

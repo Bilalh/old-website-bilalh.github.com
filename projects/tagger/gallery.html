@@ -1,320 +1,421 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tagger's gallery - Bilal Syed Hussain</title>
-<meta name="author" content="Bilal Syed Hussain" />
-<meta name="description" content="Bilal Syed Hussain Tagger's gallery" />
-<meta name="robots" content="noodp, nydir" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-<link href="/css/site.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="/js/writeCapture-1.0.5-nolib-min.js"></script>
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/site.js"></script>
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-26827948-1']);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
+	
+	<title>Tagger's gallery - Bilal Syed Hussain</title>
+	
+	
+	<meta name="author" content="Bilal Syed Hussain" />
+	
+	<meta name="description" content="Bilal Syed Hussain Tagger's gallery" />
+	
+
+	
+
+	<meta name="robots" content="noodp, nydir" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+	<!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->	 
+	<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+	<link href="/css/site.css" type="text/css" rel="stylesheet" />
+
+	<script type="text/javascript" src="/js/writeCapture-1.0.5-nolib-min.js"></script>
+		<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/site.js"></script>
+		<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26827948-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
 </script>
-<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-<script language="Javascript" type="text/javascript">
-//<![CDATA[
+		<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+  <script language="Javascript" type="text/javascript">
+  //<![CDATA[
 google.load("search", "1");
+
 function OnLoad() {
-// Create a search control
-var searchControl = new google.search.SearchControl();
-// Add in a WebSearch
-var webSearch = new google.search.WebSearch();
-// Restrict our search to pages from this site
-webSearch.setSiteRestriction('bilalh.github.com');
-// Add the searcher to the SearchControl
-searchControl.addSearcher(webSearch);
-// tell the searcher to draw itself and tell it where to attach
-searchControl.draw(document.getElementById("searchcontrol"));
-// Add the value of "Search..." to the input field and a class of .empty
+  // Create a search control
+  var searchControl = new google.search.SearchControl();
+  
+  // Add in a WebSearch
+  var webSearch = new google.search.WebSearch();
+  
+  // Restrict our search to pages from this site
+  webSearch.setSiteRestriction('bilalh.github.com');
+  
+  // Add the searcher to the SearchControl
+  searchControl.addSearcher(webSearch);
+  
+  // tell the searcher to draw itself and tell it where to attach
+  searchControl.draw(document.getElementById("searchcontrol"));
+	// Add the value of "Search..." to the input field and a class of .empty
+
+
 }
 google.setOnLoadCallback(function() {
-$(function() {
-OnLoad()
-$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-// When you click on #search
-$(".gsc-input > input").focus(function(){
-// If the value is equal to "Search..."
-if($(this).val() == "Search... powered by Google") {
-// remove all the text and the class of .empty
-$(this).val("").removeClass("empty");;
-}
-this.select();
+  $(function() {
+		OnLoad()
+		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
+	 
+	// When you click on #search
+	$(".gsc-input > input").focus(function(){
+	 
+		// If the value is equal to "Search..."
+		if($(this).val() == "Search... powered by Google") {
+			// remove all the text and the class of .empty
+			$(this).val("").removeClass("empty");;
+		}
+		this.select();
+	});
+	 
+	// When the focus on #search is lost
+	$(".gsc-input > input").blur(function(){
+	 
+		// If the input field is empty
+		if($(this).val() == "") {
+			// Add the text "Search..." and a class of .empty
+			$(this).val("Search... powered by Google").addClass("empty");
+		}
+	});
+
+	$("#comment_heading").click(function()
+	{
+		$(this).next("#disqus_thread").slideToggle(500);
+		if($(this).text() == "Show Comments") {
+			$(this).text("Hide Comments")
+		}else{
+			$(this).text("Show Comments")
+		}
+	});
+		
+  });
 });
-// When the focus on #search is lost
-$(".gsc-input > input").blur(function(){
-// If the input field is empty
-if($(this).val() == "") {
-// Add the text "Search..." and a class of .empty
-$(this).val("Search... powered by Google").addClass("empty");
-}
-});
-$("#comment_heading").click(function()
-{
-$(this).next("#disqus_thread").slideToggle(500);
-if($(this).text() == "Show Comments") {
-$(this).text("Hide Comments")
-}else{
-$(this).text("Show Comments")
-}
-});
-});
-});
-//]]>
-</script>
+
+
+  //]]>
+  </script>
 </head>
+
 <body>
-<div class="container">
-<div id="header" class="span-24">
-<div id="menu" class="span-15 last">
-<ul>
-<li class="first"><a href="/">Home</a></li>
-<li><a href="/about">About</a></li>
-<li><a href="/blog">Blog</a></li>
-<li><a href="/projects">Projects</a></li>
-<li class="last"><a id="mail" href="">Contact</a></li>
-</ul>
+	<div class="container">
+	<!-- <div class="container showgrid"> -->
+		<div id="header" class="span-24">
+  <div id="menu" class="span-15 last">
+    <ul>
+      <li class="first"><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li class="last"><a id="mail" href="">Contact</a></li>
+    </ul>
+  </div>
 </div>
-</div>
-<div id="main" class="span-24">
-<style type="text/css">
+
+		
+		<div id="main" class="span-24">
+			<style type="text/css">
 h2,h3,h4,h5{ 
-color: #335E8D;
-font-weight   : normal;
-border-bottom : 1px dotted #ccc;
+	color: #335E8D;
+	font-weight   : normal;
+	border-bottom : 1px dotted #ccc;
 }     
+
 h3.project-headings{
-border-bottom : none;
+	border-bottom : none;
 }
+
 h2, h2.title-feature {
-margin-left   : 3px;
-font-variant  : small-caps;
-font-weight   : normal;
-border-bottom : 1px dotted #ccc;  
+	margin-left   : 3px;
+	font-variant  : small-caps;
+	font-weight   : normal;
+	border-bottom : 1px dotted #ccc;  
 }
+
+
 .project-icon {
-margin-top: 20px; 
+	margin-top: 20px; 
 }
 img.pic{
-float:left;
-margin-top    : 5px;
-margin-right  : 15px;
-margin-bottom : 10px;
+	float:left;
+	margin-top    : 5px;
+	margin-right  : 15px;
+	margin-bottom : 10px;
 }
 </style>
+
+
 <div class="span-18">
-<img src="/images/projects/tagger/Tagger.png" class="project-icon left" width="64" height="64" alt="icon"/> 
-<h1 class="project-title">Tagger</h1>
-<h3 class='project-headings'>
-<a href="/projects/tagger">Features &nbsp;</a>
-<a href="readme.html">
-Readme &nbsp;</a>
-<a href="gallery.html">Screenshots &nbsp;</a>
-<a href="changelog.html">Changelog &nbsp;</a>
-<a href="https://github.com/Bilalh/tagger/issues">Support &nbsp;</a>
-</h3>
+	
+		<img src="/images/projects/tagger/Tagger.png" class="project-icon left" width="64" height="64" alt="icon"/> 
+		 
+	<h1 class="project-title">Tagger</h1>
+		<h3 class='project-headings'>
+			
+				<a href="/projects/tagger">Features &nbsp;</a>
+			
+			
+				<a href="readme.html">
+					Readme &nbsp;</a>
+			
+			
+				<a href="gallery.html">Screenshots &nbsp;</a>
+			
+			
+				<a href="changelog.html">Changelog &nbsp;</a>
+			
+			
+			
+				<a href="https://github.com/Bilalh/tagger/issues">Support &nbsp;</a>
+			
+		</h3>
 </div>
+
 <div class="project-links span-6 last">
-<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.6.2.zip" class="project-download-link">
-<div class="project-download">Download v1.6.2</div>
-</a>
-<h3 class ='project-headings'><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
+	<a href="https://github.com/downloads/Bilalh/Tagger/Tagger_1.6.2.zip" class="project-download-link">
+		<div class="project-download">Download v1.6.2</div>
+	</a>
+	
+	<h3 class ='project-headings'><a href="https://github.com/Bilalh/tagger">GitHub Repository</a></h3>
+	
+	
 </div>
+
 <div class="readme span-24">
-<link rel="stylesheet" type="text/css" href="/css/jquery.ad-gallery.css">
-<script type="text/javascript" src="/js/jquery.ad-gallery.pack.js"></script>
-<script type="text/javascript">
-$(function() {
-var galleries = $('.ad-gallery').adGallery();
-$('#switch-effect').change(
-function() {
-galleries[0].settings.effect = $(this).val();
-return false;
-}
-);
-$('#toggle-slideshow').click(
-function() {
-galleries[0].slideshow.toggle();
-return false;
-}
-);
-$('#toggle-description').click(
-function() {
-if(!galleries[0].settings.description_wrapper) {
-galleries[0].settings.description_wrapper = $('#descriptions');
-} else {
-galleries[0].settings.description_wrapper = false;
-}
-return false;
-}
-);
-});
-</script>
-<style type="text/css">
-#gallery {
-padding: 30px;
-}
-#descriptions {
-position: relative;
-height: 50px;
-background: #EEE;
-margin-top: 10px;
-width: 640px;
-padding: 10px;
-overflow: hidden;
-}
-#descriptions .ad-image-description {
-position: absolute;
-}
-#descriptions .ad-image-description .ad-description-title {
-display: block;
-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
-color: #333;
-line-height: 140%;
-}
-.ad-gallery {
-width: 800px;
-}
-.ad-gallery .ad-image-wrapper {
-height: 456px;
-}
-</style>
+		<link rel="stylesheet" type="text/css" href="/css/jquery.ad-gallery.css">
+	<script type="text/javascript" src="/js/jquery.ad-gallery.pack.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		var galleries = $('.ad-gallery').adGallery();
+		$('#switch-effect').change(
+			function() {
+				galleries[0].settings.effect = $(this).val();
+				return false;
+			}
+		);
+		$('#toggle-slideshow').click(
+			function() {
+				galleries[0].slideshow.toggle();
+				return false;
+			}
+		);
+		$('#toggle-description').click(
+			function() {
+				if(!galleries[0].settings.description_wrapper) {
+					galleries[0].settings.description_wrapper = $('#descriptions');
+				} else {
+					galleries[0].settings.description_wrapper = false;
+				}
+				return false;
+			}
+		);
+	});
+	</script>
+
+	<style type="text/css">
+
+	#gallery {
+		padding: 30px;
+	}
+	#descriptions {
+		position: relative;
+		height: 50px;
+		background: #EEE;
+		margin-top: 10px;
+		width: 640px;
+		padding: 10px;
+		overflow: hidden;
+	}
+	#descriptions .ad-image-description {
+		position: absolute;
+	}
+	#descriptions .ad-image-description .ad-description-title {
+		display: block;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Arial, sans-serif;
+    color: #333;
+    line-height: 140%;
+
+	}
+	.ad-gallery {
+	  width: 800px;
+	}
+	.ad-gallery .ad-image-wrapper {
+	  height: 456px;
+	}
+	</style>
+
 <div id="gallery" class="ad-gallery">
-<div class="ad-image-wrapper">
+	<div class="ad-image-wrapper">
+	</div>
+	<div class="ad-controls">
+	</div>
+
+	<div class="ad-nav">
+		<div class="ad-thumbs">
+			<ul class="ad-thumb-list">
+			
+				
+				<li>
+					<a href="/images/projects/tagger/s001.png">
+						<img src="/images/projects/tagger/thumbs/s001.png" 
+						title="Multiple File Editing" alt="Multiple files can be edited at once.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s002.png">
+						<img src="/images/projects/tagger/thumbs/s002.png" 
+						title="Album art" alt="Tagger supports editings album art, album art can extracted by dragging the image to a directory.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s003.png">
+						<img src="/images/projects/tagger/thumbs/s003.png" 
+						title="Quicklook" alt="Tagger supports Quicklook to play the audio files.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s004.png">
+						<img src="/images/projects/tagger/thumbs/s004.png" 
+						title="Finder Labels" alt="Tagger supports editing Finder labels.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s005.png">
+						<img src="/images/projects/tagger/thumbs/s005.png" 
+						title="File Renaming" alt="Tagger supports batch file renaming using the field of the audio files.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s006.png">
+						<img src="/images/projects/tagger/thumbs/s006.png" 
+						title="Auto Tagging - Search" alt="Tagger supports searching in multiple languages, clicking on a row open the web page of album.
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s007.png">
+						<img src="/images/projects/tagger/thumbs/s007.png" 
+						title="Auto Tagging - Results" alt="The field to be tagged can be changed. 
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s008.png">
+						<img src="/images/projects/tagger/thumbs/s008.png" 
+						title="Auto Tagging - languages" alt="The language can also be specifed when auto tagging,
+">
+					</a>
+				</li>
+				
+				<li>
+					<a href="/images/projects/tagger/s009.png">
+						<img src="/images/projects/tagger/thumbs/s009.png" 
+						title="Preferences" alt="The columns in the table can be chosen. The starting folder can also be specifed.
+">
+					</a>
+				</li>
+				
+								
+			</ul>
+		</div>
+	</div>
+
 </div>
-<div class="ad-controls">
-</div>
-<div class="ad-nav">
-<div class="ad-thumbs">
-<ul class="ad-thumb-list">
-<li>
-<a href="/images/projects/tagger/s001.png">
-<img src="/images/projects/tagger/thumbs/s001.png" 
-title="Multiple File Editing" alt="Multiple files can be edited at once.
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s002.png">
-<img src="/images/projects/tagger/thumbs/s002.png" 
-title="Album art" alt="Tagger supports editings album art, album art can extracted by dragging the image to a directory.
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s003.png">
-<img src="/images/projects/tagger/thumbs/s003.png" 
-title="Quicklook" alt="Tagger supports Quicklook to play the audio files.
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s004.png">
-<img src="/images/projects/tagger/thumbs/s004.png" 
-title="Finder Labels" alt="Tagger supports editing Finder labels.
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s005.png">
-<img src="/images/projects/tagger/thumbs/s005.png" 
-title="File Renaming" alt="Tagger supports batch file renaming using the field of the audio files.
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s006.png">
-<img src="/images/projects/tagger/thumbs/s006.png" 
-title="Auto Tagging - Search" alt="Tagger supports searching in multiple languages, clicking on a row open the web page of album.
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s007.png">
-<img src="/images/projects/tagger/thumbs/s007.png" 
-title="Auto Tagging - Results" alt="The field to be tagged can be changed. 
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s008.png">
-<img src="/images/projects/tagger/thumbs/s008.png" 
-title="Auto Tagging - languages" alt="The language can also be specifed when auto tagging,
-">
-</a>
-</li>
-<li>
-<a href="/images/projects/tagger/s009.png">
-<img src="/images/projects/tagger/thumbs/s009.png" 
-title="Preferences" alt="The columns in the table can be chosen. The starting folder can also be specifed.
-">
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
+
+
 <hr />
 <div class="sharing">
-<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.comprojects/tagger/gallery.html" data-via="" data-counturl="http://bilalh.github.comprojects/tagger/gallery.html" >Tweet</a>
-<div class="g-plusone" data-size="12"></div>
-<script type="text/javascript">
-(function() {
-var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-script.src = 'https://apis.google.com/js/plusone.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-})();
-</script>
-<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) {return;}
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script type="text/javascript">
-(function(){
-var twitterWidgets = document.createElement('script');
-twitterWidgets.type = 'text/javascript';
-twitterWidgets.async = true;
-twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-})();
-</script>
-<span id="a2itemwidget"></span>
-<script src="http://api.alternativeto.net/software/media-tagger/widgetjs/blue" type="text/javascript"></script>
-<div id="macupdate">
+	
+	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.comprojects/tagger/gallery.html" data-via="" data-counturl="http://bilalh.github.comprojects/tagger/gallery.html" >Tweet</a>
+	
+	
+	<div class="g-plusone" data-size="12"></div>
+	<script type="text/javascript">
+		(function() {
+			var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+			script.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+		})();
+	</script>
+	 
+	
+		<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	
+	
+		<script type="text/javascript">
+			(function(){
+				var twitterWidgets = document.createElement('script');
+				twitterWidgets.type = 'text/javascript';
+				twitterWidgets.async = true;
+				twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+				document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+			})();
+		</script>
+	
+	
+	
+	
+	<span id="a2itemwidget"></span>
+	<script src="http://api.alternativeto.net/software/media-tagger/widgetjs/blue" type="text/javascript"></script>
+	
+	
+	
+	<div id="macupdate">
+		
+	</div>
+	<script>
+		   $("div#macupdate").html(writeCapture.sanitize('<scri'+'pt type="text/javascript" src="http://www.macupdate.com/developers/badge/41285"></scr'+'ipt>'));
+	</script>
+	 
 </div>
-<script>
-$("div#macupdate").html(writeCapture.sanitize('<scri'+'pt type="text/javascript" src="http://www.macupdate.com/developers/badge/41285"></scr'+'ipt>'));
-</script>
+
 </div>
-</div>
-</div>
-<div id="footer" class="span-24"> 
+
+		</div>
+		
+		
+		
+		<div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
-<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
-2011-2012 Bilal Syed Hussain. 
+	<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
+	2011-2012 Bilal Syed Hussain. 
 </span> 
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
-&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
-&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
-&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
-&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
+ &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
+ &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
+ &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
+ &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-</div>
+
+	</div>
+	
 </body>
 </html>
