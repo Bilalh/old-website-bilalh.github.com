@@ -1,362 +1,246 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>MPlayer OSX Extended Build 2 - Bilal Syed Hussain</title>
-	
-	
-	<meta name="author" content="Bilal Syed Hussain" />
-	
-	<meta name="description" content="Bilal Syed Hussain MPlayer OSX Extended Build 2" />
-	
-
-	
-
-	<meta name="robots" content="noodp, nydir" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-	<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-	<!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->	 
-	<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-	<link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-	<script type="text/javascript" src="/js/writeCapture-1.0.5-nolib-min.js"></script>
-		<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/site.js"></script>
-		<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26827948-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<title>MPlayer OSX Extended Build 2 - Bilal Syed Hussain</title>
+<meta name="author" content="Bilal Syed Hussain" />
+<meta name="description" content="Bilal Syed Hussain MPlayer OSX Extended Build 2" />
+<meta name="robots" content="noodp, nydir" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+<link href="/css/site.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/writeCapture-1.0.5-nolib-min.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26827948-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
-		<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-  <script language="Javascript" type="text/javascript">
-  //<![CDATA[
+<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
-  // Create a search control
-  var searchControl = new google.search.SearchControl();
-  
-  // Add in a WebSearch
-  var webSearch = new google.search.WebSearch();
-  
-  // Restrict our search to pages from this site
-  webSearch.setSiteRestriction('bilalh.github.com');
-  
-  // Add the searcher to the SearchControl
-  searchControl.addSearcher(webSearch);
-  
-  // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
-	// Add the value of "Search..." to the input field and a class of .empty
-
-
+// Create a search control
+var searchControl = new google.search.SearchControl();
+// Add in a WebSearch
+var webSearch = new google.search.WebSearch();
+// Restrict our search to pages from this site
+webSearch.setSiteRestriction('bilalh.github.com');
+// Add the searcher to the SearchControl
+searchControl.addSearcher(webSearch);
+// tell the searcher to draw itself and tell it where to attach
+searchControl.draw(document.getElementById("searchcontrol"));
+// Add the value of "Search..." to the input field and a class of .empty
 }
 google.setOnLoadCallback(function() {
-  $(function() {
-		OnLoad()
-		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-	 
-	// When you click on #search
-	$(".gsc-input > input").focus(function(){
-	 
-		// If the value is equal to "Search..."
-		if($(this).val() == "Search... powered by Google") {
-			// remove all the text and the class of .empty
-			$(this).val("").removeClass("empty");;
-		}
-		this.select();
-	});
-	 
-	// When the focus on #search is lost
-	$(".gsc-input > input").blur(function(){
-	 
-		// If the input field is empty
-		if($(this).val() == "") {
-			// Add the text "Search..." and a class of .empty
-			$(this).val("Search... powered by Google").addClass("empty");
-		}
-	});
-
-	$("#comment_heading").click(function()
-	{
-		$(this).next("#disqus_thread").slideToggle(500);
-		if($(this).text() == "Show Comments") {
-			$(this).text("Hide Comments")
-		}else{
-			$(this).text("Show Comments")
-		}
-	});
-		
-  });
+$(function() {
+OnLoad()
+$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
+// When you click on #search
+$(".gsc-input > input").focus(function(){
+// If the value is equal to "Search..."
+if($(this).val() == "Search... powered by Google") {
+// remove all the text and the class of .empty
+$(this).val("").removeClass("empty");;
+}
+this.select();
 });
-
-
-  //]]>
-  </script>
+// When the focus on #search is lost
+$(".gsc-input > input").blur(function(){
+// If the input field is empty
+if($(this).val() == "") {
+// Add the text "Search..." and a class of .empty
+$(this).val("Search... powered by Google").addClass("empty");
+}
+});
+$("#comment_heading").click(function()
+{
+$(this).next("#disqus_thread").slideToggle(500);
+if($(this).text() == "Show Comments") {
+$(this).text("Hide Comments")
+}else{
+$(this).text("Show Comments")
+}
+});
+});
+});
+//]]>
+</script>
 </head>
-
 <body>
-	<div class="container">
-	<!-- <div class="container showgrid"> -->
-		<div id="header" class="span-24">
-  <div id="menu" class="span-15 last">
-    <ul>
-      <li class="first"><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li class="last"><a id="mail" href="">Contact</a></li>
-    </ul>
-  </div>
+<div class="container">
+<div id="header" class="span-24">
+<div id="menu" class="span-15 last">
+<ul>
+<li class="first"><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/projects">Projects</a></li>
+<li class="last"><a id="mail" href="">Contact</a></li>
+</ul>
 </div>
-
-		
-		<div id="main" class="span-17">
-			<style type="text/css">
+</div>
+<div id="main" class="span-17">
+<style type="text/css">
 h3,h4{ 
-	color: #335E8D;
+color: #335E8D;
 }			
 h3,h4 {
-	margin-left		: 3px;
-	font-variant	: small-caps;
-	font-weight		: normal;
-	border-bottom : 1px dotted #ccc;	
+margin-left		: 3px;
+font-variant	: small-caps;
+font-weight		: normal;
+border-bottom : 1px dotted #ccc;	
 }
 </style>
-
-
-
-
 <div class="post" id="main-content">
-	<h1>MPlayer OSX Extended Build 2</h1>
-	<h4 class="large-bottom">
-		Posted on May 18, 2012
-		 in <a href="/categories/release">Release</a> 
-
-		<span class="tag-list">
-			
-			<a href="/tags/mplayer">MPlayer</a>
-			
-		</span>
-	</h4>
-	
-	<div class="content">
-		<p>This is build contains all the features in the <a href='/2011/12/20/mplayer-osx-extended/'>previous build</a> with a few new additions.</p>
-
+<h1>MPlayer OSX Extended Build 2</h1>
+<h4 class="large-bottom">
+Posted on May 18, 2012
+in <a href="/categories/release">Release</a> 
+<span class="tag-list">
+<a href="/tags/mplayer">MPlayer</a>
+</span>
+</h4>
+<div class="content">
+<p>This is build contains all the features in the <a href='/2011/12/20/mplayer-osx-extended/'>previous build</a> with a few new additions.</p>
 <p><a href='https://github.com/downloads/Bilalh/MPlayer-OSX-Extended/MPlayer%20OSX%20Extended%20rev15-test1-build%202.zip' title='MPlayer OSX Extended Binary'>Download Link</a></p>
-
 <p><a href='https://github.com/Bilalh/MPlayer-OSX-Extended' title='MPlayer OSX Extended GitHub Repository'>GitHub Repository</a></p>
-
 <h2 id='new_features'>New Features</h2>
-
 <h3 id='proxy_icons'>Proxy Icons</h3>
-
 <p>I Added a Proxy Icon when a file is playing, which is invoke by clicking on the icon in the menu bar, this brings up the menu shown below which allows the user to open the folder the movie is placed in.</p>
-
 <p><img alt='Proxy Icon' src='/images/posts/proxy_icon.png' /></p>
-
 <h3 id='next_episode'>Next Episode</h3>
-
 <p>A menu item (Play Next Episode) that plays the next episode based on the currently playing file was added in previous build and was bound to ⌘E. This works for most formats of naming including</p>
-
 <pre><code>File Name 01
 File_Name_1
 File Name Episode 1</code></pre>
-
 <p>This build added an extra option to play the next episode automatically, saving the user from clicking on the <code>Play Next Episode</code> menu item each time.</p>
-
 <p><img alt='Next Menu' src='/images/posts/next_menu.png' /></p>
-
 <h2 id='compatibility'>Compatibility</h2>
-
 <p>Nearly all of he features have been merged in the main repository, meaning that will no compatibility issues in the future.</p>
-
 <h2 id='other_improvements'>Other Improvements</h2>
-
 <p>This build also contains other features to improve the image quality.</p>
-	</div>
-
-	<div class="next-prev-nav low-top">
-		
-			&laquo;&nbsp;<a href="/2012/09/22/tagger-1-6-2" rel="next" title="Tagger 1.6.2">Tagger 1.6.2</a>
-		
-	
-		
-			
-				|
-			
-		
-		
-	
-		
-			<a href="/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor" rel="previous" title="Pipe output from command line tools to a text editor">Pipe output from command line tools to a text editor</a>&nbsp;&raquo;
-		
-	
-		<br />
-	</div>
-
-	<hr />
-	<div class="sharing">
-	
-	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2" data-via="" data-counturl="http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2" >Tweet</a>
-	
-	
-	<div class="g-plusone" data-size="12"></div>
-	<script type="text/javascript">
-		(function() {
-			var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-			script.src = 'https://apis.google.com/js/plusone.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-		})();
-	</script>
-	 
-	
-		<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-	
-	
-		<script type="text/javascript">
-			(function(){
-				var twitterWidgets = document.createElement('script');
-				twitterWidgets.type = 'text/javascript';
-				twitterWidgets.async = true;
-				twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-				document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-			})();
-		</script>
-	
-	
-	
-	
-	
-	 
 </div>
-
-	
-
+<div class="next-prev-nav low-top">
+&laquo;&nbsp;<a href="/2012/09/22/tagger-1-6-2" rel="next" title="Tagger 1.6.2">Tagger 1.6.2</a>
+|
+<a href="/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor" rel="previous" title="Pipe output from command line tools to a text editor">Pipe output from command line tools to a text editor</a>&nbsp;&raquo;
+<br />
+</div>
+<hr />
+<div class="sharing">
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2" data-via="" data-counturl="http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2" >Tweet</a>
+<div class="g-plusone" data-size="12"></div>
 <script type="text/javascript">
-      var disqus_shortname = 'bilalsyedhussain';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2';
-        var disqus_url = 'http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
+(function() {
+var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+script.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+})();
 </script>
-
-
-	<div>
-		<h2 id='comment_heading'>Show Comments</h2>
-		<div id="disqus_thread" style="display: none; " aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+(function(){
+var twitterWidgets = document.createElement('script');
+twitterWidgets.type = 'text/javascript';
+twitterWidgets.async = true;
+twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+})();
+</script>
 </div>
-	</div>
+<script type="text/javascript">
+var disqus_shortname = 'bilalsyedhussain';
+// var disqus_developer = 1;
+var disqus_identifier = 'http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2';
+var disqus_url = 'http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2';
+var disqus_script = 'embed.js';
+(function () {
+var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+<div>
+<h2 id='comment_heading'>Show Comments</h2>
+<div id="disqus_thread" style="display: none; " aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-
-		</div>
-		
-		
-			<div id="sidebar" class="span-6 push-1 last">
-	<div class="sidebar-module" id='gsearcher'>
-				 
-		<div id="searchcontrol">
-			
-		</div>
-		
-	</div>
-
-	<div class="sidebar-module">
-		<div class="title"><a href='/tags'>Tags</a></div>
-		
-            <span style="font-size: 75%">
-              <a href="/tags/applescript/" title="1 post">Applescript</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/audio/" title="1 post">Audio</a>
-            </span>
-          
-            <span style="font-size: 143%">
-              <a href="/tags/bash/" title="3 posts">Bash</a>
-            </span>
-          
-            <span style="font-size: 109%">
-              <a href="/tags/git/" title="2 posts">Git</a>
-            </span>
-          
-            <span style="font-size: 143%">
-              <a href="/tags/mplayer/" title="3 posts">MPlayer</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/misc/" title="1 post">Misc</a>
-            </span>
-          
-            <span style="font-size: 177%">
-              <a href="/tags/scripting/" title="4 posts">Scripting</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/textmate/" title="1 post">TextMate</a>
-            </span>
-          
-            <span style="font-size: 280%">
-              <a href="/tags/utilities/" title="7 posts">Utilities</a>
-            </span>
-          
-            <span style="font-size: 75%">
-              <a href="/tags/ical/" title="1 post">iCal</a>
-            </span>
-          
-	</div>
-
-	<div class="sidebar-module">
-		<div class="title"><a href='/categories'>Categories</a></div>
-		<a href="/categories/osx"><strong>OSX</strong></a> (6)<br /><a href="/categories/unix"><strong>Unix</strong></a> (6)<br /><a href="/categories/release"><strong>Release</strong></a> (3)<br />
-	</div>
-	
-	<div class="sidebar-module">
-		<div class="title"><a href='/archives'>Archives</a></div>
-		<a href="/2012/09"><strong>September 2012</strong></a> (1)<br /><a href="/2012/05"><strong>May 2012</strong></a> (1)<br /><a href="/2012/04"><strong>April 2012</strong></a> (2)<br /><a href="/2012/01"><strong>January 2012</strong></a> (1)<br /><a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
-	</div>
 </div>
-
-		
-		
-		<div id="footer" class="span-24"> 
+</div>
+</div>
+<div id="sidebar" class="span-6 push-1 last">
+<div class="sidebar-module" id='gsearcher'>
+<div id="searchcontrol">
+</div>
+</div>
+<div class="sidebar-module">
+<div class="title"><a href='/tags'>Tags</a></div>
+<span style="font-size: 75%">
+<a href="/tags/applescript/" title="1 post">Applescript</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/audio/" title="1 post">Audio</a>
+</span>
+<span style="font-size: 143%">
+<a href="/tags/bash/" title="3 posts">Bash</a>
+</span>
+<span style="font-size: 109%">
+<a href="/tags/git/" title="2 posts">Git</a>
+</span>
+<span style="font-size: 143%">
+<a href="/tags/mplayer/" title="3 posts">MPlayer</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/misc/" title="1 post">Misc</a>
+</span>
+<span style="font-size: 177%">
+<a href="/tags/scripting/" title="4 posts">Scripting</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/textmate/" title="1 post">TextMate</a>
+</span>
+<span style="font-size: 280%">
+<a href="/tags/utilities/" title="7 posts">Utilities</a>
+</span>
+<span style="font-size: 75%">
+<a href="/tags/ical/" title="1 post">iCal</a>
+</span>
+</div>
+<div class="sidebar-module">
+<div class="title"><a href='/categories'>Categories</a></div>
+<a href="/categories/osx"><strong>OSX</strong></a> (6)<br /><a href="/categories/unix"><strong>Unix</strong></a> (6)<br /><a href="/categories/release"><strong>Release</strong></a> (3)<br />
+</div>
+<div class="sidebar-module">
+<div class="title"><a href='/archives'>Archives</a></div>
+<a href="/2012/09"><strong>September 2012</strong></a> (1)<br /><a href="/2012/05"><strong>May 2012</strong></a> (1)<br /><a href="/2012/04"><strong>April 2012</strong></a> (2)<br /><a href="/2012/01"><strong>January 2012</strong></a> (1)<br /><a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
+</div>
+</div>
+<div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
-	<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
-	2011-2012 Bilal Syed Hussain. 
+<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
+2011-2012 Bilal Syed Hussain. 
 </span> 
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
-	</div>
-	
+</div>
 </body>
 </html>

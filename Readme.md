@@ -8,7 +8,7 @@ Prerequisites
 -------------
 * Ruby (only tested with 1.9)
 
-	gem install nokogiri sass growl jekyll jekyll-pagination 
+	gem install nokogiri sass growl jekyll jekyll-pagination  front-compiler
 
 Install 
 -------

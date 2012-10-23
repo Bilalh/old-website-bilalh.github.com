@@ -1,199 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Media - Bilal Syed Hussain</title>
-	
-	
-	<meta name="author" content="Bilal Syed Hussain" />
-	
-	<meta name="description" content="A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
+<title>Media - Bilal Syed Hussain</title>
+<meta name="author" content="Bilal Syed Hussain" />
+<meta name="description" content="A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
 " />
-	
-
-	
-
-	<meta name="robots" content="noodp, nydir" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-	<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
-	<!--[if lt IE 8]> <link href="/css/blueprint/ie.css" type="text/css" rel="stylesheet" /> <![endif]-->	 
-	<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
-	<link href="/css/site.css" type="text/css" rel="stylesheet" />
-
-	<script type="text/javascript" src="/js/writeCapture-1.0.5-nolib-min.js"></script>
-		<script type="text/javascript" src="/js/jquery.js"></script>
-	<script type="text/javascript" src="/js/site.js"></script>
-		<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26827948-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<meta name="robots" content="noodp, nydir" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
+<link href="/css/railscasts.css" type="text/css" rel="stylesheet" />
+<link href="/css/site.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/js/writeCapture-1.0.5-nolib-min.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/site.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-26827948-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
 </script>
-		<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
-  <script language="Javascript" type="text/javascript">
-  //<![CDATA[
+<script src="https://www.google.com/jsapi?key=ABQIAAAAiqVTU5OSSot1cR3lwcUaRhQPs6C_P29mBdw5cor5GsRcwXY76RSRx8xGbDAbXn6RjwDCYn67tbc_hg" type="text/javascript"></script>
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
 google.load("search", "1");
-
 function OnLoad() {
-  // Create a search control
-  var searchControl = new google.search.SearchControl();
-  
-  // Add in a WebSearch
-  var webSearch = new google.search.WebSearch();
-  
-  // Restrict our search to pages from this site
-  webSearch.setSiteRestriction('bilalh.github.com');
-  
-  // Add the searcher to the SearchControl
-  searchControl.addSearcher(webSearch);
-  
-  // tell the searcher to draw itself and tell it where to attach
-  searchControl.draw(document.getElementById("searchcontrol"));
-	// Add the value of "Search..." to the input field and a class of .empty
-
-
+// Create a search control
+var searchControl = new google.search.SearchControl();
+// Add in a WebSearch
+var webSearch = new google.search.WebSearch();
+// Restrict our search to pages from this site
+webSearch.setSiteRestriction('bilalh.github.com');
+// Add the searcher to the SearchControl
+searchControl.addSearcher(webSearch);
+// tell the searcher to draw itself and tell it where to attach
+searchControl.draw(document.getElementById("searchcontrol"));
+// Add the value of "Search..." to the input field and a class of .empty
 }
 google.setOnLoadCallback(function() {
-  $(function() {
-		OnLoad()
-		$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
-	 
-	// When you click on #search
-	$(".gsc-input > input").focus(function(){
-	 
-		// If the value is equal to "Search..."
-		if($(this).val() == "Search... powered by Google") {
-			// remove all the text and the class of .empty
-			$(this).val("").removeClass("empty");;
-		}
-		this.select();
-	});
-	 
-	// When the focus on #search is lost
-	$(".gsc-input > input").blur(function(){
-	 
-		// If the input field is empty
-		if($(this).val() == "") {
-			// Add the text "Search..." and a class of .empty
-			$(this).val("Search... powered by Google").addClass("empty");
-		}
-	});
-
-	$("#comment_heading").click(function()
-	{
-		$(this).next("#disqus_thread").slideToggle(500);
-		if($(this).text() == "Show Comments") {
-			$(this).text("Hide Comments")
-		}else{
-			$(this).text("Show Comments")
-		}
-	});
-		
-  });
+$(function() {
+OnLoad()
+$(".gsc-input > input").val("Search... powered by Google").addClass("empty");
+// When you click on #search
+$(".gsc-input > input").focus(function(){
+// If the value is equal to "Search..."
+if($(this).val() == "Search... powered by Google") {
+// remove all the text and the class of .empty
+$(this).val("").removeClass("empty");;
+}
+this.select();
 });
-
-
-  //]]>
-  </script>
+// When the focus on #search is lost
+$(".gsc-input > input").blur(function(){
+// If the input field is empty
+if($(this).val() == "") {
+// Add the text "Search..." and a class of .empty
+$(this).val("Search... powered by Google").addClass("empty");
+}
+});
+$("#comment_heading").click(function()
+{
+$(this).next("#disqus_thread").slideToggle(500);
+if($(this).text() == "Show Comments") {
+$(this).text("Hide Comments")
+}else{
+$(this).text("Show Comments")
+}
+});
+});
+});
+//]]>
+</script>
 </head>
-
 <body>
-	<div class="container">
-	<!-- <div class="container showgrid"> -->
-		<div id="header" class="span-24">
-  <div id="menu" class="span-15 last">
-    <ul>
-      <li class="first"><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li class="last"><a id="mail" href="">Contact</a></li>
-    </ul>
-  </div>
+<div class="container">
+<div id="header" class="span-24">
+<div id="menu" class="span-15 last">
+<ul>
+<li class="first"><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/projects">Projects</a></li>
+<li class="last"><a id="mail" href="">Contact</a></li>
+</ul>
 </div>
-
-		
-		<div id="main" class="span-24">
-			<style type="text/css">
+</div>
+<div id="main" class="span-24">
+<style type="text/css">
 h2,h3,h4,h5{ 
-	color: #335E8D;
-	font-weight   : normal;
-	border-bottom : 1px dotted #ccc;
+color: #335E8D;
+font-weight   : normal;
+border-bottom : 1px dotted #ccc;
 }     
-
 h3.project-headings{
-	border-bottom : none;
+border-bottom : none;
 }
-
 h2, h2.title-feature {
-	margin-left   : 3px;
-	font-variant  : small-caps;
-	font-weight   : normal;
-	border-bottom : 1px dotted #ccc;  
+margin-left   : 3px;
+font-variant  : small-caps;
+font-weight   : normal;
+border-bottom : 1px dotted #ccc;  
 }
-
-
 .project-icon {
-	margin-top: 20px; 
+margin-top: 20px; 
 }
 img.pic{
-	float:left;
-	margin-top    : 5px;
-	margin-right  : 15px;
-	margin-bottom : 10px;
+float:left;
+margin-top    : 5px;
+margin-right  : 15px;
+margin-bottom : 10px;
 }
 </style>
-
-
 <div class="span-18">
-		 
-	<h1 class="project-title">Media</h1>
-		<h3 class='project-headings'>
-			
-			
-			
-			
-			
-			
-		</h3>
+<h1 class="project-title">Media</h1>
+<h3 class='project-headings'>
+</h3>
 </div>
-
 <div class="project-links span-6 last">
-	<a href="https://github.com/Bilalh/media/zipball/master" class="project-download-link">
-		<div class="project-download">Download</div>
-	</a>
-	
-	<h3 class ='project-headings'><a href="https://github.com/Bilalh/media">GitHub Repository</a></h3>
-	
-	
+<a href="https://github.com/Bilalh/media/zipball/master" class="project-download-link">
+<div class="project-download">Download</div>
+</a>
+<h3 class ='project-headings'><a href="https://github.com/Bilalh/media">GitHub Repository</a></h3>
 </div>
-
 <div class="readme span-24">
-	
-	<h1 id='readmeTitle'>Media</h1><p id='description'>Media is used to play video and/or audio files, provide a nice interface to MPlayer and keep track of which episodes of series has been watched. It has a options to show only the latest or unwatched files and update mylist</p><h2 id='usage'>Usage</h2><p>Usage <code>media start_path [args]</code></p><pre><code> args: [-abcdefghijklmnopqrstuvwxyz.ABCDEFGHIJKLMNOPQRSTUVWXYZ,0123456789:/[]{}@%^=]
- Use -h for help Use -h[num] for a section in the help
- Use -h,{letters} for details of the arg(s)</code></pre><p>See the man pages or <code>media -h</code> for more details.</p><h2 id='prerequisites'>Prerequisites</h2><ul>
+<h1 id='readmeTitle'>Media</h1><p id='description'>Media is used to play video and/or audio files, provide a nice interface to MPlayer and keep track of which episodes of series has been watched. It has a options to show only the latest or unwatched files and update mylist</p><h2 id='usage'>Usage</h2><p>Usage <code>media start_path [args]</code></p><pre><code> args: [-abcdefghijklmnopqrstuvwxyz.ABCDEFGHIJKLMNOPQRSTUVWXYZ,0123456789:/[]{}@%^=]
+Use -h for help Use -h[num] for a section in the help
+Use -h,{letters} for details of the arg(s)</code></pre><p>See the man pages or <code>media -h</code> for more details.</p><h2 id='prerequisites'>Prerequisites</h2><ul>
 <li>sqlite3</li>
-
 <li>pcre</li>
-
 <li>libcurl (for mylist)</li>
-
 <li>libxml (for mylist and playlists)</li>
-
 <li>linux has lots extra requirements see Readme</li>
 </ul><h2 id='install'>Install</h2><ul>
 <li>
 <p>Put the scripts in your <code>$PATH</code> e.g <code>export PATH=$PATH:${HOME}/bin</code> for default settings</p>
-
 <pre><code>make dist
 make install
 make create_database
@@ -203,7 +146,6 @@ make install_man_pages
 make install_mplayer_options
 make install_media_aliases</code></pre>
 </li>
-
 <li>
 <p>Note the xcode project is <strong>only</strong> for <strong>debugging</strong> not building</p>
 </li>
@@ -212,73 +154,49 @@ make install_media_aliases</code></pre>
 </ul><h2 id='licence'>Licence</h2><p><a href='http://creativecommons.org/licenses/by-nc-sa/3.0/' title='Full details'>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></p><h2 id='authors'>Authors</h2><ul>
 <li>Bilal Syed Hussain</li>
 </ul>
-
-	
-
-
 <hr />
 <div class="sharing">
-	
-	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.comprojects/media/index.html" data-via="" data-counturl="http://bilalh.github.comprojects/media/index.html" >Tweet</a>
-	
-	
-	<div class="g-plusone" data-size="12"></div>
-	<script type="text/javascript">
-		(function() {
-			var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-			script.src = 'https://apis.google.com/js/plusone.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-		})();
-	</script>
-	 
-	
-		<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) {return;}
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-	
-	
-		<script type="text/javascript">
-			(function(){
-				var twitterWidgets = document.createElement('script');
-				twitterWidgets.type = 'text/javascript';
-				twitterWidgets.async = true;
-				twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-				document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-			})();
-		</script>
-	
-	
-	
-	
-	
-	 
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.comprojects/media/index.html" data-via="" data-counturl="http://bilalh.github.comprojects/media/index.html" >Tweet</a>
+<div class="g-plusone" data-size="12"></div>
+<script type="text/javascript">
+(function() {
+var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+script.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+})();
+</script>
+<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+(function(){
+var twitterWidgets = document.createElement('script');
+twitterWidgets.type = 'text/javascript';
+twitterWidgets.async = true;
+twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+})();
+</script>
 </div>
-
 </div>
-
-		</div>
-		
-		
-		
-		<div id="footer" class="span-24"> 
+</div>
+<div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
-	<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
-	2011-2012 Bilal Syed Hussain. 
+<a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
+2011-2012 Bilal Syed Hussain. 
 </span> 
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
- &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/BilalsHussain">Twitter</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://uk.linkedin.com/pub/bilal-syed-hussain/40/981/18">Linkedin</a>
+&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://plus.google.com/u/0/115924527404981938729/about">Google+</a>
 </div>
-
-	</div>
-	
+</div>
 </body>
 </html>
