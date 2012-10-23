@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19 -WKU
+#!/usr/bin/env ruby -WKU
 require "front-compiler"
 
 class FrontCompiler::HTMLCompactor

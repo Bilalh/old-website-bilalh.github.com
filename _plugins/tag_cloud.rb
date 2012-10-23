@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19
+#!/usr/bin/env ruby
 module Jekyll
   class TagCloud < Liquid::Tag
     @@max_size = 280

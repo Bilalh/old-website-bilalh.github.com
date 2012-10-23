@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19
+#!/usr/bin/env ruby
 # from https://github.com/BlackBulletIV/blackbulletiv.github.com/blob/master/_plugins/archives.rb
 
 require_relative 'custom_page'

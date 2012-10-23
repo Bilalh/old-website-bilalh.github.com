@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19
+#!/usr/bin/env ruby
 class String
   def slugize
     self.downcase.gsub(/[\s\.]/, '-').gsub(/[^\w\d\-]/, '').downcase

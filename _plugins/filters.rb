@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19
+#!/usr/bin/env ruby
 module Jekyll
   module Filters
     def slugize(text)

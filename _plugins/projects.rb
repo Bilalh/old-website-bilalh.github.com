@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19
+#!/usr/bin/env ruby
 # encoding: utf-8
 require_relative 'custom_page'
 require "nokogiri"

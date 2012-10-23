@@ -15,7 +15,7 @@ no_sidebar: true
 
 ## Education ##
 * First-class honours in Computer Science at University of St. Andrews
-* Currently doing PhD at the University of St. Andrews.
+* Currently reading for a PhD in Computer Science (specialising in Constraint Programming) at the University of St. Andrews.
 
 ## Skills ##
 

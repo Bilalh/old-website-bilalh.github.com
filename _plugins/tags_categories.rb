@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby19
+#!/usr/bin/env ruby
 # Thanks to http://recursive-design.com/projects/jekyll-plugins/ for the code off which this is based
 require_relative 'custom_page'
 
