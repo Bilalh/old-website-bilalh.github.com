@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://bilalh.github.com/2011/08/29/fn-lock</loc>
-        <lastmod>2012-01-14T02:45:33+00:00</lastmod>
+        <lastmod>2013-01-18T20:37:55+00:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/2011/09/08/mac-keyboard-symbols</loc>
@@ -54,7 +54,7 @@
         <loc>
             http://bilalh.github.com/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor
         </loc>
-        <lastmod>2012-04-22T22:12:26+01:00</lastmod>
+        <lastmod>2013-01-18T20:41:16+00:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/2012/05/18/mplayer-osx-extended-build-2</loc>
@@ -63,6 +63,10 @@
     <url>
         <loc>http://bilalh.github.com/2012/09/22/tagger-1-6-2</loc>
         <lastmod>2012-09-22T17:00:12+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://bilalh.github.com/2013/03/29/alfred-extensions</loc>
+        <lastmod>2013-04-03T04:34:53+01:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/about/</loc>
@@ -82,14 +86,14 @@
     </url>
     <url>
         <loc>http://bilalh.github.com/feed/atom/</loc>
-        <lastmod>2012-09-22T17:00:12+01:00</lastmod>
+        <lastmod>2013-04-03T04:34:53+01:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/feed/</loc>
-        <lastmod>2012-09-22T17:00:12+01:00</lastmod>
+        <lastmod>2013-04-03T04:34:53+01:00</lastmod>
     </url>
     <url>
         <loc>http://bilalh.github.com/</loc>
-        <lastmod>2012-09-22T17:00:12+01:00</lastmod>
+        <lastmod>2013-04-03T04:34:53+01:00</lastmod>
     </url>
 </urlset>

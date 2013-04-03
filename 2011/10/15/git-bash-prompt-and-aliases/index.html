@@ -110,9 +110,15 @@ in <a href="/categories/unix">Unix</a>
 </h4>
 <div class="content">
 <p>You can get git to shown the information such as which branch you are on by using the following:</p>
-<p>Liquid error: No such file or directory - posix_spawnp</p>
+<p><div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\u$(__git_ps1 &quot;@%s&quot;) \$ &#39;</span>
+</code></pre>
+</div></p>
 <p>This would as display as <code>User@master $ </code>. You can git to shown even more information by using the following.</p>
-<p>Liquid error: No such file or directory - posix_spawnp</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWDIRTYSTATE</span><span class='o'>=</span><span class='nb'>true</span>
+<span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWUNTRACKEDFILES</span><span class='o'>=</span><span class='nb'>true</span>
+<span class='nb'>export </span><span class='nv'>GIT_PS1_SHOWSTASHSTATE</span><span class='o'>=</span><span class='nb'>true</span>
+</code></pre>
+</div>
 <ul>
 <li><code>GIT_PS1_SHOWDIRTYSTATE</code> adds a <code>*</code> at the end if the branch has been changed e.g <code>User@master * $ </code></li>
 <li><code>GIT_PS1_SHOWUNTRACKEDFILES</code> adds a <code>%</code> at end if the branch has untracked files e.g <code>User@master % $ </code></li>
@@ -120,7 +126,9 @@ in <a href="/categories/unix">Unix</a>
 <li><code>+</code> at the end means that there are changed to be committed.</li>
 </ul>
 <p>For a full colour prompt use</p>
-<p>Liquid error: No such file or directory - posix_spawnp</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>PS1</span><span class='o'>=</span><span class='s1'>&#39;\[$(tput setaf 3)\]\u\[$(tput sgr0)$(tput setaf 5)\]\[$(tput sgr0)$(tput setaf 2)\]$(__git_ps1 &quot; [%s]&quot;) \[$(tput sgr0)\]$ &#39;</span>
+</code></pre>
+</div>
 <p>which shows <code>bilalh [mediakeys] $</code> but in colour</p>
 <p>This has been tested with <code>git version 1.7.3.4</code> but should work with 1.6.5+ and requires git <code>bash_completion</code>, see <a href='https://github.com/markgandolfo/git-bash-completion,' title='git bash_completion'>git bash completion</a> if you don&#8217;t have it.</p>
 </div>
@@ -192,26 +200,26 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
 <span style="font-size: 75%">
 <a href="/tags/audio/" title="1 post">Audio</a>
 </span>
-<span style="font-size: 143%">
+<span style="font-size: 133%">
 <a href="/tags/bash/" title="3 posts">Bash</a>
 </span>
-<span style="font-size: 109%">
+<span style="font-size: 104%">
 <a href="/tags/git/" title="2 posts">Git</a>
 </span>
-<span style="font-size: 143%">
+<span style="font-size: 133%">
 <a href="/tags/mplayer/" title="3 posts">MPlayer</a>
 </span>
 <span style="font-size: 75%">
 <a href="/tags/misc/" title="1 post">Misc</a>
 </span>
-<span style="font-size: 177%">
-<a href="/tags/scripting/" title="4 posts">Scripting</a>
+<span style="font-size: 192%">
+<a href="/tags/scripting/" title="5 posts">Scripting</a>
 </span>
 <span style="font-size: 75%">
 <a href="/tags/textmate/" title="1 post">TextMate</a>
 </span>
 <span style="font-size: 280%">
-<a href="/tags/utilities/" title="7 posts">Utilities</a>
+<a href="/tags/utilities/" title="8 posts">Utilities</a>
 </span>
 <span style="font-size: 75%">
 <a href="/tags/ical/" title="1 post">iCal</a>
@@ -219,17 +227,17 @@ dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
 </div>
 <div class="sidebar-module">
 <div class="title"><a href='/categories'>Categories</a></div>
-<a href="/categories/osx"><strong>OSX</strong></a> (6)<br /><a href="/categories/unix"><strong>Unix</strong></a> (6)<br /><a href="/categories/release"><strong>Release</strong></a> (3)<br />
+<a href="/categories/osx"><strong>OSX</strong></a> (7)<br /><a href="/categories/unix"><strong>Unix</strong></a> (6)<br /><a href="/categories/release"><strong>Release</strong></a> (3)<br />
 </div>
 <div class="sidebar-module">
 <div class="title"><a href='/archives'>Archives</a></div>
-<a href="/2012/09"><strong>September 2012</strong></a> (1)<br /><a href="/2012/05"><strong>May 2012</strong></a> (1)<br /><a href="/2012/04"><strong>April 2012</strong></a> (2)<br /><a href="/2012/01"><strong>January 2012</strong></a> (1)<br /><a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
+<a href="/2013/03"><strong>March 2013</strong></a> (1)<br /><a href="/2012/09"><strong>September 2012</strong></a> (1)<br /><a href="/2012/05"><strong>May 2012</strong></a> (1)<br /><a href="/2012/04"><strong>April 2012</strong></a> (2)<br /><a href="/2012/01"><strong>January 2012</strong></a> (1)<br /><a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
 </div>
 </div>
 <div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
 <a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
-2011-2012 Bilal Syed Hussain. 
+2011-2013 Bilal Syed Hussain. 
 </span> 
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>

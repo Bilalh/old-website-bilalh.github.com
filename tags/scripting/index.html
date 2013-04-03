@@ -91,6 +91,18 @@ $(this).text("Show Comments")
 <h1 class="large-bottom">Tag: Scripting</h1>
 <div id="main-content">
 <div class="post-listing">
+<h2><a href="/2013/03/29/alfred-extensions" class="dark-link">Alfred Extensions</a></h2>
+<div class="low-top">
+<span class="low-top ">Posted on  March 29, 2013 in <a href="/categories/osx">OSX</a></span>
+<span class="tag-list">
+<a href="/tags/utilities">Utilities</a>
+<a href="/tags/scripting">Scripting</a>
+</span>
+</div>
+<p>Workflows and Extensions for Alfred hosted on https://github.com/Bilalh/AlfredExtensions Itunes Ratings Allows you to set the rating of the currently playing song. Support halves stars and empty ratings based off https://github.com/qlassiqa/qWorkflow/tree/master/example%20workflows Toggle Extension A file action which toggles the visibility of file extensions for the selected files&#8217; bashmarks Allow the use...</p>
+<p class><a href="/2013/03/29/alfred-extensions">Read more...</a></p>
+</div>
+<div class="post-listing">
 <h2><a href="/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor" class="dark-link">Pipe output from command line tools to a text editor</a></h2>
 <div class="low-top">
 <span class="low-top ">Posted on  April 22, 2012 in <a href="/categories/osx">OSX</a></span>
@@ -99,7 +111,7 @@ $(this).text("Show Comments")
 <a href="/tags/utilities">Utilities</a>
 </span>
 </div>
-<p>A useful feature is to pipe the result of a command such as ls to a text editor. This can be done by using: Liquid error: No such file or directory - posix_spawnp Using the -a flag for open makes this even more useful allowing you to specify the application...</p>
+<p>A useful feature is to pipe the result of a command such as ls to a text editor. This can be done by using: ls | open -f Using the -a flag for open makes this even more useful allowing you to specify the application to open the output in...</p>
 <p class><a href="/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor">Read more...</a></p>
 </div>
 <div class="post-listing">
@@ -123,7 +135,16 @@ $(this).text("Show Comments")
 <a href="/tags/scripting">Scripting</a>
 </span>
 </div>
-<p>Useful sed commands Delete nth line inplace Liquid error: No such file or directory - posix_spawnp Get the nth line Liquid error: No such file or directory - posix_spawnp Delete the first 10 lines of a file Liquid error: No such file or directory - posix_spawnp Delete lines matching pattern...</p>
+<p>Useful sed commands
+Delete nth line inplace
+sed -i .tmp &#39;&lt;n&gt;d&#39; &lt;filename&gt;
+Get the nth line
+sed &#39;&lt;n&gt;q;d&#39; &lt;filename&gt;
+Delete the first 10 lines of a file
+sed &#39;1,10d&#39;
+Delete lines matching pattern
+sed &#39;/pattern/d&#39;
+</p>
 <p class><a href="/2011/10/09/using-sed">Read more...</a></p>
 </div>
 <div class="post-listing">
@@ -136,9 +157,7 @@ $(this).text("Show Comments")
 <a href="/tags/scripting">Scripting</a>
 </span>
 </div>
-<p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys.
-The script is most useful in either the script menu, which is done by placing the script in the /Library/Scripts/ or using Alfred/Quicksilver.
-Liquid error: No such file or directory - posix_spawnp</p>
+<p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys. The script is most useful in either the script menu, which is done by placing the script in the /Library/Scripts/ or using Alfred/Quicksilver. tell application &quot;System Preferences&quot; set current pane to pane &quot;com.apple.preference.keyboard&quot;...</p>
 <p class><a href="/2011/08/29/fn-lock">Read more...</a></p>
 </div>
 </div>
@@ -156,26 +175,26 @@ Liquid error: No such file or directory - posix_spawnp</p>
 <span style="font-size: 75%">
 <a href="/tags/audio/" title="1 post">Audio</a>
 </span>
-<span style="font-size: 143%">
+<span style="font-size: 133%">
 <a href="/tags/bash/" title="3 posts">Bash</a>
 </span>
-<span style="font-size: 109%">
+<span style="font-size: 104%">
 <a href="/tags/git/" title="2 posts">Git</a>
 </span>
-<span style="font-size: 143%">
+<span style="font-size: 133%">
 <a href="/tags/mplayer/" title="3 posts">MPlayer</a>
 </span>
 <span style="font-size: 75%">
 <a href="/tags/misc/" title="1 post">Misc</a>
 </span>
-<span style="font-size: 177%">
-<a href="/tags/scripting/" title="4 posts">Scripting</a>
+<span style="font-size: 192%">
+<a href="/tags/scripting/" title="5 posts">Scripting</a>
 </span>
 <span style="font-size: 75%">
 <a href="/tags/textmate/" title="1 post">TextMate</a>
 </span>
 <span style="font-size: 280%">
-<a href="/tags/utilities/" title="7 posts">Utilities</a>
+<a href="/tags/utilities/" title="8 posts">Utilities</a>
 </span>
 <span style="font-size: 75%">
 <a href="/tags/ical/" title="1 post">iCal</a>
@@ -183,17 +202,17 @@ Liquid error: No such file or directory - posix_spawnp</p>
 </div>
 <div class="sidebar-module">
 <div class="title"><a href='/categories'>Categories</a></div>
-<a href="/categories/osx"><strong>OSX</strong></a> (6)<br /><a href="/categories/unix"><strong>Unix</strong></a> (6)<br /><a href="/categories/release"><strong>Release</strong></a> (3)<br />
+<a href="/categories/osx"><strong>OSX</strong></a> (7)<br /><a href="/categories/unix"><strong>Unix</strong></a> (6)<br /><a href="/categories/release"><strong>Release</strong></a> (3)<br />
 </div>
 <div class="sidebar-module">
 <div class="title"><a href='/archives'>Archives</a></div>
-<a href="/2012/09"><strong>September 2012</strong></a> (1)<br /><a href="/2012/05"><strong>May 2012</strong></a> (1)<br /><a href="/2012/04"><strong>April 2012</strong></a> (2)<br /><a href="/2012/01"><strong>January 2012</strong></a> (1)<br /><a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
+<a href="/2013/03"><strong>March 2013</strong></a> (1)<br /><a href="/2012/09"><strong>September 2012</strong></a> (1)<br /><a href="/2012/05"><strong>May 2012</strong></a> (1)<br /><a href="/2012/04"><strong>April 2012</strong></a> (2)<br /><a href="/2012/01"><strong>January 2012</strong></a> (1)<br /><a href="/2011/12"><strong>December 2011</strong></a> (3)<br /><a href="/2011/10"><strong>October 2011</strong></a> (3)<br /><a href="/2011/09"><strong>September 2011</strong></a> (3)<br /><a href="/2011/08"><strong>August 2011</strong></a> (1)<br />
 </div>
 </div>
 <div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
 <a title="Content licenced under Creative Commons by-nc-sa 3.0" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">&copy;</a> 
-2011-2012 Bilal Syed Hussain. 
+2011-2013 Bilal Syed Hussain. 
 </span> 
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/bilalsyedhussain">Facebook</a>
 &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/Bilalh">GitHub</a>

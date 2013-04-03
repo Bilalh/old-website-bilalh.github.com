@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>fn lock - Bilal Syed Hussain</title>
+<title>Archives for March 2013 - Bilal Syed Hussain</title>
 <meta name="author" content="Bilal Syed Hussain" />
-<meta name="description" content="Bilal Syed Hussain fn lock" />
+<meta name="description" content="Bilal Syed Hussain Archives for March 2013" />
 <meta name="robots" content="noodp, nydir" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
@@ -88,108 +88,19 @@ $(this).text("Show Comments")
 </div>
 </div>
 <div id="main" class="span-17">
-<style type="text/css">
-h3,h4{ 
-color: #335E8D;
-}			
-h3,h4 {
-margin-left		: 3px;
-font-variant	: small-caps;
-font-weight		: normal;
-border-bottom : 1px dotted #ccc;	
-}
-</style>
-<div class="post" id="main-content">
-<h1>fn lock</h1>
-<h4 class="large-bottom">
-Posted on August 29, 2011
-in <a href="/categories/osx">OSX</a> 
+<h1>Archives for March 2013</h1>
+<div id="main-content">
+<div class="post-listing">
+<h2><a href="/2013/03/29/alfred-extensions" class="dark-link">Alfred Extensions</a></h2>
+<div class="low-top">
+<span class="low-top ">Posted on  March 29, 2013 in <a href="/categories/osx">OSX</a></span>
 <span class="tag-list">
-<a href="/tags/applescript">Applescript</a>
 <a href="/tags/utilities">Utilities</a>
 <a href="/tags/scripting">Scripting</a>
 </span>
-</h4>
-<div class="content">
-<p>The below scripts toggles function keys on mac keyboards, between the media and the standard functions keys.</p>
-<p>The script is most useful in either the script menu, which is done by placing the script in the <code>/Library/Scripts/</code> or using Alfred/Quicksilver.</p>
-<div class='highlight'><pre><code class='applescript'><span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
-<span class='k'>set</span> <span class='nv'>current</span> <span class='nv'>pane</span> <span class='k'>to</span> <span class='nv'>pane</span> <span class='s2'>&quot;com.apple.preference.keyboard&quot;</span>
-<span class='k'>end</span> <span class='k'>tell</span>
-<span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Events&quot;</span>
-<span class='k'>if</span> <span class='nv'>UI</span> <span class='nv'>elements</span> <span class='na'>enabled</span> <span class='k'>then</span>
-<span class='k'>tell</span> <span class='nb'>application</span> <span class='nv'>process</span> <span class='s2'>&quot;System Preferences&quot;</span>
-<span class='k'>get</span> <span class='na'>properties</span>
-<span class='nv'>click</span> <span class='nv'>radio</span> <span class='nb'>button</span> <span class='s2'>&quot;Keyboard&quot;</span> <span class='k'>of</span> <span class='no'>tab</span> <span class='nv'>group</span> <span class='mi'>1</span> <span class='k'>of</span> <span class='na'>window</span> <span class='s2'>&quot;Keyboard&quot;</span>
-<span class='nv'>click</span> <span class='nv'>checkbox</span> <span class='s2'>&quot;Use all F1, F2, etc. keys as standard function keys&quot;</span> <span class='err'>¬</span> 
-<span class='k'>of</span> <span class='no'>tab</span> <span class='nv'>group</span> <span class='mi'>1</span> <span class='k'>of</span> <span class='na'>window</span> <span class='s2'>&quot;Keyboard&quot;</span>
-<span class='k'>end</span> <span class='k'>tell</span>
-<span class='k'>else</span>
-<span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
-<span class='nb'>activate</span>
-<span class='k'>set</span> <span class='nv'>current</span> <span class='nv'>pane</span> <span class='se'>¬</span>
-<span class='k'>to</span> <span class='nv'>pane</span> <span class='s2'>&quot;com.apple.preference.universalaccess&quot;</span>
-<span class='nb'>display dialog</span> <span class='se'>¬</span>
-<span class='s2'>&quot;UI element scripting is not enabled. Check \&quot;Enable access for assistive devices\&quot;&quot;</span>
-<span class='k'>end</span> <span class='k'>tell</span>
-<span class='k'>end</span> <span class='k'>if</span>
-<span class='k'>end</span> <span class='k'>tell</span>
-<span class='k'>tell</span> <span class='nb'>application</span> <span class='s2'>&quot;System Preferences&quot;</span>
-<span class='nb'>quit</span>
-<span class='k'>end</span> <span class='k'>tell</span>
-</code></pre>
 </div>
-</div>
-<div class="next-prev-nav low-top">
-&laquo;&nbsp;<a href="/2011/09/08/mac-keyboard-symbols" rel="next" title="Mac Keyboard Symbols">Mac Keyboard Symbols</a>
-<br />
-</div>
-<hr />
-<div class="sharing">
-<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.com/2011/08/29/fn-lock" data-via="" data-counturl="http://bilalh.github.com/2011/08/29/fn-lock" >Tweet</a>
-<div class="g-plusone" data-size="12"></div>
-<script type="text/javascript">
-(function() {
-var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-script.src = 'https://apis.google.com/js/plusone.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-})();
-</script>
-<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) {return;}
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script type="text/javascript">
-(function(){
-var twitterWidgets = document.createElement('script');
-twitterWidgets.type = 'text/javascript';
-twitterWidgets.async = true;
-twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-})();
-</script>
-</div>
-<script type="text/javascript">
-var disqus_shortname = 'bilalsyedhussain';
-// var disqus_developer = 1;
-var disqus_identifier = 'http://bilalh.github.com/2011/08/29/fn-lock';
-var disqus_url = 'http://bilalh.github.com/2011/08/29/fn-lock';
-var disqus_script = 'embed.js';
-(function () {
-var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-}());
-</script>
-<div>
-<h2 id='comment_heading'>Show Comments</h2>
-<div id="disqus_thread" style="display: none; " aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+<p>Workflows and Extensions for Alfred hosted on https://github.com/Bilalh/AlfredExtensions Itunes Ratings Allows you to set the rating of the currently playing song. Support halves stars and empty ratings based off https://github.com/qlassiqa/qWorkflow/tree/master/example%20workflows Toggle Extension A file action which toggles the visibility of file extensions for the selected files&#8217; bashmarks Allow the use...</p>
+<p class><a href="/2013/03/29/alfred-extensions">Read more...</a></p>
 </div>
 </div>
 </div>
