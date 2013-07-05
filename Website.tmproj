@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>about/index.md</string>
+	<string>_posts/2013-03-29-alfred-extensions.md</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,7 +18,7 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>181</integer>
+	<integer>104</integer>
 	<key>metaData</key>
 	<dict>
 		<key>Rakefile</key>
@@ -33,7 +33,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>21</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Readme.md</key>
 		<dict>
@@ -44,40 +44,10 @@
 				<key>line</key>
 				<integer>10</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>59</integer>
-				<key>line</key>
-				<integer>10</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>73</integer>
-				<key>line</key>
-				<integer>10</integer>
-			</dict>
-		</dict>
-		<key>_config.yml</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>74</integer>
-				<key>line</key>
-				<integer>40</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>21</integer>
+			<integer>1</integer>
 		</dict>
 		<key>_layouts/tags.html</key>
 		<dict>
@@ -93,14 +63,14 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>about/index.md</key>
+		<key>_posts/2013-03-29-alfred-extensions.md</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>66</integer>
 				<key>line</key>
-				<integer>13</integer>
+				<integer>24</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -110,10 +80,9 @@
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>Readme.md</string>
-		<string>about/index.md</string>
-		<string>_config.yml</string>
 		<string>Rakefile</string>
+		<string>_posts/2013-03-29-alfred-extensions.md</string>
+		<string>Readme.md</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<false/>
@@ -134,10 +103,25 @@
 					<key>subItems</key>
 					<dict/>
 				</dict>
+				<key>images</key>
+				<dict>
+					<key>isExpanded</key>
+					<true/>
+					<key>subItems</key>
+					<dict>
+						<key>posts</key>
+						<dict>
+							<key>isExpanded</key>
+							<true/>
+							<key>subItems</key>
+							<dict/>
+						</dict>
+					</dict>
+				</dict>
 			</dict>
 		</dict>
 	</dict>
 	<key>windowFrame</key>
-	<string>{{721, 143}, {715, 735}}</string>
+	<string>{{575, 115}, {715, 735}}</string>
 </dict>
 </plist>
