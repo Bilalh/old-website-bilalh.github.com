@@ -18,11 +18,15 @@ There also a <a href="/blog">blog</a> with an <a href='/feed'>RSS</a> feed that 
 <div class="span-24">
 	<h2>Latest Projects</h2>
 
-	{% for project in site.featured_project limit:3 %}
+	{% for project in site.featured_project %}
 	<div class="post-listing project-listing">
 		<div class="inner">
 			<div class="title">
+				{% if project.link %}
+				<a href="{{ project.link }}">
+				{% else %}
 				<a href="/projects/{{project.name}}">
+				{% endif %}
 				{{project.title}}
 				</a>
 			</div>

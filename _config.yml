@@ -88,8 +88,6 @@ projects:
         image: s009.png 
         description: >
            The columns in the table can be chosen. The starting folder can also be specifed.
-    
-
     features:
         - title: Aqua User Interface
           icon:  gui.png
@@ -157,16 +155,24 @@ projects:
     languages:   [C, SQL, Man Pages]
     description: >
       A efficient program that keeps track of tv episodes, also has a nice interface to mplayer, has lots of options see man pages for details.
-  
-  Audio-Sync: &Audio-Sync
-    title:       Audio Sync
-    languages:   [Ruby, Objective C]
+
   
   
   Shell-Tunes: &Shell-Tunes
     title:       Shell Tunes
     languages:   [Shell, Applescript]
   
+
+  TimerBar: &TimerBar
+    link:  http://bilalh.github.io/TimerBar/
+    icon:  TimerBar.png
+    title: TimerBar
+    name:  TimerBar
+    languages: [Objective C,Icons]
+    oneline: >
+      A timer in your menubar. Also allows you to set global hotkeys to control the timer.
+    description: >
+      A timer in your menubar. Also allows you to set a global hotkey to start/pause and stop the timer.
 
 
   MPlayer-OSX-Extended: &MPlayer-OSX-Extended
@@ -187,6 +193,10 @@ projects:
     description:  >
       MPlayer OSX Extended is a video player leveraging the power of the MPlayer and FFmpeg. I have contributed icons and some features to the project and upto data binaries.
   
+  
+  Audio-Sync: &Audio-Sync
+    title:       Audio Sync
+    languages:   [Ruby, Objective C]
 
   BHDraggableImageView: &BHDraggableImageView
     title:       BHDraggableImageView
@@ -238,13 +248,15 @@ projects:
       Directory bookmarks for the terminal with adddition features.
     description: >
       Fork of bashmarks (a script that allows you to save and jump to commonly used directories. with supports for tab completion.) that supports open the bookmark in Finder and perform and command after using a bookmark e.g. `g bookmarkname ls` changes the directory to the bookmark then preforms ls.
-  
+
 
 
 featured_project: 
   -  
     *tagger
   -
-      *bashmarks
+    *bashmarks
   -
     *MPlayer-OSX-Extended
+  -
+    *TimerBar

@@ -177,7 +177,7 @@ module Jekyll
 			self.config['projects'].each do |k, v|
 				slug = v['slug'] || k.slugize
 				p = Project.new(self, self.source, File.join(dir, slug), k, v,"/#{dir}/#{slug}")
-				p.data['url'] = "/#{dir}/#{slug}"
+				p.data['url'] =  v['link'] || "/#{dir}/#{slug}"
 				projects << p
 				write_page p
 				write_page ChangeLog.new(self, self.source, File.join(dir, slug),k, p) if v['changelog']
