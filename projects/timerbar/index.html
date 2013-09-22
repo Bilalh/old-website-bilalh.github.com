@@ -6,9 +6,10 @@ Site design, scripts and layout by Bilal Syed Hussain
 bilalshussain@gmail.com
 http://bilalh.github.io     
 -->
-<title>Bilal Syed Hussain</title>
+<title>TimerBar - Bilal Syed Hussain</title>
 <meta name="author" content="Bilal Syed Hussain" />
-<meta name="description" content="Bilal Syed Hussain " />
+<meta name="description" content="A timer in your menubar. Also allows you to set a global hotkey to start/pause and stop the timer.
+" />
 <meta name="robots" content="noodp, nydir" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="/css/blueprint/screen.css" type="text/css" rel="stylesheet" />
@@ -93,150 +94,83 @@ $(this).text("Show Comments")
 </div>
 </div>
 <div id="main" class="span-24">
-<h1 class="h1-5">Bilal Syed Hussain</h1>
-<p class="large-para">This site contains the various programs and scripts I have created, along with a blog.</p>
-<div class="prepend-2 append-2 home span-8">
-On the project page find the <a href='/projects'>open source project</a> that I have created.
+<style type="text/css">
+h2,h3,h4,h5{ 
+color: #335E8D;
+font-weight   : normal;
+border-bottom : 1px dotted #ccc;
+}     
+h3.project-headings{
+border-bottom : none;
+}
+h2, h2.title-feature {
+margin-left   : 3px;
+font-variant  : small-caps;
+font-weight   : normal;
+border-bottom : 1px dotted #ccc;  
+}
+.project-icon {
+margin-top: 20px; 
+}
+img.pic{
+float:left;
+margin-top    : 5px;
+margin-right  : 15px;
+margin-bottom : 10px;
+}
+</style>
+<div class="span-18">
+<img src="/images/projects/TimerBar/TimerBar.png" class="project-icon left" width="64" height="64" alt="icon"/> 
+<h1 class="project-title">TimerBar</h1>
+<h3 class='project-headings'>
+</h3>
 </div>
-<div class="prepend-2 append-2 span-8 last">
-There also a <a href="/blog">blog</a> with an <a href='/feed'>RSS</a> feed that contains updates about my projects and also contains posts to do with technology.	  
-</div>
-<div class="span-24">
-<h2>Latest Projects</h2>
-<div class="post-listing project-listing">
-<div class="inner">
-<div class="title">
-<a href="/projects/tagger">
-Tagger
+<div class="project-links span-6 last">
+<a href="https://github.com/Bilalh/TimerBar/zipball/master" class="project-download-link">
+<div class="project-download">Download</div>
 </a>
+<h3 class ='project-headings'><a href="https://github.com/Bilalh/TimerBar">GitHub Repository</a></h3>
 </div>
-<div class='description'>
-<span>An tag editor for audio files, that supports auto tagging.
-</span>
-</div>
-<div class="lang">
-<span class="tag-list project-list">
-<span>Objective C</span>
-<span>C++</span>
-<span>Ruby</span>
-</span>
-</div>
-</div>
-</div>	
-<div class="post-listing project-listing">
-<div class="inner">
-<div class="title">
-<a href="/projects/bashmarks">
-Bashmarks
-</a>
-</div>
-<div class='description'>
-<span>Directory bookmarks for the terminal with adddition features.
-</span>
-</div>
-<div class="lang">
-<span class="tag-list project-list">
-<span>Shell</span>
-</span>
-</div>
-</div>
-</div>	
-<div class="post-listing project-listing">
-<div class="inner">
-<div class="title">
-<a href="/projects/mplayer-osx-extended">
-MPlayer OSX Extended
-</a>
-</div>
-<div class='description'>
-<span>Video player leveraging the power of the MPlayer with extra features.
-</span>
-</div>
-<div class="lang">
-<span class="tag-list project-list">
-<span>Objective C</span>
-<span>Icons</span>
-</span>
+<div class="readme span-24">
+<h1 id='timerbar'>TimerBar</h1><p>A timer in your menubar. Also allows you to set a global hotkey to start/pause and stop the timer.</p><h2 id='downloads'>Downloads</h2><p>Located at https://github.com/Bilalh/TimerBar/releases</p><h2 id='prerequisites'>Prerequisites</h2><ul>
+<li>Only tested on the latest Mac OSX 10.8 release.</li>
+<li>64 bit only.</li>
+</ul><h2 id='licence'>Licence</h2><ul>
+<li>GPL3 (see the LICENCE file).</li>
+</ul><h2 id='authors'>Authors</h2><ul>
+<li>Bilal Syed Hussain</li>
+</ul>
+<hr />
+<div class="sharing">
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://bilalh.github.comprojects/timerbar/index.html" data-via="" data-counturl="http://bilalh.github.comprojects/timerbar/index.html" >Tweet</a>
+<div class="g-plusone" data-size="12"></div>
+<script type="text/javascript">
+(function() {
+var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+script.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+})();
+</script>
+<div class="fb-like" data-send="true" data-width="400" data-show-faces="false"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+(function(){
+var twitterWidgets = document.createElement('script');
+twitterWidgets.type = 'text/javascript';
+twitterWidgets.async = true;
+twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+})();
+</script>
 </div>
 </div>
-</div>	
-<div class="post-listing project-listing">
-<div class="inner">
-<div class="title">
-<a href="http://bilalh.github.io/TimerBar/">
-TimerBar
-</a>
-</div>
-<div class='description'>
-<span>A timer in your menubar. Also allows you to set global hotkeys to control the timer.
-</span>
-</div>
-<div class="lang">
-<span class="tag-list project-list">
-<span>Objective C</span>
-<span>Icons</span>
-</span>
-</div>
-</div>
-</div>	
-</div>
-<div class="span-24">
-<h2 class>Latest Posts</h2>
-<div class="post-listing">
-<div class="inner">
-<span class="title">
-<span class="date">2013-03-29</span>
-<a href="/2013/03/29/alfred-extensions">
-Alfred Extensions
-</a>
-</span>
-<span class="tag-list">
-<a href="/tags/utilities">Utilities</a>
-<a href="/tags/scripting">Scripting</a>
-</span>
-</div>
-</div>
-<div class="post-listing">
-<div class="inner">
-<span class="title">
-<span class="date">2012-09-22</span>
-<a href="/2012/09/22/tagger-1-6-2">
-Tagger 1.6.2
-</a>
-</span>
-<span class="tag-list">
-<a href="/tags/utilities">Utilities</a>
-</span>
-</div>
-</div>
-<div class="post-listing">
-<div class="inner">
-<span class="title">
-<span class="date">2012-05-18</span>
-<a href="/2012/05/18/mplayer-osx-extended-build-2">
-MPlayer OSX Extended Build 2
-</a>
-</span>
-<span class="tag-list">
-<a href="/tags/mplayer">MPlayer</a>
-</span>
-</div>
-</div>
-<div class="post-listing">
-<div class="inner">
-<span class="title">
-<span class="date">2012-04-22</span>
-<a href="/2012/04/22/pipe-output-from-command-line-tools-to-a-text-editor">
-Pipe output from command line tools to a text editor
-</a>
-</span>
-<span class="tag-list">
-<a href="/tags/scripting">Scripting</a>
-<a href="/tags/utilities">Utilities</a>
-</span>
-</div>
-</div>
-</div>	
 </div>
 <div id="footer" class="span-24"> 
 <span  title="Content licenced under Creative Commons by-nc-sa 3.0">
