@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>TimerBar</title>
+		<link>http://bilalh.github.com/sparkle/timerbar/appcast.xml</link>
+		<description>Most recent changes with links to updates.</description>
+		<language>en</language>
+		<item>
+			<title>Version 1.2.1</title>
+			<sparkle:releaseNotesLink>
+				http://bilalh.github.com/sparkle/timerbar/1.2.1.html
+			</sparkle:releaseNotesLink>
+			<pubDate>Mon, 23 Sep 2013 03:27:01 +0100</pubDate>
+			<enclosure url="https://github.com/downloads/Bilalh/TimerBar/TimerBar_1.2.1.zip"
+			length="717929"
+			type="application/octet-stream"
+			sparkle:version="1.2.1"
+			sparkle:shortVersionString="1.2.1"
+			sparkle:dsaSignature="MCwCFFh/wqH803C2FGFq/yoJe3D4MP1AAhQnEOTDeRqB/DHtVy0H6uPv64JMfg=="/>
+		</item>
+	</channel>
+</rss>
