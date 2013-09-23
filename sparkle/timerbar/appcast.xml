@@ -6,18 +6,18 @@
 		<description>Most recent changes with links to updates.</description>
 		<language>en</language>
 		<item>
-			<title>Version 1.2.1</title>
+			<title>Version 1.2.2</title>
 			<sparkle:releaseNotesLink>
-				http://bilalh.github.com/sparkle/timerbar/1.2.1.html
+				http://bilalh.github.com/sparkle/timerbar/1.2.2.html
 			</sparkle:releaseNotesLink>
-			<pubDate>Mon, 23 Sep 2013 03:35:55 +0100</pubDate>
-			<enclosure url="https://github.com/Bilalh/TimerBar/releases/download/1.2.1
-/TimerBar_1.2.1.zip"
-			length="717929"
+			<pubDate>Mon, 23 Sep 2013 03:48:58 +0100</pubDate>
+			<enclosure url="https://github.com/Bilalh/TimerBar/releases/download/1.2.2
+/TimerBar_1.2.2.zip"
+			length="717942"
 			type="application/octet-stream"
-			sparkle:version="1.2.1"
-			sparkle:shortVersionString="1.2.1"
-			sparkle:dsaSignature="MC0CFQC3SpVjL5KCpq6qNMbLMOS0dKi7AgIUCEsXfyKg5nr9fCyCTVrOgHC0ugM="/>
+			sparkle:version="1.2.2"
+			sparkle:shortVersionString="1.2.2"
+			sparkle:dsaSignature="MC0CFEdE+Qe0DDguc40er9u/yTpVOxnIAhUAuUb/66r+61c4tzaMCwn+Sx9KcXs="/>
 		</item>
 	</channel>
 </rss>
