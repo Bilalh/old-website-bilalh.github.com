@@ -10,13 +10,14 @@
 			<sparkle:releaseNotesLink>
 				http://bilalh.github.com/sparkle/timerbar/1.2.1.html
 			</sparkle:releaseNotesLink>
-			<pubDate>Mon, 23 Sep 2013 03:27:01 +0100</pubDate>
-			<enclosure url="https://github.com/downloads/Bilalh/TimerBar/TimerBar_1.2.1.zip"
+			<pubDate>Mon, 23 Sep 2013 03:35:55 +0100</pubDate>
+			<enclosure url="https://github.com/Bilalh/TimerBar/releases/download/1.2.1
+/TimerBar_1.2.1.zip"
 			length="717929"
 			type="application/octet-stream"
 			sparkle:version="1.2.1"
 			sparkle:shortVersionString="1.2.1"
-			sparkle:dsaSignature="MCwCFFh/wqH803C2FGFq/yoJe3D4MP1AAhQnEOTDeRqB/DHtVy0H6uPv64JMfg=="/>
+			sparkle:dsaSignature="MC0CFQC3SpVjL5KCpq6qNMbLMOS0dKi7AgIUCEsXfyKg5nr9fCyCTVrOgHC0ugM="/>
 		</item>
 	</channel>
 </rss>
