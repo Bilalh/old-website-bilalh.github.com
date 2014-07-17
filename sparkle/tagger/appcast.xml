@@ -6,17 +6,17 @@
 		<description>Most recent changes with links to updates.</description>
 		<language>en</language>
 		<item>
-			<title>Version 1.6.2</title>
+			<title>Version 1.8.0.7</title>
 			<sparkle:releaseNotesLink>
-				http://bilalh.github.com/sparkle/tagger/1.6.2.html
+				http://bilalh.github.com/sparkle/tagger/1.8.0.7.html
 			</sparkle:releaseNotesLink>
-			<pubDate>Sat, 22 Sep 2012 15:02:12 +0100</pubDate>
-			<enclosure url="https://github.com/downloads/Bilalh/Tagger/Tagger_1.6.2.zip"
-			length="1567283"
+			<pubDate>Thu, 17 Jul 2014 01:39:00 +0100</pubDate>
+			<enclosure url="https://github.com/Bilalh/Tagger/releases/download/1.8.0/Tagger_1.8.0.7.zip"
+			length="1481113"
 			type="application/octet-stream"
-			sparkle:version="1.6.2"
-			sparkle:shortVersionString="1.6.2"
-			sparkle:dsaSignature="MCwCFDARhR5eKqxgMczoC0QK4fJr1YMOAhR6FazAHxNq5XO0WGNbISwFuc1kdw=="/>
+			sparkle:version="566"
+			sparkle:shortVersionString="1.8.0.7"
+			sparkle:dsaSignature="MCwCFDk5oPqJE70z1B0KrJu2c/3GwfKcAhQ7Gr9v24jixMrf0pbcEr9ZFBpzVA=="/>
 		</item>
 	</channel>
 </rss>
